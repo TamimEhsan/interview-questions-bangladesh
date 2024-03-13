@@ -1,0 +1,24 @@
+Interview with Jitu
+
+Q1: Tell me about yourself? Why do you want to join chaldal 
+
+Q2: Find even fibonacci sum up to n terms. 
+Q3: Find digits from a string( Leading zeroes doesn't get counted) 
+
+Interview with Shakib: 
+
+Q1: Same as Jitu
+Q2: Given a string s containing lowercase lattin letters and another string p containing lowercase lattin letters and * and ?. * means any substring possibly empty. ? means any character but single.
+ 
+Print yes or no if both strings matches
+
+I provided dynamic programming solution O(n *m)
+Q3: Tell a solution which works in O(n + m)
+
+Q4: About project: What have you done in the authentication part in your project? Also how did you specify roles for different users. 
+
+
+Interview with tejas:
+Q1: Same as Jitu
+Q2: Write a function which converts decimal number to hexadecimal
+Q3: Write a function which finds all the subset of a given set. 
