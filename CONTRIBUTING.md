@@ -19,7 +19,7 @@ Stick to the following format to add a question under a company:
 </summary>
 <br>
 [Answer]
-</b>
+<br>
 </details>
 ```
 Example:
@@ -30,7 +30,7 @@ What is 1+1?
 </summary>
 <br/>
 1+1 equals 3
-</br>
+<br/>
 </details>
 
 
