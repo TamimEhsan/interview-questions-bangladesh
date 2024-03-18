@@ -42,6 +42,107 @@ The element at position (2, 1) is **12** [*indexed at (1, 0)*]
 <br>
 </details>
 
+<details>
+<summary>
+Given a number in roman format. Convert it to arabic numeral.
+</summary>
+<br>
+
+```C++
+
+map<char,int>RtoA;
+void preprocess(){
+    // Map of romans to Arabic
+    RtoA['I'] = 1;      RtoA['V'] = 5;
+    RtoA['X'] = 10;     RtoA['L'] = 50;
+    RtoA['C'] = 100;    RtoA['D'] = 500;
+    RtoA['M'] = 1000;
+}
+
+// Roman numerals to Arabic
+int RomanToArabic(string R){
+    int value = 0;
+    int n = R.size();
+    for(int i=0;i<n;i++){
+        if( R[i+1] && RtoA[ R[i] ] < RtoA[ R[i+1] ] ){
+            value+= RtoA[ R[i+1] ] - RtoA[ R[i] ];
+            i++;
+        } else{
+            value+=RtoA[ R[i] ];
+        }
+    }
+    return value;
+}
+```
+
+<br>
+</details>
+
+
+<details>
+<summary>
+Given a string of characters. Reverse the string without using any library function.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+
+<details>
+<summary>
+Given a string of characters. Check if the given string is a palindrome.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given an positive integer n. Find the sum of even fibonacchi number upto nth term.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given a string of characters [0-9]. Convert it to integer.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given an array of integers. Generate all possible permutation of the given array.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given an array of integers. Generate all possible subset of the given array.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given a regex expression and a string. Check if the regex expression matches with the string.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
 ## DSI
 
 ### Intro
