@@ -10,7 +10,8 @@ A crowd sourced collection of interview questions asked in Bangladeshi Tech comp
 - [Synesis IT](#synesis-it)
 
 
-### Chaldal
+## Chaldal
+
 ### Intro
 Chaldal interview process has 3 stage
 
@@ -126,12 +127,88 @@ Given coordinates x,y and radius r of two circle. Find the area of intersection 
 
 <details>
 <summary>
-Given a list of ranges. Find the length covered by at least one of the range.
+Given a list of ranges. Find the length covered by at least one of the range. <br>
+input: [[1,3],[2,5],[6,7]] <br>
+output: 5 <br>
+explanation: range [1,5],[6,7] are covered by at least one range
 </summary>
 <br>
 [Answer]
 <br>
 </details>
+
+<details>
+<summary>
+Sort array elements by their frequency and in case of tie, keep the order they arrive in the original array.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given the connection between cities, Count the number of disjoint clusters of cities.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given a string of characters S and a specific character C. Find the number of occurance of C in S.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given a range [l,r]. Find all primes between this range. 
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given two binary string A,B. Find the minimum number of bit flips to change string A to string B.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+2 shops sell apples in lots. their price is given. You cannot buy any loose apples. find minimum cost of buying exactly n apples.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given an integer array. Sort the array in nondecreasing order using frequency count of elements in the array. 
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given an array of thresholds. For each threshold print the first negative number.
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
 
 ## Priyo
 
