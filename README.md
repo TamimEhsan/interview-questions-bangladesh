@@ -227,6 +227,122 @@ int main() {
 <br>
 </details>
 
+<details>
+<summary>
+Implement Game of Life
+</summary>
+
+<br>
+
+```C++
+
+/*
+	__________________
+|██                                	 
+|   ██ ██                           	 
+|██ ██ 
+|
+|
+|
+|
+|
+
+In the game of life, you have a 2D matrix of small squares that can be either alive or dead. The matrix goes through iterations, and on every iteration the squares can die or be revived. This is based on the previous iteration and the below rules
+A living square with 1 or less neighbors in the previous iteration will die, as if from loneliness
+A living square with 2 or 3 neighbors in the previous iteration will survive, as if from contentment
+A living square with 4 or more neighbors in the previous iteration will die, as if from overpopulation
+A dead square with exactly 3 neighbors in the previous iteration will be revived, as if by unfulfilled desires
+Implement a square matrix of size 20 and set up the initial five (given) living squares. Then run 10 iterations on it, then print the final matrix. 0,0 should be the top left of the matrix, where the first is the row and the second is the column.
+matrix size = 20
+iterations = 10
+initial squares =
+[0][0]
+[1][1]
+
+*/
+
+// Solution
+
+#include <bits/stdc++.h>
+
+#define pb             push_back
+#define int            long long
+#define endl "\n" 
+#define fill(x, y)     memset(x, y, sizeof(x))
+#define all(x)         (x).begin(), (x).end()
+#define debug(x)       { cerr << #x << " = " << x << endl; }
+#define IO	       { ios_base::sync_with_stdio(false); cin.tie(0); }
+#define read(x)	       freopen(x, "r", stdin)
+#define write(x)       freopen(x, "w", stdout)
+
+using namespace std;
+
+typedef long long      ll;
+typedef pair<int, int> ii;
+typedef vector<int>    vi;
+
+const int msz = 20;
+const int max_iters = 10;
+vector<vector<bool>> matrix(msz, vector<bool>(msz, false));
+
+vector<int> dx = {-1, -1, -1, 0, 0, 1, 1, 1};
+vector<int> dy = {-1, 0, 1, -1, 1, -1, 0, 1};
+
+
+signed main() {
+    matrix[0][0] = true;
+    matrix[1][1] = true;
+    matrix[1][2] = true;
+    matrix[2][0] = true;
+    matrix[2][1] = true;
+
+    for (int gen = 1; gen <= max_iters; gen++) {
+        vector<vector<bool>> next_gen_mat(msz, vector<bool>(msz, false));
+
+        for (int i=0; i<msz; i++) {
+            for (int j=0; j<msz; j++) {
+                int alive_neighbors = 0;
+
+                for (int k=0; k<8; k++)  {
+                    int ni = i + dx[k], nj = j + dy[k];
+                    if (ni >= 0 and ni < msz and nj >=0 and nj < msz) {
+                        if (matrix[ni][nj]) alive_neighbors++;
+                    }
+                }
+
+                if (matrix[i][j]) {
+                    if (alive_neighbors <= 1) next_gen_mat[i][j] = false;
+                    else if (alive_neighbors <= 3) next_gen_mat[i][j] = true;
+                    else next_gen_mat[i][j] = false;
+                } else {
+                    if (alive_neighbors == 3) next_gen_mat[i][j] = true;
+                }
+
+            }
+        }
+
+        matrix = next_gen_mat;
+
+        cout << "Gen : " << gen << endl;
+        for (int i=0; i<msz; i++) {
+            for (int j=0; j<msz; j++) {
+                if (matrix[i][j]) cout << "██";
+                else cout << "  ";
+            }
+            cout << endl;
+        }
+        cout << endl;
+
+    }
+}
+
+
+```
+    
+<br>
+</details>
+
+
 ## DSI
 
 ### Intro
