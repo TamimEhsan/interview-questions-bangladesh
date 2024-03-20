@@ -150,6 +150,7 @@ Each student is assigned to an assignment at a particular location at a specific
 
 <br>
 ```C++
+
 class Assignment {
 	String Area
 	String Time
