@@ -143,6 +143,42 @@ Given a regex expression and a string. Check if the regex expression matches wit
 <br>
 </details>
 
+<details>
+<summary>
+Each student is assigned to an assignment at a particular location at a specific time. Are there any inconsistencies in the assignments ? Find at least one of them by looking into the input. Then write a code to print all inconsistencies in the assignments. 
+</summary>
+
+<br>
+```C++
+class Assignment {
+	String Area
+	String Time
+	List<Integer> StudentIds
+}
+
+getInput() {
+	return
+    	[
+        	Assignment { Area = "Garden", 	Time = "A", StudentIds = [2,9,1] }
+        	Assignment { Area = "Pond",   	Time = "M", StudentIds = [2,8,5] }
+        	Assignment { Area = "FoodCourt",  Time = "A", StudentIds = [4,8,7] }
+        	Assignment { Area = "Playground", Time = "M", StudentIds = [1,7,2] }
+        	Assignment { Area = "PicnicArea", Time = "M", StudentIds = [7,3,9] }
+        	Assignment { Area = "Zoo",    	Time = "A", StudentIds = [6,3,2] }
+    	]
+}
+
+main() {
+	assignments = getInput()
+    
+	// Do something with the assignments list here ...
+}
+
+```
+    
+<br>
+</details>
+
 ## DSI
 
 ### Intro
