@@ -155,6 +155,206 @@ Given a regex expression and a string. Check if the regex expression matches wit
 <br>
 </details>
 
+<details>
+<summary>
+Each student is assigned to an assignment at a particular location at a specific time. Are there any inconsistencies in the assignments ? Find at least one of them by looking into the input. Then write a code to print all inconsistencies in the assignments. 
+</summary>
+
+<br>
+
+```C++
+
+/*
+class Assignment {
+	String Area
+	String Time
+	List<Integer> StudentIds
+}
+
+getInput() {
+	return
+    	[
+        	Assignment { Area = "Garden", 	Time = "A", StudentIds = [2,9,1] }
+        	Assignment { Area = "Pond",   	Time = "M", StudentIds = [2,8,5] }
+        	Assignment { Area = "FoodCourt",  Time = "A", StudentIds = [4,8,7] }
+        	Assignment { Area = "Playground", Time = "M", StudentIds = [1,7,2] }
+        	Assignment { Area = "PicnicArea", Time = "M", StudentIds = [7,3,9] }
+        	Assignment { Area = "Zoo",    	Time = "A", StudentIds = [6,3,2] }
+    	]
+}
+
+main() {
+	assignments = getInput()
+    
+	// Do something with the assignments list here ...
+}
+*/
+// Solution :
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+
+struct Assignment {
+    string Area, Time;
+    vector<int> StudentIds;
+};
+
+vector<Assignment> getInput() {
+    vector<Assignment> res = {
+        {"Garden", "A", {2, 9, 1}},
+        {"Pond", "M", {2, 8, 5}},
+        {"FoodCourt", "A", {4, 8, 7}},
+        {"Playground", "M", {1, 7, 2}},
+        {"PicnicArea", "M", {7, 3, 9}},
+        {"Zoo", "A", {6, 3, 2}},
+    };
+    return res;
+}
+
+int main() {
+    vector<Assignment> inputs = getInput();
+
+    map< pair<int, string>, vector<string> > mapping;
+    for (Assignment a : inputs) {
+        for (auto studentId : a.StudentIds)
+            mapping[{studentId, a.Time}].push_back(a.Area);
+    }
+
+    for (auto k: mapping) {
+        if (k.second.size() > 1) {
+            cout << "Student " << k.first.first << " has conflicts at time " << k.first.second << " at : " << endl;
+
+            for (string area : k.second) {
+                cout << area << " ";
+            } 
+            cout << endl;
+        }
+    }
+}
+
+```
+    
+<br>
+</details>
+
+<details>
+<summary>
+Implement Game of Life
+</summary>
+
+<br>
+
+```C++
+
+/*
+	__________________
+|██                                	 
+|   ██ ██                           	 
+|██ ██ 
+|
+|
+|
+|
+|
+
+In the game of life, you have a 2D matrix of small squares that can be either alive or dead. The matrix goes through iterations, and on every iteration the squares can die or be revived. This is based on the previous iteration and the below rules
+A living square with 1 or less neighbors in the previous iteration will die, as if from loneliness
+A living square with 2 or 3 neighbors in the previous iteration will survive, as if from contentment
+A living square with 4 or more neighbors in the previous iteration will die, as if from overpopulation
+A dead square with exactly 3 neighbors in the previous iteration will be revived, as if by unfulfilled desires
+Implement a square matrix of size 20 and set up the initial five (given) living squares. Then run 10 iterations on it, then print the final matrix. 0,0 should be the top left of the matrix, where the first is the row and the second is the column.
+matrix size = 20
+iterations = 10
+initial squares =
+[0][0]
+[1][1]
+
+*/
+
+// Solution
+
+#include <bits/stdc++.h>
+
+#define pb             push_back
+#define int            long long
+#define endl "\n" 
+#define fill(x, y)     memset(x, y, sizeof(x))
+#define all(x)         (x).begin(), (x).end()
+#define debug(x)       { cerr << #x << " = " << x << endl; }
+#define IO	       { ios_base::sync_with_stdio(false); cin.tie(0); }
+#define read(x)	       freopen(x, "r", stdin)
+#define write(x)       freopen(x, "w", stdout)
+
+using namespace std;
+
+typedef long long      ll;
+typedef pair<int, int> ii;
+typedef vector<int>    vi;
+
+const int msz = 20;
+const int max_iters = 10;
+vector<vector<bool>> matrix(msz, vector<bool>(msz, false));
+
+vector<int> dx = {-1, -1, -1, 0, 0, 1, 1, 1};
+vector<int> dy = {-1, 0, 1, -1, 1, -1, 0, 1};
+
+
+signed main() {
+    matrix[0][0] = true;
+    matrix[1][1] = true;
+    matrix[1][2] = true;
+    matrix[2][0] = true;
+    matrix[2][1] = true;
+
+    for (int gen = 1; gen <= max_iters; gen++) {
+        vector<vector<bool>> next_gen_mat(msz, vector<bool>(msz, false));
+
+        for (int i=0; i<msz; i++) {
+            for (int j=0; j<msz; j++) {
+                int alive_neighbors = 0;
+
+                for (int k=0; k<8; k++)  {
+                    int ni = i + dx[k], nj = j + dy[k];
+                    if (ni >= 0 and ni < msz and nj >=0 and nj < msz) {
+                        if (matrix[ni][nj]) alive_neighbors++;
+                    }
+                }
+
+                if (matrix[i][j]) {
+                    if (alive_neighbors <= 1) next_gen_mat[i][j] = false;
+                    else if (alive_neighbors <= 3) next_gen_mat[i][j] = true;
+                    else next_gen_mat[i][j] = false;
+                } else {
+                    if (alive_neighbors == 3) next_gen_mat[i][j] = true;
+                }
+
+            }
+        }
+
+        matrix = next_gen_mat;
+
+        cout << "Gen : " << gen << endl;
+        for (int i=0; i<msz; i++) {
+            for (int j=0; j<msz; j++) {
+                if (matrix[i][j]) cout << "██";
+                else cout << "  ";
+            }
+            cout << endl;
+        }
+        cout << endl;
+
+    }
+}
+
+
+```
+    
+<br>
+</details>
+
+
 
 
 <details>
