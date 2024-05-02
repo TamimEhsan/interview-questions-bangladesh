@@ -9,6 +9,7 @@ A crowd sourced collection of interview questions asked in Bangladeshi Tech comp
 - [Priyo](#priyo)
 - [Samsung (SRBD)](#srbd)
 - [Synesis IT](#synesis-it)
+- [Therap](#therap)
 
 
 ## Chaldal
@@ -21,6 +22,16 @@ Chaldal interview process has 3 stage
 3. CTO round: It is kind of a behavioural round. But the questions can be coding or technical.
 
 ### Questions
+
+<details>
+<summary>
+Tell me about yourself? Why do you want to join chaldal
+</summary>
+<br>
+Answer varies from person to person
+</b>
+</details>
+
 <details>
 <summary>
 You have been provided a spiral matrix of size NXN along with a coordinate (x, y) as follows. Find the element at the position (x, y) of the matrix.
@@ -144,6 +155,84 @@ Given a regex expression and a string. Check if the regex expression matches wit
 <br>
 </details>
 
+
+
+<details>
+<summary>
+Find digits from a string( Leading zeroes doesn't get counted)
+</summary>
+<br>
+
+```
+```
+
+</b>
+</details>
+
+<details>
+<summary>
+Given a string s containing lowercase lattin letters and another string p containing lowercase lattin letters and * and ?. * means any substring possibly empty. ? means any character but single.
+
+Print yes or no if both strings matches. [RegEx Matching]
+</summary>
+<br>
+
+```
+```
+
+</b>
+</details>
+
+<details>
+<summary>
+About project: What have you done in the authentication part in your project? Also how did you specify roles for different users.
+</summary>
+<br>
+
+```
+```
+
+</b>
+</details>
+
+<details>
+<summary>
+Write a function which converts decimal number to hexadecimal
+</summary>
+<br>
+
+```C++
+string decimalToHexa(int decimal){
+    string hexa = "";
+    while(decimal > 0){
+        int remainder = decimal % 16;
+        if(remainder < 10){
+            hexa = to_string(remainder) + hexa;
+        }else{
+            hexa = char(remainder + 55) + hexa;
+        }
+        decimal /= 16;
+    }
+    return hexa;
+}
+```
+
+</b>
+</details>
+
+<details>
+<summary>
+Write a function which finds all the subset of a given set.
+</summary>
+<br>
+
+```
+```
+
+</b>
+</details>
+
+
 ## DSI
 
 ### Intro
@@ -197,6 +286,8 @@ The preliminary test of IQVIA consists of 3 stage
 - Aplitude: Understanding, Vocabulary, Reasoning, Maths
 - Automata: Easy level coding test
 - Automata Pro: Medium level coding test
+
+Then if selected there will be a technical interview. 
 
 ### Questions
 
@@ -311,6 +402,14 @@ Given an array of thresholds. For each threshold print the first negative number
 <br>
 </details>
 
+<details>
+<summary>
+What happens when you type google.com and press enter in your search bar
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
 
 ## Priyo
 
@@ -411,6 +510,204 @@ How would you manage your team if some teammate doesn't cooperate or doesn't con
 </summary>
 <br>
 Answer varies from person to person
+<br/>
+</details>
+
+## Therap
+### Intro
+Therap has multiple roles. 
+1. Software Engineer
+2. Database Engineer
+3. Quality Assurance Engineer
+4. Embedded System Engineer
+
+The selection process has x number of steps
+1. Initial screening
+2. ?
+### Questions
+<details>
+<summary>
+[DB] Design an ERD of online restaurant management system
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[DB] What is Database Transaction
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[DB] Briefly explain ACID properties
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[DB] What is normalization and denormalization
+</summary>
+<br>
+[Answer] 
+<br/>
+</details>
+
+<details>
+<summary>
+[DB] Briefly explain BCNF
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[DB] Explain data warehousing
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[DB] Explain data redundancy
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[DB] Briefly mention the differences between stored procedure, function and trigger
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[DB] Briefly mention the differences between delete, drop and truncate
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[DB] Briefly mention the differences between where and having clause
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[DB] Briefly mention the differences between candidate key and super key
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[DB] A schema has entities like CUSTOMERS, ORDERS, ORDER_ITEMS, PRODUCTS, PRODUCT_DETAILS, WAREHOUSES, INVENTORIES. Data fields of entities and cardinality relationships were given in the figure. Questions included from <>
+1. Group by, Order by, Join <>
+2. Extracting month and year from oracle dates <>
+3. Find ranks based on some criterion. The extremely hard question was - find top 10 customers based on their total amount spent in 2023. This one involved the following topics: aggregation, join of multiple tables, nested sub-query, year extraction from date. The book of Sukarna sir contains one/two such exercises. Practise them properly
+
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[SWE] Given an array of numbers indicating stock price of n consecutive days. If you buy stock at one day and sell at any later day what is the maximum profit that you can get
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[SWE] Given an array of n integers. You need to take all zeroes in array to the end without changing the relative order of remaining element.
+eg: [2,0,0,3,1,0,5] => [2,3,1,5,0,0,0]
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[SWE] Given an array of n integers. Reorder the elements such that all odd numbers occur after even numbers.
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[SWE] Given an array of strings. Print the sets of strings which are anagram.
+eg: ["cat","tab","act","bat","taco"] => [{"cat","act"},{"tab","bat"},{"taco"}] 
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[SWE] Given an array of n integers. Find the kth largest element in the array.
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[SWE] Given two very large number in string format. Find the sum of the two number
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[SWE] Given two binary tree. Check if they are identical [not isomorphism]
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+[SWE] Given two array of integers. Find the common elements between them.
+</summary>
+<br>
+[Answer]
 <br/>
 </details>
 
