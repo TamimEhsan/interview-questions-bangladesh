@@ -432,6 +432,28 @@ Write a function which finds all the subset of a given set.
 </b>
 </details>
 
+<details>
+<summary>
+Given a set of orderings of letters, determine their topological sorting order. The orderings are provided as strings. 
+For example, given the input ["A>B", "B>C", "C>D"], the expected output is "ABCD".
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given two numbers represented as arrays of characters in decimal format, add them and return the result in the same format.
+For example, Input: ['1', '2', '3'] and ['4', '5', '6']
+Output: Output: ['5', '7', '9']
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+
 
 ## DSI
 
@@ -476,6 +498,8 @@ Given n inputs each with n bits. Output a number not given which has n bits too.
 [Answer]
 <br>
 </details>
+
+
 
 
 ## IQVIA
