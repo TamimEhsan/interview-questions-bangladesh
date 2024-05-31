@@ -635,6 +635,61 @@ What happens when you type google.com and press enter in your search bar
 <br/>
 </details>
 
+<details>
+<summary>
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+</summary>
+<br>
+https://leetcode.com/problems/valid-parentheses/
+<br/>
+</details>
+
+<details>
+<summary>
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police
+</summary>
+<br/>
+https://leetcode.com/problems/house-robber/
+<br/>
+</details>
+
+<details>
+<summary>
+Input given is an int array, which may or may not contain positive, negative or zero values. Write a program to find out the two numbers which gives the highest product. 
+</summary>
+<br/>
+https://www.geeksforgeeks.org/return-a-pair-with-maximum-product-in-array-of-integers/
+<br/>
+</details>
+
+<details>
+<summary>
+Given an array having 0 to n-1 unsorted. Return a new array having their indices 
+</summary>
+<br/>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+Given two strings, find the number of times the second string occurs in the first string, whether continuous or discontinuous. 
+</summary>
+<br/>
+https://www.geeksforgeeks.org/find-number-times-string-occurs-given-string/
+<br/>
+</details>
+
+<details>
+<summary>
+Given an array of positive integers. We need to make the given array a ‘Palindrome’. The only allowed operation is”merging” (of two adjacent elements). Merging two adjacent elements means replacing them with their sum. The task is to find the array of maximum length with the minimum number of merge operations required to make the given array a ‘Palindrome’. 
+</summary>
+<br/>
+https://www.geeksforgeeks.org/find-minimum-number-of-merge-operations-to-make-an-array-palindrome/
+<br/>
+</details>
+
 ## Priyo
 
 ### Intro
