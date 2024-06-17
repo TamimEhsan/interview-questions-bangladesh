@@ -792,6 +792,159 @@ Your program only have to report the distance of a (the) shortest path.
 </summary>
 </details>
 
+<details>
+<summary>
+You are given a directed graph represented by an adjacency list. Your task is to detect if there exists a cycle in the graph.
+If a cycle is found, print the nodes of the cycle in sorted order. Additionally, provide the results for each test case in the format 
+"#testCaseNo node1 node2 ... nodeK". If no cycle is present, print 0.
+</summary>
+<br>
+
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+int firstNodeOfTheCycle, lastNodeOfTheCycle;
+bool detectCycle(int node, vector<vector<int>>& adjList, vector<bool> &visited, vector<bool> &dfsVisited, vector<int> &parent){
+    visited[node] = true;
+    dfsVisited[node] = true;
+
+    for(auto neighbour : adjList[node]){
+        if(!visited[neighbour]){
+            parent[neighbour] = node;
+            bool isCycleDetected = detectCycle(node, adjList, visited, dfsVisited, parent);
+            if(isCycleDetected){
+                firstNodeOfTheCycle = neighbour, lastNodeOfTheCycle = node;
+                return true;
+            }
+        }
+    }
+
+    dfsVisited[node] = false;
+    return false;
+}
+
+void calculateCycle(vector<int>& ans, vector<int>& parent){
+    int curNode = lastNodeOfTheCycle;
+    while(curNode != firstNodeOfTheCycle){
+        ans.push_back(curNode);
+        curNode = parent[curNode];
+    }
+    ans.push_back(curNode);
+}
+int main(){
+    int tc = 10;
+    for(int t = 1; t < tc; t++){
+        int n,m;
+        bool wasVisited = false;
+        cin >> n >> m;
+        vector<vector<int>>& adjList(n + 1);
+        vector<bool> visited(n + 1, false), dfsVisited(n + 1, false);
+        vector<int> parent(n + 1, -1), ans;
+        for(int i = 0; i < m; i++){
+            int u, v;
+            cin >> u >> v;
+            adjList[u].push_back(v);
+        }
+        for(int i = 1; i <= n; i++){
+            if(!visited[i]){
+                bool isCycleDetected = detectCycle(i, adjList, visited, dfsVisited, parent);
+                if(isCycleDetected){
+                    wasVisited = true;
+                    calculateCycle(ans, parent);
+                    sort(ans.begin(), ans.end());
+                    cout<<"#"<<t;
+                    for(auto it: ans){
+                        cout<<" "<<it;
+                    }
+                    cout<<endl;
+                    break;
+                }
+            }
+        }
+        if(!wasVisited){
+            cout<<"#"<<t<<" "<<endl;
+        }
+    }
+}
+```
+<br/>
+</details>
+
+
+<details>
+<summary>
+Given 5 element. We want to search million time that will return is searched element is present or no. What is the best time complexity.
+</summary>
+<br>
+[Answer]
+To sort  $nlon(n)$. The for each time search $log(n)$.
+<br/>
+</details>
+
+<details>
+<summary>
+Follow up question. We are guaranteed that each time new search element would be front the next position of previous search. Write code on pen & paper.
+</summary>
+<br>
+[Answer]
+
+```C++
+int lastElementPosition = 0;
+int solve( vector<int> arr, int element){
+	int l =  lastElementPosition , r = 0;
+	while( l <= r){
+		int mid = l + (r - l) / 2;
+        if( arr[mid] == element ){
+            lastElementPosition = mid;
+            return mid;
+        }
+        else if( element < arr[mid] ){
+            r = mid - 1;
+        }else{
+            lastElementPosition = l;
+            l = mid + 1;
+        }
+    }
+}
+```
+
+<br/>
+</details>
+
+<details>
+<summary>
+Follow up question. Suppose we have 5000 number each 500 digit. Now how will you search? 
+</summary>
+<br>
+[Answer]
+Trie Data structure
+<br/>
+</details>
+
+<details>
+<summary>
+You have string with repeated character. Example : `abcaade`. You can’t use array or map. 
+</summary>
+<br>
+[Answer 1]
+My approach : Sort & search concurrent character `nlog(n)`.
+[Answer 2]
+Optimize approach : An integer have 32 bit. We have 26 small letter character.  We just need to allocate each bit for position of a character. If an element is present set the concurrent bit.  & finally count.
+<br/>
+</details>
+
+
+<details>
+<summary>
+Thread A and Thread B are running parallely. What will be the output of following code?
+<img src= "./resource/thread_question_srbd.png">
+</summary>
+<br>
+[Answer]
+Unpredictable. It is not guaranteed that which thread is currently accessing the `cnt` variable. Was asked a follow up question on how to solve this issue?
+<img src= "./resource/thread_answer_srbd.png">
+<br/>
+</details>
 
 ## Synesis IT
 Synesis takes a on campus written test first. The questions contain some coding problem, Database, writting sql, OOP etc
