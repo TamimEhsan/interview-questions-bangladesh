@@ -432,6 +432,28 @@ Write a function which finds all the subset of a given set.
 </b>
 </details>
 
+<details>
+<summary>
+Given a set of orderings of letters, determine their topological sorting order. The orderings are provided as strings. 
+For example, given the input ["A>B", "B>C", "C>D"], the expected output is "ABCD".
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
+Given two numbers represented as arrays of characters in decimal format, add them and return the result in the same format.
+For example, Input: ['1', '2', '3'] and ['4', '5', '6']
+Output: Output: ['5', '7', '9']
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+
 
 ## DSI
 
@@ -476,6 +498,8 @@ Given n inputs each with n bits. Output a number not given which has n bits too.
 [Answer]
 <br>
 </details>
+
+
 
 
 ## IQVIA
@@ -611,6 +635,61 @@ What happens when you type google.com and press enter in your search bar
 <br/>
 </details>
 
+<details>
+<summary>
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+</summary>
+<br>
+https://leetcode.com/problems/valid-parentheses/
+<br/>
+</details>
+
+<details>
+<summary>
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police
+</summary>
+<br/>
+https://leetcode.com/problems/house-robber/
+<br/>
+</details>
+
+<details>
+<summary>
+Input given is an int array, which may or may not contain positive, negative or zero values. Write a program to find out the two numbers which gives the highest product. 
+</summary>
+<br/>
+https://www.geeksforgeeks.org/return-a-pair-with-maximum-product-in-array-of-integers/
+<br/>
+</details>
+
+<details>
+<summary>
+Given an array having 0 to n-1 unsorted. Return a new array having their indices 
+</summary>
+<br/>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+Given two strings, find the number of times the second string occurs in the first string, whether continuous or discontinuous. 
+</summary>
+<br/>
+https://www.geeksforgeeks.org/find-number-times-string-occurs-given-string/
+<br/>
+</details>
+
+<details>
+<summary>
+Given an array of positive integers. We need to make the given array a ‘Palindrome’. The only allowed operation is”merging” (of two adjacent elements). Merging two adjacent elements means replacing them with their sum. The task is to find the array of maximum length with the minimum number of merge operations required to make the given array a ‘Palindrome’. 
+</summary>
+<br/>
+https://www.geeksforgeeks.org/find-minimum-number-of-merge-operations-to-make-an-array-palindrome/
+<br/>
+</details>
+
 ## Priyo
 
 ### Intro
@@ -698,6 +777,19 @@ Variants: coins achived is nums[i-1]*nums[i+1]
 <br>
 [Answer]
 <br>
+</details>
+
+<details>
+<summary>
+Mr. Kim has to deliver refrigerators to N customers. From the office, he is going to visit all the customers and then return to his home. 
+Each location of the office, his home, and the customers is given in the form of integer coordinates (x,y) (0≤x≤100, 0≤y≤100) . 
+The distance between two arbitrary locations (x1, y1) and (x2, y2) is computed by |x1-x2| + |y1-y2|, where |x| denotes the absolute value 
+of x; for instance, |3|=|-3|=3. The locations of the office, his home, and the customers are all distinct. You should plan an optimal way 
+to visit all the N customers and return to his among all the possibilities.
+You are given the locations of the office, Mr. Kim’s home, and the customers; the number of the customers is in the range of 5 to 10. 
+Write a program that, starting at the office, finds a (the) shortest path visiting all the customers and returning to his home. 
+Your program only have to report the distance of a (the) shortest path.
+</summary>
 </details>
 
 
