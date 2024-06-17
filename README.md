@@ -873,11 +873,13 @@ int main(){
 
 <details>
 <summary>
-Given 5 element. We want to search million time that will return is searched element is present or no. What is the best time complexity.
+Given 5 element. We want to search million time that will return if the searched element is present or no. What is the best time complexity.
 </summary>
 <br>
 [Answer]
-To sort  $nlon(n)$. The for each time search $log(n)$.
+To sort  $nlog(n)$. Then for each time search $log(n)$.
+
+(Note from Tamim: It might be better to use linear search. The internal mechanism for binary search has some constant overhead. For small number that overhead overshadows the benefit of logarithmic complexity. I ran both linear search and binary search. Linear search is about 5 times faster than binary search)
 <br/>
 </details>
 
@@ -891,7 +893,7 @@ Follow up question. We are guaranteed that each time new search element would be
 ```C++
 int lastElementPosition = 0;
 int solve( vector<int> arr, int element){
-	int l =  lastElementPosition , r = 0;
+	int l =  0 , r = lastElementPosition;
 	while( l <= r){
 		int mid = l + (r - l) / 2;
         if( arr[mid] == element ){
@@ -907,7 +909,6 @@ int solve( vector<int> arr, int element){
     }
 }
 ```
-
 <br/>
 </details>
 
@@ -923,13 +924,15 @@ Trie Data structure
 
 <details>
 <summary>
-You have string with repeated character. Example : `abcaade`. You can’t use array or map. 
+You have string with repeated character. Example : `abcaade`. Count the number of characters that occur more than once. You can’t use array or map. 
 </summary>
 <br>
 [Answer 1]
-My approach : Sort & search concurrent character `nlog(n)`.
-[Answer 2]
-Optimize approach : An integer have 32 bit. We have 26 small letter character.  We just need to allocate each bit for position of a character. If an element is present set the concurrent bit.  & finally count.
+My approach : Sort & search concurrent character `nlog(n)`.  
+
+[Answer 2] 
+Optimize approach : An integer have 32 bit. We have 26 small letter character.  We just need to allocate each bit for position of a character. If an element is present set the concurrent bit and  finally count the number of set bit.  
+(Comment from Tamim: Before trying this approach communicate with the interviewer to make sure about the characters present in the string ie only a-z is present and nothing else)
 <br/>
 </details>
 
