@@ -792,6 +792,84 @@ Your program only have to report the distance of a (the) shortest path.
 </summary>
 </details>
 
+<details>
+<summary>
+You are given a directed graph represented by an adjacency list. Your task is to detect if there exists a cycle in the graph.
+If a cycle is found, print the nodes of the cycle in sorted order. Additionally, provide the results for each test case in the format 
+"#testCaseNo node1 node2 ... nodeK". If no cycle is present, print 0.
+</summary>
+<br>
+
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+int firstNodeOfTheCycle, lastNodeOfTheCycle;
+bool detectCycle(int node, vector<vector<int>>& adjList, vector<bool> &visited, vector<bool> &dfsVisited, vector<int> &parent){
+    visited[node] = true;
+    dfsVisited[node] = true;
+
+    for(auto neighbour : adjList[node]){
+        if(!visited[neighbour]){
+            parent[neighbour] = node;
+            bool isCycleDetected = detectCycle(node, adjList, visited, dfsVisited, parent);
+            if(isCycleDetected){
+                firstNodeOfTheCycle = neighbour, lastNodeOfTheCycle = node;
+                return true;
+            }
+        }
+    }
+
+    dfsVisited[node] = false;
+    return false;
+}
+
+void calculateCycle(vector<int>& ans, vector<int>& parent){
+    int curNode = lastNodeOfTheCycle;
+    while(curNode != firstNodeOfTheCycle){
+        ans.push_back(curNode);
+        curNode = parent[curNode];
+    }
+    ans.push_back(curNode);
+}
+int main(){
+    int tc = 10;
+    for(int t = 1; t < tc; t++){
+        int n,m;
+        bool wasVisited = false;
+        cin >> n >> m;
+        vector<vector<int>>& adjList(n + 1);
+        vector<bool> visited(n + 1, false), dfsVisited(n + 1, false);
+        vector<int> parent(n + 1, -1), ans;
+        for(int i = 0; i < m; i++){
+            int u, v;
+            cin >> u >> v;
+            adjList[u].push_back(v);
+        }
+        for(int i = 1; i <= n; i++){
+            if(!visited[i]){
+                bool isCycleDetected = detectCycle(i, adjList, visited, dfsVisited, parent);
+                if(isCycleDetected){
+                    wasVisited = true;
+                    calculateCycle(ans, parent);
+                    sort(ans.begin(), ans.end());
+                    cout<<"#"<<t;
+                    for(auto it: ans){
+                        cout<<" "<<it;
+                    }
+                    cout<<endl;
+                    break;
+                }
+            }
+        }
+        if(!wasVisited){
+            cout<<"#"<<t<<" "<<endl;
+        }
+    }
+}
+```
+<br/>
+</details>
+
 
 ## Synesis IT
 Synesis takes a on campus written test first. The questions contain some coding problem, Database, writting sql, OOP etc
