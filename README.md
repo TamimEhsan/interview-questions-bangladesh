@@ -937,13 +937,12 @@ Optimize approach : An integer have 32 bit. We have 26 small letter character.  
 <details>
 <summary>
 Thread A and Thread B are running parallely. What will be the output of following code?
-![thread_question_srbd](./resource/thread_question_srbd.png)
 <img src= "./resource/thread_question_srbd.png">
 </summary>
 <br>
 [Answer]
 Unpredictable. It is not guaranteed that which thread is currently accessing the `cnt` variable. Was asked a follow up question on how to solve this issue?
-![thread_answer_srbd](./resource/thread_answer_srbd.png)
+<img src= "./resource/thread_answer_srbd.png">
 <br/>
 </details>
 
