@@ -871,6 +871,78 @@ int main(){
 </details>
 
 
+<details>
+<summary>
+Given 5 element. We want to search million time that will return is searched element is present or no. What is the best time complexity.
+</summary>
+<br>
+[Answer]
+To sort  $nlon(n)$. The for each time search $log(n)$.
+<br/>
+</details>
+
+<details>
+<summary>
+Follow up question. We are guaranteed that each time new search element would be front the next position of previous search. Write code on pen & paper.
+</summary>
+<br>
+[Answer]
+```C++
+int lastElementPosition = 0;
+int solve( vector<int> arr, int element){
+	int l =  lastElementPosition , r = 0;
+	while( l <= r){
+		int mid = l + (r - l) / 2;
+        if( arr[mid] == element ){
+            lastElementPosition = mid;
+            return mid;
+        }
+        else if( element < arr[mid] ){
+            r = mid - 1;
+        }else{
+            lastElementPosition = l;
+            l = mid + 1;
+        }
+    }
+}
+```
+<br/>
+</details>
+
+<details>
+<summary>
+Follow up question. Suppose we have 5000 number each 500 digit. Now how will you search? 
+</summary>
+<br>
+[Answer]
+Trie Data structure
+<br/>
+</details>
+
+<details>
+<summary>
+You have string with repeated character. Example : `abcaade`. You can’t use array or map. 
+</summary>
+<br>
+[Answer 1]
+My approach : Sort & search concurrent character `nlog(n)`.
+[Answer 2]
+Optimize approach : An integer have 32 bit. We have 26 small letter character.  We just need to allocate each bit for position of a character. If an element is present set the concurrent bit.  & finally count.
+<br/>
+</details>
+
+
+<details>
+<summary>
+Thread A and Thread B are running parallely. What will be the output of following code? ![thread_question_srbd](./resource/thread_question_srbd.png)
+</summary>
+<br>
+[Answer]
+Unpredictable. It is not guaranteed that which thread is currently accessing the `cnt` variable. Was asked a follow up question on how to solve this issue?
+![thread_answer_srbd](./resource/thread_answer_srbd.png)
+<br/>
+</details>
+
 ## Synesis IT
 Synesis takes a on campus written test first. The questions contain some coding problem, Database, writting sql, OOP etc
 The second stage is face to face interview
