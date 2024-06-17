@@ -887,6 +887,7 @@ Follow up question. We are guaranteed that each time new search element would be
 </summary>
 <br>
 [Answer]
+
 ```C++
 int lastElementPosition = 0;
 int solve( vector<int> arr, int element){
@@ -906,6 +907,7 @@ int solve( vector<int> arr, int element){
     }
 }
 ```
+
 <br/>
 </details>
 
