@@ -10,6 +10,7 @@ A crowd sourced collection of interview questions asked in Bangladeshi Tech comp
 - [Samsung (SRBD)](#srbd)
 - [Synesis IT](#synesis-it)
 - [Therap](#therap)
+- [Relisource](#relisource)
 
 
 ## Chaldal
@@ -1153,6 +1154,72 @@ eg: ["cat","tab","act","bat","taco"] => [{"cat","act"},{"tab","bat"},{"taco"}]
 <details>
 <summary>
 [SWE] Given two array of integers. Find the common elements between them.
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+
+## Relisource
+
+### Intro
+
+For the Junior .NET Developer Position at first there was a 1 hour long written Exam which consisted 3 Questions (SQL Query, Problem Solving, JavaScript-HTML)
+
+### Questions
+<details>
+<summary>
+
+1. Select The Company name which has the lowest total emoployee count.
+
+<table>
+        <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Employee</th>
+        </tr>
+        <tr>
+            <td>ABC</td>
+            <td>blah</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>ABC</td>
+            <td>blah</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>ABC</td>
+            <td>blah</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>XYZ</td>
+            <td>blah</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>XYZ</td>
+            <td>blah</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>XYZ</td>
+            <td>blah</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>MNO</td>
+            <td>blah</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>MNO</td>
+            <td>blah</td>
+            <td>5</td>
+        </tr>
+    </table>
 </summary>
 <br>
 [Answer]
