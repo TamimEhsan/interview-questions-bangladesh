@@ -1226,5 +1226,49 @@ For the Junior .NET Developer Position at first there was a 1 hour long written 
 <br/>
 </details>
 
+<details>
+<summary>
+
+2. Problem Solving
+
+There is a food track consisting of cells marked with 0, 1, or other numbers. Here, 0 signifies the cell is not traceable, 1 signifies it is traceable, and any other number represents the destination. Starting from the top-left point, determine the longest path to reach the destination. If no path exists, print -1.
+<table>
+        <tr>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>9</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+
+
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
+<details>
+<summary>
+
+3. JavaScript & HTML
+
+Write JavaScript code to check if a button is clicked in an HTML element using an EventListener. Upon clicking, the size of the HTML element should increase by 10%.
+</summary>
+<br>
+[Answer]
+<br/>
+</details>
+
 ## Contributing
 See CONTRIBUTION.md for more guidelines
