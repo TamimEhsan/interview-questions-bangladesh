@@ -782,6 +782,40 @@ Variants: coins achived is nums[i-1]*nums[i+1]
 
 <details>
 <summary>
+A linked list of length `n` is given such that each node contains an additional random pointer, which could point to any node in the list, or null.
+Construct a deep copy of the list. The deep copy should consist of exactly `n` brand new nodes, where each new node has its value set to the value of its corresponding original node. Both the next and random pointer of the new nodes should point to new nodes in the copied list such that the pointers in the original list and copied list represent the same list state. None of the pointers in the new list should point to nodes in the original list.
+</summary>
+<br>
+	
+```C++
+class Solution {
+public:
+    unordered_map<Node*,Node*> random;
+    Node* copyRandomList(Node* head) {
+        if( head == NULL ) return NULL;
+        Node* node = new Node(head->val);
+        random[head] = node;
+        node->next = copyRandomList(head->next);
+        node->random = random[head->random];
+        return node;
+    }
+};
+```
+<br>
+</details>
+
+
+<details>
+<summary>
+In pen and paper write the inner workings of a BST. How does a BST work? How to insert and retrieve a value from a BST?
+</summary>
+<br>
+[Answer]
+<br>
+</details>
+
+<details>
+<summary>
 Mr. Kim has to deliver refrigerators to N customers. From the office, he is going to visit all the customers and then return to his home. 
 Each location of the office, his home, and the customers is given in the form of integer coordinates (x,y) (0≤x≤100, 0≤y≤100) . 
 The distance between two arbitrary locations (x1, y1) and (x2, y2) is computed by |x1-x2| + |y1-y2|, where |x| denotes the absolute value 
@@ -878,9 +912,7 @@ Given 5 element. We want to search million time that will return if the searched
 </summary>
 <br>
 [Answer]
-To sort  $nlog(n)$. Then for each time search $log(n)$.
-
-(Note from Tamim: It might be better to use linear search. The internal mechanism for binary search has some constant overhead. For small number that overhead overshadows the benefit of logarithmic complexity. I ran both linear search and binary search. Linear search is about 5 times faster than binary search)
+You might be tempted to answer using binary search on sorted list but it might be better to use linear search. The internal mechanism for binary search has some constant overhead. For small number that overhead overshadows the benefit of logarithmic complexity. I ran both linear search and binary search. Linear search is about 5 times faster than binary search
 <br/>
 </details>
 
