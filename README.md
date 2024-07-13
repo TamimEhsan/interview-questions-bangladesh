@@ -23,7 +23,7 @@ For fresher roles almost all the companies ask about projects and thesis done in
 ### Resume
 Instead of creating a resume from scratch by yourself, try using a template. You can find good tested templates on the web. If you just follow the basic template and change the information you get a pretty good starter. You can find a good latex resume template [here](https://github.com/arasgungore/arasgungore-CV). Follow the guidelines presented [here](https://www.indeed.com/career-advice/resumes-cover-letters/technical-resume-tips) on how to write contents of a resume.
 
-> [TIP]
+> [!TIP]
 > Change your resume before applying to a new position tailoring for that specific role. It helps yourself to stand out from others
 
 ### Portfolio
