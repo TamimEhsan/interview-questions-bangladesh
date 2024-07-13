@@ -15,6 +15,23 @@ A crowd sourced collection of interview questions asked in Bangladeshi Tech comp
 - [Spectrum](#spectrum)
 
 
+## General Guidelines
+
+### Projects and Thesis
+For fresher roles almost all the companies ask about projects and thesis done in university. So, it is a good idea to take a refresher on them before going to the interview. 
+
+### Resume
+Instead of creating a resume from scratch by yourself, try using a template. You can find good tested templates on the web. If you just follow the basic template and change the information you get a pretty good starter. You can find a good latex resume template [here](https://github.com/arasgungore/arasgungore-CV). Follow the guidelines presented [here](https://www.indeed.com/career-advice/resumes-cover-letters/technical-resume-tips) on how to write contents of a resume.
+
+> [TIP]
+> Change your resume before applying to a new position tailoring for that specific role. It helps yourself to stand out from others
+
+### Portfolio
+You can't add everything to your resume. As it is better to keep resume as short as possible, many of the things need to be left out. So, it is a good choice to create a portfolio website. Add all your information there. Add a link of the portfolio to your resume. This way if your recruiter wants to know more about you, they can check the portfolio. For a simple and clean potfolio you can use this [portfolio generator](https://github.com/TamimEhsan/Simple-Portfolio-Generator) which builds a portfolio site from json files. 
+
+### Linked In
+Try to maintain a good linked in presence. Many companies post their vacancies in linked in. Keep your linkedin profile up to date. Sometimes recruiters directly reach out if they find the profile suitable for the role. 
+
 ## Chaldal
 
 ### Intro
@@ -1015,10 +1032,10 @@ The selection process has x number of steps
 > [!TIP]
 > Therap BD organizes a Java fest every year. The prize money is very handsome. Apart from that, if you advance to final that means you get a direct ticket to interview skipping the initial screening
 
-### Questions
+### Database Questions
 <details>
 <summary>
-[DB] Design an ERD of online restaurant management system
+Design an ERD of online restaurant management system
 </summary>
 <br>
 [Answer]
@@ -1027,7 +1044,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[DB] What is Database Transaction
+What is Database Transaction
 </summary>
 <br>
 [Answer]
@@ -1036,7 +1053,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[DB] Briefly explain ACID properties
+Briefly explain ACID properties
 </summary>
 <br>
 [Answer]
@@ -1045,7 +1062,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[DB] What is normalization and denormalization
+What is normalization and denormalization
 </summary>
 <br>
 [Answer] 
@@ -1054,7 +1071,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[DB] Briefly explain BCNF
+Briefly explain BCNF
 </summary>
 <br>
 [Answer]
@@ -1063,7 +1080,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[DB] Explain data warehousing
+Explain data warehousing
 </summary>
 <br>
 [Answer]
@@ -1072,7 +1089,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[DB] Explain data redundancy
+Explain data redundancy
 </summary>
 <br>
 [Answer]
@@ -1081,7 +1098,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[DB] Briefly mention the differences between stored procedure, function and trigger
+Briefly mention the differences between stored procedure, function and trigger
 </summary>
 <br>
 [Answer]
@@ -1090,7 +1107,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[DB] Briefly mention the differences between delete, drop and truncate
+Briefly mention the differences between delete, drop and truncate
 </summary>
 <br>
 [Answer]
@@ -1099,7 +1116,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[DB] Briefly mention the differences between where and having clause
+Briefly mention the differences between where and having clause
 </summary>
 <br>
 [Answer]
@@ -1108,7 +1125,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[DB] Briefly mention the differences between candidate key and super key
+Briefly mention the differences between candidate key and super key
 </summary>
 <br>
 [Answer]
@@ -1117,7 +1134,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[DB] A schema has entities like CUSTOMERS, ORDERS, ORDER_ITEMS, PRODUCTS, PRODUCT_DETAILS, WAREHOUSES, INVENTORIES. Data fields of entities and cardinality relationships were given in the figure. Questions included from <>
+A schema has entities like CUSTOMERS, ORDERS, ORDER_ITEMS, PRODUCTS, PRODUCT_DETAILS, WAREHOUSES, INVENTORIES. Data fields of entities and cardinality relationships were given in the figure. Questions included from <>
 1. Group by, Order by, Join <>
 2. Extracting month and year from oracle dates <>
 3. Find ranks based on some criterion. The extremely hard question was - find top 10 customers based on their total amount spent in 2023. This one involved the following topics: aggregation, join of multiple tables, nested sub-query, year extraction from date. The book of Sukarna sir contains one/two such exercises. Practise them properly
@@ -1128,9 +1145,10 @@ The selection process has x number of steps
 <br/>
 </details>
 
+### Software Engineering Questions
 <details>
 <summary>
-[SWE] Given an array of numbers indicating stock price of n consecutive days. If you buy stock at one day and sell at any later day what is the maximum profit that you can get
+Given an array of numbers indicating stock price of n consecutive days. If you buy stock at one day and sell at any later day what is the maximum profit that you can get
 </summary>
 <br>
 [Answer]
@@ -1139,7 +1157,7 @@ The selection process has x number of steps
 
 <details>
 <summary>
-[SWE] Given an array of n integers. You need to take all zeroes in array to the end without changing the relative order of remaining element.
+Given an array of n integers. You need to take all zeroes in array to the end without changing the relative order of remaining element.
 eg: [2,0,0,3,1,0,5] => [2,3,1,5,0,0,0]
 </summary>
 <br>
@@ -1149,7 +1167,7 @@ eg: [2,0,0,3,1,0,5] => [2,3,1,5,0,0,0]
 
 <details>
 <summary>
-[SWE] Given an array of n integers. Reorder the elements such that all odd numbers occur after even numbers.
+Given an array of n integers. Reorder the elements such that all odd numbers occur after even numbers.
 </summary>
 <br>
 [Answer]
@@ -1158,7 +1176,7 @@ eg: [2,0,0,3,1,0,5] => [2,3,1,5,0,0,0]
 
 <details>
 <summary>
-[SWE] Given an array of strings. Print the sets of strings which are anagram.
+Given an array of strings. Print the sets of strings which are anagram.
 eg: ["cat","tab","act","bat","taco"] => [{"cat","act"},{"tab","bat"},{"taco"}] 
 </summary>
 <br>
@@ -1168,7 +1186,7 @@ eg: ["cat","tab","act","bat","taco"] => [{"cat","act"},{"tab","bat"},{"taco"}]
 
 <details>
 <summary>
-[SWE] Given an array of n integers. Find the kth largest element in the array.
+Given an array of n integers. Find the kth largest element in the array.
 </summary>
 <br>
 [Answer]
@@ -1177,7 +1195,7 @@ eg: ["cat","tab","act","bat","taco"] => [{"cat","act"},{"tab","bat"},{"taco"}]
 
 <details>
 <summary>
-[SWE] Given two very large number in string format. Find the sum of the two number
+Given two very large number in string format. Find the sum of the two number
 </summary>
 <br>
 [Answer]
@@ -1186,7 +1204,7 @@ eg: ["cat","tab","act","bat","taco"] => [{"cat","act"},{"tab","bat"},{"taco"}]
 
 <details>
 <summary>
-[SWE] Given two binary tree. Check if they are identical [not isomorphism]
+Given two binary tree. Check if they are identical [not isomorphism]
 </summary>
 <br>
 [Answer]
@@ -1195,7 +1213,7 @@ eg: ["cat","tab","act","bat","taco"] => [{"cat","act"},{"tab","bat"},{"taco"}]
 
 <details>
 <summary>
-[SWE] Given two array of integers. Find the common elements between them.
+Given two array of integers. Find the common elements between them.
 </summary>
 <br>
 [Answer]
