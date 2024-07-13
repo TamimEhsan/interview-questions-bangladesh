@@ -765,6 +765,9 @@ Round 1 is coding round. The problems are typically from leetcode. You can only 
 
 Round 2 is a technical round. You might get asked about basic theories or solve some simple problems
 
+> [!TIP]
+> SRBD organizes a coding contest every year. The prize money is very handsome. Apart from that, if you do advance to round 2 or 3 means you might get a call for interview skipping the initial screening
+
 ### Questions
 
 <details>
@@ -974,7 +977,8 @@ Optimize approach : An integer have 32 bit. We have 26 small letter character.  
 
 <details>
 <summary>
-Thread A and Thread B are running parallely. What will be the output of following code?
+Thread A and Thread B are running parallely. What will be the output of following code?  
+
 <img src= "./resource/thread_question_srbd.png">
 </summary>
 <br>
@@ -1007,6 +1011,10 @@ Therap has multiple roles.
 The selection process has x number of steps
 1. Initial screening
 2. ?
+
+> [!TIP]
+> Therap BD organizes a Java fest every year. The prize money is very handsome. Apart from that, if you advance to final that means you get a direct ticket to interview skipping the initial screening
+
 ### Questions
 <details>
 <summary>
@@ -1312,7 +1320,8 @@ WSD or Wall Street Docs is a US based company trying to expand in Bangladesh. Th
 - First round is task based. An assignment will be sent to your email if resume screening is passed.
 - Second round is in their Bangladesh office. It is a mix of coding and technical
 
-WSD most probably works with java like Therap BD. So their interview questions generally contains topics from Java, Spring Boot and OOP.
+> [!TIP]
+> WSD most probably works with java like Therap BD. So their interview questions generally contains topics from Java, Spring Boot and OOP.
 
 ### First Round Questions
 <details>
