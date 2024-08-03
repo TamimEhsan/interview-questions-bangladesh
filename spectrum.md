@@ -1,6 +1,6 @@
 # Spectrum
 
-## Intro
+## Introduction
 Spectrum Engineering Consortium Ltd. specializes in IP/DWDM/SDH Network infrastructure, Data Center-Cloud solutions Facility, Server, Storage/Virtualizations. 
 
 ## Questions

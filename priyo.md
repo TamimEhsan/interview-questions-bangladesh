@@ -1,6 +1,8 @@
 # Priyo
 
-## Intro
+## Introduction
+[Priyo](https://www.priyo.com/) is a finance based tech company operating in US market. They operate from Bangladesh. 
+## Interview Stages
 Priyo takes 2 interview. \
 First one has two part. One coding round and another technical round. Each half hour long. \
 Second one is with CEO. It is a behavioural round. 

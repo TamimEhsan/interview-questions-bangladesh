@@ -1,6 +1,8 @@
 # DSI
 
-## Intro
+## Introduction
+[Dynamic Solution Innovators Ltd](https://www.dsinnovators.com/) is an international software company based in Dhaka, Bangladesh. They have been successfully providing software services since 2001 in both the local and global market.
+## Interview Stages
 DSI takes a on campus written test first. The questions contain some coding problem, Database, writting sql, OOP etc
 The second stage is face to face interview
 

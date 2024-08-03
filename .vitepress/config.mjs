@@ -3,7 +3,9 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Interview BD",
-  description: "Crowd sourced collected of interview questions of different BD tech companies",
+  description: "Crowd sourced collection of interview questions of different BD tech companies",
+
+  // description: "Crowd sourced collection of interview questions of different BD tech companies",
   base: '/interview-questions-bangladesh/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -14,11 +16,8 @@ export default defineConfig({
 
     sidebar: [
       {
-        
         items: [
-          // { text: 'Markdown Examples', link: '/markdown-examples' },
-          // { text: 'Runtime API Examples', link: '/api-examples' },
-          { text: 'General guidelines', link: '/general' },
+          {text: 'General guidelines', link: '/general' },
           {text: 'Chaldal', link: '/chaldal'},
           {text: 'DSI', link: '/dsi'},
           {text: 'IQVIA', link: '/iqvia'},
@@ -29,9 +28,6 @@ export default defineConfig({
           {text: 'Synesis IT', link: '/synesis'},
           {text: 'Therap BD', link: '/therap'},
           {text: 'WSD', link: '/wsd'}
-
-
-
         ]
       }
     ],

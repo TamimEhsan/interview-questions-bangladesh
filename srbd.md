@@ -1,14 +1,18 @@
 # SRBD
-## Intro
 
+## Introduction
+[Samsung R&D Institute Bangladesh (SRBD)](https://research.samsung.com/srbd) started its journey in February 2011. Located in the heart of Dhaka, it is the first ever R&D hub set up by a multinational company in Bangladesh.
+
+> [!TIP]
+> SRBD organizes a coding contest every year. The prize money is very handsome. Apart from that, if you do advance to round 2 or 3 means you might get a call for interview skipping the initial screening
+## Interview Stages
 SRBD takes interview in two round.
 
 Round 1 is coding round. The problems are typically from leetcode. You can only proceed to round 2 if you can solve round 1 correctly.
 
 Round 2 is a technical round. You might get asked about basic theories or solve some simple problems
 
-> [!TIP]
-> SRBD organizes a coding contest every year. The prize money is very handsome. Apart from that, if you do advance to round 2 or 3 means you might get a call for interview skipping the initial screening
+
 
 ## Questions
 

@@ -1,6 +1,8 @@
 # Chaldal
 
-## Intro
+## Introduction
+Chaldal.com, founded in 2013, is a grocery e-commerce platform in Bangladesh. They maintain the whole system by themselves. So, they are a tech company too and arguably one the most prestigious tech company in bangaldesh
+## Interview Stages
 Chaldal interview process has 3 stage
 
 1. Apltitude Test: Basic reasoning, vocabulary, maths etc

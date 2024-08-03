@@ -1,6 +1,6 @@
 # Relisource
 
-## Intro
+## Introduction
 
 For the Junior .NET Developer Position at first there was a 1 hour long written Exam which consisted 3 Questions (SQL Query, Problem Solving, JavaScript-HTML)
 

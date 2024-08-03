@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Interview Preparation Bangladesh"
-  text: "Crowd sourced collected of interview questions of different BD tech companies"
-  # tagline: My great project tagline
+  name: "Interview BD"
+  # text: "Crowd sourced collected of interview questions of different BD tech companies"
+  tagline: "Crowd sourced collection of interview questions of different BD tech companies"
   actions:
     - theme: brand
       text: Start Taking Preparation

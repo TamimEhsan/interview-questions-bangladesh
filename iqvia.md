@@ -1,6 +1,8 @@
 # IQVIA
 
-## Intro
+## Introduction
+[IQVIA](https://www.iqvia.com/) is an American Fortune 500 and S&P 500 multinational company serving the combined industries of health information technology and clinical research. They hire professionals from Bangladesh as remote.
+## Interview Stages
 The preliminary test of IQVIA consists of 3 stage
 
 - Aplitude: Understanding, Vocabulary, Reasoning, Maths
