@@ -15,11 +15,17 @@ hero:
     #   link: /api-examples
 
 features:
-  - title: 10+ companies
+  - icon:
+      src: /resource/office-building.png
+    title: 10+ companies
     details: Collection of questions asked in multiple top companies of Bangladesh
-  - title: 100+ questions
+  - icon:
+      src: /resource/checklist.png
+    title: 100+ questions
     details: Details and solutions of 100+ questions
-  - title: Tips and tricks
+  - icon:
+      src: /resource/lightbulb.png
+    title: Tips and tricks
     details: Tips related to specific companies or overall interview preparation
 ---
 

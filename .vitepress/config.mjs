@@ -7,6 +7,7 @@ export default defineConfig({
 
   // description: "Crowd sourced collection of interview questions of different BD tech companies",
   base: '/interview-questions-bangladesh/',
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -34,6 +35,14 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/TamimEhsan/interview-questions-bangladesh' }
-    ]
+    ],
+    editLink: {
+      pattern: 'https://github.com/TamimEhsan/interview-questions-bangladesh/edit/master/:path',
+      text: 'Contribute to this page on GitHub'
+    },
+    search: {
+      provider: 'local'
+    },
+    lastUpdated: true
   }
 })
