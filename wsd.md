@@ -17,18 +17,16 @@ They take their interview in two phases.
 <summary>
 Create a java console based movie listing application. Features include authentication (signin, login), adding movies, searching movies etc. 
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 Create a java console based banking application. Features include creating, displaying, searching, updating and deleting an acount, depositing and withdrawing an amount to your account. 
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 ## Second Round Questions
@@ -36,79 +34,70 @@ Create a java console based banking application. Features include creating, disp
 <summary>
 Describe key features of spring boot.
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 What is JWT token? What are the parts of a jwt token?
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 Given a 2D matrix where each row is sorted. Describe how to find an element in the matrix. What is the complexity of such approach?
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 Given a graph G and two nodes u and v of the graph. Find the lowest common ancestor of u and v.
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 What are the key points of OOP?
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 Describe abstract class and interface. What are their similarities and dissimilarities? What are their benefits?
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 Describe key features of spring boot.
 </summary>
-<br>
+<hr>
 What happens when final keyword is used with variables and classes?
-<br/>
 </details>
 
 <details>
 <summary>
 Given a binary search tree, find/ insert an element in the tree
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 Describe method overloading and method overriding.
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>

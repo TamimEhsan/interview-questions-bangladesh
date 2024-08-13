@@ -8,7 +8,6 @@ The second stage is face to face interview
 <summary>
 How would you manage your team if some teammate doesn't cooperate or doesn't contribute?
 </summary>
-<br>
+<hr>
 Answer varies from person to person
-<br/>
 </details>

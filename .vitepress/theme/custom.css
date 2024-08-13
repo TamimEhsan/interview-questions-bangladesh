@@ -1,0 +1,18 @@
+details {
+    border-color: var(--vp-custom-block-details-border);
+    color: var(--vp-custom-block-details-text);
+    background-color: var(--vp-custom-block-details-bg);
+    border-radius: 8px;
+    padding: 16px 16px 8px;
+    line-height: 24px;
+    font-size: var(--vp-custom-block-font-size);
+    margin-bottom: 8px
+  }
+
+summary {
+    margin: 0 0 8px!important;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}

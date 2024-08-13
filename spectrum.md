@@ -8,25 +8,23 @@ Spectrum Engineering Consortium Ltd. specializes in IP/DWDM/SDH Network infrastr
 <summary>
 What is heap? How heap sort works? what is its run time?
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 What is AVL tree?
 </summary>
-<br/>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 Given a singly linked list, more specifically the head of the linked list. Return the reverse of the list.
 </summary>
-<br/>
+<hr>
 
 ```C++
 ListNode* reverseList(ListNode* head) {
@@ -37,7 +35,6 @@ ListNode* reverseList(ListNode* head) {
     return tail;
 }
 ```
-<br/>
 </details>
 
 <details>
@@ -45,25 +42,22 @@ ListNode* reverseList(ListNode* head) {
 [System Design] Design a url shortener like tiny url. Ensure uniqueness of the shortened link and scalability of the system.
 
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 What is RAID? Describe RAID 0-5.
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 Why disk IO time increases if the chunk size is small?
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>

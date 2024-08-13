@@ -16,9 +16,8 @@ Follow up 1: find the number of subarray (need not be minimum) deleting which wi
 
 Follow up 2: For each index find the number of times it is included in any subarray upon deleting which the remaining sum will be divisible by p
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
@@ -28,9 +27,8 @@ Each boat carries at most two people at the same time, provided the sum of the w
 
 Return the minimum number of boats to carry every given person.
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
@@ -38,9 +36,8 @@ Return the minimum number of boats to carry every given person.
 Given an array of n colored balls. And some boxes. Each box has some capacity and each box must contain balls of same color. What is the maximum number of balls that the boxes can carry?
 Constraint: max capacity of box - min capacity of box <= 1
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 
@@ -48,16 +45,14 @@ Constraint: max capacity of box - min capacity of box <= 1
 <summary>
 Given an array of n integers.Find max subarray sum with at most one delete.
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
 <summary>
 Given an array of n integers. Find the number of subarrays where the maximum element is between x and y
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>

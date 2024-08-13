@@ -15,9 +15,9 @@ Chaldal interview process has 3 stage
 <summary>
 Tell me about yourself? Why do you want to join chaldal
 </summary>
-<br>
+<hr>
 Answer varies from person to person
-<br>
+
 </details>
 
 <details>
@@ -25,28 +25,27 @@ Answer varies from person to person
 You have been provided a spiral matrix of size NXN along with a coordinate (x, y) as follows. Find the element at the position (x, y) of the matrix.
 N = 4, x = 2, y =1 
 
-```math
-$$\begin{bmatrix}
-1 & 2 & 3 & 4 \\
-12 & 13 & 14 & 5 \\
-11 & 16 & 15 & 6 \\
-10 & 9 & 8 & 7
-\end{bmatrix}$$
-```
+<table >
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+  <tr><td>12</td><td>13</td><td>14</td> <td>5</td></tr>
+  <tr> <td>11</td> <td>16</td><td>15</td><td>6</td></tr>
+  <tr><td>10</td> <td>9</td><td>8</td><td>7</td></tr>
+</table>
+
 </summary>
-<br>
+<hr>
 
 ```C++
 The element at position (2, 1) is **12** [*indexed at (1, 0)*]
 ```
-<br>
 </details>
+
 
 <details>
 <summary>
 Given a number in roman format. Convert it to arabic numeral.
 </summary>
-<br>
+<hr>
 
 ```C++
 
@@ -75,7 +74,6 @@ int RomanToArabic(string R){
 }
 ```
 
-<br>
 </details>
 
 
@@ -83,9 +81,8 @@ int RomanToArabic(string R){
 <summary>
 Given a string of characters. Reverse the string without using any library function.
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>
 
 
@@ -93,62 +90,55 @@ Given a string of characters. Reverse the string without using any library funct
 <summary>
 Given a string of characters. Check if the given string is a palindrome.
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>
 
 <details>
 <summary>
 Given an positive integer n. Find the sum of even fibonacchi number upto nth term.
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>
 
 <details>
 <summary>
 Given a string of characters [0-9]. Convert it to integer.
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>
 
 <details>
 <summary>
 Given an array of integers. Generate all possible permutation of the given array.
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>
 
 <details>
 <summary>
 Given an array of integers. Generate all possible subset of the given array.
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>
 
 <details>
 <summary>
 Given a regex expression and a string. Check if the regex expression matches with the string.
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>
 
 <details>
 <summary>
 Each student is assigned to an assignment at a particular location at a specific time. Are there any inconsistencies in the assignments ? Find at least one of them by looking into the input. Then write a code to print all inconsistencies in the assignments. 
 </summary>
-
-<br>
+<hr>
 
 ```C++
 
@@ -224,15 +214,13 @@ int main() {
 
 ```
     
-<br>
 </details>
 
 <details>
 <summary>
 Implement Game of Life
 </summary>
-
-<br>
+<hr>
 
 	__________________
 |██                                	 
@@ -316,7 +304,6 @@ else next_gen_mat[i][j] = false;
 
 ```
     
-<br>
 </details>
 
 
@@ -326,12 +313,11 @@ else next_gen_mat[i][j] = false;
 <summary>
 Find digits from a string( Leading zeroes doesn't get counted)
 </summary>
-<br>
+<hr>
 
 ```
 ```
 
-<br>
 </details>
 
 <details>
@@ -340,31 +326,29 @@ Given a string s containing lowercase lattin letters and another string p contai
 
 Print yes or no if both strings matches. [RegEx Matching]
 </summary>
-<br>
+<hr>
 
 ```
 ```
 
-<br>
 </details>
 
 <details>
 <summary>
 About project: What have you done in the authentication part in your project? Also how did you specify roles for different users.
 </summary>
-<br>
+<hr>
 
 ```
 ```
 
-<br>
 </details>
 
 <details>
 <summary>
 Write a function which converts decimal number to hexadecimal
 </summary>
-<br>
+<hr>
 
 ```C++
 string decimalToHexa(int decimal){
@@ -382,19 +366,17 @@ string decimalToHexa(int decimal){
 }
 ```
 
-<br>
 </details>
 
 <details>
 <summary>
 Write a function which finds all the subset of a given set.
 </summary>
-<br>
+<hr>
 
 ```
 ```
 
-<br>
 </details>
 
 <details>
@@ -402,9 +384,8 @@ Write a function which finds all the subset of a given set.
 Given a set of orderings of letters, determine their topological sorting order. The orderings are provided as strings. 
 For example, given the input ["A>B", "B>C", "C>D"], the expected output is "ABCD".
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>
 
 <details>
@@ -413,7 +394,6 @@ Given two numbers represented as arrays of characters in decimal format, add the
 For example, Input: ['1', '2', '3'] and ['4', '5', '6']
 Output: Output: ['5', '7', '9']
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>

@@ -57,9 +57,8 @@ Select The Company name which has the lowest total emoployee count.
         </tr>
     </table>
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
@@ -88,9 +87,8 @@ There is a food track consisting of cells marked with 0, 1, or other numbers. He
 
 
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>
 
 <details>
@@ -99,7 +97,6 @@ JavaScript & HTML
 
 Write JavaScript code to check if a button is clicked in an HTML element using an EventListener. Upon clicking, the size of the HTML element should increase by 10%.
 </summary>
-<br>
+<hr>
 [Answer]
-<br/>
 </details>

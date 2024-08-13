@@ -3,7 +3,7 @@
 Use pull requests to contribute to the project.
 
 ### Adding a New Company
-If the company eg `Generic Company Ltd` is not in the list, then create a new file for the company in root folder eg `generic.md`, then add that in the table of contents in `/vitepress/config.mjs`. In the json file, find the items in themeConfig.sidebar.items. And add your new entry here
+If the company eg `Generic Company Ltd` is not in the list, then create a new file for the company in root folder eg `generic.md`, then add that in the table of contents in `/vitepress/config.mjs`. In the json file, find the items in themeConfig.sidebar.items. And add your new entry here. If you feel like this is too much hassle, then just mention it in the pull request. I will add it later.
 
 ```json
 items: [
@@ -39,20 +39,17 @@ Stick to the following format to add a question under a company:
 <summary>
 [Question]
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>
 ```
 Example:
 <details>
-
 <summary>
 What is 1+1?
 </summary>
-<br/>
+<hr>
 1+1 equals 3
-<br/>
 </details>
 
 

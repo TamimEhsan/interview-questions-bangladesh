@@ -26,9 +26,8 @@ Return the maximum coins you can collect by bursting the balloons wisely.
 
 Variants: coins achived is nums[i-1]*nums[i+1]
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>
 
 <details>
@@ -36,7 +35,7 @@ Variants: coins achived is nums[i-1]*nums[i+1]
 A linked list of length `n` is given such that each node contains an additional random pointer, which could point to any node in the list, or null.
 Construct a deep copy of the list. The deep copy should consist of exactly `n` brand new nodes, where each new node has its value set to the value of its corresponding original node. Both the next and random pointer of the new nodes should point to new nodes in the copied list such that the pointers in the original list and copied list represent the same list state. None of the pointers in the new list should point to nodes in the original list.
 </summary>
-<br>
+<hr>
 	
 ```C++
 class Solution {
@@ -52,7 +51,6 @@ public:
     }
 };
 ```
-<br>
 </details>
 
 
@@ -60,9 +58,8 @@ public:
 <summary>
 In pen and paper write the inner workings of a BST. How does a BST work? How to insert and retrieve a value from a BST?
 </summary>
-<br>
+<hr>
 [Answer]
-<br>
 </details>
 
 <details>
@@ -84,7 +81,7 @@ You are given a directed graph represented by an adjacency list. Your task is to
 If a cycle is found, print the nodes of the cycle in sorted order. Additionally, provide the results for each test case in the format 
 "#testCaseNo node1 node2 ... nodeK". If no cycle is present, print 0.
 </summary>
-<br>
+<hr>
 
 ```C++
 #include<bits/stdc++.h>
@@ -153,7 +150,6 @@ int main(){
     }
 }
 ```
-<br/>
 </details>
 
 
@@ -161,17 +157,16 @@ int main(){
 <summary>
 Given 5 element. We want to search million time that will return if the searched element is present or no. What is the best time complexity.
 </summary>
-<br>
+<hr>
 [Answer]
 You might be tempted to answer using binary search on sorted list but it might be better to use linear search. The internal mechanism for binary search has some constant overhead. For small number that overhead overshadows the benefit of logarithmic complexity. I ran both linear search and binary search. Linear search is about 5 times faster than binary search
-<br/>
 </details>
 
 <details>
 <summary>
 Follow up question. We are guaranteed that each time new search element would be front the next position of previous search. Write code on pen & paper.
 </summary>
-<br>
+<hr>
 [Answer]
 
 ```C++
@@ -193,31 +188,28 @@ int solve( vector<int> arr, int element){
     }
 }
 ```
-<br/>
 </details>
 
 <details>
 <summary>
 Follow up question. Suppose we have 5000 number each 500 digit. Now how will you search? 
 </summary>
-<br>
+<hr>
 [Answer]
 Trie Data structure
-<br/>
 </details>
 
 <details>
 <summary>
 You have string with repeated character. Example : `abcaade`. Count the number of characters that occur more than once. You can’t use array or map. 
 </summary>
-<br>
+<hr>
 [Answer 1]
 My approach : Sort & search concurrent character `nlog(n)`.  
 
 [Answer 2] 
 Optimize approach : An integer have 32 bit. We have 26 small letter character.  We just need to allocate each bit for position of a character. If an element is present set the concurrent bit and  finally count the number of set bit.  
 (Comment from Tamim: Before trying this approach communicate with the interviewer to make sure about the characters present in the string ie only a-z is present and nothing else)
-<br/>
 </details>
 
 
@@ -227,9 +219,8 @@ Thread A and Thread B are running parallely. What will be the output of followin
 
 <img src= "./resource/thread_question_srbd.png">
 </summary>
-<br>
+<hr>
 [Answer]
 Unpredictable. It is not guaranteed that which thread is currently accessing the `cnt` variable. Was asked a follow up question on how to solve this issue?
 <img src= "./resource/thread_answer_srbd.png">
-<br/>
 </details>
