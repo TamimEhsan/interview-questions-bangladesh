@@ -43,6 +43,20 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    lastUpdated: true
+    lastUpdated: true,
+    head: [
+      [
+        'script',
+        { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-P6ZVQMX05B' }
+      ],
+      [
+        'script',
+        {},
+        `window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6ZVQMX05B');`
+      ]
+    ]
   }
 })
