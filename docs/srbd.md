@@ -8,9 +8,9 @@
 ## Interview Stages
 SRBD takes interview in two round.
 
-Round 1 is coding round. The problems are typically from leetcode. You can only proceed to round 2 if you can solve round 1 correctly.
+1. **Coding round:** Round 1 is coding round. The problems are typically from leetcode. You can only proceed to round 2 if you can solve round 1 correctly.
 
-Round 2 is a technical round. You might get asked about basic theories or solve some simple problems
+1. **Technical round:** Round 2 is a technical round. You might get asked about basic theories or solve some simple problems
 
 
 

@@ -3,7 +3,7 @@
 Use pull requests to contribute to the project.
 
 ### Adding a New Company
-If the company eg `Generic Company Ltd` is not in the list, then create a new file for the company in root folder eg `generic.md`, then add that in the table of contents in `/vitepress/config.mjs`. In the json file, find the items in themeConfig.sidebar.items. And add your new entry here. If you feel like this is too much hassle, then just mention it in the pull request. I will add it later.
+If the company eg `Generic Company Ltd` is not in the list, then create a new file for the company in `/docs/` folder eg `generic.md`, then add that in the table of contents in `/docs/.vitepress/config.mjs`. In the json file, find the items in themeConfig.sidebar.items. And add your new entry here. If you feel like this is too much hassle, then just mention it in the pull request. I will add it later.
 
 ```json
 items: [

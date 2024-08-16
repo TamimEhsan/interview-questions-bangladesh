@@ -5,9 +5,9 @@
 ## Interview Stages
 The preliminary test of IQVIA consists of 3 stage
 
-- Aplitude: Understanding, Vocabulary, Reasoning, Maths
-- Automata: Easy level coding test
-- Automata Pro: Medium level coding test
+- **Aptitude:** Understanding, Vocabulary, Reasoning, Maths
+- **Automata:** Easy level coding test
+- **Automata Pro:** Medium level coding test
 
 Then if selected there will be a technical interview. 
 

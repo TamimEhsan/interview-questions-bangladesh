@@ -28,7 +28,12 @@ export default defineConfig({
           {text: 'SRBD', link: '/srbd'},
           {text: 'Synesis IT', link: '/synesis'},
           {text: 'Therap BD', link: '/therap'},
-          {text: 'WSD', link: '/wsd'}
+          {text: 'WSD', link: '/wsd'},
+          ]
+      },{
+        items: [
+          {text: 'CSE competitions', link: '/competitions'},
+        
         ]
       }
     ],

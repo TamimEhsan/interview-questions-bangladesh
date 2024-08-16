@@ -5,9 +5,9 @@ Chaldal.com, founded in 2013, is a grocery e-commerce platform in Bangladesh. Th
 ## Interview Stages
 Chaldal interview process has 3 stage
 
-1. Apltitude Test: Basic reasoning, vocabulary, maths etc
-2. First round Interview :  There will be 2 seperate interview. The questions asked depend on the interviewer. They may be coding or technical or both. Two yes will lead to next round. 1 yes and 1 no gives you a third chance.
-3. CTO round: It is kind of a behavioural round. But the questions can be coding or technical.
+1. **Apltitude Test:** Basic reasoning, vocabulary, maths etc
+2. **First round Interview:**  There will be 2 seperate interview. The questions asked depend on the interviewer. They may be coding or technical or both. Two yes will lead to next round. 1 yes and 1 no gives you a third chance.
+3. **CTO round:** It is kind of a behavioural round. But the questions can be coding or technical.
 
 ## Questions
 
@@ -277,9 +277,9 @@ signed main() {
                 }
 
                 if (matrix[i][j]) {
-if (alive_neighbors <= 1) next_gen_mat[i][j] = false;
-else if (alive_neighbors <= 3) next_gen_mat[i][j] = true;
-else next_gen_mat[i][j] = false;
+                    if (alive_neighbors <= 1) next_gen_mat[i][j] = false;
+                    else if (alive_neighbors <= 3) next_gen_mat[i][j] = true;
+                    else next_gen_mat[i][j] = false;
                 } else {
                     if (alive_neighbors == 3) next_gen_mat[i][j] = true;
                 }

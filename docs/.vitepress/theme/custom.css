@@ -16,3 +16,7 @@ summary {
     -webkit-user-select: none;
     user-select: none;
 }
+
+.github-alert {
+  border-left: .35em solid #238636!important;
+}

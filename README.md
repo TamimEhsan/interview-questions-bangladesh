@@ -1,5 +1,5 @@
 ﻿# Interview BD
-[![](/resource/banner.png)](https://tamimehsan.github.io/interview-questions-bangladesh)
+[![](/docs/resource/banner.png)](https://tamimehsan.github.io/interview-questions-bangladesh)
 
 Visit [Interview BD](https://tamimehsan.github.io/interview-questions-bangladesh)  
 
