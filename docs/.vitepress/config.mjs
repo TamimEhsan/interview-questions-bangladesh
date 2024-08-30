@@ -23,6 +23,7 @@ export default defineConfig({
           {text: 'DSI', link: '/dsi'},
           {text: 'IQVIA', link: '/iqvia'},
           {text: 'Priyo', link: '/priyo'},
+          {text: 'Kite Games Studio', link: '/kite'},
           {text: 'Relisource', link: '/relisource'},
           {text: 'Spectrum', link: '/spectrum'},
           {text: 'SRBD', link: '/srbd'},
