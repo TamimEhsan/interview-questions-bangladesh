@@ -99,7 +99,7 @@ Given a string of characters. Check if the given string is a palindrome.
 Given an positive integer n. Find the sum of even fibonacchi number upto nth term.
 </summary>
 <hr>
-[Answer]
+[https://supecoder.dev/questions/Sum%20of%20Even%20Fibonacci%20Numbers?questionId=66a6015c5cbe5326054ebf70]
 </details>
 
 <details>
@@ -107,7 +107,7 @@ Given an positive integer n. Find the sum of even fibonacchi number upto nth ter
 Given a string of characters [0-9]. Convert it to integer.
 </summary>
 <hr>
-[Answer]
+[https://supecoder.dev/questions/Convert%20String%20to%20Integer?questionId=66a8cba05cbe532605568a68]
 </details>
 
 <details>
