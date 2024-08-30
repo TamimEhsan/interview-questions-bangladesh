@@ -41,3 +41,17 @@ Given n inputs each with n bits. Output a number not given which has n bits too.
 <hr>
 [Answer]
 </details>
+<details>
+<summary>
+Given an array. Find out the number such that their sum is equal to the target value.
+</summary>
+<hr>
+[Answer]
+</details>
+<details>
+<summary>
+Given a and b.  Find the last digit of a^b.
+</summary>
+<hr>
+[Answer]
+</details>
