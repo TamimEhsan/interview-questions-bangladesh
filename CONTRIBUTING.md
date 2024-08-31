@@ -56,4 +56,5 @@ What is 1+1?
 
 ## Before submitting the pull request
 
-Check if all the formatting is correct.
+1. Check if all the formatting is correct.
+1. Build and run the site locally to check if changes are correct. Check `README.md` to find how to run locally.

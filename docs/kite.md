@@ -10,11 +10,11 @@
 
 2. **Technical Round**: This round primarily focuses on coding problems and some basic Java concepts. The interviewers assess the candidate's problem-solving approach and how they think through the problems.
 
-## Questions
+## Technical Round Questions
 
 <details>
 <summary>
-(Technical round) Problem: A permutation P is good if P[i] % i == 0 or i % P[i] == 0 for 1 ≤ i ≤ N. Given N ≤ 20, count the number of good permutations.
+A permutation P is good if P[i] % i == 0 or i % P[i] == 0 for 1 ≤ i ≤ N. Given N ≤ 20, count the number of good permutations.
 </summary>
 <hr>
 
@@ -62,7 +62,7 @@ int main() {
 
 <details>
 <summary>
-(Technical round) Problem: Design a data structure to add integers and remove the most frequent element, with ties broken by recency.
+Design a data structure to add integers and remove the most frequent element, with ties broken by recency.
 </summary>
 <hr>
 
@@ -130,16 +130,18 @@ int main() {
 </details>
 
 <details> 
-<summary>(Technical round) Question: What are the main concepts of OOP? </summary> 
+<summary>
+What are the main concepts of OOP? 
+</summary> 
 <hr>
-Answer: The main concepts of Object-Oriented Programming (OOP) are:
+The main concepts of Object-Oriented Programming (OOP) are:
 Abstraction, Inheritance, Encapsulation, Polymorphism.
 </details> 
 
 
 <details>
 <summary>
-(Technical round) Problem: Implement the Singleton pattern.
+Implement the Singleton pattern.
 </summary>
 <hr>
 
@@ -179,12 +181,15 @@ public class DatabaseConnection {
     }
 }
 ```
+> [!WARNING] 
+> The given implementation of the singleton pattern though widely popular, is not thread-safe. If a multithreaded application were to get the connection, there is a chance that the connection is initialized multiple times. Ask the interviewer to make sure if they want it to be thread-safe. You can check this [wikipedia section](https://en.wikipedia.org/wiki/Double-checked_locking#Usage_in_Java) if you want to learn more.
 </details>
 
+## Online Round Questions
 
 <details>
 <summary>
-(Online round) Problem: You're at a buffet with various food items. Each food item has a deliciousness factor and nutrient values. You need to maximize the total deliciousness of the foods you eat. Additionally, for health reasons, each nutrient value must occur in an odd number of food items.
+You're at a buffet with various food items. Each food item has a deliciousness factor and nutrient values. You need to maximize the total deliciousness of the foods you eat. Additionally, for health reasons, each nutrient value must occur in an odd number of food items.
 </summary>
 <hr>
 
@@ -253,7 +258,7 @@ int32_t main() {
 
 <details>
 <summary>
-(Online round) Problem: You have a 2D grid representing a village. 'X' denotes farmer-owned land, and '.' denotes government-owned land. Connected 'X' areas belong to the same farmer. If two connected 'X' areas match under any 90° rotation, they also belong to the same farmer. Count the number of unique farmers in the village.
+You have a 2D grid representing a village. 'X' denotes farmer-owned land, and '.' denotes government-owned land. Connected 'X' areas belong to the same farmer. If two connected 'X' areas match under any 90° rotation, they also belong to the same farmer. Count the number of unique farmers in the village.
 </summary>
 <hr>
 
@@ -399,11 +404,9 @@ int32_t main() {
 
 
 
-
-
 <details>
 <summary>
-(Online round) Problem: You need to write a program to simulate a Linux terminal on an old computer. You'll be given commands like "mkdir", "ls", "rm", "pwd", and "cd", and you need to simulate their behavior, printing the appropriate output or error messages.
+You need to write a program to simulate a Linux terminal on an old computer. You'll be given commands like "mkdir", "ls", "rm", "pwd", and "cd", and you need to simulate their behavior, printing the appropriate output or error messages.
 </summary>
 <hr>
 
@@ -514,7 +517,7 @@ int32_t main() {
 
 <details>
 <summary>
-(Online round) Problem: You have a 2D grid representing a field with crop fields and godowns. Harvesters start at godowns and collect crops from fields, bringing them back to their godown. The first harvester must collect from a specific number of fields. You need to calculate the minimum total time for all harvesters to collect all crops.
+You have a 2D grid representing a field with crop fields and godowns. Harvesters start at godowns and collect crops from fields, bringing them back to their godown. The first harvester must collect from a specific number of fields. You need to calculate the minimum total time for all harvesters to collect all crops.
 </summary>
 <hr>
 
@@ -530,7 +533,7 @@ int32_t main() {
 
 <details>
 <summary>
-(Online round) Problem: You have a list of unique strings and an empty list. You'll be given queries to add strings to the empty list, delete strings from it, and count the number of strings between two given strings in the list after sorting it.
+You have a list of unique strings and an empty list. You'll be given queries to add strings to the empty list, delete strings from it, and count the number of strings between two given strings in the list after sorting it.
 </summary>
 <hr>
 

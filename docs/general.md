@@ -10,7 +10,7 @@ Instead of creating a resume from scratch by yourself, try using a template. You
 > Modify your resume (if needed) before applying to a new position tailoring for that specific role. It helps yourself to stand out from others.
 
 ### Portfolio
-You can't add everything to your resume. As it is better to keep resume as short as possible, many of the things need to be left out. So, it is a good choice to create a portfolio website. Add all your information there. Add a link of the portfolio to your resume. This way if your recruiter wants to know more about you, they can check the portfolio. For a simple and clean potfolio you can use this [portfolio generator](https://github.com/TamimEhsan/Simple-Portfolio-Generator) which builds a portfolio site from json files. 
+You can't add everything to your resume. As it is better to keep resume as short as possible, many of the things need to be left out. So, it is a good choice to create a portfolio website. Add all your information there. Add a link of the portfolio to your resume. This way if your recruiter wants to know more about you, they can check the portfolio. 
 
 Jekyll and Hugo are two popular static site generator which requires minimal coding. Tons of highly customizable templates for these are available online.
 

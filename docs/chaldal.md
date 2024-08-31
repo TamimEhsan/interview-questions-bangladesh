@@ -99,7 +99,8 @@ Given a string of characters. Check if the given string is a palindrome.
 Given an positive integer n. Find the sum of even fibonacchi number upto nth term.
 </summary>
 <hr>
-[https://supecoder.dev/questions/Sum%20of%20Even%20Fibonacci%20Numbers?questionId=66a6015c5cbe5326054ebf70]
+
+[**💻 Submit Code**](https://supecoder.dev/questions/Sum%20of%20Even%20Fibonacci%20Numbers?questionId=66a6015c5cbe5326054ebf70)
 </details>
 
 <details>
@@ -107,7 +108,8 @@ Given an positive integer n. Find the sum of even fibonacchi number upto nth ter
 Given a string of characters [0-9]. Convert it to integer.
 </summary>
 <hr>
-[https://supecoder.dev/questions/Convert%20String%20to%20Integer?questionId=66a8cba05cbe532605568a68]
+
+[**💻 Submit Code**](https://supecoder.dev/questions/Convert%20String%20to%20Integer?questionId=66a8cba05cbe532605568a68)
 </details>
 
 <details>
@@ -115,7 +117,34 @@ Given a string of characters [0-9]. Convert it to integer.
 Given an array of integers. Generate all possible permutation of the given array.
 </summary>
 <hr>
-[Answer]
+
+[**💻 Submit Code**](https://leetcode.com/problems/permutations/)
+```cpp
+class Solution {
+public:
+    vector<vector<int>> perms;
+    void backtrack(vector<int>& nums, vector<int> &perm, int rem){
+        if( rem == 0 ){
+            perms.push_back(perm);
+            return;
+        }
+        for(int i=0;i<nums.size();i++){
+            if( nums[i] == 69 ) continue;
+            perm.push_back(nums[i]);
+            nums[i] = 69;
+            backtrack(nums,perm,rem-1);
+            nums[i] = perm.back();
+            perm.pop_back();
+        }
+
+    }
+    vector<vector<int>> permute(vector<int>& nums) {
+        vector<int> perm;
+        backtrack(nums,perm,nums.size());
+        return perms;
+    }
+};
+```
 </details>
 
 <details>
@@ -123,7 +152,31 @@ Given an array of integers. Generate all possible permutation of the given array
 Given an array of integers. Generate all possible subset of the given array.
 </summary>
 <hr>
-[Answer]
+
+[**💻 Submit Code**](https://leetcode.com/problems/subsets/)
+```cpp
+class Solution {
+public:
+    vector<vector<int>> subs;
+    vector<int> sub;
+    void backtrack(vector<int>& nums, int index){
+        if( index == nums.size() ){
+            subs.push_back(sub);
+            return;
+        }
+        // take the current value
+        sub.push_back(nums[index]);
+        backtrack(nums,index+1);
+        sub.pop_back();
+        // don't take the current value
+        backtrack(nums,index+1);
+    }
+    vector<vector<int>> subsets(vector<int>& nums) {
+        backtrack(nums,0);
+        return subs;
+    }
+};
+```
 </details>
 
 <details>
