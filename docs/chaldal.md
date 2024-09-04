@@ -1,12 +1,15 @@
 # Chaldal
 
 ## Introduction
+
 Chaldal.com, founded in 2013, is a grocery e-commerce platform in Bangladesh. They maintain the whole system by themselves. So, they are a tech company too and arguably one the most prestigious tech company in bangaldesh
+
 ## Interview Stages
+
 Chaldal interview process has 3 stage
 
 1. **Apltitude Test:** Basic reasoning, vocabulary, maths etc
-2. **First round Interview:**  There will be 2 seperate interview. The questions asked depend on the interviewer. They may be coding or technical or both. Two yes will lead to next round. 1 yes and 1 no gives you a third chance.
+2. **First round Interview:** There will be 2 seperate interview. The questions asked depend on the interviewer. They may be coding or technical or both. Two yes will lead to next round. 1 yes and 1 no gives you a third chance.
 3. **CTO round:** It is kind of a behavioural round. But the questions can be coding or technical.
 
 ## Questions
@@ -23,7 +26,7 @@ Answer varies from person to person
 <details>
 <summary>
 You have been provided a spiral matrix of size NXN along with a coordinate (x, y) as follows. Find the element at the position (x, y) of the matrix.
-N = 4, x = 2, y =1 
+N = 4, x = 2, y =1
 
 <table >
   <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
@@ -38,8 +41,8 @@ N = 4, x = 2, y =1
 ```C++
 The element at position (2, 1) is **12** [*indexed at (1, 0)*]
 ```
-</details>
 
+</details>
 
 <details>
 <summary>
@@ -76,22 +79,49 @@ int RomanToArabic(string R){
 
 </details>
 
-
 <details>
 <summary>
 Given a string of characters. Reverse the string without using any library function.
 </summary>
-<hr>
-[Answer]
-</details>
 
+```C++
+void solve(string &s){
+
+    int n = s.size();
+
+    for(int i=0;i<n/2;i++){
+
+        char temp = s[i];
+        s[i] = s[n-i-1];
+        s[n-i-1] = temp;
+    }
+
+}
+```
+
+</details>
 
 <details>
 <summary>
 Given a string of characters. Check if the given string is a palindrome.
 </summary>
 <hr>
-[Answer]
+
+```C++
+    bool solve(string s){
+
+    int n = s.size();
+
+    for(int i=0;i<n/2;i++){
+        if(s[i] != s[n-i-1]) return false;
+    }
+
+    return true;
+
+}
+
+```
+
 </details>
 
 <details>
@@ -101,6 +131,30 @@ Given an positive integer n. Find the sum of even fibonacchi number upto nth ter
 <hr>
 
 [**💻 Submit Code**](https://supecoder.dev/questions/Sum%20of%20Even%20Fibonacci%20Numbers?questionId=66a6015c5cbe5326054ebf70)
+
+```C++
+long long solve(int n){
+
+    if(n == 1 or n == 2) return 0;
+
+    long long sum = 0, first = 1, second = 1, x = 2;
+
+    while(x < n){
+
+        long long temp = first;
+        first = second;
+        second = temp + second;
+
+        if(second % 2 == 0) sum += second;
+
+        x++;
+
+    }
+
+    return sum;
+}
+```
+
 </details>
 
 <details>
@@ -110,6 +164,25 @@ Given a string of characters [0-9]. Convert it to integer.
 <hr>
 
 [**💻 Submit Code**](https://supecoder.dev/questions/Convert%20String%20to%20Integer?questionId=66a8cba05cbe532605568a68)
+
+```C++
+long long stringToInteger(string& s) {
+
+    int n = s.size();
+
+    long long res = s[0] - '0';
+
+
+    for(int i=1;i<n;i++){
+
+        res = (res*10) + (s[i] - '0');
+    }
+
+    return res;
+
+}
+```
+
 </details>
 
 <details>
@@ -119,6 +192,7 @@ Given an array of integers. Generate all possible permutation of the given array
 <hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/permutations/)
+
 ```cpp
 class Solution {
 public:
@@ -145,6 +219,7 @@ public:
     }
 };
 ```
+
 </details>
 
 <details>
@@ -154,6 +229,7 @@ Given an array of integers. Generate all possible subset of the given array.
 <hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/subsets/)
+
 ```cpp
 class Solution {
 public:
@@ -177,6 +253,7 @@ public:
     }
 };
 ```
+
 </details>
 
 <details>
@@ -216,7 +293,7 @@ getInput() {
 
 main() {
 	assignments = getInput()
-    
+
 	// Do something with the assignments list here ...
 }
 */
@@ -259,14 +336,14 @@ int main() {
 
             for (string area : k.second) {
                 cout << area << " ";
-            } 
+            }
             cout << endl;
         }
     }
 }
 
 ```
-    
+
 </details>
 
 <details>
@@ -275,9 +352,10 @@ Implement Game of Life
 </summary>
 <hr>
 
-	__________________
-|██                                	 
-|   ██ ██                           	 
+    __________________
+
+|██ 
+|  ██ ██
 |██ ██ 
 |
 |
@@ -356,11 +434,8 @@ signed main() {
 }
 
 ```
-    
+
 </details>
-
-
-
 
 <details>
 <summary>
@@ -369,6 +444,7 @@ Find digits from a string( Leading zeroes doesn't get counted)
 <hr>
 
 ```
+
 ```
 
 </details>
@@ -378,10 +454,12 @@ Find digits from a string( Leading zeroes doesn't get counted)
 Given a string s containing lowercase lattin letters and another string p containing lowercase lattin letters and * and ?. * means any substring possibly empty. ? means any character but single.
 
 Print yes or no if both strings matches. [RegEx Matching]
+
 </summary>
 <hr>
 
 ```
+
 ```
 
 </details>
@@ -393,6 +471,7 @@ About project: What have you done in the authentication part in your project? Al
 <hr>
 
 ```
+
 ```
 
 </details>
@@ -428,6 +507,7 @@ Write a function which finds all the subset of a given set.
 <hr>
 
 ```
+
 ```
 
 </details>
