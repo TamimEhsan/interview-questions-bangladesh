@@ -14,7 +14,7 @@ SRBD takes interview in two round.
 
 
 
-## Questions
+## Coding Round Questions
 
 <details>
 <summary>
@@ -32,8 +32,9 @@ Variants: coins achived is nums[i-1]*nums[i+1]
 
 <details>
 <summary>
-A linked list of length `n` is given such that each node contains an additional random pointer, which could point to any node in the list, or null.
-Construct a deep copy of the list. The deep copy should consist of exactly `n` brand new nodes, where each new node has its value set to the value of its corresponding original node. Both the next and random pointer of the new nodes should point to new nodes in the copied list such that the pointers in the original list and copied list represent the same list state. None of the pointers in the new list should point to nodes in the original list.
+A linked list of length `n` is given such that each node contains an additional random pointer, which could point to any node in the list, or null. Construct a deep copy of the list.
+
+The deep copy should consist of exactly `n` brand new nodes, where each new node has its value set to the value of its corresponding original node. Both the next and random pointer of the new nodes should point to new nodes in the copied list such that the pointers in the original list and copied list represent the same list state. None of the pointers in the new list should point to nodes in the original list.
 </summary>
 <hr>
 	
@@ -55,21 +56,15 @@ public:
 
 
 <details>
-<summary>
-In pen and paper write the inner workings of a BST. How does a BST work? How to insert and retrieve a value from a BST?
-</summary>
-<hr>
-[Answer]
-</details>
-
-<details>
-<summary>
-Mr. Kim has to deliver refrigerators to N customers. From the office, he is going to visit all the customers and then return to his home. 
+<summary> 
+Mr. Kim has to deliver refrigerators to `N` customers. From the office, he is going to visit all the customers and then return to his home. 
 Each location of the office, his home, and the customers is given in the form of integer coordinates (x,y) (0≤x≤100, 0≤y≤100) . 
 The distance between two arbitrary locations (x1, y1) and (x2, y2) is computed by |x1-x2| + |y1-y2|, where |x| denotes the absolute value 
 of x; for instance, |3|=|-3|=3. The locations of the office, his home, and the customers are all distinct. You should plan an optimal way 
-to visit all the N customers and return to his among all the possibilities.
+to visit all the N customers and return to his among all the possibilities. 
+
 You are given the locations of the office, Mr. Kim’s home, and the customers; the number of the customers is in the range of 5 to 10. 
+
 Write a program that, starting at the office, finds a (the) shortest path visiting all the customers and returning to his home. 
 Your program only have to report the distance of a (the) shortest path.
 </summary>
@@ -155,6 +150,44 @@ int main(){
 
 <details>
 <summary>
+You have string with repeated character. Example : `abcaade`. Count the number of characters that occur more than once. You can’t use array or map. 
+</summary>
+<hr>
+[Answer 1]
+My approach : Sort & search concurrent character `nlog(n)`.  
+
+[Answer 2] 
+Optimize approach : An integer have 32 bit. We have 26 small letter character.  We just need to allocate each bit for position of a character. If an element is present set the concurrent bit and  finally count the number of set bit.  
+(Comment from Tamim: Before trying this approach communicate with the interviewer to make sure about the characters present in the string ie only a-z is present and nothing else)
+</details>
+
+
+
+
+## Technical Round Questions
+<details>
+<summary>
+In pen and paper write the inner workings of a BST. How does a BST work? How to insert and retrieve a value from a BST?
+</summary>
+<hr>
+[Answer]
+</details>
+
+<details>
+<summary>
+Thread A and Thread B are running parallely. What will be the output of following code?   
+<img src= "./resource/thread_question_srbd.png">
+
+</summary>
+<hr>
+
+Unpredictable. It is not guaranteed that which thread is currently accessing the `cnt` variable. Was asked a follow up question on how to solve this issue?
+<img src= "./resource/thread_answer_srbd.png">
+
+</details>
+
+<details>
+<summary>
 Given 5 element. We want to search million time that will return if the searched element is present or no. What is the best time complexity.
 </summary>
 <hr>
@@ -195,32 +228,6 @@ int solve( vector<int> arr, int element){
 Follow up question. Suppose we have 5000 number each 500 digit. Now how will you search? 
 </summary>
 <hr>
-[Answer]
+
 Trie Data structure
-</details>
-
-<details>
-<summary>
-You have string with repeated character. Example : `abcaade`. Count the number of characters that occur more than once. You can’t use array or map. 
-</summary>
-<hr>
-[Answer 1]
-My approach : Sort & search concurrent character `nlog(n)`.  
-
-[Answer 2] 
-Optimize approach : An integer have 32 bit. We have 26 small letter character.  We just need to allocate each bit for position of a character. If an element is present set the concurrent bit and  finally count the number of set bit.  
-(Comment from Tamim: Before trying this approach communicate with the interviewer to make sure about the characters present in the string ie only a-z is present and nothing else)
-</details>
-
-
-<details>
-<summary>
-Thread A and Thread B are running parallely. What will be the output of following code?  
-
-<img src= "./resource/thread_question_srbd.png">
-</summary>
-<hr>
-[Answer]
-Unpredictable. It is not guaranteed that which thread is currently accessing the `cnt` variable. Was asked a follow up question on how to solve this issue?
-<img src= "./resource/thread_answer_srbd.png">
 </details>

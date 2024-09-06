@@ -51,7 +51,6 @@ Given a number in roman format. Convert it to arabic numeral.
 <hr>
 
 ```C++
-
 map<char,int>RtoA;
 void preprocess(){
     // Map of romans to Arabic
@@ -95,7 +94,6 @@ void solve(string &s){
         s[i] = s[n-i-1];
         s[n-i-1] = temp;
     }
-
 }
 ```
 
@@ -108,18 +106,13 @@ Given a string of characters. Check if the given string is a palindrome.
 <hr>
 
 ```C++
-    bool solve(string s){
-
+bool solve(string s){
     int n = s.size();
-
     for(int i=0;i<n/2;i++){
         if(s[i] != s[n-i-1]) return false;
     }
-
     return true;
-
 }
-
 ```
 
 </details>
@@ -134,23 +127,14 @@ Given an positive integer n. Find the sum of even fibonacchi number upto nth ter
 
 ```C++
 long long solve(int n){
-
     if(n == 1 or n == 2) return 0;
-
-    long long sum = 0, first = 1, second = 1, x = 2;
-
-    while(x < n){
-
+    long long sum = 0, first = 1, second = 1;
+    for(int fib=2;fib<n;fib++){
         long long temp = first;
         first = second;
         second = temp + second;
-
         if(second % 2 == 0) sum += second;
-
-        x++;
-
     }
-
     return sum;
 }
 ```
@@ -166,20 +150,13 @@ Given a string of characters [0-9]. Convert it to integer.
 [**💻 Submit Code**](https://supecoder.dev/questions/Convert%20String%20to%20Integer?questionId=66a8cba05cbe532605568a68)
 
 ```C++
-long long stringToInteger(string& s) {
-
+long long stringToInteger(string &s) {
     int n = s.size();
-
-    long long res = s[0] - '0';
-
-
-    for(int i=1;i<n;i++){
-
+    long long res = 0;
+    for(int i=0;i<n;i++){
         res = (res*10) + (s[i] - '0');
     }
-
     return res;
-
 }
 ```
 
@@ -193,10 +170,11 @@ Given an array of integers. Generate all possible permutation of the given array
 
 [**💻 Submit Code**](https://leetcode.com/problems/permutations/)
 
-```cpp
+```C++
 class Solution {
 public:
     vector<vector<int>> perms;
+    
     void backtrack(vector<int>& nums, vector<int> &perm, int rem){
         if( rem == 0 ){
             perms.push_back(perm);
@@ -210,9 +188,9 @@ public:
             nums[i] = perm.back();
             perm.pop_back();
         }
-
     }
-    vector<vector<int>> permute(vector<int>& nums) {
+
+    vector<vector<int>> permute(vector<int>& nums){
         vector<int> perm;
         backtrack(nums,perm,nums.size());
         return perms;
@@ -235,6 +213,7 @@ class Solution {
 public:
     vector<vector<int>> subs;
     vector<int> sub;
+
     void backtrack(vector<int>& nums, int index){
         if( index == nums.size() ){
             subs.push_back(sub);
@@ -247,7 +226,8 @@ public:
         // don't take the current value
         backtrack(nums,index+1);
     }
-    vector<vector<int>> subsets(vector<int>& nums) {
+
+    vector<vector<int>> subsets(vector<int>& nums){
         backtrack(nums,0);
         return subs;
     }
@@ -271,38 +251,8 @@ Each student is assigned to an assignment at a particular location at a specific
 <hr>
 
 ```C++
-
-/*
-class Assignment {
-	String Area
-	String Time
-	List<Integer> StudentIds
-}
-
-getInput() {
-	return
-    	[
-        	Assignment { Area = "Garden", 	Time = "A", StudentIds = [2,9,1] }
-        	Assignment { Area = "Pond",   	Time = "M", StudentIds = [2,8,5] }
-        	Assignment { Area = "FoodCourt",  Time = "A", StudentIds = [4,8,7] }
-        	Assignment { Area = "Playground", Time = "M", StudentIds = [1,7,2] }
-        	Assignment { Area = "PicnicArea", Time = "M", StudentIds = [7,3,9] }
-        	Assignment { Area = "Zoo",    	Time = "A", StudentIds = [6,3,2] }
-    	]
-}
-
-main() {
-	assignments = getInput()
-
-	// Do something with the assignments list here ...
-}
-*/
-// Solution :
-
 #include <bits/stdc++.h>
-
 using namespace std;
-
 
 struct Assignment {
     string Area, Time;
@@ -432,7 +382,6 @@ signed main() {
 
     }
 }
-
 ```
 
 </details>
@@ -506,9 +455,7 @@ Write a function which finds all the subset of a given set.
 </summary>
 <hr>
 
-```
-
-```
+Similar to the question for finding all subset of an array
 
 </details>
 
@@ -528,5 +475,26 @@ For example, Input: ['1', '2', '3'] and ['4', '5', '6']
 Output: Output: ['5', '7', '9']
 </summary>
 <hr>
-[Answer]
+
+```C++
+vector<char> sum(vector<char> &A, vector<char> &B){
+    reverse(A.begin(),A.end());
+    reverse(B.begin(),B.end());
+    vector<char> sum;
+    int c = 0;
+    int i=0,j=0;
+    while(true){
+        int a=0,b=0;
+        if( i<A.size() ) a = A[i++]-'0';
+        if( j<B.size() ) b = B[j++]-'0';
+
+        int s = (a+b+c)%10;
+        c = (a+b+c)/10;
+        sum.push_back(s+'0');
+        if( i>=A.size() and j>=B.size() and c == 0 ) break;
+    }
+    reverse(sum.begin(),sum.end());
+    return sum;
+}
+```
 </details>
