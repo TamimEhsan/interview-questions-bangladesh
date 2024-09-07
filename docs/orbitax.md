@@ -99,6 +99,8 @@ The result should be returned modulo 10^9+7
 </summary>
 <hr>
 
+[**💻 Submit Code**](https://www.hackerrank.com/contests/orbitax-associate-software-engineer-recruitment-2024-phase-1/challenges/orbitax-sub-sequence)
+
 ```C++
 #define M 1000000007
 map<char,queue<pii> > pos;
