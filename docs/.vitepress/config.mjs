@@ -30,6 +30,7 @@ export default defineConfig({
           {text: 'Synesis IT', link: '/synesis'},
           {text: 'Therap BD', link: '/therap'},
           {text: 'WSD', link: '/wsd'},
+          {text: 'WellDev', link: '/welldev'},
           ]
       },{
         items: [
