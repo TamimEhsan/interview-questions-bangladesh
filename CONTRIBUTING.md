@@ -44,6 +44,7 @@ Stick to the following format to add a question under a company:
 </details>
 ```
 Example:
+```
 <details>
 <summary>
 What is 1+1?
@@ -51,7 +52,7 @@ What is 1+1?
 <hr>
 1+1 equals 3
 </details>
-
+```
 
 
 ## Before submitting the pull request
