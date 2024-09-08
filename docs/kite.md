@@ -159,7 +159,8 @@ To provide better understanding, here’s how the discussion typically goes. The
 
 **Solution:** Below is the implementation of the Singleton pattern in Java:
 
-```java
+::: code-group
+```java [Single Threaded]
 // Singleton class to manage database connections
 public class DatabaseConnection {
     // Static variable to hold the single instance of the class
@@ -181,8 +182,35 @@ public class DatabaseConnection {
     }
 }
 ```
+```go [Thread Safe]
+var lock = &sync.Mutex{}
+
+type single struct {
+}
+
+var singleInstance *single
+
+func getInstance() *single {
+    if singleInstance == nil {
+        lock.Lock()
+        defer lock.Unlock()
+        if singleInstance == nil {
+            fmt.Println("Creating single instance now.")
+            singleInstance = &single{}
+        } else {
+            fmt.Println("Single instance already created.")
+        }
+    } else {
+        fmt.Println("Single instance already created.")
+    }
+
+    return singleInstance
+}
+```
+:::
+
 > [!WARNING] 
-> The given implementation of the singleton pattern though widely popular, is not thread-safe. If a multithreaded application were to get the connection, there is a chance that the connection is initialized multiple times. Ask the interviewer to make sure if they want it to be thread-safe. You can check this [wikipedia section](https://en.wikipedia.org/wiki/Double-checked_locking#Usage_in_Java) if you want to learn more.
+> The given single threaded implementation of the singleton pattern though widely popular, is not thread-safe. If a multithreaded application were to get the connection, there is a chance that the connection is initialized multiple times. Ask the interviewer to make sure if they want it to be thread-safe. You can check this [wikipedia section](https://en.wikipedia.org/wiki/Double-checked_locking#Usage_in_Java) if you want to learn more.
 </details>
 
 ## Online Round Questions

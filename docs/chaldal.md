@@ -407,8 +407,45 @@ Print yes or no if both strings matches. [RegEx Matching]
 </summary>
 <hr>
 
-```
+[**💻 Submit Code**](https://leetcode.com/problems/regular-expression-matching/)
+```C++
+int dp[25][25];
+    bool Down(string &p,string &s, int i,int j){
+    if( p[j] == '*' and p[j-1] == s[i] and dp[i-1][j] == 1 ) return true;
+    if( p[j] == '*' and p[j-1] == '.' and dp[i-1][j] == 1 ) return true;
+    return false;
+}
+bool Corner(string &p,string &s, int i,int j){
+    if( p[j] == '.' and dp[i-1][j-1] == 1 ) return true;
+    if( p[j] == s[i] and dp[i-1][j-1] == 1 ) return true;
+    return false;
+}
+bool Right(string &p,string &s, int i,int j){
+    if( p[j] == '*' and dp[i-1][j-2] == 1 ) {
+        dp[i-1][j] = 1;
+    }
+    if( p[j] == '*' and dp[i][j-2] == 1 ) {
+        return true;
+    }
+    return false;
+}
+bool isMatch(string s, string p) {
+    for(int i=0;i<25;i++) for(int j=0;j<25;j++) dp[i][j] = 0;
+    dp[0][0] = 1;
+    s = "#"+s;
+    p = "#"+p;
+    int n = s.size(); int m = p.size();
 
+    dp[0][0] = 1;
+    for(int i=1;i<n;i++){
+        for(int j=1;j<m;j++){
+            Right(p,s,i,j);
+            if( Down(p,s,i,j) or Corner(p,s,i,j) or Right(p,s,i,j)  ) dp[i][j] = 1;
+        }
+    }
+   
+    return dp[n-1][m-1];
+}
 ```
 
 </details>
