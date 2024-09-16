@@ -54,6 +54,14 @@ What is 1+1?
 </details>
 ```
 
+## Self Citation
+If you want to add show yourself as a contributor in the page then add a new section if there isn't one already and add your name under it. 
+Example
+
+```
+## Contributors
+- [Mohammad Tamimul Ehsan](https://www.linkedin.com/in/tamimehsan/)
+```
 
 ## Before submitting the pull request
 

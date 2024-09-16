@@ -165,3 +165,54 @@ signed main() {
 }
 ```
 </details>
+
+<details>
+<summary>
+You are given an array of weights of length 200 and 3 buckets. The sum of total weights of the array will not exceed 100. You need to distribute the weights among the buckets such that the maximum value of the difference between the sum of weights in any two bucket is minimum.
+</summary>
+<hr>
+
+```C++
+bool dp[205][505][505];
+// until index i, weights on 1st bucket is j and 2nd bucket is k,
+// and 3rd bucket is cumsum[i]-j-k;
+void solve() {
+    int n;
+    cin>>n;
+    int weights[n+1];
+    int csum = 0;
+    for(int i=1;i<=n;i++)
+        cin>>weights[i];
+
+    // we can put 0 weight in 1st,2nd and 3rd bucket with 0 weights
+    dp[0][0][0] = true;
+
+    for(int i=1;i<=n;i++){
+        for(int j=0;j<=min(csum,500);j++){
+            for(int k=0;k<=min(csum,500);k++){
+                if( !dp[i-1][j][k] ) continue;
+                // put it in 1st bucket
+                dp[i][j][k] = true;
+                // put it in the second bucket
+                if( j+weights[i]<=500 ) dp[i][j+weights[i]][k] = true;
+                // put it in the third bucket
+                if( k+weights[i]<=500 ) dp[i][j][k+weights[i]] = true;
+            }
+        }
+        csum+=weights[i];
+    }
+    cout<<csum<<endl;
+    int mx = -1;
+    for(int i=0;i<=min(csum,500);i++){
+        for(int j=0;j<=min(csum,500);j++){
+            if( dp[n][i][j] == false ) continue;
+            int k = csum-i-j;
+            cout<<i<<" "<<j<<" "<<k<<endl;
+            int val = max( {abs(i-j),abs(j-k),abs(k-i)} );
+            mx = mx == -1? val: min(mx,val);
+        }
+    }
+    cout<<mx<<endl;
+}
+```
+</details>

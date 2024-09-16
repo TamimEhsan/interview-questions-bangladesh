@@ -117,7 +117,8 @@ Given an array of thresholds. For each threshold print the first negative number
 What happens when you type google.com and press enter in your search bar
 </summary>
 <hr>
-[Answer]
+
+This is a very important question and aims to check the knowledge of networking. A very thorough explanation of this question is answere here in [What Happens When](https://github.com/alex/what-happens-when)
 
 </details>
 

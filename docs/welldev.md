@@ -91,6 +91,15 @@ Explain the basic concepts of Object-Oriented Programming (OOP).
 What are the ACID properties in DBMS?
 </summary>
 <hr>
+ACID is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. Databases that support this are called ACID compliance. The properties are  
+
+- **Atomicity:** Each statement in a transaction (to read, write, update or delete data) is treated as a single unit. Either the entire statement is executed, or none of it is executed.
+- **Consistency:** Ensures the databases remain consistent following some predefined business logic both before and after the transaction
+- **Isolation:** Each transaction executes in such a way that one is not affected by other s though they were occurring only one. 
+- **Durability:** The data changes by a successfull transaction is saved even in the event of system failure
+
+> [!IMPORTANT]
+> Atomicity, isolation and durability are properties of the database, whereas consistency is a property of the application. The C in ACID was tossed in to make the acronym work. [ref: Martin Kleppmann, Designing Data Intensive Applications]
 </details>
 
 <details>
