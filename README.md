@@ -1,9 +1,21 @@
-﻿# Interview BD
-[![](/docs/resource/banner.png)](https://tamimehsan.github.io/interview-questions-bangladesh)
+<div align="center">
+	<a href="https://tamimehsan.github.io/interview-questions-bangladesh"><img src="/docs/resource/banner.png" alt="hero" width="500px"/></a>
+	<h1>Interview BD</h1>
+	<h3>A crowd sourced collection of interview questions asked in Bangladeshi Tech companies</h3>
+	<h4>Interviewees | Interviewers | Knowledge test | Practice</h4>
+	<p>
+		<a name="stars"><img src="https://img.shields.io/github/stars/tamimehsan/interview-questions-bangladesh?style=for-the-badge"></a>
+		<a name="forks"><img src="https://img.shields.io/github/forks/tamimehsan/interview-questions-bangladesh?logoColor=green&style=for-the-badge"></a>
+		<a name="contributions"><img src="https://img.shields.io/github/contributors/tamimehsan/interview-questions-bangladesh?logoColor=green&style=for-the-badge"></a>
+		<a name="license"><img src="https://img.shields.io/github/license/tamimehsan/interview-questions-bangladesh?style=for-the-badge"></a>
+	</p>
+	<h3>All questions and answers can be found at <a href="https://tamimehsan.github.io/interview-questions-bangladesh">Interview BD</a></h3>
+	<p>Show your support by giving a ⭐ to this repo</p>
+</div>
 
-Visit [Interview BD](https://tamimehsan.github.io/interview-questions-bangladesh)  
+---
 
-A crowd sourced collection of interview questions asked in Bangladeshi Tech companies. Visit the site [Interview BD](https://tamimehsan.github.io/interview-questions-bangladesh) to start taking preparation for your next interview!
+ Visit the site [Interview BD](https://tamimehsan.github.io/interview-questions-bangladesh) to start taking preparation for your next interview!
 
 - 10+ companies
 - 100+ questions
