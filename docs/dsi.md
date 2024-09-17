@@ -41,3 +41,13 @@ Given n inputs each with n bits. Output a number not given which has n bits too.
 <hr>
 [Answer]
 </details>
+
+<details>
+<summary>
+What are the 7 layers in OSI networking model? 
+</summary>
+<hr>
+
+![](https://cf-assets.www.cloudflare.com/slt3lc6tev37/6ZH2Etm3LlFHTgmkjLmkxp/59ff240fb3ebdc7794ffaa6e1d69b7c2/osi_model_7_layers.png)
+
+</details>

@@ -18,7 +18,23 @@ Then if selected there will be a technical interview.
 Given a string of lowercase characters. Find the count of characters which only occured once in the string.
 </summary>
 <hr>
-[Answer]
+
+```C++
+int solve(string s) {
+    sort(s.begin(),s.end());
+    int unik = 0;
+    int cnt = 1;
+    for(int i=1;i<s.size();i++){
+        if( s[i] != s[i-1] ){
+            unik += (cnt == 1);
+            cnt = 0;
+        }
+        cnt++;
+    }
+    unik += (cnt == 1);
+    return unik;
+}
+```
 </details>
 
 <details>
@@ -26,7 +42,34 @@ Given a string of lowercase characters. Find the count of characters which only 
 Given n,Find all primes less than equal n.
 </summary>
 <hr>
-[Answer]
+
+::: code-group
+```C++ [O(n^2)]
+vector<int> solve(int n) {
+    vector<int> primes;
+    for(int i=2;i<=n;i++){
+        bool isPrime = true;
+        for(int j=2;j<i;j++) {
+            if( i%j == 0 ) isPrime = false;
+        }
+        if( isPrime ) primes.push_back(i);
+    }
+    return primes;
+}
+```
+```C++ [O(n logn)]
+vector<int> solve(int n) {
+    bool notPrime[n+1] = {0};
+    vector<int> primes;
+    for(int i=2;i<=n;i++){
+        if( notPrime[i] == true ) continue;
+        primes.push_back(i);
+        for(int j=i*i;j<=n;j+=i) notPrime[j] = true;
+    }
+    return primes;
+}
+```
+:::
 </details>
 
 <details>
@@ -34,7 +77,44 @@ Given n,Find all primes less than equal n.
 Given coordinates x,y and radius r of two circle. Find the area of intersection between them. Print area in double with 6 digit precision.
 </summary>
 <hr>
-[Answer]
+
+```C++
+// src: https://www.geeksforgeeks.org/area-of-intersection-of-two-circles/
+
+#include <bits/stdc++.h>
+using namespace std;
+#define ld long double
+// Function to return area of intersection
+long long int
+intersectionArea(long double X1, long double Y1,
+                    long double R1, long double X2,
+                    long double Y2, long double R2){
+	long double Pi = 3.14;
+	long double d, alpha, beta, a1, a2;
+	long long int ans;
+
+	// Calculate the euclidean distance
+	// between the two points
+	d = sqrt((X2 - X1) * (X2 - X1) + (Y2 - Y1) * (Y2 - Y1));
+
+	if (d > R1 + R2)
+		ans = 0;
+	else if (d <= (R1 - R2) && R1 >= R2)
+		ans = floor(Pi * R2 * R2);
+	else if (d <= (R2 - R1) && R2 >= R1)
+		ans = floor(Pi * R1 * R1);
+	else {
+		alpha = acos((R1 * R1 + d * d - R2 * R2) / (2 * R1 * d))* 2;
+		beta = acos((R2 * R2 + d * d - R1 * R1) / (2 * R2 * d))* 2;
+		a1 = 0.5 * beta * R2 * R2 - 0.5 * R2 * R2 * sin(beta);
+		a2 = 0.5 * alpha * R1 * R1 - 0.5 * R1 * R1 * sin(alpha);
+		ans = floor(a1 + a2);
+	}
+
+	return ans;
+}
+
+```
 </details>
 
 <details>
@@ -45,7 +125,25 @@ output: 5 <br>
 explanation: range [1,5],[6,7] are covered by at least one range
 </summary>
 <hr>
-[Answer]
+
+```C++
+int solve(vector<pair<int,int>> ranges) {
+    sort(ranges.begin(),ranges.end());
+    int covered = 0;
+    int st = ranges[0].first;
+    int en = ranges[0].second;
+    for(int i=1;i<ranges.size();i++){
+        if( ranges[i].first > en ) {
+            covered += en - st;
+            st = ranges[i].first;
+            en = ranges[i].second;
+        }
+        en = max(en,ranges[i].second);
+    }
+    covered += en - st;
+    return covered;
+}
+```
 </details>
 
 <details>
@@ -69,7 +167,14 @@ Given the connection between cities, Count the number of disjoint clusters of ci
 Given a string of characters S and a specific character C. Find the number of occurance of C in S.
 </summary>
 <hr>
-[Answer]
+
+```C++
+int solve(string s, char c) {
+    int cnt = 0;
+    for(auto cc:s) cnt += (cc==c);
+    return cnt;
+}
+```
 </details>
 
 <details>
@@ -118,7 +223,7 @@ What happens when you type google.com and press enter in your search bar
 </summary>
 <hr>
 
-This is a very important question and aims to check the knowledge of networking. A very thorough explanation of this question is answere here in [What Happens When](https://github.com/alex/what-happens-when)
+This is a very important question and aims to check the knowledge of networking. A very thorough explanation of this question is answered here in [What Happens When](https://github.com/alex/what-happens-when)
 
 </details>
 
@@ -127,7 +232,29 @@ This is a very important question and aims to check the knowledge of networking.
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 </summary>
 <hr>
-https://leetcode.com/problems/valid-parentheses/
+
+[**💻 Submit Code**](https://leetcode.com/problems/valid-parentheses/)
+```C++
+bool isValid(string s) {
+    stack<char> st;
+    for(auto c:s){
+        if( c == '(' or c == '[' or c == '{' ) {
+            st.push(c);
+            continue;
+        }
+        if( !st.size() ) return false;
+        if( c == ')' ) {
+            if(  st.top() != '(' ) return false;
+        }else if(  c == '}' ) {
+            if( st.top() != '{' ) return false;
+        } else if( c == ']' ) {
+            if( st.top() != '[' ) return false;
+        }
+        st.pop();
+    }
+    return st.size() == 0;
+}
+```
 
 </details>
 
@@ -137,8 +264,22 @@ You are a professional robber planning to rob houses along a street. Each house 
 Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police
 </summary>
 <hr>
-https://leetcode.com/problems/house-robber/
 
+[**💻 Submit Code**](https://leetcode.com/problems/house-robber/)
+```C++
+int rob(vector<int>& nums) {
+    int n = nums.size();
+    int dp[n+1][2];
+    memset(dp, 0, sizeof(dp));
+    for(int i=1;i<=n;i++){
+        // we dont rob the ith house
+        dp[i][0] = max(dp[i-1][0],dp[i-1][1]);
+        // we rob the ith house
+        dp[i][1] = dp[i-1][0] + nums[i-1];
+    }
+    return max(dp[n][0],dp[n][1]);
+}
+```
 </details>
 
 <details>
