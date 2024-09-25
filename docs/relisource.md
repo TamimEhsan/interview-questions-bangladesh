@@ -4,7 +4,7 @@
 
 For the Junior .NET Developer Position at first there was a 1 hour long written Exam which consisted 3 Questions (SQL Query, Problem Solving, JavaScript-HTML)
 
-## Questions
+## Software Engineering Questions
 <details>
 <summary>
 Select The Company name which has the lowest total emoployee count.
@@ -89,6 +89,17 @@ There is a food track consisting of cells marked with 0, 1, or other numbers. He
 [Answer]
 </details>
 
+<details>
+<summary>
+JavaScript & HTML
+
+Write JavaScript code to check if a button is clicked in an HTML element using an EventListener. Upon clicking, the size of the HTML element should increase by 10%.
+</summary>
+<hr>
+[Answer]
+</details>
+
+## Embedded Software Engineering Questions
 <details>
 <summary>
 Problem Solving
@@ -252,16 +263,6 @@ Maze Details:
     <li>The maze length and height are not guaranteed to be equal but will be global fixed defined constants for each problem.</li>
 </ul>
 
-</summary>
-<hr>
-[Answer]
-</details>
-
-<details>
-<summary>
-JavaScript & HTML
-
-Write JavaScript code to check if a button is clicked in an HTML element using an EventListener. Upon clicking, the size of the HTML element should increase by 10%.
 </summary>
 <hr>
 [Answer]
