@@ -104,18 +104,18 @@ Your task is to write a function in the C programming language to find an optima
         <td>6</td>
         <td>5</td>
         <td>4</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>2</td>
         <td>3</td>
     </tr>
     <tr>
         <td>6</td>
-        <td>-1</td>
-        <td>-1</td>
-        <td>-1</td>
-        <td>-1</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>5</td>
         <td>2</td>
         <td style="background-color: #00b300;">0</td>
@@ -123,15 +123,15 @@ Your task is to write a function in the C programming language to find an optima
     </tr>
     <tr>
         <td>7</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>16</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>7</td>
         <td>1</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>5</td>
     </tr>
     <tr>
@@ -142,48 +142,48 @@ Your task is to write a function in the C programming language to find an optima
         <td>3</td>
         <td>5</td>
         <td>6</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>6</td>
         <td>2</td>
         <td>6</td>
     </tr>
     <tr>
         <td>9</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>21</td>
-        <td>-1</td>
-        <td>-1</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>5</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>2</td>
     </tr>
     <tr>
         <td>2</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>22</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>5</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>4</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>7</td>
     </tr>
     <tr>
         <td>8</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>26</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>5</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>3</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>6</td>
     </tr>
     <tr>
@@ -194,35 +194,35 @@ Your task is to write a function in the C programming language to find an optima
         <td>11</td>
         <td>23</td>
         <td>11</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>2</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>5</td>
     </tr>
     <tr>
         <td>2</td>
-        <td>-1</td>
-        <td>-1</td>
-        <td>-1</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>20</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>2</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>4</td>
     </tr>
     <tr>
         <td>4</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>4</td>
-        <td>-1</td>
-        <td>-1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>4</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>1</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td>3</td>
     </tr>
     <tr>
@@ -235,7 +235,7 @@ Your task is to write a function in the C programming language to find an optima
         <td>5</td>
         <td>10</td>
         <td>4</td>
-        <td>-1</td>
+        <td style="background-color: grey;">-1</td>
         <td style="background-color: #66ccff;">2</td>
     </tr>
 </table>
