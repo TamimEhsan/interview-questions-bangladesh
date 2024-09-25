@@ -118,7 +118,7 @@ Your task is to write a function in the C programming language to find an optima
         <td>-1</td>
         <td>5</td>
         <td>2</td>
-        <td>0</td>
+        <td style="background-color: #00b300;">0</td>
         <td>94</td>
     </tr>
     <tr>
@@ -138,7 +138,7 @@ Your task is to write a function in the C programming language to find an optima
         <td>1</td>
         <td>15</td>
         <td>25</td>
-        <td>0</td>
+        <td style="background-color: #00b300;">0</td>
         <td>3</td>
         <td>5</td>
         <td>6</td>
@@ -236,7 +236,7 @@ Your task is to write a function in the C programming language to find an optima
         <td>10</td>
         <td>4</td>
         <td>-1</td>
-        <td>2</td>
+        <td style="background-color: #66ccff;">2</td>
     </tr>
 </table>
 
