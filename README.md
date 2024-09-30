@@ -18,12 +18,16 @@
  Visit the site [Interview BD](https://tamimehsan.github.io/interview-questions-bangladesh) to start taking preparation for your next interview!
 
 - 10+ companies
-- 100+ questions
+- 150+ questions
 - Solutions to questions
 - Company specific guidelines
+- Specialized knowledge on various topics
 
 ## Contributing
 All kinds of contribution are welcome here. See [CONTRIBUTION.md](/CONTRIBUTING.md) for detailed guidelines on how to add new questions or answers.
+
+## Feature Request and Discussions
+To request any new features or to start any discussions please head over to the discussions tab in the upper tab section or click [here](https://github.com/TamimEhsan/interview-questions-bangladesh/discussions). Select the relevant topic and post! 
 
 ## Run locally
 Before creating a pull request you should test your changes locally.  
