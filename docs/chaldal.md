@@ -492,8 +492,26 @@ string decimalToHexa(int decimal){
 Write a function which finds all the subset of a given set.
 </summary>
 <hr>
-
+[**💻 Submit Code**](https://leetcode.com/problems/subsets/description/)
 Similar to the question for finding all subset of an array
+```C++
+vector<vector<int>> ans;
+void allsubset(vector<int>&nums,int i,vector<int>&subset){
+    if(i>=nums.size()){
+        ans.push_back(subset);
+        return;
+    }
+    subset.push_back(nums[i]);
+    allsubset(nums,i+1,subset);
+    subset.pop_back();
+    allsubset(nums,i+1,subset);
+}
+vector<vector<int>> subsets(vector<int>& nums) {
+    vector<int>subset;
+    allsubset(nums,0,subset);
+    return ans;
+}
+```
 
 </details>
 
