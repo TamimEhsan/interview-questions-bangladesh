@@ -467,6 +467,7 @@ About project: What have you done in the authentication part in your project? Al
 Write a function which converts decimal number to hexadecimal
 </summary>
 <hr>
+
 [**💻 Submit Code**](https://supecoder.dev/questions/Convert%20a%20Number%20to%20Hexadecimal?questionId=66acbdc29e71a163cdcece36)
 
 ```C++
@@ -492,6 +493,7 @@ string decimalToHexa(int decimal){
 Write a function which finds all the subset of a given set.
 </summary>
 <hr>
+
 [**💻 Submit Code**](https://leetcode.com/problems/subsets/description/)
 Similar to the question for finding all subset of an array
 ```C++
