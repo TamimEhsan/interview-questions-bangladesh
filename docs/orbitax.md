@@ -1,6 +1,7 @@
-# Orbitax Bangladesh Limited 
+# Orbitax Bangladesh Limited
 
 ## Coding Round Questions
+
 <details>
 <summary>
 You are given an HTML string. Your task is to determine the number of characters encompassed by each HTML tag in the string. For each tag, count the number of characters that are enclosed between the opening (<tag>) and closing (</tag>) tags.
@@ -8,6 +9,7 @@ You are given an HTML string. Your task is to determine the number of characters
 A tag is composed of one or more lowercase English letters (a-z). For example: `<div> ... </div>`, `<span>..</span>`. It can be followed by digits (0-9) i.e `<h1>..</h1>`.
 
 The content between the tags can consist of:
+
 1. English characters (a-z, A-Z).
 2. Digits (0-9).
 3. Punctuation marks: period (.), comma (,), and spaces(' ').
@@ -86,8 +88,8 @@ void solve(string s) {
     }
 }
 ```
-</details>
 
+</details>
 
 <details>
 <summary>
@@ -96,6 +98,7 @@ You are given a string S of length N and an integer K. Your task is to find the 
 More formally, let the subsequence of P be represented by an array pos, where (1 ≤ pos[i] ≤ N) and S[pos[i]] = P[i]. Then for each i > 1, the condition pos[i] − pos[i-1] ≤ K must hold.
 
 The result should be returned modulo 10^9+7
+
 </summary>
 <hr>
 
@@ -164,6 +167,7 @@ signed main() {
     while(tc--) solve();
 }
 ```
+
 </details>
 
 <details>
@@ -215,4 +219,5 @@ void solve() {
     cout<<mx<<endl;
 }
 ```
+
 </details>

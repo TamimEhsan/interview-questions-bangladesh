@@ -1,12 +1,16 @@
 # DSI
 
 ## Introduction
+
 [Dynamic Solution Innovators Ltd](https://www.dsinnovators.com/) is an international software company based in Dhaka, Bangladesh. They have been successfully providing software services since 2001 in both the local and global market.
+
 ## Interview Stages
+
 DSI takes a on campus written test first. The questions contain some coding problem, Database, writting sql, OOP etc
 The second stage is face to face interview
 
 ## Questions
+
 <details>
 <summary>
 There is an array initially containing n numbers. then each of the numbers of the array is multiplied by 2. Now the array is 2 * n size and each element of the array gets shuffled. You are given the shuffled array of size 2 * n. You have to restore the original array.
@@ -32,6 +36,7 @@ bool restoreDouble(vector<int> input,vector<int>& output){
     return true;
 }
 ```
+
 </details>
 
 <details>

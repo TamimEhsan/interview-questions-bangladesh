@@ -1,18 +1,19 @@
 # SRBD
 
 ## Introduction
+
 [Samsung R&D Institute Bangladesh (SRBD)](https://research.samsung.com/srbd) started its journey in February 2011. Located in the heart of Dhaka, it is the first ever R&D hub set up by a multinational company in Bangladesh.
 
 > [!TIP]
 > SRBD organizes a coding contest every year. The prize money is very handsome. Apart from that, if you do advance to round 2 or 3 means you might get a call for interview skipping the initial screening
+
 ## Interview Stages
+
 SRBD takes interview in two round.
 
 1. **Coding round:** Round 1 is coding round. The problems are typically from leetcode. You can only proceed to round 2 if you can solve round 1 correctly.
 
 1. **Technical round:** Round 2 is a technical round. You might get asked about basic theories or solve some simple problems
-
-
 
 ## Coding Round Questions
 
@@ -20,11 +21,12 @@ SRBD takes interview in two round.
 <summary>
 You are given n balloons, indexed from 0 to n - 1. Each balloon is painted with a number on it represented by an array nums. You are asked to burst all the balloons.
 
-If you burst the ith balloon, you will get nums[i - 1] * nums[i] * nums[i + 1] coins. If i - 1 or i + 1 goes out of bounds of the array, then treat it as if there is a balloon with a 1 painted on it.
+If you burst the ith balloon, you will get nums[i - 1] _ nums[i] _ nums[i + 1] coins. If i - 1 or i + 1 goes out of bounds of the array, then treat it as if there is a balloon with a 1 painted on it.
 
 Return the maximum coins you can collect by bursting the balloons wisely.
 
-Variants: coins achived is nums[i-1]*nums[i+1]
+Variants: coins achived is nums[i-1]\*nums[i+1]
+
 </summary>
 <hr>
 [Answer]
@@ -35,6 +37,7 @@ Variants: coins achived is nums[i-1]*nums[i+1]
 A linked list of length `n` is given such that each node contains an additional random pointer, which could point to any node in the list, or null. Construct a deep copy of the list.
 
 The deep copy should consist of exactly `n` brand new nodes, where each new node has its value set to the value of its corresponding original node. Both the next and random pointer of the new nodes should point to new nodes in the copied list such that the pointers in the original list and copied list represent the same list state. None of the pointers in the new list should point to nodes in the original list.
+
 </summary>
 <hr>
 	
@@ -54,19 +57,19 @@ public:
 ```
 </details>
 
-
 <details>
 <summary> 
 Mr. Kim has to deliver refrigerators to `N` customers. From the office, he is going to visit all the customers and then return to his home. 
 Each location of the office, his home, and the customers is given in the form of integer coordinates (x,y) (0≤x≤100, 0≤y≤100) . 
 The distance between two arbitrary locations (x1, y1) and (x2, y2) is computed by |x1-x2| + |y1-y2|, where |x| denotes the absolute value 
 of x; for instance, |3|=|-3|=3. The locations of the office, his home, and the customers are all distinct. You should plan an optimal way 
-to visit all the N customers and return to his among all the possibilities. 
+to visit all the N customers and return to his among all the possibilities.
 
-You are given the locations of the office, Mr. Kim’s home, and the customers; the number of the customers is in the range of 5 to 10. 
+You are given the locations of the office, Mr. Kim’s home, and the customers; the number of the customers is in the range of 5 to 10.
 
-Write a program that, starting at the office, finds a (the) shortest path visiting all the customers and returning to his home. 
+Write a program that, starting at the office, finds a (the) shortest path visiting all the customers and returning to his home.
 Your program only have to report the distance of a (the) shortest path.
+
 </summary>
 </details>
 
@@ -145,8 +148,8 @@ int main(){
     }
 }
 ```
-</details>
 
+</details>
 
 <details>
 <summary>
@@ -154,17 +157,16 @@ You have string with repeated character. Example : `abcaade`. Count the number o
 </summary>
 <hr>
 [Answer 1]
-My approach : Sort & search concurrent character `nlog(n)`.  
+My approach : Sort & search concurrent character `nlog(n)`.
 
-[Answer 2] 
-Optimize approach : An integer have 32 bit. We have 26 small letter character.  We just need to allocate each bit for position of a character. If an element is present set the concurrent bit and  finally count the number of set bit.  
+[Answer 2]
+Optimize approach : An integer have 32 bit. We have 26 small letter character. We just need to allocate each bit for position of a character. If an element is present set the concurrent bit and finally count the number of set bit.  
 (Comment from Tamim: Before trying this approach communicate with the interviewer to make sure about the characters present in the string ie only a-z is present and nothing else)
+
 </details>
 
-
-
-
 ## Technical Round Questions
+
 <details>
 <summary>
 In pen and paper write the inner workings of a BST. How does a BST work? How to insert and retrieve a value from a BST?
@@ -221,6 +223,7 @@ int solve( vector<int> arr, int element){
     }
 }
 ```
+
 </details>
 
 <details>
@@ -230,4 +233,5 @@ Follow up question. Suppose we have 5000 number each 500 digit. Now how will you
 <hr>
 
 Trie Data structure
+
 </details>

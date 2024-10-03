@@ -11,13 +11,14 @@ WellDev Ltd is a software company based in Zurich, Switzerland, specializing in 
 3. **Round 2:** The second round is divided into two part. The first part is a behavioural part taken by HR of the company. For the second part two software engineer conducts the technical sessions.
 4. **COO Round:** The final round is taken by the COO of the company
 
-
 ## MCQ Round
-A Broad Range of Topics  
+
+A Broad Range of Topics
 
 This round consisted of a multiple-choice questionnaire covering these topics. The test required me to share my screen with Quillgo and keep my camera on. It covers wide range of topics like JavaScript fundamentals, OOP, DBMS, SWE principles, Networking, Rest API knowledge, Analytical reasoning, DSA (time complexity, sorting, binary trees, MST, greedy algorithms).
 
 ## First Round Questions
+
 Hands-On Problem Solving
 
 <details>
@@ -53,6 +54,7 @@ int fun(int n) {
     return x + y;
 }
 ```
+
 </summary>
 <hr>
 
@@ -91,15 +93,16 @@ Explain the basic concepts of Object-Oriented Programming (OOP).
 What are the ACID properties in DBMS?
 </summary>
 <hr>
-ACID is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. Databases that support this are called ACID compliance. The properties are  
+ACID is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. Databases that support this are called ACID compliance. The properties are
 
 - **Atomicity:** Each statement in a transaction (to read, write, update or delete data) is treated as a single unit. Either the entire statement is executed, or none of it is executed.
 - **Consistency:** Ensures the databases remain consistent following some predefined business logic both before and after the transaction
-- **Isolation:** Each transaction executes in such a way that one is not affected by other s though they were occurring only one. 
+- **Isolation:** Each transaction executes in such a way that one is not affected by other s though they were occurring only one.
 - **Durability:** The data changes by a successfull transaction is saved even in the event of system failure
 
 > [!IMPORTANT]
 > Atomicity, isolation and durability are properties of the database, whereas consistency is a property of the application. The C in ACID was tossed in to make the acronym work. [ref: Martin Kleppmann, Designing Data Intensive Applications]
+
 </details>
 
 <details>
@@ -211,15 +214,15 @@ int largestRectangleArea(vector<int>& hist) {
     int n = hist.size();
     stack<int> s;
 
-    int max_area = 0; 
-    int tp; 
-    int area_with_top; 
+    int max_area = 0;
+    int tp;
+    int area_with_top;
     int i = 0;
     while (i < n) {
         if (s.empty() || hist[s.top()] <= hist[i]){
             s.push(i++);
         } else {
-            tp = s.top(); 
+            tp = s.top();
             s.pop();
 
             area_with_top = hist[tp] * (s.empty() ? i : i - s.top() - 1);
@@ -238,6 +241,7 @@ int largestRectangleArea(vector<int>& hist) {
     return max_area;
 }
 ```
+
 ```C++ [Segment Tree]
 #include <bits/stdc++.h>
 using namespace std;
@@ -249,7 +253,7 @@ const int MAX = 1e9+5;
 const int N = 200005;
 pii segtree[4*N];
 int ara[N],n;
- 
+
 void build(int node,int l,int r ){
     if( l == r ){
         segtree[node] = {ara[l],l};
@@ -260,14 +264,14 @@ void build(int node,int l,int r ){
     build(node*2+1,mid+1,r);
     segtree[node] = min( segtree[node*2],segtree[node*2+1] );
 }
- 
+
 pii query(int node,int L,int R,int l,int r){
     if( l>R or r<L ) return {MAX,-1};
     if( l>=L and r<=R ) return segtree[node];
     int mid = (l+r)/2;
     return min( query(node*2,L,R,l,mid), query(node*2+1,L,R,mid+1,r) );
 }
- 
+
 ll getRect(int l,int r){
     if( l>r ) return 0;
     auto pp = query(1,l,r,0,n-1);
@@ -278,11 +282,13 @@ int main(){
     cin>>n;
     for(int i=0;i<n;i++) cin>>ara[i];
     build(1,0,n-1);
- 
+
     cout<<getRect(0,n-1);
 }
 ```
+
 :::
+
 </details>
 
 <details>
@@ -334,6 +340,7 @@ Given an integer array nums, move all 0's to the end of it while maintaining the
 <hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/move-zeroes/description/)
+
 ```C++
 void moveZeroes(vector<int>& nums) {
     int i = 0;
@@ -343,8 +350,9 @@ void moveZeroes(vector<int>& nums) {
     }
 }
 ```
+
 </details>
 
-
 ## Contributors
+
 1. [Salman Farsi](https://www.linkedin.com/in/salmanfarsi0/)

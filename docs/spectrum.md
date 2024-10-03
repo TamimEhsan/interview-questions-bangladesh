@@ -1,9 +1,11 @@
 # Spectrum
 
 ## Introduction
-Spectrum Engineering Consortium Ltd. specializes in IP/DWDM/SDH Network infrastructure, Data Center-Cloud solutions Facility, Server, Storage/Virtualizations. 
+
+Spectrum Engineering Consortium Ltd. specializes in IP/DWDM/SDH Network infrastructure, Data Center-Cloud solutions Facility, Server, Storage/Virtualizations.
 
 ## Questions
+
 <details>
 <summary>
 What is heap? How heap sort works? what is its run time?
@@ -35,6 +37,7 @@ ListNode* reverseList(ListNode* head) {
     return tail;
 }
 ```
+
 </details>
 
 <details>

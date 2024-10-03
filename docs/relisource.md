@@ -5,6 +5,7 @@
 For the Junior .NET Developer Position at first there was a 1 hour long written Exam which consisted 3 Questions (SQL Query, Problem Solving, JavaScript-HTML)
 
 ## Software Engineering Questions
+
 <details>
 <summary>
 Select The Company name which has the lowest total emoployee count.
@@ -66,6 +67,7 @@ Select The Company name which has the lowest total emoployee count.
 Problem Solving
 
 There is a food track consisting of cells marked with 0, 1, or other numbers. Here, 0 signifies the cell is not traceable, 1 signifies it is traceable, and any other number represents the destination. Starting from the top-left point, determine the longest path to reach the destination. If no path exists, print -1.
+
 <table>
     <tr>
         <th>1</th>
@@ -94,17 +96,20 @@ There is a food track consisting of cells marked with 0, 1, or other numbers. He
 JavaScript & HTML
 
 Write JavaScript code to check if a button is clicked in an HTML element using an EventListener. Upon clicking, the size of the HTML element should increase by 10%.
+
 </summary>
 <hr>
 [Answer]
 </details>
 
 ## Embedded Software Engineering Questions
+
 <details>
 <summary>
 Problem Solving
 
-Your task is to write a function in the C programming language to find an optimal route cost to a target location inside a maze and return the highest 4 bits (MSB + 3 bits) of the optimal route cost value. Your function should take as input two integer numbers for the starting index on the maze array. An optimal route is defined as a complete path from the start point to the target location that requires the least effort/cost. Diagonal movement in the maze is not allowed. An example maze is given below: 
+Your task is to write a function in the C programming language to find an optimal route cost to a target location inside a maze and return the highest 4 bits (MSB + 3 bits) of the optimal route cost value. Your function should take as input two integer numbers for the starting index on the maze array. An optimal route is defined as a complete path from the start point to the target location that requires the least effort/cost. Diagonal movement in the maze is not allowed. An example maze is given below:
+
 <table >
     <tr>
         <td>4</td>
@@ -252,6 +257,7 @@ Your task is to write a function in the C programming language to find an optima
 </table>
 
 Maze Details:
+
 <ul>
     <li>The starting block location will be provided as a function parameter (Blue block in the example).</li>
     <li>Blocks with a value of -1 are impassable (Grey blocks in the example).</li>
