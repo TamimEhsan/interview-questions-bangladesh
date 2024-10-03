@@ -15,7 +15,7 @@
 
 ---
 
- Visit the site [Interview BD](https://tamimehsan.github.io/interview-questions-bangladesh) to start taking preparation for your next interview!
+Visit the site [Interview BD](https://tamimehsan.github.io/interview-questions-bangladesh) to start taking preparation for your next interview!
 
 - 10+ companies
 - 150+ questions
@@ -24,22 +24,28 @@
 - Specialized knowledge on various topics
 
 ## Contributing
+
 All kinds of contribution are welcome here. See [CONTRIBUTION.md](/CONTRIBUTING.md) for detailed guidelines on how to add new questions or answers.
 
 ## Feature Request and Discussions
-To request any new features or to start any discussions please head over to the discussions tab in the upper tab section or click [here](https://github.com/TamimEhsan/interview-questions-bangladesh/discussions). Select the relevant topic and post! 
+
+To request any new features or to start any discussions please head over to the discussions tab in the upper tab section or click [here](https://github.com/TamimEhsan/interview-questions-bangladesh/discussions). Select the relevant topic and post!
 
 ## Run locally
-Before creating a pull request you should test your changes locally.  
+
+Before creating a pull request you should test your changes locally.
 
 Use npm to run the development server.
+
 ```bash
 npm install
 npm run docs:dev
 ```
+
 The site should be available in [http://localhost:5173/interview-questions-bangladesh/](http://localhost:5173/interview-questions-bangladesh/)
 
 ## Disclaimer
-The questions are collected from volunteers. The owner is not responsible for anykind of terms and conditions imposed from the companies. The owner will gladly remove any content if that violates any agreement. 
 
-The owner tries to check every questions and answer contributed from others. Sometimes, the questions or answers might not be correct. The owner is not responsible for any issues for that. 
+The questions are collected from volunteers. The owner is not responsible for anykind of terms and conditions imposed from the companies. The owner will gladly remove any content if that violates any agreement.
+
+The owner tries to check every questions and answer contributed from others. Sometimes, the questions or answers might not be correct. The owner is not responsible for any issues for that.

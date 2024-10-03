@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Interview BD"
+  name: 'Interview BD'
   # text: "Crowd sourced collected of interview questions of different BD tech companies"
-  tagline: "Crowd sourced collection of interview questions of different BD tech companies"
+  tagline: 'Crowd sourced collection of interview questions of different BD tech companies'
   actions:
     - theme: brand
       text: Start Taking Preparation
@@ -25,4 +25,3 @@ features:
     title: Tips and tricks
     details: Tips related to specific companies or overall interview preparation
 ---
-

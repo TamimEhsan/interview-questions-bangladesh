@@ -1,8 +1,8 @@
 # Kite Games Studio
 
 ## Introduction
-[Kite Games Studio (KGS)](https://www.kitegamesstudio.com/), founded in 2014, is a leading mobile application development firm in Bangladesh. Based in Mohakhali DOHS, Dhaka, KGS specializes in developing software for both iOS and Android platforms, along with building websites. The company is known for its emphasis on competitive programming skills, making it an excellent choice for talented **competitive programmers** looking to join a dynamic and innovative team.
 
+[Kite Games Studio (KGS)](https://www.kitegamesstudio.com/), founded in 2014, is a leading mobile application development firm in Bangladesh. Based in Mohakhali DOHS, Dhaka, KGS specializes in developing software for both iOS and Android platforms, along with building websites. The company is known for its emphasis on competitive programming skills, making it an excellent choice for talented **competitive programmers** looking to join a dynamic and innovative team.
 
 ## Interview Stages
 
@@ -57,8 +57,8 @@ int main() {
     return 0;
 }
 ```
-</details>
 
+</details>
 
 <details>
 <summary>
@@ -73,8 +73,8 @@ Design a data structure that supports the following two operations:
 
 The constraints for the operations are:
 
-* Total number of operations ≤ 10<sup>5</sup>
-* 0 ≤ val ≤ 10<sup>9</sup>
+- Total number of operations ≤ 10<sup>5</sup>
+- 0 ≤ val ≤ 10<sup>9</sup>
 
 **Solution:**
 
@@ -118,15 +118,16 @@ int main() {
     fs.push(7);
     fs.push(4);
     fs.push(5);
-    
+
     cout << fs.pop() << endl;  // Should print 5
     cout << fs.pop() << endl;  // Should print 7
     cout << fs.pop() << endl;  // Should print 5
     cout << fs.pop() << endl;  // Should print 4
-    
+
     return 0;
 }
 ```
+
 </details>
 
 <details> 
@@ -136,8 +137,7 @@ What are the main concepts of OOP?
 <hr>
 The main concepts of Object-Oriented Programming (OOP) are:
 Abstraction, Inheritance, Encapsulation, Polymorphism.
-</details> 
-
+</details>
 
 <details>
 <summary>
@@ -147,7 +147,7 @@ Implement the Singleton pattern.
 
 To provide better understanding, here’s how the discussion typically goes. The questions aren't directly asked; instead, they are discussed in the context of a coding problem or a concept. (I am sharing real experience of mine):
 
-**Interviewer:** Here's a scenario: you need to create a class for database connections, and as every developer of your team needs to use the same database connection, you should only allow one instance of this class.  How would you implement this in Java?  
+**Interviewer:** Here's a scenario: you need to create a class for database connections, and as every developer of your team needs to use the same database connection, you should only allow one instance of this class. How would you implement this in Java?  
 **Candidate:** I would include a static variable within the class, initially set to null. I'd also create a static method called "connection." This method would first check if the static variable is null. If it is, it would create a new object, assign it to the variable, and then return it. If the variable is not null, it would simply return the existing object.  
 **Interviewer:** But if someone creates an object of this class, wouldn't they get a different object?  
 **Candidate:** To prevent that, I would make the constructor private.  
@@ -160,6 +160,7 @@ To provide better understanding, here’s how the discussion typically goes. The
 **Solution:** Below is the implementation of the Singleton pattern in Java:
 
 ::: code-group
+
 ```java [Single Threaded]
 // Singleton class to manage database connections
 public class DatabaseConnection {
@@ -182,6 +183,7 @@ public class DatabaseConnection {
     }
 }
 ```
+
 ```go [Thread Safe]
 var lock = &sync.Mutex{}
 
@@ -207,10 +209,12 @@ func getInstance() *single {
     return singleInstance
 }
 ```
+
 :::
 
-> [!WARNING] 
+> [!WARNING]
 > The given single threaded implementation of the singleton pattern though widely popular, is not thread-safe. If a multithreaded application were to get the connection, there is a chance that the connection is initialized multiple times. Ask the interviewer to make sure if they want it to be thread-safe. You can check this [wikipedia section](https://en.wikipedia.org/wiki/Double-checked_locking#Usage_in_Java) if you want to learn more.
+
 </details>
 
 ## Online Round Questions
@@ -223,7 +227,7 @@ You're at a buffet with various food items. Each food item has a deliciousness f
 
 [A. Time for a Treat](https://toph.co/c/recruitment-contest-by-kite-games-studio)
 
-**Solution:** 
+**Solution:**
 
 ```cpp
 #include <bits/stdc++.h>
@@ -281,8 +285,8 @@ int32_t main() {
 }
 
 ```
-</details>
 
+</details>
 
 <details>
 <summary>
@@ -292,7 +296,8 @@ You have a 2D grid representing a village. 'X' denotes farmer-owned land, and '.
 
 [B. Farmers](https://toph.co/c/recruitment-contest-by-kite-games-studio)
 
-**Solution:** 
+**Solution:**
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -302,7 +307,7 @@ using namespace std;
 #define MAX 200005
 
 typedef long long ll;
-typedef vector<string> Grid; 
+typedef vector<string> Grid;
 
 string grid[55];
 map<Grid, int> farmerMap;
@@ -377,18 +382,18 @@ int checkRegion(Region region) {
         }
         subgrid.push_back(row);
     }
-    
+
     if (farmerMap[subgrid]) return 0;
-    
+
     Grid rotated = rotateGrid(subgrid);
     if (farmerMap[rotated]) return 0;
-    
+
     rotated = rotateGrid(rotated);
     if (farmerMap[rotated]) return 0;
-    
+
     rotated = rotateGrid(rotated);
     if (farmerMap[rotated]) return 0;
-    
+
     farmerMap[subgrid] = 1;
     return 1;
 }
@@ -428,9 +433,8 @@ int32_t main() {
 }
 
 ```
+
 </details>
-
-
 
 <details>
 <summary>
@@ -440,7 +444,8 @@ You need to write a program to simulate a Linux terminal on an old computer. You
 
 [C. Directory Specialist](https://toph.co/c/recruitment-contest-by-kite-games-studio)
 
-**Solution:** 
+**Solution:**
+
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
@@ -476,7 +481,7 @@ void dfs(int idx) {
 void solve() {
     string s;
     int avail = 2;
-    
+
     par[1] = 1;
     get_idx["KGS"] = 1;
     get_name[1] = "KGS";
@@ -540,8 +545,8 @@ int32_t main() {
 }
 
 ```
-</details>
 
+</details>
 
 <details>
 <summary>
@@ -551,12 +556,13 @@ You have a 2D grid representing a field with crop fields and godowns. Harvesters
 
 [D. Crop Harvesting](https://toph.co/c/recruitment-contest-by-kite-games-studio)
 
-**Solution:** 
+**Solution:**
 
 ```cpp
 
 
 ```
+
 </details>
 
 <details>
@@ -569,19 +575,19 @@ You have a list of unique strings and an empty list. You'll be given queries to 
 
 You are given a list <i>L</i> of <i>N</i> unique strings and an initially empty list <i>P</i>. You need to process <i>Q</i> queries of the following types:
 
-* **add i f:** Add the string <i>L[i]</i> to the list <i>P</i> a total of <i>f</i> times.
-* **delete i f:** Let <i>t</i> be the number of occurrences of string <i>L[i]</i> in list <i>P</i>. Delete min(<i>f</i>, <i>t</i>) occurrences of <i>L[i]</i> from list <i>P</i>.
-* **count i j:** Sort the elements of list <i>P</i> in lexicographic order, then count the number of strings in <i>P</i> that are between <i>L[i]</i> and <i>L[j]</i> (inclusive).
+- **add i f:** Add the string <i>L[i]</i> to the list <i>P</i> a total of <i>f</i> times.
+- **delete i f:** Let <i>t</i> be the number of occurrences of string <i>L[i]</i> in list <i>P</i>. Delete min(<i>f</i>, <i>t</i>) occurrences of <i>L[i]</i> from list <i>P</i>.
+- **count i j:** Sort the elements of list <i>P</i> in lexicographic order, then count the number of strings in <i>P</i> that are between <i>L[i]</i> and <i>L[j]</i> (inclusive).
 
 **Constraints:**
 
-* **1 ≤ N ≤ 10<sup>5</sup>** - Number of strings in list <i>L</i>.
-* The total length of all strings in <i>L</i> is at most 2 × 10<sup>6</sup>, and each string length is between 1 and 10<sup>6</sup> characters.
-* **1 ≤ Q ≤ 10<sup>5</sup>** - Number of queries.
-* For **add i f** and **delete i f** queries: **1 ≤ i ≤ N** and **1 ≤ f ≤ 10<sup>5</sup>**.
-* For **count i j** queries: **1 ≤ i ≤ N** and **1 ≤ j ≤ N**.
+- **1 ≤ N ≤ 10<sup>5</sup>** - Number of strings in list <i>L</i>.
+- The total length of all strings in <i>L</i> is at most 2 × 10<sup>6</sup>, and each string length is between 1 and 10<sup>6</sup> characters.
+- **1 ≤ Q ≤ 10<sup>5</sup>** - Number of queries.
+- For **add i f** and **delete i f** queries: **1 ≤ i ≤ N** and **1 ≤ f ≤ 10<sup>5</sup>**.
+- For **count i j** queries: **1 ≤ i ≤ N** and **1 ≤ j ≤ N**.
 
-**Solution:** 
+**Solution:**
 
 ```cpp
 #include<bits/stdc++.h>
@@ -690,7 +696,7 @@ void update(int pos, ll val){
     update(1,0,N-1,pos,val);
 }
 ll query(int x, int y){
-    auto ans = query(1,0,N-1,x,y); 
+    auto ans = query(1,0,N-1,x,y);
     return ans.sum;
 }
 
@@ -753,4 +759,5 @@ int32_t main() {
 }
 
 ```
+
 </details>

@@ -1,15 +1,18 @@
 # IQVIA
 
 ## Introduction
+
 [IQVIA](https://www.iqvia.com/) is an American Fortune 500 and S&P 500 multinational company serving the combined industries of health information technology and clinical research. They hire professionals from Bangladesh as remote.
+
 ## Interview Stages
+
 The preliminary test of IQVIA consists of 3 stage
 
 - **Aptitude:** Understanding, Vocabulary, Reasoning, Maths
 - **Automata:** Easy level coding test
 - **Automata Pro:** Medium level coding test
 
-Then if selected there will be a technical interview. 
+Then if selected there will be a technical interview.
 
 ## Questions
 
@@ -35,6 +38,7 @@ int solve(string s) {
     return unik;
 }
 ```
+
 </details>
 
 <details>
@@ -44,6 +48,7 @@ Given n,Find all primes less than equal n.
 <hr>
 
 ::: code-group
+
 ```C++ [O(n^2)]
 vector<int> solve(int n) {
     vector<int> primes;
@@ -57,6 +62,7 @@ vector<int> solve(int n) {
     return primes;
 }
 ```
+
 ```C++ [O(n logn)]
 vector<int> solve(int n) {
     bool notPrime[n+1] = {0};
@@ -69,7 +75,9 @@ vector<int> solve(int n) {
     return primes;
 }
 ```
+
 :::
+
 </details>
 
 <details>
@@ -115,6 +123,7 @@ intersectionArea(long double X1, long double Y1,
 }
 
 ```
+
 </details>
 
 <details>
@@ -144,6 +153,7 @@ int solve(vector<pair<int,int>> ranges) {
     return covered;
 }
 ```
+
 </details>
 
 <details>
@@ -175,6 +185,7 @@ int solve(string s, char c) {
     return cnt;
 }
 ```
+
 </details>
 
 <details>
@@ -234,6 +245,7 @@ Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
 <hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/valid-parentheses/)
+
 ```C++
 bool isValid(string s) {
     stack<char> st;
@@ -266,6 +278,7 @@ Given an integer array nums representing the amount of money of each house, retu
 <hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/house-robber/)
+
 ```C++
 int rob(vector<int>& nums) {
     int n = nums.size();
@@ -280,6 +293,7 @@ int rob(vector<int>& nums) {
     return max(dp[n][0],dp[n][1]);
 }
 ```
+
 </details>
 
 <details>

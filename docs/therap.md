@@ -1,8 +1,10 @@
 # Therap
 
 ## Introduction
+
 [Therap (BD) Ltd.](https://therapbd.com/) is a US-based Software Company registered in Bangladesh, operating since 2004. They have their office in Dhaka, Bangladesh, and affiliate offices in the USA and Canada.
-Therap has multiple roles. 
+Therap has multiple roles.
+
 1. Software Engineer
 2. Database Engineer
 3. Quality Assurance Engineer
@@ -12,13 +14,15 @@ Therap has multiple roles.
 > Therap BD organizes a Java fest every year. The prize money is very handsome. Apart from that, if you advance to final that means you get a direct ticket to interview skipping the initial screening
 
 ## Interview Stages
-The selection process generally has  3 steps
+
+The selection process generally has 3 steps
+
 1. **Initial screening:** This round is taken in written format
 1. **1st technical round** The first round is taken by the BD team
 1. **2nd technical round:** This round is typically taken by the USA team
- 
 
 ## Database Questions
+
 <details>
 <summary>
 Design an ERD of online restaurant management system
@@ -40,15 +44,16 @@ What is Database Transaction
 Briefly explain ACID properties
 </summary>
 <hr>
-ACID is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. Databases that support this are called ACID compliance. The properties are  
+ACID is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. Databases that support this are called ACID compliance. The properties are
 
 - **Atomicity:** Each statement in a transaction (to read, write, update or delete data) is treated as a single unit. Either the entire statement is executed, or none of it is executed.
 - **Consistency:** Ensures the databases remain consistent following some predefined business logic both before and after the transaction
-- **Isolation:** Each transaction executes in such a way that one is not affected by other s though they were occurring only one. 
+- **Isolation:** Each transaction executes in such a way that one is not affected by other s though they were occurring only one.
 - **Durability:** The data changes by a successfull transaction is saved even in the event of system failure
 
 > [!IMPORTANT]
 > Atomicity, isolation and durability are properties of the database, whereas consistency is a property of the application. The C in ACID was tossed in to make the acronym work. [ref: Martin Kleppmann, Designing Data Intensive Applications]
+
 </details>
 
 <details>
@@ -128,6 +133,7 @@ A schema has entities like CUSTOMERS, ORDERS, ORDER_ITEMS, PRODUCTS, PRODUCT_DET
 </details>
 
 ## Software Engineering Questions
+
 <details>
 <summary>
 Given an array of numbers indicating stock price of n consecutive days. If you buy stock at one day and sell at any later day what is the maximum profit that you can get
@@ -135,6 +141,7 @@ Given an array of numbers indicating stock price of n consecutive days. If you b
 <hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
 ```C++
 int maxProfit(vector<int>& prices) {
     int buy = prices[0];
@@ -146,6 +153,7 @@ int maxProfit(vector<int>& prices) {
     return profit;
 }
 ```
+
 </details>
 
 <details>
@@ -156,6 +164,7 @@ eg: [2,0,0,3,1,0,5] => [2,3,1,5,0,0,0]
 <hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/move-zeroes/description/)
+
 ```C++
 void moveZeroes(vector<int>& nums) {
     int i = 0;
@@ -165,6 +174,7 @@ void moveZeroes(vector<int>& nums) {
     }
 }
 ```
+
 </details>
 
 <details>
@@ -183,6 +193,7 @@ eg: ["cat","tab","act","bat","taco"] => [{"cat","act"},{"tab","bat"},{"taco"}]
 <hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/group-anagrams/)
+
 ```C++
 vector<vector<string>> groupAnagrams(vector<string>& strs) {
     map<string,int> index;
@@ -195,10 +206,11 @@ vector<vector<string>> groupAnagrams(vector<string>& strs) {
             index[str2] = vs.size()-1;
         }
         vs[ index[str2] ].push_back(str);
-    } 
+    }
     return vs;
 }
 ```
+
 </details>
 
 <details>
@@ -208,12 +220,14 @@ Given an array of n integers. Find the kth largest element in the array.
 <hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+
 ```C++
 int findKthLargest(vector<int>& nums, int k) {
     partial_sort(nums.begin(), nums.begin() + k, nums.end(), greater<int>());
     return nums[k-1];
 }
 ```
+
 </details>
 
 <details>
@@ -243,6 +257,7 @@ string sum(string &A, string &B){
     return sum;
 }
 ```
+
 </details>
 
 <details>
@@ -253,6 +268,7 @@ Given two binary tree. Check if they are identical [not isomorphism]
 
 [**💻 Submit Code**](https://leetcode.com/problems/same-tree/)
 ::: code-group
+
 ```C++ [Normal Solution]
 bool isSameTree(TreeNode* p, TreeNode* q) {
     if( p == nullptr and q != nullptr ) return false;
@@ -261,10 +277,11 @@ bool isSameTree(TreeNode* p, TreeNode* q) {
 
     if( p->val != q->val ) return false;
 
-    return isSameTree(p->left,q->left) && 
+    return isSameTree(p->left,q->left) &&
             isSameTree(p->right,q->right);
 }
 ```
+
 ```go [Weird Solution]
 // ref: https://go.dev/tour/concurrency/7
 package main
@@ -317,7 +334,9 @@ func main() {
 	fmt.Println(Same(tree.New(1), tree.New(2)))
 }
 ```
+
 :::
+
 </details>
 
 <details>
@@ -326,9 +345,10 @@ Given two array of integers. Find the common elements between them.
 </summary>
 <hr>
 
-[**💻 Submit Code**](https://leetcode.com/problems/intersection-of-two-arrays/)  Unique  
+[**💻 Submit Code**](https://leetcode.com/problems/intersection-of-two-arrays/) Unique  
 [**💻 Submit Code**](https://leetcode.com/problems/intersection-of-two-arrays-ii/) Repeats
 ::: code-group
+
 ```C++ [Return uniques]
 vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
     set<int> st;
@@ -358,5 +378,7 @@ vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
     return merged;
 }
 ```
+
 :::
+
 </details>

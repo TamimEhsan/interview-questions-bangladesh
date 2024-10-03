@@ -174,7 +174,7 @@ Given an array of integers. Generate all possible permutation of the given array
 class Solution {
 public:
     vector<vector<int>> perms;
-    
+
     void backtrack(vector<int>& nums, vector<int> &perm, int rem){
         if( rem == 0 ){
             perms.push_back(perm);
@@ -408,6 +408,7 @@ Print yes or no if both strings matches. [RegEx Matching]
 <hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/regular-expression-matching/)
+
 ```C++
 int dp[25][25];
     bool Down(string &p,string &s, int i,int j){
@@ -443,7 +444,7 @@ bool isMatch(string s, string p) {
             if( Down(p,s,i,j) or Corner(p,s,i,j) or Right(p,s,i,j)  ) dp[i][j] = 1;
         }
     }
-   
+
     return dp[n-1][m-1];
 }
 ```
@@ -496,6 +497,7 @@ Write a function which finds all the subset of a given set.
 
 [**💻 Submit Code**](https://leetcode.com/problems/subsets/description/)
 Similar to the question for finding all subset of an array
+
 ```C++
 vector<vector<int>> ans;
 void allsubset(vector<int>&nums,int i,vector<int>&subset){
@@ -555,4 +557,5 @@ vector<char> sum(vector<char> &A, vector<char> &B){
     return sum;
 }
 ```
+
 </details>
