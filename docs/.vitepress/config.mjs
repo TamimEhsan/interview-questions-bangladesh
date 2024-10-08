@@ -22,6 +22,7 @@ export default defineConfig({
           { text: "General guidelines", link: "/general" },
           { text: "Chaldal", link: "/chaldal" },
           { text: "DSI", link: "/dsi" },
+          { text: "Exabyting", link: "/exabyting" },
           { text: "IQVIA", link: "/iqvia" },
           { text: "Priyo", link: "/priyo" },
           { text: "Kite Games Studio", link: "/kite" },
