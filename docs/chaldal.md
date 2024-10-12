@@ -528,6 +528,9 @@ For example, given the input ["A>B", "B>C", "C>D"], the expected output is "ABCD
 
 <details>
 <summary>
+<hr>
+
+[**💻 Submit Code**](https://supecoder.dev/questions/Add%20Two%20Numbers%20Represented%20as%20Character%20Arrays?questionId=66acc37d9e71a163cdcee583)
 Given two numbers represented as arrays of characters in decimal format, add them and return the result in the same format.
 For example, Input: ['1', '2', '3'] and ['4', '5', '6']
 Output: Output: ['5', '7', '9']
