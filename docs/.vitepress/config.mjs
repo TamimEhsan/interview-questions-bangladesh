@@ -28,6 +28,7 @@ export default defineConfig({
           { text: "Kite Games Studio", link: "/kite" },
           { text: "Orbitax", link: "/orbitax" },
           { text: "Relisource", link: "/relisource" },
+          { text:"RoBenDevs", link:"/robendevs"},
           { text: "Spectrum", link: "/spectrum" },
           { text: "SRBD", link: "/srbd" },
           { text: "Synesis IT", link: "/synesis" },
@@ -41,6 +42,7 @@ export default defineConfig({
           },
           { text: "WSD", link: "/wsd" },
           { text: "WellDev", link: "/welldev" },
+
         ],
       },
       {
