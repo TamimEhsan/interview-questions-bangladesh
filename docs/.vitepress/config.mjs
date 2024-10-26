@@ -27,6 +27,7 @@ export default defineConfig({
           { text: "Priyo", link: "/priyo" },
           { text: "Kite Games Studio", link: "/kite" },
           { text: "Orbitax", link: "/orbitax" },
+          { text: "Optimizely", link: "/optimizely" },
           { text: "Relisource", link: "/relisource" },
           { text: "RoBenDevs", link: "/robendevs" },
           { text: "Spectrum", link: "/spectrum" },
