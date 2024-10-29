@@ -9,6 +9,9 @@ The second stage is face to face interview
 ## Questions
 <details>
 <summary>
+<hr>
+
+[**💻 Submit Code**](https://supecoder.dev/questions/Find%20Original%20Array%20From%20Doubled%20Array?questionId=66ae10189e71a163cdd2011b)
 There is an array initially containing n numbers. then each of the numbers of the array is multiplied by 2. Now the array is 2 * n size and each element of the array gets shuffled. You are given the shuffled array of size 2 * n. You have to restore the original array.
 </summary>
 <hr>

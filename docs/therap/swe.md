@@ -1,4 +1,15 @@
-# Software Engineering Questions
+# Therap Software Engineer
+
+## Interview Stages
+
+The selection process has 3 stages,
+
+1. **Initial screening:** This round is taken in written format
+1. **1st technical round** The first round is taken by the BD team
+1. **HR Round:** This is the final stage before onboarding and typically deals with salary negotiation. 
+
+
+## Software Engineering Questions
 
 <details>
 <summary>
