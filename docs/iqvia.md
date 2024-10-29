@@ -19,6 +19,8 @@ Given a string of lowercase characters. Find the count of characters which only 
 </summary>
 <hr>
 
+[**💻 Submit Code**](https://supecoder.dev/questions/Count%20of%20Characters%20Occurring%20Exactly%20Once?questionId=66ae165b9e71a163cdd21527)
+
 ```C++
 int solve(string s) {
     sort(s.begin(),s.end());
