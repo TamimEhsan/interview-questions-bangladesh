@@ -259,3 +259,121 @@ vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
 :::
 
 </details>
+
+<details>
+<summary>
+Find pairs with given target sum in a doubly linked list. 
+Input:
+1 <> 2 <> 4 <> 5 <> 6 <> 8 <> 9
+target = 7
+Output: (1,6), (2,5)
+</summary>
+<hr>
+
+[**💻 Submit Code**](https://www.geeksforgeeks.org/problems/find-pairs-with-given-sum-in-doubly-linked-list/1)
+
+```C++
+class Solution
+{
+public:
+    vector<pair<int, int>> findPairsWithGivenSum(Node *head, int target)
+    {
+        vector<pair<int,int>> ans;
+        
+        Node* left = head;
+        
+        /// traverse to the end of the list
+        while(head!= nullptr && head->next!=nullptr){
+            head = head->next;
+        }
+        Node* right = head;
+        
+        while(left!= right && left->prev != right){
+            if(left->data + right->data == target){
+                ans.push_back(make_pair(left->data, right->data));
+                left = left->next;
+                right = right->prev;
+            }
+            else if(left->data + right->data > target){
+                right = right->prev;
+            }else{
+                left = left->next;
+            }
+        }
+        
+        return ans;    
+        
+    }
+};
+```
+</details>
+
+<details>
+<summary>
+Solve the problem using Object Oriented Programming
+
+``` C++
+int main(){
+    int square1width = 50;
+    int square2width = 80;
+    int rectangle1width = 30, rectangle1height = 40;
+    int rectangle2width = 20, rectangle2height = 40;
+
+    int square1area = square1width* square1width;
+    int square2area = square2width* square2width;
+    int rectangle1area = rectangle1height*rectangle1width;
+    int rectangle2area = rectangle2width* rectangle2height;
+}
+```
+</summary>
+<hr>
+
+``` C++
+#include <iostream>
+using namespace std;
+
+// Abstract base class
+class Shape {
+public:
+    virtual int area() const = 0;  // Pure virtual function for area
+};
+
+class Square : public Shape {
+private:
+    int width;
+public:
+    Square(int w) : width(w) {}  // Constructor to initialize width
+
+    int area() const override {
+        return width * width;  // Area of square
+    }
+};
+
+class Rectangle : public Shape {
+private:
+    int width;
+    int height;
+public:
+    Rectangle(int w, int h) : width(w), height(h) {}  // Constructor to initialize width and height
+
+    int area() const override {
+        return width * height;  // Area of rectangle
+    }
+};
+
+int main() {
+    
+    Square square1(50);
+    Square square2(80);
+    Rectangle rectangle1(30, 40);
+    Rectangle rectangle2(20, 40);
+
+    cout << "Square 1 area: " << square1.area() << endl;
+    cout << "Square 2 area: " << square2.area() << endl;
+    cout << "Rectangle 1 area: " << rectangle1.area() << endl;
+    cout << "Rectangle 2 area: " << rectangle2.area() << endl;
+    return 0;
+}
+
+```
+</details>
