@@ -373,7 +373,6 @@ Output: (1,6), (2,5)
 
 [**💻 Submit Code**](https://www.geeksforgeeks.org/problems/find-pairs-with-given-sum-in-doubly-linked-list/1)
 
-::: code-group
 ```C++
 class Solution
 {
@@ -413,6 +412,7 @@ public:
 <details>
 <summary>
 Solve the problem using Object Oriented Programming
+
 ``` C++
 int main(){
     int square1width = 50;
@@ -428,7 +428,7 @@ int main(){
 ```
 </summary>
 <hr>
-::: code-group
+
 ``` C++
 #include <iostream>
 using namespace std;
