@@ -412,6 +412,8 @@ public:
 
 <details>
 <summary>
+Solve the problem using Object Oriented Programming
+``` C++
 int main(){
     int square1width = 50;
     int square2width = 80;
@@ -423,8 +425,7 @@ int main(){
     int rectangle1area = rectangle1height*rectangle1width;
     int rectangle2area = rectangle2width* rectangle2height;
 }
-
-Solve the problem using Object Oriented Programming
+```
 </summary>
 <hr>
 ::: code-group
@@ -438,7 +439,6 @@ public:
     virtual int area() const = 0;  // Pure virtual function for area
 };
 
-// Square class inheriting from Shape
 class Square : public Shape {
 private:
     int width;
@@ -450,7 +450,6 @@ public:
     }
 };
 
-// Rectangle class inheriting from Shape
 class Rectangle : public Shape {
 private:
     int width;
@@ -464,18 +463,16 @@ public:
 };
 
 int main() {
-    // Create square and rectangle objects
+    
     Square square1(50);
     Square square2(80);
     Rectangle rectangle1(30, 40);
     Rectangle rectangle2(20, 40);
 
-    // Calculate and print areas
     cout << "Square 1 area: " << square1.area() << endl;
     cout << "Square 2 area: " << square2.area() << endl;
     cout << "Rectangle 1 area: " << rectangle1.area() << endl;
     cout << "Rectangle 2 area: " << rectangle2.area() << endl;
-
     return 0;
 }
 
