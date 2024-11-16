@@ -38,7 +38,7 @@ bool restoreDouble(vector<int> input,vector<int>& output){
 
 <details>
 <summary>
-Given n inputs each with n bits. Output a number not given which has n bits too.
+Given n inputs each with n bits, output a number which was not in the given inputs and has n bits too.
 </summary>
 <hr>
 [Answer]
@@ -75,13 +75,15 @@ Given a number n.return true if you find a middle element k such that sum of 1 t
 
 <details>
 <summary>
-apply database normalization technique to the following table
-	student table:
-	student_id | name    | course_name | course_fee |
-	| 1 	   | shakib  | DSA         | 400	  |
-	| 2 	   | rakib   | Algorithms  | 100	  |
-	| 3 	   | showrov | Networking  | 300	  |
-	| 4 	   | kalam   | Algorithms  | 100	  |
+Apply database normalization technique to the following table
+
+student table:
+|student_id | name    | course_name | course_fee |
+| :-: | :- | :- | :-: |
+| 1 	   | shakib  | DSA         | 400	  |
+| 2 	   | rakib   | Algorithms  | 100	  |
+| 3 	   | showrov | Networking  | 300	  |
+| 4 	   | kalam   | Algorithms  | 100	  |
 </summary>
 <hr>
 [Answer]
@@ -107,9 +109,13 @@ Explain static keyword
 <details>
 <summary>
 What is significance of this below operation?
+
+```
 a=a^b;
 b=a^b;
 a=a^b;
+```
+   
 </summary>
 <hr>
 Swaps the value of a and b without a third variable using bit manipulation
