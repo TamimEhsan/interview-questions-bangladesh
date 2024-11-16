@@ -9,12 +9,11 @@ The second stage is face to face interview
 ## Questions
 <details>
 <summary>
-<hr>
-
-[**💻 Submit Code**](https://supecoder.dev/questions/Find%20Original%20Array%20From%20Doubled%20Array?questionId=66ae10189e71a163cdd2011b)
 There is an array initially containing n numbers. then each of the numbers of the array is multiplied by 2. Now the array is 2 * n size and each element of the array gets shuffled. You are given the shuffled array of size 2 * n. You have to restore the original array.
 </summary>
 <hr>
+
+[**💻 Submit Code**](https://supecoder.dev/questions/Find%20Original%20Array%20From%20Doubled%20Array?questionId=66ae10189e71a163cdd2011b)
 
 ```C++
 bool restoreDouble(vector<int> input,vector<int>& output){
@@ -57,7 +56,7 @@ What are the 7 layers in OSI networking model?
 
 <details>
 <summary>
-find the longest substring between two same character.ex: afgksia -> ans: 5
+Given a string s, find the longest substring between two identical character.ex: afgksia -> ans: fgksi
 </summary>
 <hr>
 [Answer]
@@ -65,10 +64,10 @@ find the longest substring between two same character.ex: afgksia -> ans: 5
 
 <details>
 <summary>
-given a number n.return true if you find a middle element k such that sum of 1 to k and sum from k to n are equal.if there no one return false.
+Given a number n.return true if you find a middle element k such that sum of 1 to k and sum from k to n are equal.if there no one return false.
     ex: 49.
 	output: true.
-	explanation: 1 2 3 4 .....35 = 35 36 ....49
+	explanation: 1 + 2 + ... + 35 = 35 + 36 + ... + 49
 </summary>
 <hr>
 [Answer]
@@ -99,7 +98,7 @@ Explain ACID properties
 
 <details>
 <summary>
-explain static keyword
+Explain static keyword
 </summary>
 <hr>
 [Answer]
@@ -113,7 +112,7 @@ b=a^b;
 a=a^b;
 </summary>
 <hr>
-Swap without third variable using bit manipulation
+Swaps the value of a and b without a third variable using bit manipulation
 </details>
 
 <details>
@@ -126,7 +125,7 @@ Difference between authentication and authorization
 
 <details>
 <summary>
-Given three value a,b,c.Write a program to determine if they can made a traingle
+Given three value a,b,c, write a program to determine if they can made a traingle
 </summary>
 <hr>
 [Answer]
