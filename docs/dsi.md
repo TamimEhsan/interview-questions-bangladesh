@@ -54,3 +54,83 @@ What are the 7 layers in OSI networking model?
 ![](https://cf-assets.www.cloudflare.com/slt3lc6tev37/6ZH2Etm3LlFHTgmkjLmkxp/59ff240fb3ebdc7794ffaa6e1d69b7c2/osi_model_7_layers.png)
 
 </details>
+
+<details>
+<summary>
+find the longest substring between two same character.ex: afgksia -> ans: 5
+</summary>
+<hr>
+[Answer]
+</details>
+
+<details>
+<summary>
+given a number n.return true if you find a middle element k such that sum of 1 to k and sum from k to n are equal.if there no one return false.
+    ex: 49.
+	output: true.
+	explanation: 1 2 3 4 .....35 = 35 36 ....49
+</summary>
+<hr>
+[Answer]
+</details>
+
+<details>
+<summary>
+apply database normalization technique to the following table
+	student table:
+	student_id | name    | course_name | course_fee |
+	| 1 	   | shakib  | DSA         | 400	  |
+	| 2 	   | rakib   | Algorithms  | 100	  |
+	| 3 	   | showrov | Networking  | 300	  |
+	| 4 	   | kalam   | Algorithms  | 100	  |
+</summary>
+<hr>
+[Answer]
+</details>
+
+<details>
+<summary>
+Explain ACID properties
+</summary>
+<hr>
+[Answer]
+</details>
+
+
+<details>
+<summary>
+explain static keyword
+</summary>
+<hr>
+[Answer]
+</details>
+
+<details>
+<summary>
+What is significance of this below operation?
+a=a^b;
+b=a^b;
+a=a^b;
+</summary>
+<hr>
+Swap without third variable using bit manipulation
+</details>
+
+<details>
+<summary>
+Difference between authentication and authorization
+</summary>
+<hr>
+[Answer]
+</details>
+
+<details>
+<summary>
+Given three value a,b,c.Write a program to determine if they can made a traingle
+</summary>
+<hr>
+[Answer]
+</details>
+
+
+
