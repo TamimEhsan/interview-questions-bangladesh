@@ -21,6 +21,7 @@ export default defineConfig({
         items: [
           { text: "General guidelines", link: "/general" },
           { text: "Chaldal", link: "/chaldal" },
+          { text: "Bevy Commerce", link: "/bevycommerce" },
           { text: "DSI", link: "/dsi" },
           { text: "Exabyting", link: "/exabyting" },
           { text: "IQVIA", link: "/iqvia" },
