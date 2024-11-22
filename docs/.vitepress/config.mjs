@@ -24,6 +24,7 @@ export default defineConfig({
           { text: "Bevy Commerce", link: "/bevycommerce" },
           { text: "DSI", link: "/dsi" },
           { text: "Exabyting", link: "/exabyting" },
+          { text: "Inverse AI", link: "/inverseai" },
           { text: "IQVIA", link: "/iqvia" },
           { text: "Priyo", link: "/priyo" },
           { text: "Kite Games Studio", link: "/kite" },
@@ -49,7 +50,6 @@ export default defineConfig({
       {
         items: [{ text: "CSE competitions", link: "/competitions" }],
       },
-      ,
     ],
 
     socialLinks: [
