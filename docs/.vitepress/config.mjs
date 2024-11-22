@@ -19,7 +19,9 @@ export default defineConfig({
     sidebar: [
       {
         items: [
-          { text: "General guidelines", link: "/general" },
+          { text: "General Guidelines", link: "/general" },
+          { text: "Before Application", link: "/beforeapplying" },
+
           { text: "Chaldal", link: "/chaldal" },
           { text: "Bevy Commerce", link: "/bevycommerce" },
           { text: "DSI", link: "/dsi" },
