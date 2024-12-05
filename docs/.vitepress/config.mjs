@@ -24,6 +24,7 @@ export default defineConfig({
 
           { text: "Chaldal", link: "/chaldal" },
           { text: "Bevy Commerce", link: "/bevycommerce" },
+          { text: "Brain Station 23", link: "/bs23" },
           { text: "DSI", link: "/dsi" },
           { text: "Exabyting", link: "/exabyting" },
           { text: "Inverse AI", link: "/inverseai" },
