@@ -60,3 +60,29 @@ Now you are given M queries, each of whom is of following two types.
 
 [**💻 Submit Code**](https://www.codechef.com/problems/QSET)
 </details>
+
+<details>
+<summary>
+There is a robot in a 4*4 matrix. The robot is initilly in cell (a,b) and wants to go to another cell (c,d). However, the robot doesn't know the exact route and will move to any of its adjacent cell at equal probability. What is the probability that the robot will go from initial cell (a,b) to final cell (c,d) in exactly 4 moves.
+</summary>
+<hr>
+[Answer]
+</details>
+
+<details>
+<summary>
+There is a robot in a undirected tree. The robot will move from a node to any of its adjacent node with equal probability. What is the expected number of moves required for the robot to go from node a to node b.
+</summary>
+<hr>
+[Answer]
+</details>
+
+<details>
+<summary>
+You are given an array of integers. You want to make the array non increasing. To do that you can cut out a subsegment of the array to discard and concat the remaining segment(s). What is the minimum length of the cut segment to make the remaining parts nondecreasing.
+
+Example: [9,7,4,3,6,6,2] : we can remove the subsegment containing [4,3] to make the array [9,7,6,6,2] or remove the segment [6,6] to make the array [9,7,4,3,2]. Both of them are non increasing.
+</summary>
+<hr>
+[Answer]
+</details>
