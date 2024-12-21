@@ -27,6 +27,7 @@ export default defineConfig({
           { text: "Brain Station 23", link: "/bs23" },
           { text: "DSI", link: "/dsi" },
           { text: "Exabyting", link: "/exabyting" },
+          { text: "Fringecore", link: "/fringecore" },
           { text: "Inverse AI", link: "/inverseai" },
           { text: "IQVIA", link: "/iqvia" },
           { text: "Priyo", link: "/priyo" },
