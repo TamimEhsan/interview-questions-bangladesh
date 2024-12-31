@@ -20,15 +20,14 @@ export default defineConfig({
       {
         items: [
           { text: "General Guidelines", link: "/general" },
-          { text: "Before Application", link: "/beforeapplying" },
-
+          { text: 'Before Application', link: "/beforeapplying" },
           { text: "Chaldal", link: "/chaldal" },
           { text: "Bevy Commerce", link: "/bevycommerce" },
           { text: "Brain Station 23", link: "/bs23" },
           { text: "DSI", link: "/dsi" },
           { text: "Exabyting", link: "/exabyting" },
-          { text: "Fringecore", link: "/fringecore" },
-          { text: "Inverse AI", link: "/inverseai" },
+          { text: 'Fringecore <span class="VPBadge tip">new</span>', link: "/fringecore" },
+          { text: 'Inverse AI <span class="VPBadge warning">updated</span>', link: "/inverseai" },
           { text: "IQVIA", link: "/iqvia" },
           { text: "Priyo", link: "/priyo" },
           { text: "Kite Games Studio", link: "/kite" },
@@ -43,7 +42,7 @@ export default defineConfig({
             text: "Therap BD",
             link: "/therap/",
             items: [
-              { text: "Software Engineer", link: "/therap/swe.md" },
+              { text: 'Software Engineer <span class="VPBadge warning">updated</span>', link: "/therap/swe.md" },
               { text: "Database Engineer", link: "/therap/dbe.md" },
             ],
           },
