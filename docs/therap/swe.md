@@ -377,3 +377,206 @@ int main() {
 
 ```
 </details>
+
+
+<details>
+<summary>
+Given an array of sides of triangles, return an array of strings. The strings would be either “yes” or “no”, corresponding to whether the same indexed triangle is a right triangle or not.
+
+Input: `[[3,4,5], [5,9,12], [6,8,10]]`
+Output: `["yes","no","yes"]`
+</summary>
+
+<hr>
+
+```python
+def areRightTriangles(triangles):
+    res = []
+    
+    for sides in triangles:
+        sides.sort()
+        a,b,c = sides
+        if a**2 + b**2 == c**2:
+            res.append(True)
+        else:
+            res.append(False)
+    
+    return res
+```
+
+</details>
+
+<details>
+<summary>
+A dictionary of sorted words was like this: [a, above, bad, broke, cat,..., yes, yolk, zoo]. After a malfunction it became this: [..., yes, yolk, zoo, a, above, bad, broke, cat,....]. Write a program so that given a word, one can find the word in the dictionary, with the same time complexity as when the dictionary was sorted.
+</summary>
+
+<hr>
+
+[**💻 Submit Code**](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
+
+```python
+def search(words, target):
+        l, r = 0, len(words) - 1
+
+        while l <= r:
+            m = (l + r) // 2
+            if words[m] == target:
+                return m
+            
+            if words[l] <= words[m]:
+                if target < words[l] or target > words[m]:
+                    l = m + 1
+                else :
+                    r = m - 1
+            
+            else:
+                if target > words[r] or target < words[m] :
+                    r = m - 1
+                else :
+                    l = m + 1
+
+        return -1
+```
+
+</details>
+
+
+
+
+<details>
+
+
+<summary>
+Given two strings s1, s2, return whether a substring of s1 is an anagram of s2
+
+Input: `s1 = "hello", s2 = "lol"` Output: `True`\
+Input: `s1 = "hello", s2 = "loa"` Output: `False`
+
+</summary>
+<hr>
+    
+```python
+def containsAnagram(s1, s2):
+    ara1 = [0]*26
+    ara2 = [0]*26
+
+    for i in range(len(s2)):
+        ara1[ord(s1[i])-ord(('a'))] += 1
+        ara2[ord(s2[i])-ord(('a'))] += 1
+
+    l, r = 0, len(s2)
+    while r < len(s1):
+        if ara1 == ara2:
+            return True
+        ara1[ord(s1[l])-ord(('a'))] -= 1
+        ara1[ord(s1[r])-ord(('a'))] += 1
+        l += 1
+        r += 1
+
+    return ara1 == ara2
+```
+</details>
+
+<details>
+<summary>
+Given two large numbers as strings, num1 and num2 with num1 larger than num2, return their difference in string format, using no direct string to int conversion or libraries.
+</summary>
+<hr>
+
+```python
+def subtract(num1, num2):
+    num1, num2 = num1[::-1], num2[::-1]   
+    res = ""
+    carry = 0
+
+    for i in range(len(num1)):
+        digit1 = int(num1[i])
+        digit2 = int(num2[i]) if i < len(num2) else 0
+        diff = digit1 - digit2 - carry
+
+        if diff < 0:
+            diff += 10
+            carry = 1
+
+        else:
+            carry = 0
+
+        res += str(diff)
+
+    # Remove leading zeros
+    res = res.rstrip("0")
+
+    return res[::-1]
+```
+</details>
+
+
+<details>
+<summary>
+Given an array containing 0,1,2 sort it.
+
+Input: `[2,0,1,1,0,2]` Output: `[0,0,1,1,2,2]`
+</summary>
+<hr>
+
+```python
+def bring2Front(ara,start,target):
+    target_index = start
+    for i in range(start,len(ara)):
+        ara[i],ara[target_index] = ara[target_index],ara[i]
+        if ara[target_index] == target:
+            target_index += 1
+    return target_index
+
+def sortNums(ara):
+    target_index = bring2Front(ara,0,0)
+    bring2Front(ara,target_index,1)
+    return ara
+```
+</details>
+
+<details>
+<summary>
+Using no loops, print this pattern for a given number n: 
+
+`n, n-5, n-10,....0,....,n-10,n-5,n`.
+Example: `7, 2, -3, 2, 7`
+
+
+</summary>
+<hr>
+
+```python
+def recursiveAdd(ara, n):
+    ara.append(n)
+    if n > 0:
+        recursiveAdd(ara, n-5)
+        ara.append(n)
+
+def solution(n):
+    ara = []
+    recursiveAdd(ara, n)
+    return ara
+```
+
+</details>
+
+
+
+
+<details>
+<summary>
+Design this legacy table for using in a relational database.
+
+| ID 	| Name  	| Email           	| Subject 	| Courses                              	|
+|----	|-------	|-----------------	|---------	|--------------------------------------	|
+| 1  	| Rahim 	| rahim@gmail.com 	| CSE     	| CSE101, CSE102, EEE101, CIVIL104     	|
+| 2  	| karim 	| karim@gmail.com 	| EEE     	| EEE101, EEE102, CSE102, CIVIL104     	|
+| 3  	| Josim 	| josim@gmail.com 	| BME     	| EEE101, CSE101, BME101               	|
+| 4  	| Belal 	| belal@gmail.com 	| CIVIL   	| CIVIL101, CIVIL102, MECHA101, EEE101 	|
+| 5  	| Rakib 	| rakib@gmail.com 	| MECHA   	| CSE101, BME101, MECHA101, MECHA101   	|
+
+</summary>
+<hr>
+</details>
