@@ -16,11 +16,11 @@ hero:
 
 features:
   - icon: 🏣
-    title: 15+ companies
+    title: 20+ companies
     details: Collection of questions asked in multiple top companies of Bangladesh
   - icon: 📝
-    title: 200+ questions
-    details: Details and solutions of 200+ questions
+    title: 250+ questions
+    details: Details and solutions of 250+ questions
   - icon: 💡
     title: Tips and tricks
     details: Tips related to specific companies or overall interview preparation
