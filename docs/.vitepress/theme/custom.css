@@ -6,9 +6,37 @@ details {
     padding: 16px 16px 8px;
     line-height: 24px;
     font-size: var(--vp-custom-block-font-size);
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-weight: 400;
   }
 
+  article {
+    border-color: var(--vp-custom-block-details-border);
+    color: var(--vp-custom-block-details-text);
+    background-color: var(--vp-custom-block-details-bg);
+    border-radius: 8px;
+    padding: 16px 16px 8px;
+    line-height: 24px;
+    font-size: var(--vp-custom-block-font-size);
+    margin-bottom: 8px;
+    padding-top: 2px;
+    font-weight: 600;
+  } 
+
+
+article a {
+  color: var(--vp-badge-tip-text);
+  background-color: var(--vp-badge-tip-bg);
+  border-color: var(--vp-badge-tip-border);
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-weight: 700;
+  padding: 8px;
+}
+article hr {
+  background-color: var(--vp-badge-tip-bg);
+}
 summary {
     margin: 0 0 8px!important;
     font-weight: 700;

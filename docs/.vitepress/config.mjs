@@ -44,6 +44,8 @@ export default defineConfig({
             items: [
               { text: 'Software Engineer <span class="VPBadge warning">updated</span>', link: "/therap/swe.md" },
               { text: "Database Engineer", link: "/therap/dbe.md" },
+              { text: "Database Engineer", link: "/therap/test.md" },
+
             ],
           },
           { text: "WSD", link: "/wsd" },
