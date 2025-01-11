@@ -8,8 +8,11 @@ hero:
   tagline: "Crowd sourced collection of interview questions of different BD tech companies"
   actions:
     - theme: brand
-      text: Start Taking Preparation
-      link: /general
+      text: Start Taking Preparations
+      link: /companies/general
+    - theme: alt
+      text: Read Notes
+      link: /notes/general
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples
