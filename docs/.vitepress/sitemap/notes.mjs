@@ -7,7 +7,7 @@ const notesMap = [
   {
     text: "Database",
     items: [
-      { text: "General Guidelines", link: "/general" },
+      { text: "Resources", link: "/database" },
     ],
   },
   {
