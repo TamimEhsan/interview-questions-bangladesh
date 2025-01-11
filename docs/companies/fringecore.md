@@ -10,7 +10,7 @@ Build a recursive partitioner
 [**💻 Problem Repository**](https://github.com/fringecore/fringecore-frontend-challenge-recursive-partitioning)
 <details><summary>Show Description</summary>
 
-![](resource/fringecore-frontend-recursive.webp)
+![](../resource/fringecore-frontend-recursive.webp)
 
 Your task is to create a recursive partitioner. Upon opening the project, users should be greeted with a random background color and two buttons labeled "v" and "h." The "v" button allows the screen to be split vertically, while the "h" button splits it horizontally. When a split occurs, one partition should retain its original color, and the newly created partition should adopt a new random color. Each partition should remain interactive and allow further splits. Additionally, if multiple partitions exist, users should have the option to remove any partition. All partitions should be resizable by clicking and dragging their edges.
 </details>
@@ -38,7 +38,7 @@ Build a block graph
 [**💻 Problem Repository**](https://github.com/fringecore/fringecore-frontend-challenge-block-graph)
 <details><summary>Show Description</summary>
 
-![](resource/fringecore-frontend-block.webp)
+![](../resource/fringecore-frontend-block.webp)
 
 Build an interactive page where, upon loading, a block appears at a random position on the screen. Each block should feature a "+" button, which, when pressed, spawns a new block at another random position. All blocks should be draggable using mouse clicks, allowing users to reposition them freely. A dashed line should visually connect each new block to its parent, i.e., the block on which the "+" button was pressed. These connecting lines must dynamically adjust their position to reflect any movement of the parent or child blocks, maintaining their connection at all times.
 </details>
