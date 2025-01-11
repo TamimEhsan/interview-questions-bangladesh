@@ -1,5 +1,12 @@
 # Kite Games Studio
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://www.kitegamesstudio.com/ |
+| Career Website | https://www.kitegamesstudio.com/ |
+| Technologies Used| Swift, React, Kotline, PyTorch |
+
 ## Introduction
 [Kite Games Studio (KGS)](https://www.kitegamesstudio.com/), founded in 2014, is a leading mobile application development firm in Bangladesh. Based in Mohakhali DOHS, Dhaka, KGS specializes in developing software for both iOS and Android platforms, along with building websites. The company is known for its emphasis on competitive programming skills, making it an excellent choice for talented **competitive programmers** looking to join a dynamic and innovative team.
 

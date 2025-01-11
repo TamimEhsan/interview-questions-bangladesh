@@ -1,5 +1,12 @@
 # Chaldal
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | 2013 |
+| Company Website | https://chaldal.com/ |
+| Career Website | https://chaldal.tech/ |
+| Technologies Used| .NET, F#, C#, SQL Server, TypeScript, JavaScript, Xamarin, Android, React, React Native, Microsoft Orleans |
+
 ## Introduction
 
 Chaldal.com, founded in 2013, is a grocery e-commerce platform in Bangladesh. They maintain the whole system by themselves. So, they are a tech company too and arguably one the most prestigious tech company in bangaldesh
@@ -30,10 +37,12 @@ You have been provided a spiral matrix of size NXN along with a coordinate (x, y
 N = 4, x = 2, y =1
 
 <table >
+<tbody>
   <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
   <tr><td>12</td><td>13</td><td>14</td> <td>5</td></tr>
   <tr> <td>11</td> <td>16</td><td>15</td><td>6</td></tr>
   <tr><td>10</td> <td>9</td><td>8</td><td>7</td></tr>
+</tbody>
 </table>
 
 <details><summary>Show Hint</summary>

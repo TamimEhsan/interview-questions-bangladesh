@@ -1,5 +1,12 @@
 # Therap
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | 2004 |
+| Company Website | https://therapbd.com/ |
+| Career Website | https://therap.hire.trakstar.com/? |
+| Technologies Used| Java, J2EE |
+
 ## Introduction
 
 [Therap (BD) Ltd.](https://therapbd.com/) is a US-based Software Company registered in Bangladesh, operating since 2004. They have their office in Dhaka, Bangladesh, and affiliate offices in the USA and Canada.

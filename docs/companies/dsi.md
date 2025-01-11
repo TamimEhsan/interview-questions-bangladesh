@@ -1,5 +1,12 @@
 # DSI
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | 2001  |
+| Company Website | https://www.dsinnovators.com/ |
+| Career Website | https://app.hrythmic.com/recruit/openings/company/dsinnovators/ |
+| Technologies Used| Java, Springboot, Nodejs(hapi), Hibernate, ReactJs, NextJs, AngularJS, Android, iOS |
+
 ## Introduction
 [Dynamic Solution Innovators Ltd](https://www.dsinnovators.com/) is an international software company based in Dhaka, Bangladesh. They have been successfully providing software services since 2001 in both the local and global market.
 ## Interview Stages

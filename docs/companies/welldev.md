@@ -1,5 +1,12 @@
 # WellDev Ltd
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://www.welldev.io/ |
+| Career Website | https://www.welldev.io/careers |
+| Technologies Used| Ruby on Rails, Android, iOS, ReactJS |
+
 ## Introduction
 
 WellDev Ltd is a software company based in Zurich, Switzerland, specializing in software development and IT services. It has offices in Bangladesh (Dhaka), South Africa, Canada etc.

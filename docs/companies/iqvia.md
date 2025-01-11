@@ -1,5 +1,12 @@
 # IQVIA
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://www.iqvia.com/ |
+| Career Website | https://jobs.iqvia.com/en/search-jobs |
+| Technologies Used| .Net, Python, Javascript, Angular |
+
 ## Introduction
 [IQVIA](https://www.iqvia.com/) is an American Fortune 500 and S&P 500 multinational company serving the combined industries of health information technology and clinical research. They hire professionals from Bangladesh as remote.
 ## Interview Stages

@@ -1,5 +1,12 @@
 # Exabyting
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | http://exabyting.com/ |
+| Career Website | https://exabyting.com/join-our-team/ |
+| Technologies Used| JAVA, Spring, PHP, Laravel, JavaScript, NodeJS, ExpressJS, Python, Django, REST, Microservices, SQL, NoSQL, SQS, SNS |
+
 ## Introduction
 
 [Exabyting](https://exabyting.com/) is an international software company based in Dhaka, Bangladesh. They have been successfully providing software services since 2018 in both the local and global market.

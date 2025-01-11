@@ -1,5 +1,12 @@
 # Optimizely Bangladesh
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://www.optimizely.com/ |
+| Career Website | https://careers.optimizely.com/search/ |
+| Technologies Used| Python, NodeJS, Angular2, Scala, MongoDB |
+
 ## Introduction
 
 [Optimizely](https://www.optimizely.com/get-started/) has recently expanded its global operations with the establishment of a new office in Bangladesh. Optimizely is a leading software company specializing in digital experience platforms (DXP) that empower businesses to enhance their marketing and product strategies. Optimizely offers a comprehensive suite of tools, including a robust Content Management System (CMS) and an integrated Content Marketing Platform (CMP).

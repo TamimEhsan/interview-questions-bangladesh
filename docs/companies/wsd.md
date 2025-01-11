@@ -1,4 +1,12 @@
 # WSD
+
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://wsd.com/ |
+| Career Website | https://wsd.com/career/ |
+| Technologies Used|  |
+
 ## Introduction
 [WSD](https://wsd.com/) or Wall Street Docs is a US based company trying to expand in Bangladesh. 
 

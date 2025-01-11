@@ -1,5 +1,12 @@
 # Orbitax Bangladesh Limited 
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://www.orbitax.com/ |
+| Career Website |  |
+| Technologies Used| Java, JavaScript, Android, PHP |
+
 ## Coding Round Questions
 <article>
 

@@ -1,5 +1,12 @@
 # Bevy Commerce
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website |  |
+| Career Website |  |
+| Technologies Used|  |
+
 ## Introduction
 [Bevy Commerce](https://bevycommerce.com/landing) is a software development studio specializing in cutting-edge eCommerce solutions. They build tailored, innovative products that drive sales and elevate the customer experience for industry giants such as Canadian Tire, Alo Yoga, Authentic Brands Group, and Shopify corporate. 
 

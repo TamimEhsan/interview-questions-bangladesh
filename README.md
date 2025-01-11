@@ -39,7 +39,13 @@ npm run docs:dev
 ```
 The site should be available in [http://localhost:5173/interview-questions-bangladesh/](http://localhost:5173/interview-questions-bangladesh/)
 
-## Disclaimer
-The questions are collected from volunteers. The owner is not responsible for anykind of terms and conditions imposed from the companies. The owner will gladly remove any content if that violates any agreement. 
+## Achknowledgement
+This project is made possible by the effort of community. Majority of the contents are contributed by individual contributors. 
 
-The owner tries to check every questions and answer contributed from others. Sometimes, the questions or answers might not be correct. The owner is not responsible for any issues for that. 
+Some of the info are taken from the respective company website and from [MBSTUPC/tech-companies-in-bangladesh
+](https://github.com/MBSTUPC/tech-companies-in-bangladesh).
+
+## Disclaimer
+The questions are collected from volunteers. The maintainer is not responsible for anykind of terms and conditions imposed from the companies. The maintainer will gladly remove any content if that violates any agreement. 
+
+The maintainer tries to check every questions and answer contributed from others. Sometimes, the questions or answers might not be correct. The maintainer is not responsible for any issues for that. 

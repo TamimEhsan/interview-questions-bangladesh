@@ -1,4 +1,13 @@
 # Fringecore
+
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://fringecore.sh/ |
+| Career Website | https://work-pool.notion.site/FringeCore_-Careers-cd5106060028424383fcbbb7fc885e38 |
+| Technologies Used|  |
+
+## Introduction
 [Fringecore](https://fringecore.sh/) is a team of engineers and designers, who build software, hack hardware and apply design thinking in-order to tame the chaos in business processes.
 
 ## Frontend Questions

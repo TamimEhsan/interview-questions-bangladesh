@@ -1,5 +1,12 @@
 # Inverse.Ai
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://inverseai.com/ |
+| Career Website | https://inverseai.com/career |
+| Technologies Used| Web, Android, iOS |
+
 ## Introduction
 [Inverse.Ai](https://inverseai.com/) specializes in app development that primarily focus on video, audio and image manipulation. Their porfolio contains massive hits apps with more than 15M downloads.
 

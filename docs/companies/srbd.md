@@ -1,5 +1,12 @@
 # SRBD
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://research.samsung.com/srbd |
+| Career Website |  |
+| Technologies Used| Windows, IOS, Android, Tizen, C/C++, Java, Objective-C, Swift, C#, Kotlin, Spring, WPF, UWP, MFC, Machine Learning |
+
 ## Introduction
 [Samsung R&D Institute Bangladesh (SRBD)](https://research.samsung.com/srbd) started its journey in February 2011. Located in the heart of Dhaka, it is the first ever R&D hub set up by a multinational company in Bangladesh.
 

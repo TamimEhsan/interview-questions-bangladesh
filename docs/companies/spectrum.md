@@ -1,5 +1,12 @@
 # Spectrum
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://www.spectrum-bd.com |
+| Career Website |  |
+| Technologies Used|  |
+
 ## Introduction
 Spectrum Engineering Consortium Ltd. specializes in IP/DWDM/SDH Network infrastructure, Data Center-Cloud solutions Facility, Server, Storage/Virtualizations. 
 

@@ -1,5 +1,12 @@
 # Priyo
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://www.priyo.com/ |
+| Career Website |  |
+| Technologies Used|  |
+
 ## Introduction
 [Priyo](https://www.priyo.com/) is a finance based tech company operating in US market. They operate from Bangladesh. 
 ## Interview Stages

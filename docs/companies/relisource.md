@@ -1,5 +1,12 @@
 # Relisource
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://www.relisource.com/ |
+| Career Website | https://www.relisource.com/careers/ |
+| Technologies Used| Desktop, Mobile, Web, System & Network, Cloud Computing, AWS, Azure & Open Source DevOps |
+
 ## Introduction
 
 For the Junior .NET Developer Position at first there was a 1 hour long written Exam which consisted 3 Questions (SQL Query, Problem Solving, JavaScript-HTML)
