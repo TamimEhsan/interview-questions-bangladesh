@@ -16,258 +16,216 @@ They often give job advertisements on LinkedIn. We have to apply using the Googl
 
 ## Phone Interview
 
-<details>
-<summary>
+<article>
+
 Difference between Array and Linked List.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Which sorting algorithm works better in the average case?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Suppose, you have to sort 1000 numbers, numbers can be positive and negative. Which algorithm will you use?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What is Stack, Queue and Priority Queue?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Difference between Binary Tree and BST.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 When we type a web address (www.google.com) in a web browser, what happens before we get the response?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Difference between TCP and UDP.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What are the principles of OOP and why do we use OOP?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Difference between SQL and NoSQL.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Difference between Compiler and Interpreter. 
-</summary>
-</details>
+</article>
 
 ## First Round Questions
 
-<details>
-<summary>
+<article>
+
 Explain BST.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Suppose, we insert [1, 2, 3, 4] this array in BST. What will it look like after insertion? What is the search complexity in this tree? What if we want to make the search complexity  O(logn)?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Left Join VS Full Join. Describe a scenario where we need to use Left Join.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Describe the ACID properties of the database.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Describe the indexing of the database. Can we index with a column that has duplicate elements?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Describe the Event loop in JS.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What is closure? Describe.
-</summary>
-</details>
+</article>
 
 ## Second Round Questions
 
-<details>
-<summary>
+<article>
+
 Why React? What advantages does React give us over direct DOM manipulation?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Why shouldn’t we mutate props in the child component?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Why Tailwind? What benefits Tailwind give us compared to other CSS libraries?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What type of language is JavaScript? Compiled or Interpreted? How do they work?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 JavaScript is a single-threaded language, so how does it maintain asynchronous tasks?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain the event loop. Have you ever seen the implementations of libuv?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain var, let, const.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain hoisting.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain primitive and reference data types.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain closure. The inner function (which is returned) of the closure has access to its outer scope, how is it possible, where the variable is stored in that time?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What is a pure function?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Do you follow any functional programming philosophy?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain the ACID properties of the database.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain indexing. Why do we need indexing? What benefit does it give us?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Suppose, we want to use user_email as index. How can we do it?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain tree, binary tree, binary search tree. In a binary search tree, if the tree is imbalanced, then how can we make it balanced?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain the map, unordered_map and their complexity. Why does the complexity of the unordered_map go to O(n) in some cases?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain the four principles of OOP.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Do you know there is an OOP feature which is only in C/C++? (Operator).
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain the difference between an array and a linked list. Tell me some use cases for each of them. How can we access an element of an array with the index?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain HTTP and HTTPS. Why HTTPS? How does data transfer in HTTPS? What is used under the hood to encrypt the communication between the sender and the receiver?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Is HTTPS stateful or stateless? If stateless, then how can we browse Facebook after login once?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain cookie-based authentication. How can we blacklist a cookie?
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Do you know the structure of JWT? Explain. 
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
 
 **Problem Statement:**
 You'll be given two strings A and B, with lengths 1 <= length <= 10^6. The strings will contain only 1's and 0's. To make A a good string, you can insert B into A at any place, as many times as you want (or don't insert if you don't want). You have to print YES or NO depending on whether making A as a good string is possible.
@@ -287,24 +245,20 @@ The output must be only one word, "YES" or "NO".
 | 111<br>010       | YES    |
 | 1110011<br>01010 | NO     |
 | 1001001000<br>10 | NO     |
+</article>
 
-</summary>
-</details>
+<article>
 
-<details>
-<summary>
 Convert a decimal number to binary and show the output in string.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain JOIN and composite keys in the database.
-</summary>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Learn about polymorphism and inheritance in DB in your free time. (This is not a question).
-</summary>
-</details>
+</article>
+

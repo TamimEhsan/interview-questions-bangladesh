@@ -5,8 +5,8 @@
 For the Junior .NET Developer Position at first there was a 1 hour long written Exam which consisted 3 Questions (SQL Query, Problem Solving, JavaScript-HTML)
 
 ## Software Engineering Questions
-<details>
-<summary>
+<article>
+
 Select The Company name which has the lowest total emoployee count.
 
 |Company|Position|Employee|
@@ -19,13 +19,10 @@ Select The Company name which has the lowest total emoployee count.
 |XYZ|blah|5|
 |MNO|blah|20|
 |MNO|blah|5|
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Problem Solving
 
 There is a food track consisting of cells marked with 0, 1, or other numbers. Here, 0 signifies the cell is not traceable, 1 signifies it is traceable, and any other number represents the destination. Starting from the top-left point, determine the longest path to reach the destination. If no path exists, print -1.
@@ -35,27 +32,18 @@ There is a food track consisting of cells marked with 0, 1, or other numbers. He
 |1|1|1|
 |1|0|1|
 |1|9|1|
+</article>
 
+<article>
 
-
-</summary>
-<hr>
-[Answer]
-</details>
-
-<details>
-<summary>
 JavaScript & HTML
 
 Write JavaScript code to check if a button is clicked in an HTML element using an EventListener. Upon clicking, the size of the HTML element should increase by 10%.
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
 ## Embedded Software Engineering Questions
-<details>
-<summary>
+<article>
+
 Problem Solving
 
 Your task is to write a function in the C programming language to find an optimal route cost to a target location inside a maze and return the highest 4 bits (MSB + 3 bits) of the optimal route cost value. Your function should take as input two integer numbers for the starting index on the maze array. An optimal route is defined as a complete path from the start point to the target location that requires the least effort/cost. Diagonal movement in the maze is not allowed. An example maze is given below: 
@@ -216,9 +204,5 @@ Maze Details:
 - The maze size will be a pair of positive integer numbers, you can assume that the size parameters, length, and height of the maze will fit in a C integer (int) type.
 - The cost values, excluding the impassable blocks, will always be a positive integer that will fit in a C integer (int) type.
 - The maze length and height are not guaranteed to be equal but will be global fixed defined constants for each problem.
+</article>
 
-
-</summary>
-<hr>
-[Answer]
-</details>

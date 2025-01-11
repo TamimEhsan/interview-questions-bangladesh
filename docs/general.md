@@ -17,7 +17,6 @@ Jekyll and Hugo are two popular static site generator which requires minimal cod
 ## Linked In
 Try to maintain a good linked in presence. Keep your linkedin profile up to date. First, it offers a live portfolio with relevant industry connections added to your network. Many companies post their vacancies in linked in. Finally, albeit less common in Bangladesh, sometimes recruiters directly reach out if they find the profile suitable for the role.
 
-
 ## Website Stats
 ![](https://visitor-badge.laobi.icu/badge?page_id=interview-questions-bangladesh)  
 ![](https://profile-counter.glitch.me/interview-questions-bangladesh/count.svg)

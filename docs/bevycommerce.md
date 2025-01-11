@@ -11,43 +11,28 @@ The interview process was based on two stages
 
 ## Coding Round Questions
 
-<details>
-<summary>
+<article>
+
 How does error handling differ in synchronous and asynchronous code in Node.js, and what are the best practices for error handling in asynchronous code?
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Write a function that takes an array and a number as an argument. if the number is greater than 0, you must pop the number of elements from the array. if the number is not provided then pop once.
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
-How is JavaScript even Driven working?
-</summary>
-<hr>
-</details>
+<article>
 
-<details>
-<summary>
-Find the Second max of the array
-</summary>
-<hr>
-</details>
+What is event driven programming? How event driven programming works in JavaScript?
+</article>
 
-<details>
-<summary>
-Based on an input sort an array in ascending or descending order
-</summary>
-<hr>
-</details>
+<article>
 
+Given an array of integers, find the second max of the array
+</article>
 
+<article>
 
-
-
+Given an array of integers and a sorting criteria[asc/desc], sort the array based on the sorting criteria in either ascending or descending order
+</article>
 

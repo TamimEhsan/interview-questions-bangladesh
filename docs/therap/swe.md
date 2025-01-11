@@ -8,16 +8,14 @@ The selection process has 3 stages,
 1. **1st technical round** The first round is taken by the BD team
 1. **HR Round:** This is the final stage before onboarding and typically deals with salary negotiation. 
 
-
 ## Software Engineering Questions
 
-<details>
-<summary>
-Given an array of numbers indicating stock price of n consecutive days. If you buy stock at one day and sell at any later day what is the maximum profit that you can get
-</summary>
-<hr>
+<article>
+
+Given an array of numbers indicating stock price of n consecutive days. If you buy stock at one day and sell at any later day what is the maximum profit that you can get?
 
 [**💻 Submit Code**](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+<details><summary>Show Answer</summary>
 
 ```C++
 int maxProfit(vector<int>& prices) {
@@ -32,15 +30,15 @@ int maxProfit(vector<int>& prices) {
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an array of n integers. You need to take all zeroes in array to the end without changing the relative order of remaining element.
-eg: [2,0,0,3,1,0,5] => [2,3,1,5,0,0,0]
-</summary>
-<hr>
+eg: `[2,0,0,3,1,0,5]` => `[2,3,1,5,0,0,0]`
 
 [**💻 Submit Code**](https://leetcode.com/problems/move-zeroes/description/)
+<details><summary>Show Answer</summary>
 
 ```C++
 void moveZeroes(vector<int>& nums) {
@@ -53,23 +51,20 @@ void moveZeroes(vector<int>& nums) {
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an array of n integers. Reorder the elements such that all odd numbers occur after even numbers.
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an array of strings. Print the sets of strings which are anagram.
 eg: ["cat","tab","act","bat","taco"] => [{"cat","act"},{"tab","bat"},{"taco"}] 
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/group-anagrams/)
+<details><summary>Show Answer</summary>
 
 ```C++
 vector<vector<string>> groupAnagrams(vector<string>& strs) {
@@ -89,14 +84,14 @@ vector<vector<string>> groupAnagrams(vector<string>& strs) {
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an array of n integers. Find the kth largest element in the array.
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+<details><summary>Show Answer</summary>
 
 ```C++
 int findKthLargest(vector<int>& nums, int k) {
@@ -106,12 +101,12 @@ int findKthLargest(vector<int>& nums, int k) {
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given two very large number in string format. Find the sum of the two number
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```C++
 string sum(string &A, string &B){
@@ -136,14 +131,15 @@ string sum(string &A, string &B){
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given two binary tree. Check if they are identical [not isomorphism]
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/same-tree/)
+<details><summary>Show Answer</summary>
+
 ::: code-group
 
 ```C++ [Normal Solution]
@@ -215,15 +211,15 @@ func main() {
 :::
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given two array of integers. Find the common elements between them.
-</summary>
-<hr>
 
-[**💻 Submit Code**](https://leetcode.com/problems/intersection-of-two-arrays/) Unique  
-[**💻 Submit Code**](https://leetcode.com/problems/intersection-of-two-arrays-ii/) Repeats
+Unique : [**💻 Submit Code**](https://leetcode.com/problems/intersection-of-two-arrays/) Repeats: [**💻 Submit Code**](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
+<details><summary>Show Answer</summary>
+
 ::: code-group
 
 ```C++ [Return uniques]
@@ -259,18 +255,21 @@ vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
 :::
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Find pairs with given target sum in a doubly linked list. 
-Input:
+```
+Input: 
 1 <> 2 <> 4 <> 5 <> 6 <> 8 <> 9
 target = 7
-Output: (1,6), (2,5)
-</summary>
-<hr>
+Output: 
+(1,6), (2,5)
+```
 
 [**💻 Submit Code**](https://www.geeksforgeeks.org/problems/find-pairs-with-given-sum-in-doubly-linked-list/1)
+<details><summary>Show Answer</summary>
 
 ```C++
 class Solution
@@ -307,9 +306,10 @@ public:
 };
 ```
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Solve the problem using Object Oriented Programming
 
 ``` C++
@@ -325,8 +325,7 @@ int main(){
     int rectangle2area = rectangle2width* rectangle2height;
 }
 ```
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ``` C++
 #include <iostream>
@@ -377,17 +376,15 @@ int main() {
 
 ```
 </details>
+</article>
 
+<article>
 
-<details>
-<summary>
 Given an array of sides of triangles, return an array of strings. The strings would be either “yes” or “no”, corresponding to whether the same indexed triangle is a right triangle or not.
 
 Input: `[[3,4,5], [5,9,12], [6,8,10]]`
 Output: `["yes","no","yes"]`
-</summary>
-
-<hr>
+<details><summary>Show Answer</summary>
 
 ```python
 def areRightTriangles(triangles):
@@ -405,15 +402,14 @@ def areRightTriangles(triangles):
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 A dictionary of sorted words was like this: [a, above, bad, broke, cat,..., yes, yolk, zoo]. After a malfunction it became this: [..., yes, yolk, zoo, a, above, bad, broke, cat,....]. Write a program so that given a word, one can find the word in the dictionary, with the same time complexity as when the dictionary was sorted.
-</summary>
-
-<hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
+<details><summary>Show Answer</summary>
 
 ```python
 def search(words, target):
@@ -440,21 +436,17 @@ def search(words, target):
 ```
 
 </details>
+</article>
 
+<article>
 
-
-
-<details>
-
-
-<summary>
 Given two strings s1, s2, return whether a substring of s1 is an anagram of s2
 
 Input: `s1 = "hello", s2 = "lol"` Output: `True`\
 Input: `s1 = "hello", s2 = "loa"` Output: `False`
 
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
+
     
 ```python
 def containsAnagram(s1, s2):
@@ -477,12 +469,12 @@ def containsAnagram(s1, s2):
     return ara1 == ara2
 ```
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given two large numbers as strings, num1 and num2 with num1 larger than num2, return their difference in string format, using no direct string to int conversion or libraries.
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```python
 def subtract(num1, num2):
@@ -510,15 +502,14 @@ def subtract(num1, num2):
     return res[::-1]
 ```
 </details>
+</article>
 
+<article>
 
-<details>
-<summary>
 Given an array containing 0,1,2 sort it.
 
 Input: `[2,0,1,1,0,2]` Output: `[0,0,1,1,2,2]`
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```python
 def bring2Front(ara,start,target):
@@ -535,17 +526,16 @@ def sortNums(ara):
     return ara
 ```
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Using no loops, print this pattern for a given number n: 
 
 `n, n-5, n-10,....0,....,n-10,n-5,n`.
 Example: `7, 2, -3, 2, 7`
 
-
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```python
 def recursiveAdd(ara, n):
@@ -561,12 +551,10 @@ def solution(n):
 ```
 
 </details>
+</article>
 
+<article>
 
-
-
-<details>
-<summary>
 Design this legacy table for using in a relational database.
 
 | ID 	| Name  	| Email           	| Subject 	| Courses                              	|
@@ -576,7 +564,5 @@ Design this legacy table for using in a relational database.
 | 3  	| Josim 	| josim@gmail.com 	| BME     	| EEE101, CSE101, BME101               	|
 | 4  	| Belal 	| belal@gmail.com 	| CIVIL   	| CIVIL101, CIVIL102, MECHA101, EEE101 	|
 | 5  	| Rakib 	| rakib@gmail.com 	| MECHA   	| CSE101, BME101, MECHA101, MECHA101   	|
+</article>
 
-</summary>
-<hr>
-</details>

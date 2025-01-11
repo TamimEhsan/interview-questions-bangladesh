@@ -31,8 +31,6 @@ If there are any mistakes that needs to be corrected create a pull request or ra
 | **SRBD Coding Contest**  | Samsung Research and Development Institute Bangladesh(SRBD) | Prizemoney of  135k for top 10 participants and Job opportunities | Individual participation |
 |  | |  |  |
 
-
-
 ## AI and ML
 
 | Name| Organizer  | Prizes  | Extra Info |
@@ -41,10 +39,6 @@ If there are any mistakes that needs to be corrected create a pull request or ra
 | **[IEEE Video and Image Processing Cup (VIP Cup)](https://signalprocessingsociety.org/community-involvement/video-image-processing-cup)** | IEEE | $5,000 ,$2,500 ,$1,500 ||
 | **BUET CSE Fest Deep Learning Sprint**  | BUET CSE Dept | Prizemoney of 2.5 lakhs+  ||
 | **BUET CSE Fest AI Contest**| BUET CSE Dept | Prizemoney of 50 thousands for top 3 participants ||
-
-
-
-
 
 ## Hackathons
 
@@ -81,8 +75,6 @@ If there are any mistakes that needs to be corrected create a pull request or ra
 | -- | -- | -- | -- |
 | **Flag Hunt 2022** | CTF Community Bangladesh |  ||
 | [MIST LEETCON](https://leetcon.org/) | MIST| 500K BDT+ ||
-
-
 
 ## Poster Presentations
 

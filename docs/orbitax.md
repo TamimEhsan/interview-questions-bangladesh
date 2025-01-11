@@ -1,8 +1,8 @@
 # Orbitax Bangladesh Limited 
 
 ## Coding Round Questions
-<details>
-<summary>
+<article>
+
 You are given an HTML string. Your task is to determine the number of characters encompassed by each HTML tag in the string. For each tag, count the number of characters that are enclosed between the opening (<tag>) and closing (</tag>) tags.
 
 A tag is composed of one or more lowercase English letters (a-z). For example: `<div> ... </div>`, `<span>..</span>`. It can be followed by digits (0-9) i.e `<h1>..</h1>`.
@@ -17,10 +17,8 @@ When a character is encompassed by a same tag multiple times, count only once fo
 A tag can have 0 characters. In that case don't print that tag.
 Spaces(' ') between the tags are not counted.
 
-</summary>
-<hr>
-
 [**💻 Submit Code**](https://www.hackerrank.com/contests/orbitax-associate-software-engineer-recruitment-2024-phase-1/challenges/count-between-tags/problem)
+<details><summary>Show Answer</summary>
 
 ```C++
 string consume(string &s,int st){
@@ -87,19 +85,18 @@ void solve(string s) {
 }
 ```
 </details>
+</article>
 
+<article>
 
-<details>
-<summary>
 You are given a string S of length N and an integer K. Your task is to find the total number of subsequences in S that match the pattern P = "orbitaxian", where the difference in position between every consecutive character in the subsequence is no more than K.
 
 More formally, let the subsequence of P be represented by an array pos, where (1 ≤ pos[i] ≤ N) and S[pos[i]] = P[i]. Then for each i > 1, the condition pos[i] − pos[i-1] ≤ K must hold.
 
 The result should be returned modulo 10^9+7
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://www.hackerrank.com/contests/orbitax-associate-software-engineer-recruitment-2024-phase-1/challenges/orbitax-sub-sequence)
+<details><summary>Show Answer</summary>
 
 ```C++
 #define M 1000000007
@@ -165,12 +162,12 @@ signed main() {
 }
 ```
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 You are given an array of weights of length 200 and 3 buckets. The sum of total weights of the array will not exceed 100. You need to distribute the weights among the buckets such that the maximum value of the difference between the sum of weights in any two bucket is minimum.
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```C++
 bool dp[205][505][505];
@@ -216,3 +213,4 @@ void solve() {
 }
 ```
 </details>
+</article>

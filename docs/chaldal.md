@@ -14,17 +14,18 @@ Chaldal interview process has 3 stage
 
 ## Questions
 
-<details>
-<summary>
+<article>
+
 Tell me about yourself? Why do you want to join chaldal
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
+
 Answer varies from person to person
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 You have been provided a spiral matrix of size NXN along with a coordinate (x, y) as follows. Find the element at the position (x, y) of the matrix.
 N = 4, x = 2, y =1
 
@@ -35,20 +36,16 @@ N = 4, x = 2, y =1
   <tr><td>10</td> <td>9</td><td>8</td><td>7</td></tr>
 </table>
 
-</summary>
-<hr>
+<details><summary>Show Hint</summary>
 
-```C++
 The element at position (2, 1) is **12** [*indexed at (1, 0)*]
-```
-
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a number in roman format. Convert it to arabic numeral.
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```C++
 map<char,int>RtoA;
@@ -77,11 +74,12 @@ int RomanToArabic(string R){
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a string of characters. Reverse the string without using any library function.
-</summary>
+<details><summary>Show Answer</summary>
 
 ```C++
 void solve(string &s){
@@ -98,12 +96,12 @@ void solve(string &s){
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a string of characters. Check if the given string is a palindrome.
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```C++
 bool solve(string s){
@@ -116,14 +114,14 @@ bool solve(string s){
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an positive integer n. Find the sum of even fibonacchi number upto nth term.
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://supecoder.dev/questions/Sum%20of%20Even%20Fibonacci%20Numbers?questionId=66a6015c5cbe5326054ebf70)
+<details><summary>Show Answer</summary>
 
 ```C++
 long long solve(int n){
@@ -140,14 +138,14 @@ long long solve(int n){
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a string of characters [0-9]. Convert it to integer.
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://supecoder.dev/questions/Convert%20String%20to%20Integer?questionId=66a8cba05cbe532605568a68)
+<details><summary>Show Answer</summary>
 
 ```C++
 long long stringToInteger(string &s) {
@@ -161,14 +159,14 @@ long long stringToInteger(string &s) {
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an array of integers. Generate all possible permutation of the given array.
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/permutations/)
+<details><summary>Show Answer</summary>
 
 ```C++
 class Solution {
@@ -199,14 +197,14 @@ public:
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an array of integers. Generate all possible subset of the given array.
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/subsets/)
+<details><summary>Show Answer</summary>
 
 ```cpp
 class Solution {
@@ -235,20 +233,17 @@ public:
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a regex expression and a string. Check if the regex expression matches with the string.
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Each student is assigned to an assignment at a particular location at a specific time. Are there any inconsistencies in the assignments ? Find at least one of them by looking into the input. Then write a code to print all inconsistencies in the assignments. 
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```C++
 #include <bits/stdc++.h>
@@ -295,14 +290,15 @@ int main() {
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Implement Game of Life
-</summary>
-<hr>
+<details><summary>Show Description</summary>
 
-    __________________
+```
+__________________
 
 |██ 
 |  ██ ██
@@ -312,18 +308,23 @@ Implement Game of Life
 |
 |
 |
-
+```
 In the game of life, you have a 2D matrix of small squares that can be either alive or dead. The matrix goes through iterations, and on every iteration the squares can die or be revived. This is based on the previous iteration and the below rules
-A living square with 1 or less neighbors in the previous iteration will die, as if from loneliness
-A living square with 2 or 3 neighbors in the previous iteration will survive, as if from contentment
-A living square with 4 or more neighbors in the previous iteration will die, as if from overpopulation
-A dead square with exactly 3 neighbors in the previous iteration will be revived, as if by unfulfilled desires
+- A living square with 1 or less neighbors in the previous iteration will die, as if from loneliness
+- A living square with 2 or 3 neighbors in the previous iteration will survive, as if from contentment
+- A living square with 4 or more neighbors in the previous iteration will die, as if from overpopulation
+- A dead square with exactly 3 neighbors in the previous iteration will be revived, as if by unfulfilled desires
+
 Implement a square matrix of size 20 and set up the initial five (given) living squares. Then run 10 iterations on it, then print the final matrix. 0,0 should be the top left of the matrix, where the first is the row and the second is the column.
+```
 matrix size = 20
 iterations = 10
 initial squares =
 [0][0]
 [1][1]
+```
+</details>
+<details><summary>Show Answer</summary>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -334,7 +335,6 @@ vector<vector<bool>> matrix(msz, vector<bool>(msz, false));
 
 vector<int> dx = {-1, -1, -1, 0, 0, 1, 1, 1};
 vector<int> dy = {-1, 0, 1, -1, 1, -1, 0, 1};
-
 
 signed main() {
     matrix[0][0] = true;
@@ -385,29 +385,29 @@ signed main() {
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Find digits from a string( Leading zeroes doesn't get counted)
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```
 
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a string s containing lowercase lattin letters and another string p containing lowercase lattin letters and * and ?. * means any substring possibly empty. ? means any character but single.
 
 Print yes or no if both strings matches. [RegEx Matching]
 
-</summary>
-<hr>
-
 [**💻 Submit Code**](https://leetcode.com/problems/regular-expression-matching/)
+<details><summary>Show Answer</summary>
+
 ```C++
 int dp[25][25];
     bool Down(string &p,string &s, int i,int j){
@@ -449,26 +449,19 @@ bool isMatch(string s, string p) {
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 About project: What have you done in the authentication part in your project? Also how did you specify roles for different users.
-</summary>
-<hr>
+</article>
 
-```
+<article>
 
-```
-
-</details>
-
-<details>
-<summary>
 Write a function which converts decimal number to hexadecimal
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://supecoder.dev/questions/Convert%20a%20Number%20to%20Hexadecimal?questionId=66acbdc29e71a163cdcece36)
+<details><summary>Show Answer</summary>
 
 ```C++
 string decimalToHexa(int decimal){
@@ -487,14 +480,15 @@ string decimalToHexa(int decimal){
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Write a function which finds all the subset of a given set.
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/subsets/description/)
+<details><summary>Show Answer</summary>
+
 Similar to the question for finding all subset of an array
 ```C++
 vector<vector<int>> ans;
@@ -516,26 +510,22 @@ vector<vector<int>> subsets(vector<int>& nums) {
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a set of orderings of letters, determine their topological sorting order. The orderings are provided as strings. 
 For example, given the input ["A>B", "B>C", "C>D"], the expected output is "ABCD".
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
-<hr>
+<article>
 
-[**💻 Submit Code**](https://supecoder.dev/questions/Add%20Two%20Numbers%20Represented%20as%20Character%20Arrays?questionId=66acc37d9e71a163cdcee583)
 Given two numbers represented as arrays of characters in decimal format, add them and return the result in the same format.
 For example, Input: ['1', '2', '3'] and ['4', '5', '6']
 Output: Output: ['5', '7', '9']
-</summary>
-<hr>
+
+[**💻 Submit Code**](https://supecoder.dev/questions/Add%20Two%20Numbers%20Represented%20as%20Character%20Arrays?questionId=66acc37d9e71a163cdcee583)
+<details><summary>Show Answer</summary>
 
 ```C++
 vector<char> sum(vector<char> &A, vector<char> &B){
@@ -559,3 +549,5 @@ vector<char> sum(vector<char> &A, vector<char> &B){
 }
 ```
 </details>
+</article>
+
