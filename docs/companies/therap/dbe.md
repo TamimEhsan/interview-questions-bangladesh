@@ -9,29 +9,23 @@ The selection process has 4 stages,
 1. **2nd technical round:** This round is typically taken by both USA and BD team. However, the final selection is done by the US team.
 1. **HR Round:** This is the final stage before onboarding and typically deals with salary negotiation. 
 
-# Database Questions
+## Database Questions
 
-<details>
-<summary>
+<article>
+
 Design an ERD of online restaurant management system
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What is Database Transaction
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Briefly explain ACID properties
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
+
 ACID is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. Databases that support this are called ACID compliance. The properties are
 
 - **Atomicity:** Each statement in a transaction (to read, write, update or delete data) is treated as a single unit. Either the entire statement is executed, or none of it is executed.
@@ -43,79 +37,53 @@ ACID is a set of properties of database transactions intended to guarantee data 
 > Atomicity, isolation and durability are properties of the database, whereas consistency is a property of the application. The C in ACID was tossed in to make the acronym work. [ref: Martin Kleppmann, Designing Data Intensive Applications]
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What is normalization and denormalization
-</summary>
-<hr>
-[Answer] 
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Briefly explain BCNF
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain data warehousing
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain data redundancy
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Briefly mention the differences between stored procedure, function and trigger
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Briefly mention the differences between delete, drop and truncate
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Briefly mention the differences between where and having clause
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Briefly mention the differences between candidate key and super key
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 A schema has entities like CUSTOMERS, ORDERS, ORDER_ITEMS, PRODUCTS, PRODUCT_DETAILS, WAREHOUSES, INVENTORIES. Data fields of entities and cardinality relationships were given in the figure. Questions included from <>
 1. Group by, Order by, Join <>
 2. Extracting month and year from oracle dates <>
 3. Find ranks based on some criterion. The extremely hard question was - find top 10 customers based on their total amount spent in 2023. This one involved the following topics: aggregation, join of multiple tables, nested sub-query, year extraction from date. The book of Sukarna sir contains one/two such exercises. Practise them properly
+</article>
 
-</summary>
-<hr>
-[Answer]
-</details>

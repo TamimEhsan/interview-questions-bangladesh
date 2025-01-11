@@ -1,5 +1,12 @@
 # WellDev Ltd
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://www.welldev.io/ |
+| Career Website | https://www.welldev.io/careers |
+| Technologies Used| Ruby on Rails, Android, iOS, ReactJS |
+
 ## Introduction
 
 WellDev Ltd is a software company based in Zurich, Switzerland, specializing in software development and IT services. It has offices in Bangladesh (Dhaka), South Africa, Canada etc.
@@ -21,8 +28,8 @@ This round consisted of a multiple-choice questionnaire covering these topics. T
 
 Hands-On Problem Solving
 
-<details>
-<summary>
+<article>
+
 What will the output of this code in C Programming Language and why?
 
 ```C
@@ -35,18 +42,19 @@ if(&arr[0] == &arr){
 }
 ```
 
-</summary>
+<details><summary>Show Answer</summary>
 
 The name of the array is a pointer to the first item of the Array.
 So it will print "They are the same!"
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an array, what will be the base address if we print the array name only (e.g., printf(ara))?
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
+
 It will print the address of the first item of the array.
 In C, you can't pass array to functions by "Pass by value".
 So when you pass an array to an function (for example: printf(arr)),
@@ -73,49 +81,42 @@ Damn!
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
-
-```python
-arr = [1, 2, 3, 4]
-
-print(arr[2])
-
-```
+<article>
 
 What is the time complexity of the print statement?
 if it's `O(1)` why is that? Is it the same case for Linked List?
 If it's not, why it isn't the same case?
+```python
+arr = [1, 2, 3, 4]
 
-</summary>
+print(arr[2])
+```
+<details><summary>Show Answer</summary>
 
 `Tip:`
 Learn about stack and heap memory and their use cases when memory is allocated.
 Learn about compile time and runtime memory allocation.
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Can we run binary search on a sorted LinkedList? If we can, what issues we might face?
-</summary>
-<hr>
+<details><summary>Show Hint</summary>
 
-`Hint:`
 Think about how and why arrays can be divided easily but LinkedList can't be.
-
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Write a code to delete the middle element of a stack without using any additional data structure while preserving the original order. Input: [1, 2, 3, 4, 5]. Output: [1, 2, 4, 5]
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
 
 ```python
 def fn(n):
@@ -131,10 +132,8 @@ Given the above function, rename the function according to what the function tri
 Write the same function but in a iterative manner.
 Does the both implementations have same Time Complexity and Space Complxity?
 
-</summary>
-<hr>
+<details><summary>Show Hint</summary>
 
-`Hint and Tips:`
 Write down the stack trace of the recursive function and try to speak aloud while doing so.
 After getting what the function returns, rename the function accordingly.
 
@@ -143,9 +142,10 @@ However, think deeply about the fundamental difference between the two implement
 One of the implementation uses a Data structure, one doesn't. So their space complexity won't be same.
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What is the time complexity of the following code?
 
 ```C
@@ -157,44 +157,37 @@ int fun(int n) {
 }
 ```
 
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain the order of SQL query execution (e.g., FROM, WHERE, GROUP BY, HAVING, SELECT).
-</summary>
-<hr>  
-</details>
 
-<details>
-<summary>
+</article>
+
+<article>
+
 Given a table with redundant data in multiple columns, how would you optimize it? (Hint: Normalization)
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a Java code, identify issues that violate access modifiers.
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain the basic concepts of Object-Oriented Programming (OOP).
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What are the ACID properties in DBMS?
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
+
 ACID is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. Databases that support this are called ACID compliance. The properties are
 
 - **Atomicity:** Each statement in a transaction (to read, write, update or delete data) is treated as a single unit. Either the entire statement is executed, or none of it is executed.
@@ -206,111 +199,85 @@ ACID is a set of properties of database transactions intended to guarantee data 
 > Atomicity, isolation and durability are properties of the database, whereas consistency is a property of the application. The C in ACID was tossed in to make the acronym work. [ref: Martin Kleppmann, Designing Data Intensive Applications]
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 A basic GRE-like math question.
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Write a SQL query to show all the duplicate rows in a table.
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Can we make a stack with a queue?
-</summary>
-<hr>
+<details><summary>Show Hint</summary>
 
-`Hint:`
 Think multiple queue.
-
 </details>
+</article>
 
 ## Second Round Questions
 
-<details>
-<summary>
+<article>
+
 Write an API call to check whether the system is running properly and explain a GET API call.
-</summary>
-<hr>  
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Write a code to create a directory and a text file inside it with “Hello World” written.
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What happens if two people try to reserve the same ticket simultaneously in a ticket reservation system? How would you solve this problem in a ticket management system? What will be your idea in this regard?
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 How many APIs are required to solve the above ticket reservation problem?
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 How can passwords be secured so that no one (even the administrator) can view them? How can password hashing be strengthened? What techniques do you know? (Hint: Salting and hashing techniques)
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What is a trigger in DBMS, and what does cascading mean?
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 If we need to display a large amount of data on a website, what technique should be followed? (Hint: Pagination)
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What happens when we browse a website? How are the contents rendered?
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What is the difference between SQL and NoSQL?
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 For storing values from cache memory to RAM, should we use SQL or NoSQL?
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
+<details><summary>Show Answer</summary>
 
 ::: code-group
 
@@ -396,56 +363,44 @@ int main(){
 :::
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 You have a 100-story building, and two marbles. A marble will break if dropped from a certain height (from any floor). Find the highest floor you can lift by dropping or utilizing exactly two marbles.
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a table with product_id, price, and product_name, write a query to find products with the same price.
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What is the difference between DELETE, TRUNCATE, and DROP in SQL?
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Explain threading in OOP.
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 How do you check for changes in a database?
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Many questions from my CV (all practical, not just asking what you have done).
-</summary>
-<hr>
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/move-zeroes/description/)
+<details><summary>Show Answer</summary>
 
 ```C++
 void moveZeroes(vector<int>& nums) {
@@ -458,6 +413,7 @@ void moveZeroes(vector<int>& nums) {
 ```
 
 </details>
+</article>
 
 ## Contributors
 

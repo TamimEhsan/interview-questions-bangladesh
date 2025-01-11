@@ -1,8 +1,14 @@
 # Kite Games Studio
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://www.kitegamesstudio.com/ |
+| Career Website | https://www.kitegamesstudio.com/ |
+| Technologies Used| Swift, React, Kotline, PyTorch |
+
 ## Introduction
 [Kite Games Studio (KGS)](https://www.kitegamesstudio.com/), founded in 2014, is a leading mobile application development firm in Bangladesh. Based in Mohakhali DOHS, Dhaka, KGS specializes in developing software for both iOS and Android platforms, along with building websites. The company is known for its emphasis on competitive programming skills, making it an excellent choice for talented **competitive programmers** looking to join a dynamic and innovative team.
-
 
 ## Interview Stages
 
@@ -12,13 +18,12 @@
 
 ## Technical Round Questions
 
-<details>
-<summary>
-A permutation P is good if P[i] % i == 0 or i % P[i] == 0 for 1 ≤ i ≤ N. Given N ≤ 20, count the number of good permutations.
-</summary>
-<hr>
+<article>
 
-**Solution:** The final solution uses Bitmask DP to efficiently count the number of good permutations that satisfy the given condition.
+A permutation P is good if P[i] % i == 0 or i % P[i] == 0 for 1 ≤ i ≤ N. Given N ≤ 20, count the number of good permutations.
+<details><summary>Show Answer</summary>
+
+The final solution uses Bitmask DP to efficiently count the number of good permutations that satisfy the given condition.
 
 ```cpp
 #include <iostream>
@@ -58,13 +63,12 @@ int main() {
 }
 ```
 </details>
+</article>
 
+<article>
 
-<details>
-<summary>
 Design a data structure to add integers and remove the most frequent element, with ties broken by recency.
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 Design a data structure that supports the following two operations:
 
@@ -128,22 +132,25 @@ int main() {
 }
 ```
 </details>
+</article>
 
-<details> 
-<summary>
+<article>
+ 
+
 What are the main concepts of OOP? 
-</summary> 
-<hr>
+<details><summary>Show Answer</summary>
+ 
+
 The main concepts of Object-Oriented Programming (OOP) are:
 Abstraction, Inheritance, Encapsulation, Polymorphism.
-</details> 
+</details>
+</article>
+ 
 
+<article>
 
-<details>
-<summary>
 Implement the Singleton pattern.
-</summary>
-<hr>
+<details><summary>Show Interaction</summary>
 
 To provide better understanding, here’s how the discussion typically goes. The questions aren't directly asked; instead, they are discussed in the context of a coding problem or a concept. (I am sharing real experience of mine):
 
@@ -156,6 +163,9 @@ To provide better understanding, here’s how the discussion typically goes. The
 **Interviewer:** The process you described has a specific name in design patterns. Do you recall what it's called?  
 **Candidate:** Sorry, I don't know the name.  
 **Interviewer:** It's called the Singleton pattern.
+</details>
+
+<details><summary>Show Answer</summary>
 
 **Solution:** Below is the implementation of the Singleton pattern in Java:
 
@@ -212,16 +222,16 @@ func getInstance() *single {
 > [!WARNING] 
 > The given single threaded implementation of the singleton pattern though widely popular, is not thread-safe. If a multithreaded application were to get the connection, there is a chance that the connection is initialized multiple times. Ask the interviewer to make sure if they want it to be thread-safe. You can check this [wikipedia section](https://en.wikipedia.org/wiki/Double-checked_locking#Usage_in_Java) if you want to learn more.
 </details>
+</article>
 
 ## Online Round Questions
 
-<details>
-<summary>
-You're at a buffet with various food items. Each food item has a deliciousness factor and nutrient values. You need to maximize the total deliciousness of the foods you eat. Additionally, for health reasons, each nutrient value must occur in an odd number of food items.
-</summary>
-<hr>
+<article>
 
-[A. Time for a Treat](https://toph.co/c/recruitment-contest-by-kite-games-studio)
+You're at a buffet with various food items. Each food item has a deliciousness factor and nutrient values. You need to maximize the total deliciousness of the foods you eat. Additionally, for health reasons, each nutrient value must occur in an odd number of food items.
+
+[**💻 Submit Code**](https://toph.co/c/recruitment-contest-by-kite-games-studio)
+<details><summary>Show Answer</summary>
 
 **Solution:** 
 
@@ -282,15 +292,14 @@ int32_t main() {
 
 ```
 </details>
+</article>
 
+<article>
 
-<details>
-<summary>
 You have a 2D grid representing a village. 'X' denotes farmer-owned land, and '.' denotes government-owned land. Connected 'X' areas belong to the same farmer. If two connected 'X' areas match under any 90° rotation, they also belong to the same farmer. Count the number of unique farmers in the village.
-</summary>
-<hr>
 
-[B. Farmers](https://toph.co/c/recruitment-contest-by-kite-games-studio)
+[**💻 Submit Code**](https://toph.co/c/recruitment-contest-by-kite-games-studio)
+<details><summary>Show Answer</summary>
 
 **Solution:** 
 ```cpp
@@ -429,16 +438,14 @@ int32_t main() {
 
 ```
 </details>
+</article>
 
+<article>
 
-
-<details>
-<summary>
 You need to write a program to simulate a Linux terminal on an old computer. You'll be given commands like "mkdir", "ls", "rm", "pwd", and "cd", and you need to simulate their behavior, printing the appropriate output or error messages.
-</summary>
-<hr>
 
-[C. Directory Specialist](https://toph.co/c/recruitment-contest-by-kite-games-studio)
+[**💻 Submit Code**](https://toph.co/c/recruitment-contest-by-kite-games-studio)
+<details><summary>Show Answer</summary>
 
 **Solution:** 
 ```cpp
@@ -541,31 +548,21 @@ int32_t main() {
 
 ```
 </details>
+</article>
 
+<article>
 
-<details>
-<summary>
 You have a 2D grid representing a field with crop fields and godowns. Harvesters start at godowns and collect crops from fields, bringing them back to their godown. The first harvester must collect from a specific number of fields. You need to calculate the minimum total time for all harvesters to collect all crops.
-</summary>
-<hr>
 
-[D. Crop Harvesting](https://toph.co/c/recruitment-contest-by-kite-games-studio)
+[**💻 Submit Code**](https://toph.co/c/recruitment-contest-by-kite-games-studio)
+</article>
 
-**Solution:** 
+<article>
 
-```cpp
-
-
-```
-</details>
-
-<details>
-<summary>
 You have a list of unique strings and an empty list. You'll be given queries to add strings to the empty list, delete strings from it, and count the number of strings between two given strings in the list after sorting it.
-</summary>
-<hr>
 
-[E. A Simple String Problem](https://toph.co/c/recruitment-contest-by-kite-games-studio)
+[**💻 Submit Code**](https://toph.co/c/recruitment-contest-by-kite-games-studio)
+<details><summary>Show Description</summary>
 
 You are given a list <i>L</i> of <i>N</i> unique strings and an initially empty list <i>P</i>. You need to process <i>Q</i> queries of the following types:
 
@@ -580,6 +577,9 @@ You are given a list <i>L</i> of <i>N</i> unique strings and an initially empty 
 * **1 ≤ Q ≤ 10<sup>5</sup>** - Number of queries.
 * For **add i f** and **delete i f** queries: **1 ≤ i ≤ N** and **1 ≤ f ≤ 10<sup>5</sup>**.
 * For **count i j** queries: **1 ≤ i ≤ N** and **1 ≤ j ≤ N**.
+
+</details>
+<details><summary>Show Answer</summary>
 
 **Solution:** 
 
@@ -624,7 +624,6 @@ info merge(info x, info y){
     temp.sum=x.sum+y.sum;
     return temp;
 }
-
 
 void build(int node, int l,int r)
 {
@@ -754,3 +753,5 @@ int32_t main() {
 
 ```
 </details>
+</article>
+

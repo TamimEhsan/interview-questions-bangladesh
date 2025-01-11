@@ -1,5 +1,12 @@
 # IQVIA
 
+| <img width="441" height="1"> | <img width="441" height="1"> |
+| :-| :- |
+| Founding year | |
+| Company Website | https://www.iqvia.com/ |
+| Career Website | https://jobs.iqvia.com/en/search-jobs |
+| Technologies Used| .Net, Python, Javascript, Angular |
+
 ## Introduction
 [IQVIA](https://www.iqvia.com/) is an American Fortune 500 and S&P 500 multinational company serving the combined industries of health information technology and clinical research. They hire professionals from Bangladesh as remote.
 ## Interview Stages
@@ -13,13 +20,12 @@ Then if selected there will be a technical interview.
 
 ## Questions
 
-<details>
-<summary>
+<article>
+
 Given a string of lowercase characters. Find the count of characters which only occured once in the string.
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://supecoder.dev/questions/Count%20of%20Characters%20Occurring%20Exactly%20Once?questionId=66ae165b9e71a163cdd21527)
+<details><summary>Show Answer</summary>
 
 ```C++
 int solve(string s) {
@@ -38,12 +44,12 @@ int solve(string s) {
 }
 ```
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given n,Find all primes less than equal n.
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ::: code-group
 ```C++ [O(n^2)]
@@ -73,12 +79,12 @@ vector<int> solve(int n) {
 ```
 :::
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given coordinates x,y and radius r of two circle. Find the area of intersection between them. Print area in double with 6 digit precision.
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```C++
 // src: https://www.geeksforgeeks.org/area-of-intersection-of-two-circles/
@@ -118,15 +124,15 @@ intersectionArea(long double X1, long double Y1,
 
 ```
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a list of ranges. Find the length covered by at least one of the range. <br>
 input: [[1,3],[2,5],[6,7]] <br>
 output: 5 <br>
 explanation: range [1,5],[6,7] are covered by at least one range
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```C++
 int solve(vector<pair<int,int>> ranges) {
@@ -147,28 +153,22 @@ int solve(vector<pair<int,int>> ranges) {
 }
 ```
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Sort array elements by their frequency and in case of tie, keep the order they arrive in the original array.
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given the connection between cities, Count the number of disjoint clusters of cities.
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a string of characters S and a specific character C. Find the number of occurance of C in S.
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 ```C++
 int solve(string s, char c) {
@@ -178,64 +178,50 @@ int solve(string s, char c) {
 }
 ```
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a range [l,r]. Find all primes between this range. 
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given two binary string A,B. Find the minimum number of bit flips to change string A to string B.
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 2 shops sell apples in lots. their price is given. You cannot buy any loose apples. find minimum cost of buying exactly n apples.
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an integer array. Sort the array in nondecreasing order using frequency count of elements in the array. 
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an array of thresholds. For each threshold print the first negative number.
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 What happens when you type google.com and press enter in your search bar
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
 
 This is a very important question and aims to check the knowledge of networking. A very thorough explanation of this question is answered here in [What Happens When](https://github.com/alex/what-happens-when)
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/valid-parentheses/)
+<details><summary>Show Answer</summary>
+
 ```C++
 bool isValid(string s) {
     stack<char> st;
@@ -259,15 +245,16 @@ bool isValid(string s) {
 ```
 
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
 Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police
-</summary>
-<hr>
 
 [**💻 Submit Code**](https://leetcode.com/problems/house-robber/)
+<details><summary>Show Answer</summary>
+
 ```C++
 int rob(vector<int>& nums) {
     int n = nums.size();
@@ -283,35 +270,37 @@ int rob(vector<int>& nums) {
 }
 ```
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Input given is an int array, which may or may not contain positive, negative or zero values. Write a program to find out the two numbers which gives the highest product. 
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
+
 https://www.geeksforgeeks.org/return-a-pair-with-maximum-product-in-array-of-integers/
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an array having 0 to n-1 unsorted. Return a new array having their indices 
-</summary>
-<hr>
-[Answer]
-</details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given two strings, find the number of times the second string occurs in the first string, whether continuous or discontinuous. 
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
+
 https://www.geeksforgeeks.org/find-number-times-string-occurs-given-string/
 </details>
+</article>
 
-<details>
-<summary>
+<article>
+
 Given an array of positive integers. We need to make the given array a ‘Palindrome’. The only allowed operation is”merging” (of two adjacent elements). Merging two adjacent elements means replacing them with their sum. The task is to find the array of maximum length with the minimum number of merge operations required to make the given array a ‘Palindrome’. 
-</summary>
-<hr>
+<details><summary>Show Answer</summary>
+
 https://www.geeksforgeeks.org/find-minimum-number-of-merge-operations-to-make-an-array-palindrome/
 </details>
+</article>
+

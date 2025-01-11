@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
-
+import companiesMap from "./sitemap/companies.mjs";
+import notesMap from "./sitemap/notes.mjs";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Interview BD",
@@ -12,48 +13,16 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Questions", link: "/general" },
+      { text: 'Home', link: '/' },
+      { text: 'Companies', link: '/companies/general', activeMatch:'/companies/' },
+      { text: 'Notes', link: '/notes/general', activeMatch:'/notes/' }
+      
     ],
 
-    sidebar: [
-      {
-        items: [
-          { text: "General Guidelines", link: "/general" },
-          { text: 'Before Application', link: "/beforeapplying" },
-          { text: "Chaldal", link: "/chaldal" },
-          { text: "Bevy Commerce", link: "/bevycommerce" },
-          { text: 'Brain Station 23 <span class="VPBadge warning">updated</span>', link: "/bs23" },
-          { text: "DSI", link: "/dsi" },
-          { text: "Exabyting", link: "/exabyting" },
-          { text: 'Fringecore <span class="VPBadge tip">new</span>', link: "/fringecore" },
-          { text: 'Inverse AI <span class="VPBadge warning">updated</span>', link: "/inverseai" },
-          { text: "IQVIA", link: "/iqvia" },
-          { text: "Priyo", link: "/priyo" },
-          { text: "Kite Games Studio", link: "/kite" },
-          { text: "Orbitax", link: "/orbitax" },
-          { text: "Optimizely", link: "/optimizely" },
-          { text: "Relisource", link: "/relisource" },
-          { text: "RoBenDevs", link: "/robendevs" },
-          { text: "Spectrum", link: "/spectrum" },
-          { text: "SRBD", link: "/srbd" },
-          { text: "Synesis IT", link: "/synesis" },
-          {
-            text: "Therap BD",
-            link: "/therap/",
-            items: [
-              { text: 'Software Engineer <span class="VPBadge warning">updated</span>', link: "/therap/swe.md" },
-              { text: "Database Engineer", link: "/therap/dbe.md" },
-            ],
-          },
-          { text: "WSD", link: "/wsd" },
-          { text: "WellDev", link: "/welldev" },
-        ],
-      },
-      {
-        items: [{ text: "CSE competitions", link: "/competitions" }],
-      },
-    ],
+    sidebar: {
+      '/companies/' : {base:'/companies/', items: companiesMap},
+      '/notes/' : {base:'/notes/', items: notesMap},
+    },
 
     socialLinks: [
       {
