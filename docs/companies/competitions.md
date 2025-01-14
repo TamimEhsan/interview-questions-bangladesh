@@ -73,8 +73,19 @@ If there are any mistakes that needs to be corrected create a pull request or ra
 
 | Name| Organizer | Prizes | Extra Info |
 | -- | -- | -- | -- |
-| **Flag Hunt 2022** | CTF Community Bangladesh |  ||
-| [MIST LEETCON](https://leetcon.org/) | MIST| 500K BDT+ ||
+| Flag Hunt | CTFBD |  ||
+| MIST LEETCON | MIST| 500K BDT+ ||
+| BUET CSE Fest - CTF | BUET CSE Dept | ||
+| IUT ICT Fest - CTF | IUT |  ||
+| KnightCTF | Knight Squad |  ||
+| National Cyber Drill | BGD e-GOV CIRT |  ||
+| BCS ICT FEST - CTF | Bangladesh Computer Society |  ||
+| Phoenix Summit - CTF | Team Phoenix |  ||
+| EHT CTF | EHT Comminuty |  ||
+| SMP Cyber Security Expo - CTF | SMP Cyber Security Ltd |  ||
+| EWU National Robofest - CTF | EWU Robotics Club |  ||
+
+
 
 ## Poster Presentations
 
