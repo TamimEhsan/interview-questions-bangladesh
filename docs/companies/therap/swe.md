@@ -1,3 +1,10 @@
+---
+description: Therap Software Engineer interview questions, Therap Software Engineer interview stages, Therap Software Engineer interview details, Therap Software Engineer interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/therap/swe
+---
 # Therap Software Engineer
 
 ## Interview Stages

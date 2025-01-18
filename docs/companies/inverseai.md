@@ -1,3 +1,10 @@
+---
+description: Inverse AI interview questions, Inverse AI interview stages, Inverse AI interview details, Inverse AI interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/inverseai
+---
 # Inverse.Ai
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

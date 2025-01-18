@@ -1,3 +1,10 @@
+---
+description: Therap interview questions, Therap interview stages, Therap interview details, Therap interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/therap
+---
 # Therap
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

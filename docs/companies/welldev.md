@@ -1,3 +1,10 @@
+---
+description: Welldev interview questions, Welldev interview stages, Welldev interview details, Welldev interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/welldev
+---
 # WellDev Ltd
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

@@ -1,3 +1,10 @@
+---
+description: Synesis IT interview questions, Synesis IT interview stages, Synesis IT interview details, Synesis IT interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/synesis
+---
 # Synesis IT
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

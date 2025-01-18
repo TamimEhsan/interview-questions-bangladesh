@@ -1,3 +1,10 @@
+---
+description: Chaldal interview questions, Chaldal interview stages, Chaldal interview details, Chaldal interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/chaldal
+---
 # Chaldal
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

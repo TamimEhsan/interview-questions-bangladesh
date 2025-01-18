@@ -1,3 +1,10 @@
+---
+description: Fringecore interview questions, Fringecore interview stages, Fringecore interview details, Fringecore interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/fringecore
+---
 # Fringecore
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

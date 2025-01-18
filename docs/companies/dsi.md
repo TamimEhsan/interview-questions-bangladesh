@@ -1,3 +1,10 @@
+---
+description: DSI interview questions, DSI interview stages, DSI interview details, DSI interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/dsi
+---
 # DSI
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

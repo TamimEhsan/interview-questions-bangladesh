@@ -1,10 +1,11 @@
+---
+description: How to apply to a company for a job, what to do before applying, how to prepare for interviews, how to handle job offers and more.
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/beforeapplying
+---
 # How to Apply to a Company
-<!-- Hello chotto bondhura
-Tamim here from batch 18. I am not in this group anymore but I think I need to post one last(?) thing here. 
-What should you do before applying for a job at a company?
-
-I can’t recall if I’ve shared something on this topic before, but recently, I came across some CVs that were missing some essential elements. So, here I go again. This is a long post, but please try to follow as much as possible. These are tips based on my experience as both an applicant and a recruiter. -->
-
 Job hunting can often feel overwhelming, especially if you're just starting out or trying to make a significant career move. Over the years, I’ve learned a lot about what works—and what doesn’t—when applying for jobs, both as an applicant and a recruiter.
 
 In this post, I’ll share a step-by-step guide to help you navigate the process, from building a standout resume to preparing for interviews and handling job offers. Whether you’re a fresh graduate or someone looking to refine their approach, these tips are designed to make your journey smoother and more successful.

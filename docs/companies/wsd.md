@@ -1,3 +1,10 @@
+---
+description: WSD interview questions, WSD interview stages, WSD interview details, WSD interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/wsd
+---
 # WSD
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

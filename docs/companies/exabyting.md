@@ -1,3 +1,10 @@
+---
+description: Exabyting interview questions, Exabyting interview stages, Exabyting interview details, Exabyting interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/exabyting
+---
 # Exabyting
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

@@ -1,3 +1,10 @@
+---
+description: Optimizely interview questions, Optimizely interview stages, Optimizely interview details, Optimizely interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/optmizely
+---
 # Optimizely Bangladesh
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

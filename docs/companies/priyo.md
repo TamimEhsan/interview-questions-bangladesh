@@ -1,4 +1,11 @@
-# Priyo
+---
+description: Priyo sys interview questions, Priyo sys interview stages, Priyo sys interview details, Priyo sys interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/priyo
+---
+# Priyo sys
 
 | <img width="441" height="1"> | <img width="441" height="1"> |
 | :-| :- |

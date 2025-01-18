@@ -1,3 +1,10 @@
+---
+description:  interview questions,  interview stages,  interview details,  interview question and answers, interview questions bangladesh, resume writing, linked in, portfolio, website stats
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/general
+---
 # General Guidelines
 
 ## Projects and Thesis

@@ -1,3 +1,10 @@
+---
+description: IQVIA interview questions, IQVIA interview stages, IQVIA interview details, IQVIA interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/iqvia
+---
 # IQVIA
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

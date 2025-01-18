@@ -1,3 +1,10 @@
+---
+description: Samsung Research Bangladesh interview questions, Samsung Research Bangladesh interview stages, Samsung Research Bangladesh interview details, Samsung Research Bangladesh interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/srbd
+---
 # SRBD
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

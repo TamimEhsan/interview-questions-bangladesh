@@ -1,3 +1,10 @@
+---
+description: Orbitax interview questions, Orbitax interview stages, Orbitax interview details, Orbitax interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/orbitax
+---
 # Orbitax Bangladesh Limited 
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

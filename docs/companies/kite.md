@@ -1,3 +1,10 @@
+---
+description: Kite Games Studio interview questions, Kite Games Studio interview stages, Kite Games Studio interview details, Kite Games Studio interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/kite
+---
 # Kite Games Studio
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

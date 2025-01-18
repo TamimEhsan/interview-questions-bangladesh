@@ -1,3 +1,10 @@
+---
+description: Spectrum Software interview questions, Spectrum Software interview stages, Spectrum Software interview details, Spectrum Software interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/spectrum
+---
 # Spectrum
 
 | <img width="441" height="1"> | <img width="441" height="1"> |

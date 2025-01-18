@@ -1,3 +1,10 @@
+---
+description: Therap Database Engineer interview questions, Therap Database Engineer interview stages, Therap Database Engineer interview details, Therap Database Engineer interview question and answers
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/therap/dbe
+---
 # Therap Database Engineer
 
 ## Interview Stages

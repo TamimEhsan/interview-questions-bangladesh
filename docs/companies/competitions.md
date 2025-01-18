@@ -1,3 +1,10 @@
+---
+description: Competitions for CSE Students of Bangladesh
+head:
+  - - link
+    - rel: canonical
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/competitions
+---
 # Competitions for CSE Students
 
 Some of the competitions that a CSE Student of Bangladesh can participate during his undergrad life. Some of them allow students below undergrad or above it too.
