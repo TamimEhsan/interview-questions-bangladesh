@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import companiesMap from "./sitemap/companies.mjs";
 import notesMap from "./sitemap/notes.mjs";
+import rewrites from "./sitemap/rewrites.mjs";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Interview BD",
@@ -10,6 +11,7 @@ export default defineConfig({
   // description: "Crowd sourced collection of interview questions of different BD tech companies",
   base: "/interview-questions-bangladesh/",
   cleanUrls: true,
+  rewrites,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
