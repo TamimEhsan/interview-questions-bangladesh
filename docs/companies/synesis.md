@@ -17,7 +17,31 @@ head:
 ## Introduction
 Synesis takes a on campus written test first. The questions contain some coding problem, Database, writting sql, OOP etc
 The second stage is face to face interview
-## Questions
+
+## On Campus Written Test
+
+<article>
+
+Given a list of courses you have to take and a list of prerequisites, return the order in which you have to take the courses. If it is not possible to take all the courses return an empty list.
+
+[**💻 Submit Code**](https://leetcode.com/problems/course-schedule-ii)
+</article>
+
+<article>
+
+Given an integer array of size n, find all elements that appear more than `⌊n/3⌋` times.
+
+[**💻 Submit Code**](https://leetcode.com/problems/majority-element-ii)
+</article>
+
+<article>
+
+Given string num representing a non-negative integer `num`, and an integer `k`, return the smallest possible integer after removing `k` digits from num.
+
+[**💻 Submit Code**](https://leetcode.com/problems/remove-k-digits)
+</article>
+
+## Behavioral Questions
 <article>
 
 How would you manage your team if some teammate doesn't cooperate or doesn't contribute?
