@@ -19,7 +19,7 @@ const companiesMap = [
         { text: "RoBenDevs", link: "/robendevs" },
         { text: "Spectrum", link: "/spectrum" },
         { text: "SRBD", link: "/srbd" },
-        { text: "Synesis IT", link: "/synesis" },
+        { text: 'Synesis IT <span class="VPBadge warning">updated</span>', link: "/synesis" },
         {
           text: "Therap BD",
           link: "/therap/",
