@@ -43,6 +43,10 @@ Which sorting algorithm works better in the average case?
 <article>
 
 Suppose, you have to sort 1000 numbers, numbers can be positive and negative. Which algorithm will you use?
+<details><summary>Show Answer</summary>
+
+We can use merge sort to sort the 1000 numbers. Merge sort has a time complexity of `O(nlogn)` in the worst case. It is a stable sorting algorithm and works well with large and medium datasets. Merge sort is a divide and conquer algorithm. 
+</details>
 </article>
 
 <article>
@@ -53,11 +57,22 @@ What is Stack, Queue and Priority Queue?
 <article>
 
 Difference between Binary Tree and BST.
+<details><summary>Show Answer</summary>
+
+- **Binary Tree**:A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. 
+- **Binary Search Tree**: A binary search tree is a binary tree in which the value of the left child is less than the parent node and the value of the right child is greater than the parent node.
+
+If the binary search tree is imbalanced, then we can make it balanced by using AVL tree or Red-Black tree. These trees are self-balancing binary search trees. 
+</details>
 </article>
 
 <article>
 
 When we type a web address (www.google.com) in a web browser, what happens before we get the response?
+<details><summary>Show Answer</summary>
+
+This is a very important question and aims to check the knowledge of networking. A very thorough explanation of this question is answered here in [What Happens When](https://github.com/alex/what-happens-when)
+</details>
 </article>
 
 <article>
@@ -73,11 +88,25 @@ What are the principles of OOP and why do we use OOP?
 <article>
 
 Difference between SQL and NoSQL.
+<details><summary>Show Answer</summary>
+
+- **SQL**: Full form of SQL is Structured Query Language . SQL databases are primarily called Relational Databases (RDBMS). They use structured query language (SQL) for defining and manipulating the data. These are table-based databases. SQL databases are good for complex queries and relationships between the tables.
+- **NoSQL**: NoSQL databases are primarily called non-relational or distributed databases. They can be document-based, key-value pairs, graph databases, or wide-column stores. They have dynamic schemas for unstructured data. NoSQL databases are horizontally scalable.
+
+Read more from [Understanding SQL vs NoSQL Databases | MongoDB](https://www.mongodb.com/resources/basics/databases/nosql-explained/nosql-vs-sql)
+</details>
 </article>
 
 <article>
 
-Difference between Compiler and Interpreter. 
+Difference between Compiler and Interpreter.
+<details><summary>Show Answer</summary>
+
+- **Compiler**: A compiler translates code from a high-level programming language into machine code before the program runs.
+- **Interpreter**: An interpreter translates code written in a high-level programming language into machine code line-by-line as the code runs.
+
+To learn more about the difference between Compiler and Interpreter, read this article: [Difference between Compiler and Interpreter](https://www.geeksforgeeks.org/difference-between-compiler-and-interpreter/)
+</details>
 </article>
 
 ## First Round Questions
@@ -89,22 +118,76 @@ Explain BST.
 
 <article>
 
-Suppose, we insert [1, 2, 3, 4] this array in BST. What will it look like after insertion? What is the search complexity in this tree? What if we want to make the search complexity  O(logn)?
+Suppose, we insert `[1, 2, 3, 4]` this array in BST. What will it look like after insertion? What is the search complexity in this tree? What if we want to make the search complexity  O(logn)?
+<details><summary>Show Answer</summary>
+The tree will look like this:
+
+```
+    1
+     \
+      2
+       \
+        3
+         \
+          4
+```
+And the search complexity will be `O(n)` in this case. To make the search complexity `O(logn)`, we have to make the tree balanced. We can use AVL tree or Red-Black tree to make the tree balanced.
+</details>
 </article>
 
 <article>
 
 Left Join VS Full Join. Describe a scenario where we need to use Left Join.
+<details><summary>Show Answer</summary>
+
+![Left Join VS Full Join](https://thecrazyprogrammer.com/wp-content/uploads/2019/05/Joins-in-SQL-Inner-Outer-Left-and-Right-Join.jpg)
+Here are the different types of the JOINs in SQL:
+
+- **(INNER) JOIN**: Returns records that have matching values in both tables.
+- **LEFT (OUTER) JOIN**: Returns all records from the left table, and the matched records from the right table. The result is NULL from the right side if there is no match
+- **RIGHT (OUTER) JOIN**: Returns all records from the right table, and the matched records from the left table. The result is NULL from the left side when there is no match
+- **FULL (OUTER) JOIN**: Returns all records when there is a match in either left or right table.
+
+A scenario where we need to use Left Join is when we want to get all the records from the left table and the matched records from the right table. For example, we have two tables, one is the `students` table and another is the `marks` table. We want to get all the students' information and their marks. If a student has no marks, then we want to show `NULL` in the marks column. In this case, we will use Left Join. The SQL query will look like this:
+
+```sql
+SELECT students.name, marks.marks
+FROM students
+LEFT JOIN marks ON students.id = marks.student_id;
+```
+
+</details>
 </article>
 
 <article>
 
 Describe the ACID properties of the database.
+<details><summary>Show Answer</summary>
+
+ACID is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. Databases that support this are called ACID compliance. The properties are
+
+- **Atomicity:** Each statement in a transaction (to read, write, update or delete data) is treated as a single unit. Either the entire statement is executed, or none of it is executed.
+- **Consistency:** Ensures the databases remain consistent following some predefined business logic both before and after the transaction
+- **Isolation:** Each transaction executes in such a way that one is not affected by other s though they were occurring only one.
+- **Durability:** The data changes by a successfull transaction is saved even in the event of system failure
+
+> [!IMPORTANT]
+> Atomicity, isolation and durability are properties of the database, whereas consistency is a property of the application. The C in ACID was tossed in to make the acronym work. [ref: Martin Kleppmann, Designing Data Intensive Applications]
+
+</details>
 </article>
 
 <article>
 
 Describe the indexing of the database. Can we index with a column that has duplicate elements?
+<details><summary>Show Answer</summary>
+
+Indexing is a data structure technique that is used to quickly locate and access the data in a database. it is created mainly using B+ trees. 
+
+If a column has duplicate elements, then we can still create index on that column. 
+
+Read more from [What is Indexing in Database? | Medium](https://medium.com/@rtawadrous/introduction-to-database-indexes-9b488e243cc1)
+</details> 
 </article>
 
 <article>
@@ -151,12 +234,26 @@ Explain the event loop. Have you ever seen the implementations of libuv?
 
 <article>
 
-Explain var, let, const.
+Explain var, let, const in JavaScript.
+<details><summary>Show Answer</summary>
+
+- **let**: Block-scoped and can be reassigned. 
+- **var**: Function-scoped and can be reassigned. 
+- **const**: Block-scoped and cannot be reassigned
+
+Read more from [Var, Let, and Const – What's the Difference? | FreeCodeCamp](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)
+</details>
 </article>
 
 <article>
 
 Explain hoisting.
+<details><summary>Show Answer</summary>
+
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope before code execution. This means that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
+
+Read more from [JavaScript Hoisting Explained | DigitalOcean](https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript)
+</details>
 </article>
 
 <article>
@@ -172,6 +269,16 @@ Explain closure. The inner function (which is returned) of the closure has acces
 <article>
 
 What is a pure function?
+<details><summary>Show Answer</summary>
+
+A pure function is a function where the return value is determined by its input values, without observable side effects. This is how a pure function works:
+
+- The function always returns the same result if the same arguments are passed in.
+- The function does not depend on any state, or data, change during its execution.
+- The function does not modify any state, or data, outside of its scope.
+
+Read more from [Pure Functions in JavaScript | Medium]https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976)
+</details>
 </article>
 
 <article>
@@ -182,21 +289,55 @@ Do you follow any functional programming philosophy?
 <article>
 
 Explain the ACID properties of the database.
+<details><summary>Show Answer</summary>
+
+ACID is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. Databases that support this are called ACID compliance. The properties are
+
+- **Atomicity:** Each statement in a transaction (to read, write, update or delete data) is treated as a single unit. Either the entire statement is executed, or none of it is executed.
+- **Consistency:** Ensures the databases remain consistent following some predefined business logic both before and after the transaction
+- **Isolation:** Each transaction executes in such a way that one is not affected by other s though they were occurring only one.
+- **Durability:** The data changes by a successfull transaction is saved even in the event of system failure
+
+> [!IMPORTANT]
+> Atomicity, isolation and durability are properties of the database, whereas consistency is a property of the application. The C in ACID was tossed in to make the acronym work. [ref: Martin Kleppmann, Designing Data Intensive Applications]
+
+</details>
 </article>
 
 <article>
 
 Explain indexing. Why do we need indexing? What benefit does it give us?
+<details><summary>Show Answer</summary>
+
+Indexing is a data structure technique that is used to quickly locate and access the data in a database. it is created mainly using B+ trees. 
+
+Indexing is important because it helps to speed up the retrieval of data from the database. It is used to quickly locate and access the data in a database. Without an index, the database engine has to scan the entire table to find the data. This can be very slow if the table is large. However, creating an unnecessary index can slow down the database system because the database engine has to update the index every time the table is updated.
+
+Read more from [What is Indexing in Database? | Medium](https://medium.com/@rtawadrous/introduction-to-database-indexes-9b488e243cc1)
+</details> 
 </article>
 
 <article>
 
 Suppose, we want to use user_email as index. How can we do it?
+<details><summary>Show Answer</summary>
+
+```sql
+CREATE INDEX user_email_index ON users (user_email);
+```
+</details>
 </article>
 
 <article>
 
 Explain tree, binary tree, binary search tree. In a binary search tree, if the tree is imbalanced, then how can we make it balanced?
+<details><summary>Show Answer</summary>
+
+- **Binary Tree**:A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. 
+- **Binary Search Tree**: A binary search tree is a binary tree in which the value of the left child is less than the parent node and the value of the right child is greater than the parent node.
+
+If the binary search tree is imbalanced, then we can make it balanced by using AVL tree or Red-Black tree. These trees are self-balancing binary search trees. 
+</details>
 </article>
 
 <article>
@@ -269,6 +410,11 @@ Convert a decimal number to binary and show the output in string.
 <article>
 
 Explain JOIN and composite keys in the database.
+<details><summary>Show Answer</summary>
+
+- **JOIN**: JOIN is used to combine rows from two or more tables based on a related column between them. There are different types of JOINs in SQL, such as INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN.
+- **Composite Key**: A composite key is a combination of two or more columns in a table that can be used to uniquely identify each row in the table. A composite key is also known as a compound key.
+</details>
 </article>
 
 <article>
