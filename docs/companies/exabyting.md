@@ -78,6 +78,15 @@ This is a very important question and aims to check the knowledge of networking.
 <article>
 
 Difference between TCP and UDP.
+<details><summary>Show Answer</summary>
+
+- TCP (Transmission Control Protocol) is a connection-oriented protocol. It is used to establish a connection between two devices before transferring data. It is reliable but slower than UDP.
+- UDP (User Datagram Protocol) is a connectionless protocol. It does not establish a connection before transferring data. It is faster but less reliable than TCP.
+
+The main difference between TCP (transmission control protocol) and UDP (user datagram protocol) is that TCP is a connection-based protocol and UDP is connectionless. While TCP is more reliable, it transfers data more slowly. UDP is less reliable but works more quickly. This makes each protocol suited to different types of data transfers.
+
+Read more from [TCP vs UDP: What's the Difference? | Cloudflare](https://www.cloudflare.com/learning/ddos/glossary/tcp-vs-udp/)
+</details>
 </article>
 
 <article>
@@ -114,6 +123,10 @@ To learn more about the difference between Compiler and Interpreter, read this a
 <article>
 
 Explain BST.
+<details><summary>Show Answer</summary>
+
+**Binary Search Tree**: A binary search tree is a binary tree in which the value of the left child is less than the parent node and the value of the right child is greater than the parent node.
+</details>
 </article>
 
 <article>
@@ -363,32 +376,69 @@ Explain the difference between an array and a linked list. Tell me some use case
 <article>
 
 Explain HTTP and HTTPS. Why HTTPS? How does data transfer in HTTPS? What is used under the hood to encrypt the communication between the sender and the receiver?
+<details><summary>Show Answer</summary>
+
+- HTTP (HyperText Transfer Protocol) is a communication protocol used for transferring data between web browsers and servers. It operates over port 80 and does not encrypt data, making it vulnerable to attacks like Man-in-the-Middle (MITM). 
+- HTTPS (HyperText Transfer Protocol Secure) is the secure version of HTTP, using encryption to protect data from interception and tampering. It operates over port 443 and ensures confidentiality, integrity, and authentication.
+
+In HTTPS, data transfer is encrypted using SSL/TLS (Secure Sockets Layer / Transport Layer Security). When a user connects to a secure website, the browser and server perform an SSL/TLS handshake, exchanging encryption keys and verifying the server’s identity using an SSL certificate issued by a trusted Certificate Authority (CA). The encryption uses asymmetric cryptography (RSA, ECC) for key exchange and symmetric encryption (AES) for actual data transfer, ensuring secure communication.
+</details>
 </article>
 
 <article>
 
 Is HTTPS stateful or stateless? If stateless, then how can we browse Facebook after login once?
+<details><summary>Show Answer</summary>
+
+HTTPS itself is stateless because it follows the HTTP protocol, which does not retain session information between requests. However, websites like Facebook manage user sessions using **cookies** and **tokens** to maintain state.
+
+When we log in, the server sends a session ID (stored in a cookie) to our browser. This session ID is sent with every request, allowing the server to recognize and authenticate us. Additionally, modern web applications use JWT (JSON Web Tokens) or OAuth tokens for secure authentication and session management. This way, even though HTTPS is stateless, the session is maintained through these mechanisms.
+</details>
 </article>
 
 <article>
 
 Explain cookie-based authentication. How can we blacklist a cookie?
+<details><summary>Show Answer</summary>
+
+
+**Cookie-based authentication** is a method where a server issues a session cookie upon successful login. This cookie, stored in the user's browser, is sent with every subsequent request, allowing the server to identify the user without requiring reauthentication. The server typically stores session details in a database or in-memory store (e.g., Redis). Cookies can have attributes like HttpOnly (prevents JavaScript access), Secure (only sent over HTTPS), and SameSite (prevents CSRF attacks).
+
+#### How to Blacklist a Cookie?
+- Server-Side Invalidation – Remove the session from the database or cache, making the cookie useless.
+- Set Expiry in the Past – Send a new Set-Cookie header with an expired timestamp.
+- Revoke the Cookie via Logout – Overwrite it with an empty value.
+- Use a Token Blacklist – If using JWT, maintain a blacklist of revoked tokens.
+
+Read more from [Cookie-Based Authentication: A Comprehensive Guide | Auth0](https://auth0.com/blog/cookies-vs-tokens-definitive-guide/)
+</details>
 </article>
 
 <article>
 
 Do you know the structure of JWT? Explain. 
+<details><summary>Show Answer</summary>
+
+JWT (JSON Web Token) is a compact, URL-safe means of representing claims to be transferred between two parties. The structure of a JWT consists of three parts separated by dots: `xxxxx.yyyyy.zzzzz`
+
+- **Header**: Contains metadata about the token (e.g., type and signing algorithm).
+- **Payload**: Contains claims (e.g., user ID, role, and expiration time).
+- **Signature**: Ensures the integrity of the token and verifies that it has not been tampered with.
+
+Read more from [Introduction to JSON Web Tokens | JWT.io](https://jwt.io/introduction/)
+</details>
 </article>
 
 <article>
 
 **Problem Statement:**
-You'll be given two strings A and B, with lengths 1 <= length <= 10^6. The strings will contain only 1's and 0's. To make A a good string, you can insert B into A at any place, as many times as you want (or don't insert if you don't want). You have to print YES or NO depending on whether making A as a good string is possible.
+You'll be given two strings `A` and `B`, with lengths `1 <= length <= 10^6`. The strings will contain only `1`'s and `0`'s. To make `A` a good string, you can insert `B` into `A` at any place, as many times as you want (or don't insert if you don't want). You have to print `YES` or `NO` depending on whether making `A` as a good string is possible.
+<details><summary>Show Details</summary>
 
-**The Definition of GOOD:** A good string will never consecutively have two 1's or two 0's.
+**The Definition of GOOD:** A good string will never consecutively have two `1`'s or two `0`'s.
 
 **Input/Output:**
-The input will consist of two strings in two lines, strings A and B.
+The input will consist of two strings in two lines, strings `A` and `B`.
 
 The output must be only one word, "YES" or "NO".
 
@@ -400,6 +450,7 @@ The output must be only one word, "YES" or "NO".
 | 111<br>010       | YES    |
 | 1110011<br>01010 | NO     |
 | 1001001000<br>10 | NO     |
+</details>
 </article>
 
 <article>
