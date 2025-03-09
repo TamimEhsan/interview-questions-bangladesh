@@ -33,11 +33,22 @@ They often give job advertisements on LinkedIn. We have to apply using the Googl
 <article>
 
 Difference between Array and Linked List.
+<details><summary>Show Answer</summary>
+
+- **Array**: An array is a collection of elements of the same data type stored in contiguous memory locations. It has a fixed size and allows random access to elements using an index.
+- **Linked List**: A linked list is a data structure that consists of nodes where each node contains data and a reference (link) to the next node in the sequence. It does not require contiguous memory allocation and allows dynamic memory allocation.
+
+Read more from [Array vs Linked List | GeeksforGeeks](https://www.geeksforgeeks.org/array-vs-linked-list/)
+</details>
 </article>
 
 <article>
 
 Which sorting algorithm works better in the average case?
+<details><summary>Show Answer</summary>
+
+Merge sort and Quick sort work better in the average case. Merge sort has a time complexity of `O(nlogn)` in the worst case. Quick sort has a time complexity of `O(nlogn)` in the average case. Both are stable sorting algorithms and work well with large and medium datasets.
+</details>
 </article>
 
 <article>
@@ -52,6 +63,12 @@ We can use merge sort to sort the 1000 numbers. Merge sort has a time complexity
 <article>
 
 What is Stack, Queue and Priority Queue?
+<details><summary>Show Answer</summary>
+
+- **Stack**: A stack is a linear data structure that follows the Last In First Out (LIFO) principle. It has two main operations: push (insert) and pop (remove).
+- **Queue**: A queue is a linear data structure that follows the First In First Out (FIFO) principle. It has two main operations: enqueue (insert) and dequeue (remove).
+- **Priority Queue**: A priority queue is a data structure that stores elements based on their priority. It allows elements with higher priority to be dequeued before elements with lower priority.
+</details>
 </article>
 
 <article>
@@ -92,6 +109,17 @@ Read more from [TCP vs UDP: What's the Difference? | Cloudflare](https://www.clo
 <article>
 
 What are the principles of OOP and why do we use OOP?
+<details><summary>Show Answer</summary>
+
+The four main principles of Object-Oriented Programming (OOP) are:
+
+- **Encapsulation** – Bundling data and methods within a class while restricting direct access to some details.
+- **Abstraction** – Hiding implementation details and exposing only essential functionalities.
+- **Inheritance** – Enabling a class to derive properties and behavior from another class.
+- **Polymorphism** – Allowing a single interface to represent different data types or methods (e.g., method overloading and overriding).
+
+OOP is used to model real-world entities and relationships in software development. It promotes code reusability, modularity, and maintainability by organizing code into classes and objects. OOP also supports concepts like inheritance, polymorphism, and encapsulation, making it easier to manage complex systems.
+</details>
 </article>
 
 <article>
@@ -272,6 +300,13 @@ Read more from [JavaScript Hoisting Explained | DigitalOcean](https://www.digita
 <article>
 
 Explain primitive and reference data types.
+<details><summary>Show Answer</summary>
+
+- **Primitive Data Types**: Primitive values are data that are stored directly in a variable. These include numbers, booleans, strings, null, and undefined. When we assign a primitive value to a variable, a copy of that value is created and stored in memory. Any changes made to the variable do not affect the original value.
+- **Reference Data Types**: Reference values, on the other hand, are objects that are stored in memory and accessed through a reference. These include arrays, objects, and functions. When we assign a reference value to a variable, a reference to the original value is created and stored in memory. Any changes made to the variable affect the original value.
+
+Read more from [JavaScript Primitive Values vs Reference Values | FreeCodeCamp](https://www.freecodecamp.org/news/javascript-assigning-values-vs-assigning-references/)
+</details>
 </article>
 
 <article>
@@ -356,16 +391,36 @@ If the binary search tree is imbalanced, then we can make it balanced by using A
 <article>
 
 Explain the map, unordered_map and their complexity. Why does the complexity of the unordered_map go to O(n) in some cases?
+<details><summary>Show Answer</summary>
+
+- **Map**: A map is a data structure that stores key-value pairs. It is typically implemented as a balanced binary search tree, which gives it a time complexity of O(logn) for insertion, deletion, and search.
+- **Unordered Map**: An unordered map is a data structure that stores key-value pairs. It is typically implemented as a hash table, which gives it an average time complexity of O(1) for insertion, deletion, and search. However, in the worst case, the time complexity can go up to O(n) if there are many collisions.
+
+Read more from [Map vs Unordered Map in C++ | GeeksforGeeks](https://www.geeksforgeeks.org/map-vs-unordered_map-c/)
+</details>
 </article>
 
 <article>
 
 Explain the four principles of OOP.
+<details><summary>Show Answer</summary>
+
+The four main principles of Object-Oriented Programming (OOP) are:
+
+- **Encapsulation** – Bundling data and methods within a class while restricting direct access to some details.
+- **Abstraction** – Hiding implementation details and exposing only essential functionalities.
+- **Inheritance** – Enabling a class to derive properties and behavior from another class.
+- **Polymorphism** – Allowing a single interface to represent different data types or methods (e.g., method overloading and overriding).
+</details>
 </article>
 
 <article>
 
-Do you know there is an OOP feature which is only in C/C++? (Operator).
+Do you know there is an OOP feature which is only in C/C++?
+<details><summary>Show Answer</summary>
+
+Operator overloading is a feature in C++ that allows operators to be redefined so that they work with user-defined types. This feature is not available in all OOP languages like Java or Python.
+</details>
 </article>
 
 <article>
@@ -456,6 +511,23 @@ The output must be only one word, "YES" or "NO".
 <article>
 
 Convert a decimal number to binary and show the output in string.
+<details><summary>Show Answer</summary>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+string decimalToBinary(int n) {
+    string binary = "";
+    while (n > 0) {
+        binary += to_string(n % 2);
+        n /= 2;
+    }
+    reverse(binary.begin(), binary.end());
+    return binary;
+}
+```
+</details>
 </article>
 
 <article>
