@@ -39,7 +39,7 @@ npm run docs:dev
 ```
 The site should be available in [http://localhost:5173/interview-questions-bangladesh/](http://localhost:5173/interview-questions-bangladesh/)
 
-## Achknowledgement
+## Acknowledgement
 This project is made possible by the effort of community. Majority of the contents are contributed by individual contributors. 
 
 Some of the info are taken from the respective company website and from [MBSTUPC/tech-companies-in-bangladesh
