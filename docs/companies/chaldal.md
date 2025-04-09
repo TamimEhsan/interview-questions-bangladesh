@@ -26,7 +26,7 @@ Chaldal interview process has 3 stage
 2. **First round Interview:** There will be 2 seperate interview. The questions asked depend on the interviewer. They may be coding or technical or both. Two yes will lead to next round. 1 yes and 1 no gives you a third chance.
 3. **CTO round:** It is kind of a behavioural round. But the questions can be coding or technical.
 
-## Questions
+## First round Interview Questions
 
 <article>
 
@@ -567,3 +567,105 @@ vector<char> sum(vector<char> &A, vector<char> &B){
 </details>
 </article>
 
+<article>
+
+Given the root of a binary tree, return its maximum depth.
+
+[**💻 Submit Code**](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+<details><summary>Show Answer</summary>
+
+```C++
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        if( root == nullptr ) return 0;
+        return max( maxDepth(root->left), maxDepth(root->right) ) + 1;
+    }
+};
+```
+</details>
+</article>
+
+<article>
+
+You are to create a data structure that will support the following operations with the mentioned time complexity
+
+- Insert a number in `O(1)`
+- Search for a number in `O(1)`
+- Delete a number in `O(1)`
+- Return a number from the container with equal probability in `O(1)`
+
+You can use existing containers of your favourite language.
+</article>
+
+<article>
+
+Given an integer num, repeatedly add all its digits until the result has only one digit, and return it. (It is called the digital root of the number)
+
+[**💻 Submit Code**](https://leetcode.com/problems/add-digits/description/)
+<details><summary>Show Answer</summary>
+
+```C++
+class Solution {
+public:
+    int addDigits(int num) {
+        if( num < 10 ) return num;
+        int root = 0;
+        while(num){
+            root += num%10;
+            num /= 10;
+        }
+        return addDigits(root);
+    }
+};
+```
+</details>
+</article>
+
+<article>
+
+Given an encoded string, return its decoded string.
+
+The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. 
+
+[**💻 Submit Code**](https://leetcode.com/problems/decode-string/description/)
+</article>
+
+<article>
+
+You are given `row x col` grid representing a map where `grid[i][j] = 1` represents land and `grid[i][j] = 0` represents water.
+
+Grid cells are connected horizontally/vertically (not diagonally). The `grid` is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).
+
+The island doesn't have "lakes", meaning the water inside isn't connected to the water around the island. One cell is a square with side length 1. The `grid` is rectangular, width and height don't exceed 100. Determine the perimeter of the island.
+
+[**💻 Submit Code**](https://leetcode.com/problems/island-perimeter/description/)
+<details><summary>Show Answer</summary>
+
+```C++
+class Solution {
+public:
+    bool isLand(vector<vector<int>>& grid, int x, int y){
+        if( x < 0 or x >= grid.size() or y < 0 or y >= grid[0].size()  ) return false;
+        return grid[x][y] == 1;
+    }
+    int islandPerimeter(vector<vector<int>>& grid) {
+        int dx[] = {1,-1,0,0};
+        int dy[] = {0,0,1,-1};
+        int perimeter = 0;
+        for(int ux = 0; ux < grid.size(); ux ++){
+            for(int uy = 0; uy < grid[ux].size(); uy ++){
+                if( !isLand(grid, ux, uy) ) continue;
+                for(int i = 0; i < 4; i ++) {
+                    int vx = ux + dx[i];
+                    int vy = uy + dy[i];
+                    if( !isLand(grid, vx, vy) ) perimeter ++;
+                }
+            }
+        }
+        return perimeter;
+    }
+};
+```
+</details>
+</article>
