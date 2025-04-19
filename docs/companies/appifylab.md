@@ -36,10 +36,10 @@ Location: The position was based in Sylhet.
 The interview questions and answers (optional) following the given format  
 
 Online contest (First Round) Problemset
-<embed src="../resource/appify problemset/Online_Round.pdf" width="400" height="600" type="application/pdf">  
+<embed src="../resource/appify/Online_Round.pdf" width="400" height="600" type="application/pdf">  
 
 Onsite contest (Second Round) Problemset
-<embed src="../resource/appify problemset/Final_Onsite.pdf" width="400" height="600" type="application/pdf">  
+<embed src="../resource/appify/Final_Onsite.pdf" width="400" height="600" type="application/pdf">  
 
 ## Contributors
 - Interview applicant [Peal Hassan](https://www.linkedin.com/in/pealhassan/)  
