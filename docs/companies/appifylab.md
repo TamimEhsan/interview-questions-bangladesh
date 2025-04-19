@@ -36,10 +36,10 @@ Location: The position was based in Sylhet.
 The interview questions and answers (optional) following the given format  
 
 Online contest (First Round) Problemset
-<embed src="../resource/appify/Online_Round.pdf" width="400" height="600" type="application/pdf">  
+<iframe src="/interview-questions-bangladesh/resource/appify/Online_Round.pdf" width="400" height="600" type="application/pdf"></iframe>    
 
 Onsite contest (Second Round) Problemset
-<embed src="../resource/appify/Final_Onsite.pdf" width="400" height="600" type="application/pdf">  
+<iframe src="/interview-questions-bangladesh/resource/appify/Final_Onsite.pdf" width="400" height="600" type="application/pdf"></iframe>  
 
 ## Contributors
 - Interview applicant [Peal Hassan](https://www.linkedin.com/in/pealhassan/)  
