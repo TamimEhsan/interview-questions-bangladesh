@@ -32,14 +32,81 @@ Permanent Position: Upon successful completion of probation, a permanent positio
 Location: The position was based in Sylhet.
 
 
-## Questions
-The interview questions and answers (optional) following the given format  
+## First Round Questions
 
-Online contest (First Round) Problemset
-<!-- <iframe src="/interview-questions-bangladesh/resource/appify/Online_Round.pdf" width="400" height="600" type="application/pdf"></iframe> -->
 [Online Round Problem Set](../resource/appify/Online_Round.pdf)
 
-Onsite contest (Second Round) Problemset
+<article>
+
+Given multiple test cases, each containing a 3-letter string (uppercase/lowercase letters), you have to check whether the string equals "YES", case-insensitively. Output "YES" if it matches, else "NO".
+</article>
+
+<article>
+
+Given
+- Number of students, games, and connection events
+- For each student, the game they like
+- A sequence of connections between pairs of students over time
+
+For each game, determine the earliest time when all students who like that game become connected (either directly or indirectly). Output -1 if they never get connected.
+</article>
+
+<article>
+
+Given:
+- Number of questions
+- For each question: initial score, per-minute penalty, minimum score
+- For each question: submission time and number of submissions (positive if solved, non-positive if unsolved)
+
+Calculate the total score based on a formula involving penalties and number of attempts. If a question is unsolved, its score is 0.
+</article>
+
+<article>
+
+Given a list of unique 9-digit phone numbers. For each phone number, find the shortest digit substring that uniquely identifies it (i.e., no other number contains it as a substring).
+</article>
+
+<article>
+
+Given:
+- Number of dishes, adults, and kids
+- For each dish: happiness value if eaten by an adult or by a kid
+
+Assign one dish to each person (adult or kid) to maximize the total happiness. An adult eats the entire dish; a kid partially eats it.
+</article>
+
+<article>
+
+Given:
+- A list of item costs
+- A limit on the total increase Sabbir can apply to the item costs
+
+Sabbir increases item costs (total increment ≤ limit) to minimize the final score difference in a turn-based game where players pick items alternately and optimally.
+</article>
+
+<article>
+
+Given:
+- A circular string of length N×K representing N fragments of length K
+- A list of G candidate fragments (all distinct)
+
+Determine if the circular string can be split into a sequence of N valid fragments (from the candidate list) in some rotation. If possible, output any such valid sequence.
+</article>
+
+<article>
+
+Given multiple test cases, each with two numbers: total artifacts n and a position k. Artifacts are arranged in a special sequence: first all odd-numbered ones, then multiples of odd numbers (2×odd, 3×odd, etc.) in order, skipping duplicates. Find which artifact appears at position k.
+
+</article>
+
+<article>
+
+Given grid dimensions n × m. Determine if it is possible to assign pigment values to rows and columns such that every cell in the grid (combining row and column pigment modulo nm) has a unique value. If possible, output the row and column pigments. 
+</article>
+<!-- <iframe src="/interview-questions-bangladesh/resource/appify/Online_Round.pdf" width="400" height="600" type="application/pdf"></iframe> -->
+
+
+## Second Round Questions
 <!-- <iframe src="/interview-questions-bangladesh/resource/appify/Final_Onsite.pdf" width="400" height="600" type="application/pdf"></iframe>  -->
 [Final Round Problem Set](../resource/appify/Final_Onsite.pdf) 
 
