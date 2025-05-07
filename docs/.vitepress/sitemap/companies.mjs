@@ -18,6 +18,7 @@ const companiesMap = [
       { text: "Optimizely", link: "/optimizely" },
       { text: "Relisource", link: "/relisource" },
       { text: "RoBenDevs", link: "/robendevs" },
+      { text: "Shanghai BDCOM", link: "/shanghaibdcom" },
       { text: "Spectrum", link: "/spectrum" },
       { text: "SRBD", link: "/srbd" },
       { text: 'Synesis IT <span class="VPBadge warning">updated</span>', link: "/synesis" },
