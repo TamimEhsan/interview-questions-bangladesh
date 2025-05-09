@@ -7,7 +7,7 @@ head:
 ---
 # RoBenDevs
 
-| <img width="441" height="1"> | <img width="441" height="1"> |
+|  |  |
 | :-| :- |
 | Founding year | |
 | Company Website | https://robendevs.com/ |
@@ -15,7 +15,7 @@ head:
 | Technologies Used|  |
 
 ## Introduction
-[RoBenDevs](https://robendevs.com//) specilizes in building SaaS solutions. 
+[RoBenDevs](https://robendevs.com//) specializes in building SaaS solutions. 
 ## Interview Stages
 RoBenDevs has a 3 stage interview process for Software Engineer, Intern role.
 1. **Initial Screening:** A project description is given to the candidate. The candidate is expected to complete the project within given timeframe. The project is then reviewed by the team.
@@ -23,9 +23,10 @@ RoBenDevs has a 3 stage interview process for Software Engineer, Intern role.
 3. **Whiteboard System Design:** The candidate is tasked with designing a system on a whiteboard from a high level perspective. The candidate is expected to explain the reasoning behind the design.
 
 ## Coding Round Questions
+
 <article>
 
-Given the root of a binary tree, return the inorder traversal of its nodes values.
+Given the `root` of a binary tree, return the inorder traversal of its nodes values.
 
 [**💻 Submit Code**](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
 </article>
@@ -41,9 +42,31 @@ To solve this problem we can use a BFS traversal of the graph. We can keep track
 
 <article>
 
-Given the head of a linked list, remove the nth node from the end of the list and return its head.
+Given the `head` of a linked list, remove the `n`th node from the end of the list and return its head.
 
 [**💻 Submit Code**](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
+</article>
+
+<article>
+
+Solve a problem related to finding the Minimum Spanning Tree in a graph.
+</article>
+
+<article>
+
+Given the `root` of a binary tree, invert/mirror the tree, and return its root.
+
+[**💻 Submit Code**](https://leetcode.com/problems/invert-binary-tree/description/)
+</article>
+
+<article>
+
+Determine the number of connected components in an undirected graph.
+
+[**💻 Submit Code**](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+<details><summary>Show Hint</summary>  
+Use DFS to identify and count the connected components.  
+</details>
 </article>
 
 ## Whiteboard System Design
@@ -57,3 +80,11 @@ Answer varies from person to person. The interviewers are looking for a high lev
 </details>
 </article>
 
+<article>
+
+Design a system where a single restaurant offers home delivery services across the entire country. You don’t need to worry about the payment gateway, as that is handled by a third party.
+
+<details><summary>Show Hint</summary>
+Focus on key system design concepts such as load balancing, scaling, API gateway, caching, and token refresh. The interviewer is mainly interested in how you approach solving real-world problems and all of above. Database design is mostly important here. 
+</details>
+</article>
