@@ -15,27 +15,93 @@
 - Size of a struct.
 - Pointer to a struct, incrementing the pointer
 - Output tracing with various conditional operators
+
 #### OS [basic ‘why’ questions (like, why scheduling)]
 - What led to process scheduling.
 - When a program file is turned to an executable file, what happens during that time? Linking, assembling, preprocessing, compiling
 - Terminology: DMA, Byte Order, coroutine, RISC, PCB
 - Parts of a CPU
+
 #### Networking:
-- Describe what happens during entering URL in browser to home page loading (DNS query, HTTP request … sequence of events)
+<article>
+
+What happens when you type google.com and press enter in your search bar
+<details><summary>Show Answer</summary>
+
+This is a very important question and aims to check the knowledge of networking. A very thorough explanation of this question is answered here in [What Happens When](https://github.com/alex/what-happens-when)
+</details>
+</article>
+
 #### Analytical:
-- stack tracing(Permutation at a railway), 
-- The Poison Bottle Problem, 
-- Bridge Crossing Puzzle
-- Timing puzzle of two candles with different burn rates
-- One-Weighing Pill Problem
+<article>
+
+There are `N` train coaches numbered from `1` to `N` placed in sequence on a left track. The coaches can be moved either directly to the right track or temporarily to a spur track (which behaves like a stack). Once a coach moves from the left track to either the spur or the right, it cannot return to the left.  
+Print all possible valid output sequences (permutations) in which the coaches can arrive at the right track using the spur as intermediate storage.
+</article>
+
+<article>
+
+You are given `1000` identical-looking bottles of pills. One of them contains poisonous pills, and all the others are safe. The poison bottle has pills that are 1 gram lighter than the normal 10-gram pills.  
+Using a weighing scale only once, how can you identify the poisonous bottle?
+</article>
+
+<article>
+
+Four people need to cross a bridge at night. They have one torch and the bridge can only hold two people at a time. Each person walks at a different speed: `1`, `2`, `5`, and `10` minutes. If two people cross together, they must go at the slower person’s pace.  
+What is the minimum total time required for all four people to cross the bridge?
+</article>
+
+<article>
+
+You are given two candles of equal length. Each candle takes exactly 60 minutes to burn, but they burn at inconsistent rates (i.e., half the candle may not burn in 30 minutes).  
+How can you measure exactly 45 minutes using these two candles?
+</article>
+
+<article>
+
+There are `8` jars of pills. One jar contains pills that weigh `9` grams each, while the others contain pills weighing `10` grams each. Using a weighing scale only once, how can you determine which jar contains the lighter pills?
+</article>
+
 #### DSA: 
-- postfix/infix notation to prefix notation
-- 1000 numbers-to find smallest 10 elements-which sorting algo
-- binary tree preorder traversal both recursive and loop
-- add/del a node in a doubly linked list
-- array vs linked list
-- how many ways to make up 1 dollar using 1,2,5 cent’s coins, 
-- linear vs non-linear structure.
+<article>
+
+You are given an arithmetic expression in either infix or postfix notation.  
+Write a program to convert it to prefix notation, maintaining correct operator precedence and associativity.
+</article>
+
+<article>
+
+You are given `1000` unsorted numbers and need to find the `10` smallest elements efficiently.  
+Which sorting or selection algorithm would be most optimal to solve this problem and why?
+</article>
+
+<article>
+
+Implement a function to perform preorder traversal of a binary tree using both recursive and iterative (loop-based) approaches.
+</article>
+
+<article>
+
+Write a program to add and delete a node in a doubly linked list. Your implementation should handle edge cases like deleting the head or tail nodes and adding a node at arbitrary positions.
+</article>
+
+<article>
+
+Compare arrays and linked lists in terms of memory usage, access time, insertion, and deletion. In which scenarios would you prefer one over the other?
+</article>
+
+<article>
+
+You are given unlimited coins of denominations `1`, `2`, and `5` cents.  
+How many different ways can you make a total of `1` dollar (`100` cents) using these coins?
+</article>
+ 
+<article>
+
+Explain the difference between linear and non-linear data structures with examples.  
+Mention the advantages and typical use cases of each.
+</article>
+
 
 ## Contributors
 [Rigan Mahmud Chowdhury](https://www.linkedin.com/in/rigan-mahmud-chowdhury-9622b2240/)  
