@@ -27,7 +27,8 @@ const companiesMap = [
         link: "/therap/",
         items: [
           { text: 'Software Engineer', link: "/therap/swe.md" },
-          { text: "Database Engineer", link: "/therap/dbe.md" }
+          { text: "Database Engineer", link: "/therap/dbe.md" },
+          { text: "ML Engineer", link: "/therap/ml.md" },
         ],
       },
       { text: "WSD", link: "/wsd" },
