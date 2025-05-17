@@ -7,7 +7,7 @@ head:
 ---
 # Kite Games Studio
 
-| <img width="441" height="1"> | <img width="441" height="1"> |
+|  | |
 | :-| :- |
 | Founding year | |
 | Company Website | https://www.kitegamesstudio.com/ |
@@ -27,7 +27,7 @@ head:
 
 <article>
 
-A permutation P is good if P[i] % i == 0 or i % P[i] == 0 for 1 ≤ i ≤ N. Given N ≤ 20, count the number of good permutations.
+A permutation `P` is good if `P[i] % i == 0` or `i % P[i] == 0` for `1 ≤ i ≤ N`. Given `N ≤ 20`, count the number of good permutations. 
 <details><summary>Show Answer</summary>
 
 The final solution uses Bitmask DP to efficiently count the number of good permutations that satisfy the given condition.
@@ -235,7 +235,7 @@ func getInstance() *single {
 
 <article>
 
-You're at a buffet with various food items. Each food item has a deliciousness factor and nutrient values. You need to maximize the total deliciousness of the foods you eat. Additionally, for health reasons, each nutrient value must occur in an odd number of food items.
+You're at a buffet with various food items. Each food item has a deliciousness factor and nutrient values. You need to maximize the total deliciousness of the foods you eat. Additionally, for health reasons, each nutrient value must occur in an odd number of food items. @@2024@@
 
 [**💻 Submit Code**](https://toph.co/c/recruitment-contest-by-kite-games-studio)
 <details><summary>Show Answer</summary>
@@ -303,7 +303,7 @@ int32_t main() {
 
 <article>
 
-You have a 2D grid representing a village. 'X' denotes farmer-owned land, and '.' denotes government-owned land. Connected 'X' areas belong to the same farmer. If two connected 'X' areas match under any 90° rotation, they also belong to the same farmer. Count the number of unique farmers in the village.
+You have a 2D grid representing a village. 'X' denotes farmer-owned land, and '.' denotes government-owned land. Connected 'X' areas belong to the same farmer. If two connected 'X' areas match under any 90° rotation, they also belong to the same farmer. Count the number of unique farmers in the village. @@2024@@
 
 [**💻 Submit Code**](https://toph.co/c/recruitment-contest-by-kite-games-studio)
 <details><summary>Show Answer</summary>
@@ -449,7 +449,7 @@ int32_t main() {
 
 <article>
 
-You need to write a program to simulate a Linux terminal on an old computer. You'll be given commands like "mkdir", "ls", "rm", "pwd", and "cd", and you need to simulate their behavior, printing the appropriate output or error messages.
+You need to write a program to simulate a Linux terminal on an old computer. You'll be given commands like "mkdir", "ls", "rm", "pwd", and "cd", and you need to simulate their behavior, printing the appropriate output or error messages. @@2024@@
 
 [**💻 Submit Code**](https://toph.co/c/recruitment-contest-by-kite-games-studio)
 <details><summary>Show Answer</summary>
@@ -559,14 +559,14 @@ int32_t main() {
 
 <article>
 
-You have a 2D grid representing a field with crop fields and godowns. Harvesters start at godowns and collect crops from fields, bringing them back to their godown. The first harvester must collect from a specific number of fields. You need to calculate the minimum total time for all harvesters to collect all crops.
+You have a 2D grid representing a field with crop fields and godowns. Harvesters start at godowns and collect crops from fields, bringing them back to their godown. The first harvester must collect from a specific number of fields. You need to calculate the minimum total time for all harvesters to collect all crops. @@2024@@
 
 [**💻 Submit Code**](https://toph.co/c/recruitment-contest-by-kite-games-studio)
 </article>
 
 <article>
 
-You have a list of unique strings and an empty list. You'll be given queries to add strings to the empty list, delete strings from it, and count the number of strings between two given strings in the list after sorting it.
+You have a list of unique strings and an empty list. You'll be given queries to add strings to the empty list, delete strings from it, and count the number of strings between two given strings in the list after sorting it. @@2024@@
 
 [**💻 Submit Code**](https://toph.co/c/recruitment-contest-by-kite-games-studio)
 <details><summary>Show Description</summary>
@@ -760,5 +760,47 @@ int32_t main() {
 
 ```
 </details>
+</article>
+
+<article>
+
+Given a number `N`, find the number of integers between `[1,N]` that has odd number of divisors. @@Jr SWE 2025@@ 
+
+[**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/hey-this-is-the-giveaway-problem)
+</article>
+
+<article>
+
+Given an array of pairs indicating the size and reward of each item. You will be given a minimum and maximum size of the bag. You need to find the maximum reward you can get by filling the bag with items. @@Jr SWE 2025@@
+
+[**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/ripe-range-rich-taste)
+</article>
+
+<article>
+
+Given an array `A` of size `N` and some queries. Each query will ask for `f(l,r)` where the function computes the sum of the greatest common divisors over all prefixes of some range `[l,r]`.  @@Jr SWE 2025@@
+
+[**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/cumulative-gcd)
+</article>
+
+<article>
+
+Given a permutation of size `N`. You will change the permutation repeatedly. In each operation, you will create a new permutation b such that `b[i] = a[a[i]]` for all `1 ≤ i ≤ n`. Then replace `a` with `b`. You need to find the number of operations required to make the permutation sorted or report that it is impossible. @@Jr SWE 2025@@
+
+[**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/permutation-sorting-1)
+</article>
+
+<article>
+
+Given a tree with `N` nodes. You will need to chose an optimal start node `s` such that the round trip distance from `s` to some given target nodes is minimized. @@Jr SWE 2025@@
+
+[**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/kawchars-new-home)
+</article>
+
+<article>
+
+Given a grid of size `N` and `M` with digit `0` and `1`. The grid indicates some patterns which are not connected. The patterns can be rotated or stretched too. You will need to find the patterns present in the grid. @@Jr SWE 2025@@
+
+[**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/simple-digit-recognition)
 </article>
 
