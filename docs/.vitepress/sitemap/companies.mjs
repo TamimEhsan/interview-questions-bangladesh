@@ -13,7 +13,7 @@ const companiesMap = [
       { text: 'Inverse AI', link: "/inverseai" },
       { text: "IQVIA", link: "/iqvia" },
       { text: "Priyo", link: "/priyo" },
-      { text: "Kite Games Studio", link: "/kite" },
+      { text: 'Kite Games Studio <span class="VPBadge warning">updated</span>', link: "/kite" },
       { text: "Orbitax", link: "/orbitax" },
       { text: "Optimizely", link: "/optimizely" },
       { text: "Relisource", link: "/relisource" },
