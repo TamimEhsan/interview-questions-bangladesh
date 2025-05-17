@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 import companiesMap from "./sitemap/companies.mjs";
 import notesMap from "./sitemap/notes.mjs";
 import rewrites from "./sitemap/rewrites.mjs";
+import { applyMarkdownPlugins } from "./plugins";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Interview BD",
@@ -59,4 +60,7 @@ export default defineConfig({
       ],
     ],
   },
+  markdown: {
+    config: applyMarkdownPlugins
+  }
 });
