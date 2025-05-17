@@ -1,9 +1,18 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+// #region snippet
 const int N = 100005;
 vector<int> adj[N];
 long long child[N];
 long long cost[N];
 long long total_child = 0;
 void dfs1(int u, int p){
+    
     for(auto v:adj[u]){
         if( v == p ) continue;
         dfs1(v,u);
@@ -14,6 +23,7 @@ void dfs1(int u, int p){
 
 pair<long long,int> mn;
 void dfs2(int u, int p, long long c) {
+    //cout<<u<<" "<<c<<endl;
     mn = min(mn,{c,u});
     for(auto v:adj[u]){
         if( v == p ) continue;
@@ -47,4 +57,13 @@ void solve(){
     mn = {cost[1],1};
     dfs2(1,0,cost[1]);
     cout<<mn.second<<" "<<mn.first<<endl;
+}
+
+// #endregion snippet
+int main() {
+    int tc;
+    cin>>tc;
+    while(tc--) solve();
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
 }
