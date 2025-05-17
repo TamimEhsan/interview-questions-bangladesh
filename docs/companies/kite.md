@@ -354,8 +354,6 @@ Given a tree with `N` nodes. You will need to chose an optimal start node `s` su
 [**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/kawchars-new-home)
 <details><summary>Show Answer</summary>
 
-[Full Code](@/snippets/kite/new-home.cpp)
-
 <<< @/snippets/kite/new-home.cpp#snippet
 </details>
 </article>
