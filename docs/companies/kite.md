@@ -767,6 +767,16 @@ int32_t main() {
 Given a number `N`, find the number of integers between `[1,N]` that has odd number of divisors. @@Jr SWE 2025@@ 
 
 [**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/hey-this-is-the-giveaway-problem)
+<details><summary>Show Answer</summary>
+
+```cpp
+long long solve(long long n) {
+    long long sq = sqrtl(n);
+    if( (sq+1)*(sq+1) == n ) sq++;
+    return sq;
+}
+```
+</details>
 </article>
 
 <article>
@@ -795,6 +805,10 @@ Given a permutation of size `N`. You will change the permutation repeatedly. In 
 Given a tree with `N` nodes. You will need to chose an optimal start node `s` such that the round trip distance from `s` to some given target nodes is minimized. @@Jr SWE 2025@@
 
 [**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/kawchars-new-home)
+<details><summary>Show Answer</summary>
+
+<<< @/snippets/kite/new-home.cpp
+</details>
 </article>
 
 <article>
@@ -803,4 +817,3 @@ Given a grid of size `N` and `M` with digit `0` and `1`. The grid indicates some
 
 [**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/simple-digit-recognition)
 </article>
-
