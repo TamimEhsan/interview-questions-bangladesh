@@ -375,6 +375,8 @@ int main(){
 <article>
 
 You have a 100-story building, and two marbles. A marble will break if dropped from a certain height (from any floor). Find the highest floor you can lift by dropping or utilizing exactly two marbles.
+
+[**💻 Submit Code**](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/description/)
 </article>
 
 <article>
