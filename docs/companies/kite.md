@@ -330,7 +330,11 @@ long long solve(long long n) {
 
 Given an array of pairs indicating the size and reward of each item. You will be given a minimum and maximum size of the bag. You need to find the maximum reward you can get by filling the bag with items. @@Jr SWE 2025@@
 
-[**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/ripe-range-rich-taste)
+[**💻 Submit Code**](https://www.hackerrank.com/contests/jr-software-developer-recruitment-contest-may-2025/challenges/ripe-range.cpp)
+<details><summary>Show Answer</summary>
+
+<<< @/snippets/kite/ripe-range.cpp
+</details>
 </article>
 
 <article>

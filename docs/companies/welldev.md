@@ -374,9 +374,22 @@ int main(){
 
 <article>
 
-You have a 100-story building, and two marbles. A marble will break if dropped from a certain height (from any floor). Find the highest floor you can lift by dropping or utilizing exactly two marbles.
+You have a `n`-story building, and two eggs. An egg will break if dropped from a certain height (ie above a floor `f`).  Determine the minimum number of moves that you need to determine with certainty what the value of `f` is.
 
 [**💻 Submit Code**](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/description/)
+<details><summary>Show Answer</summary>
+
+```C++
+class Solution {
+public:
+    int twoEggDrop(int n) {
+        int sq = sqrt(2*n);
+        if ( sq * (sq+1) < 2*n ) sq++;
+        return sq;
+    }
+};
+```
+</details>
 </article>
 
 <article>
