@@ -22,7 +22,7 @@ features:
     title: 20+ companies
     details: Collection of questions asked in multiple top companies of Bangladesh
   - icon: 📝
-    title: 300+ questions
+    title: 350+ questions
     details: Details and solutions of 300+ questions
   - icon: 💡
     title: Tips and tricks

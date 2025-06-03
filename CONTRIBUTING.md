@@ -48,7 +48,7 @@ What is `1+1`?
 </article>
 ```
 
-### [OPTIONAL] Sections
+### Sections [OPTIONAL] 
 If you want to add collapsible sections with your question. You can use collapsible sections to reduce the size of the visible fields. Some example of these can be 
 
 - Show Description
@@ -103,8 +103,38 @@ Use calculator
 </details>
 </article>
 
-## Adding Images
-If you want to add any images with the question or answer, then at first add the image in `docs/resource`. Then reference that file from your content. If you are in `docs/comapanies/generic_company.md`, then you will use `../resource/image.jpg` as the link. If you are in `docs/comapanies/generic_company/generic_role.md`, then you will use `../../resource/image.jpg` as the link.
+### Markdown Support
+You can use all the standard markdown features in your question or answer. For example, you can use headings, lists, bold, italic, links, etc. You can also use HTML tags if you want to add something that is not supported by markdown.
+
+### Adding Images
+If you want to add any images with the question or answer, then at first add the image in `docs/resource` or you can add a folder for the company and put the image under `docs/resource/generic`. Then reference that file from your content. 
+
+If you are in `docs/comapanies/generic_company.md`, then you will use `../resource/image.jpg` as the link. If you are in `docs/comapanies/generic_company/generic_role.md`, then you will use `../../resource/image.jpg` as the link.
+
+### Adding Code Snippets
+You can directly add code snippets in your question or answer using the following format:
+
+    ```js
+    console.log("Hello World");
+    ```
+
+If your code snippet is long, then you can save the code in a file in `docs/snippets` folder or under a company specific folder in `docs/snippets/generic_company` and then link to that file using the following format:
+
+```html
+<<< @/snippets/generic_company/your_code_file.js
+```
+It doesn't matter where you are in the docs folder, it will always link to the file correctly.
+
+### Adding Badges
+If you want to add badges to your question or answer, you can use the following format:
+
+```html
+@@A normal badge@@
+@@info:An info badge@@
+@@tip:A tip badge@@
+@@warning:A warning badge@@
+@@danger:A danger badge@@
+```
 
 ## Self Citation
 If you want to add show yourself as a contributor in the page then add a new section if there isn't one already and add your name under it. 
