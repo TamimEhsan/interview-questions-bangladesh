@@ -231,6 +231,43 @@ func getInstance() *single {
 </details>
 </article>
 
+<article>
+
+Given a string `s` and multiple queries. Each query consists of a string `t`. Check if `t` is a subsequence of `s`.@@2025@@
+
+[**💻 Submit Code**](https://leetcode.com/problems/is-subsequence/description/)
+</article>
+
+<article>
+
+You are given an integer array `nums` and two integers `indexDiff` and `valueDiff`. Find a pair of indices `(i, j)` such that: `i != j`, `abs(i - j) <= indexDiff` and `abs(nums[i] - nums[j]) <= valueDiff`.@@2025@@
+
+[**💻 Submit Code**](https://leetcode.com/problems/contains-duplicate-iii/description/)
+<details><summary>Show Answer</summary>
+
+```cpp
+bool containsNearbyAlmostDuplicate(vector<int>& nums, int indexDiff, int valueDiff) {
+    set<pair<int,int>> st;
+    for(int i=0;i<nums.size();i++){
+        if( i>indexDiff ) st.erase({nums[i-indexDiff-1],i-indexDiff-1});
+        auto it = st.lower_bound({nums[i],0});
+        if ( it != st.end() ) {
+            if ( abs(nums[i] - it->first) <= valueDiff ) 
+                return true;
+        }
+        if( it != st.begin() ){
+            it--;
+            if ( abs(nums[i] - it->first) <= valueDiff ) 
+                return true;
+        }
+        st.insert({nums[i],i});
+    }
+    return false;
+}
+```
+</details>
+</article>
+
 ## Online Round Questions
 
 <article>
