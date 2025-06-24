@@ -12,10 +12,10 @@ head:
 | Founding year | 2003 |
 | Company Website | https://www.revesoft.com/ |
 | Career Website | https://www.revesoft.com/ |
-| Technologies Used| Java, Kotline, Swift |
+| Technologies Used| Java, Kotlin, Swift |
 
 ## Introduction
-[Kite Games Studio (KGS)](https://www.kitegamesstudio.com/), founded in 2014, is a leading mobile application development firm in Bangladesh. Based in Mohakhali DOHS, Dhaka, KGS specializes in developing software for both iOS and Android platforms, along with building websites. The company is known for its emphasis on competitive programming skills, making it an excellent choice for talented **competitive programmers** looking to join a dynamic and innovative team.
+[REVE Systems](https://www.revesoft.com/) specializes in delivering VoIP software solutions, with a focus on mobile VoIP, softswitch, and billing solutions.
 
 ## Interview Stages
 
