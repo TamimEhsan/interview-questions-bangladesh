@@ -1,18 +1,18 @@
 ---
-description: Kite Games Studio interview questions, Kite Games Studio interview stages, Kite Games Studio interview details, Kite Games Studio interview question and answers
+description: REVE Systems interview questions, REVE Systems interview stages, REVE Systems interview details, REVE Systems interview question and answers
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/kite
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/companies/revesystems
 ---
-# Kite Games Studio
+# REVE Systems
 
 |  | |
 | :-| :- |
-| Founding year | |
-| Company Website | https://www.kitegamesstudio.com/ |
-| Career Website | https://www.kitegamesstudio.com/ |
-| Technologies Used| Swift, React, Kotline, PyTorch |
+| Founding year | 2003 |
+| Company Website | https://www.revesoft.com/ |
+| Career Website | https://www.revesoft.com/ |
+| Technologies Used| C, C++, Java, Swift |
 
 ## Introduction
 [Kite Games Studio (KGS)](https://www.kitegamesstudio.com/), founded in 2014, is a leading mobile application development firm in Bangladesh. Based in Mohakhali DOHS, Dhaka, KGS specializes in developing software for both iOS and Android platforms, along with building websites. The company is known for its emphasis on competitive programming skills, making it an excellent choice for talented **competitive programmers** looking to join a dynamic and innovative team.
