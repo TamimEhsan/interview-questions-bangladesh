@@ -41,16 +41,7 @@ Reverse a given singly linked list.
 <details><summary>Show Answer</summary>
 
 ```cpp
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
+
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
@@ -109,6 +100,28 @@ int fib(int n){
  }
 ```
 </details>
+
+<details><summary>Show Answer</summary>
+
+As I used an array for storing the intermediate results, extra memory usage was involved. They told me not to use array. Then I used three variables and performed swapping values as needed.
+
+```cpp
+int fib(int n){
+  	int a, b, c = 1;
+  	a = 1;
+  	b = 1;
+  
+  	int i;
+  	for (i = 3; i <= n; i++) {
+          c =  a + b; 
+          a = b; 
+          b = c; 
+  	}
+	return c;
+ }
+```
+</details>
+
 </article>
 
 ## Technical Round Questions
