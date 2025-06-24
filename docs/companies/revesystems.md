@@ -40,41 +40,60 @@ Reverse a given singly linked list.
 
 <details><summary>Show Answer</summary>
 
+At first, I used extra memory for storing the reversed array.
 ```cpp
 
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        if (head == NULL)
-            return NULL;
-        else if (head->next == NULL) {
+        if (head == NULL || head->next == NULL)
             return head;
-        }
         
-        ListNode* cur = head;
+        int i;
         vector<int> v;
-        
+        ListNode* cur = head;
         while (cur != NULL) {
             v.push_back(cur->val);
             cur = cur->next;
         }
         
-        int i, n;
-        n = v.size();
-        
+        i = v.size()-1;
         cur = head;
-        int k = n-1;
-        while (cur != NULL) {
-            cur->val = v[k];
-            cur = cur->next;
-            k--;
-        } 
-        
-        return head;
+        while (head != NULL) {
+            head->val = v[i];
+            i--;
+            head = head->next;
+        }
+        return cur;
     }
 };
 ```
 </details>
+
+<details><summary>Show Answer</summary>
+
+They told me not to use extra memory. So, I performed an in-place reversal of the linked list.
+```cpp
+
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if (head == NULL || head->next == NULL)
+            return head;
+        
+        ListNode* prev = NULL;
+        while (head != NULL) {
+            ListNode* tmp = head->next;
+            head->next = prev;
+            prev = head;
+            head = tmp;
+        }
+        return prev;
+    }
+};
+```
+</details>
+
 </article>
 
 <article>
@@ -103,7 +122,7 @@ int fib(int n){
 
 <details><summary>Show Answer</summary>
 
-As I used an array for storing the intermediate results, extra memory usage was involved. They told me not to use array. Then I used three variables and performed swapping values as needed.
+As I used an array for storing the intermediate results, extra memory usage was involved. They told me not to use an array. Then I used three variables and performed swapping values as needed.
 
 ```cpp
 int fib(int n){
@@ -118,6 +137,21 @@ int fib(int n){
           b = c; 
   	}
 	return c;
+ }
+```
+</details>
+
+<details><summary>Show Answer</summary>
+
+They asked me to solve this problem using recursion. When implementing the recursion-based one, I first implemented the unoptimized version and later used an array for storing the intermediate values. After that, they asked me about the time and space complexities of the different approaches.
+```cpp
+ int fib(int n){
+	if (n == 1)
+            return 1;
+	else if (n == 2)
+            return 1;
+	else
+	    return (fib(n-1) + fib(n-2));
  }
 ```
 </details>
