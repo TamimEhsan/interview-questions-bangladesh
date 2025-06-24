@@ -86,6 +86,30 @@ public:
 </details>
 </article>
 
+<article>
+  
+Given a sequence `1`, `1`, `2`, `3`, `5`, `8`, `13`, `21`..., where the indices start at `1`. For any given index, find the value of the sequence. For example, when the input is `3`, the output is `2`, and when the input is `6`, the output is `8`.
+  
+[**💻 Submit Code**](https://leetcode.com/problems/fibonacci-number/description/)
+
+<details><summary>Show Answer</summary>
+
+At first, I used an array for storing the calculated results of the intermediate steps and built the array going forward.
+```cpp
+int fib(int n){
+  	int arr[n + 1];
+  	arr[1] = 1;
+  	arr[2] = 1;
+  
+  	int i;
+  	for (i = 3; i <= n; i++) {
+          arr[i] = arr[i-1] + arr[i-2];
+  	}
+  	return arr[n];
+ }
+```
+</details>
+</article>
 
 ## Technical Round Questions
 
