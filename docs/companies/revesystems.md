@@ -15,13 +15,22 @@ head:
 | Technologies Used| Java, Kotlin, Swift |
 
 ## Introduction
-[REVE Systems](https://www.revesoft.com/) specializes in delivering VoIP (Voice over IP) software solutions, with a focus on mobile VoIP, softswitch, and billing solutions. They have different departments such as Research & Development (R&D), E-Gov, Reve Chat, etc. In this article, the recruitment process for the R&D department for the DEV roles (Junior Software Engineer) is presented. They perform campus recruitment. At first, all the CVs from the participants (final year undergrad students who were to graduate soon) were collected. Then, an online MCQ-based exam was carried out followed by two online technical rounds. At last, an onsite CTO round was performed.
+[REVE Systems](https://www.revesoft.com/) specializes in delivering VoIP (Voice over IP) software solutions, with a focus on mobile VoIP, softswitch, and billing solutions. They have different departments such as Research & Development (R&D), E-Gov, Reve Chat, etc. In this article, the recruitment process for the R&D department for the DEV roles (Junior Software Engineer) is presented. They perform campus recruitment. At first, all the CVs from the participants (final year undergrad students who were to graduate soon) were collected. Then, an online MCQ-based exam was carried out, followed by two online technical rounds. At last, an onsite CTO round was performed.
 
 ## Interview Stages
-
-1. **Online Contest**: Candidates participate in an online programming contest that typically consists of 5-6 problems to be solved within 3-4 hours. The contest may be hosted on platforms like Toph, Hackerrank, or other online judges. Candidates are shortlisted for the next round based on their ranking in this contest.
-
-2. **Technical Round**: This round primarily focuses on coding problems and some basic Java concepts. The interviewers assess the candidate's problem-solving approach and how they think through the problems.
+1. **Online Screening Test**: This round is conducted via Zoom. All the participants are required to keep their microphones and cameras on during the MCQ exam via Google form. Questions were      given from the following areas:<br>
+       1. Basic problem solving<br>
+       2. Data structure and algorithms<br>
+       3. Time Complexity<br>
+       4. Finding error in code snippets<br>
+       5. Finding the output of code blocks<br>
+       6. Object-oriented programming<br>
+       7. SQL<br>
+       8. Computer networking<br>
+       9. Software engineering and design patterns
+2. **Technical Round I**: Two interviewers conducted this round via Skype. During the whole exam, the camera and microphone have to be on. At the beginning of the exam, a Google Doc was           shared for writing the code or any answers. Candidates are not allowed to use a pen or paper. Only the shared doc has to be used. In this round, they asked about me and told me to tell       them about any of my recent projects. Questions were asked on topics such as Linked list, BFS, DF, Fibonacci Series, String manipulation, a few basic OOP concepts, and REST APIs.
+3. **Technical Round II**: This round is also conducted via Skype, and to interviewers (project managers) were there. They asked in-depth questions on object-oriented programming. Other           topics included - Java socket programming, computer networking, focusing on TCP and UDP protocols, software engineering and design patterns, SOLID principles, string matching algorithms      (Naive, KMP).
+4. **CTO Round**: This was an onsite round where the CTO and head of the Mobile app department were present. They gave pen and paper to write the answers to their questions and asked many        questions where I struggled in the previous rounds. 
 
 ## Technical Round Questions
 
