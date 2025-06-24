@@ -30,7 +30,62 @@ head:
        9. Software engineering and design patterns
 2. **Technical Round I**: Two interviewers conducted this round via Skype. During the whole exam, the camera and microphone have to be on. At the beginning of the exam, a Google Doc was           shared for writing the code or any answers. Candidates are not allowed to use a pen or paper. Only the shared doc has to be used. In this round, they asked about me and told me to tell       them about any of my recent projects. Questions were asked on topics such as Linked list, BFS, DF, Fibonacci Series, String manipulation, a few basic OOP concepts, and REST APIs.
 3. **Technical Round II**: This round is also conducted via Skype, and to interviewers (project managers) were there. They asked in-depth questions on object-oriented programming. Other           topics included - Java socket programming, computer networking, focusing on TCP and UDP protocols, software engineering and design patterns, SOLID principles, string matching algorithms      (Naive, KMP).
-4. **CTO Round**: This was an onsite round where the CTO and head of the Mobile app department were present. They gave pen and paper to write the answers to their questions and asked many        questions where I struggled in the previous rounds. 
+4. **CTO Round**: This was an onsite round where the CTO and head of the Mobile app department were present. They gave pen and paper to write the answers to their questions and asked many        questions where I struggled in the previous rounds.
+
+## Technical Round I Questions
+<article>
+Reverse a given singly linked list.
+  
+[**💻 Submit Code**](https://leetcode.com/problems/reverse-linked-list/description/)
+
+<details><summary>Show Answer</summary>
+
+```cpp
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if (head == NULL)
+            return NULL;
+        else if (head->next == NULL) {
+            return head;
+        }
+        
+        ListNode* cur = head;
+        vector<int> v;
+        
+        while (cur != NULL) {
+            v.push_back(cur->val);
+            cur = cur->next;
+        }
+        
+        int i, n;
+        n = v.size();
+        
+        cur = head;
+        int k = n-1;
+        while (cur != NULL) {
+            cur->val = v[k];
+            cur = cur->next;
+            k--;
+        } 
+        
+        return head;
+    }
+};
+```
+</details>
+</article>
+
 
 ## Technical Round Questions
 
