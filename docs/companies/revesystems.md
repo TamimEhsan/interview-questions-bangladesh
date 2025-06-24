@@ -38,9 +38,10 @@ Reverse a given singly linked list.
   
 [**💻 Submit Code**](https://leetcode.com/problems/reverse-linked-list/description/)
 
+At first, I used extra memory for storing the reversed array.
+
 <details><summary>Show Answer</summary>
 
-At first, I used extra memory for storing the reversed array.
 ```cpp
 
 class Solution {
@@ -70,9 +71,10 @@ public:
 ```
 </details>
 
+They told me not to use extra memory. So, I performed an in-place reversal of the linked list.
+
 <details><summary>Show Answer</summary>
 
-They told me not to use extra memory. So, I performed an in-place reversal of the linked list.
 ```cpp
 
 class Solution {
@@ -102,9 +104,10 @@ Given a sequence `1`, `1`, `2`, `3`, `5`, `8`, `13`, `21`..., where the indices 
   
 [**💻 Submit Code**](https://leetcode.com/problems/fibonacci-number/description/)
 
+At first, I used an array for storing the calculated results of the intermediate steps and built the array going forward.
+
 <details><summary>Show Answer</summary>
 
-At first, I used an array for storing the calculated results of the intermediate steps and built the array going forward.
 ```cpp
 int fib(int n){
   	int arr[n + 1];
@@ -120,9 +123,9 @@ int fib(int n){
 ```
 </details>
 
-<details><summary>Show Answer</summary>
-
 As I used an array for storing the intermediate results, extra memory usage was involved. They told me not to use an array. Then I used three variables and performed swapping values as needed.
+
+<details><summary>Show Answer</summary>
 
 ```cpp
 int fib(int n){
@@ -141,9 +144,10 @@ int fib(int n){
 ```
 </details>
 
+They asked me to solve this problem using recursion. When implementing the recursion-based one, I first implemented the unoptimized version and later used an array for storing the intermediate values. After that, they asked me about the time and space complexities of the different approaches.
+
 <details><summary>Show Answer</summary>
 
-They asked me to solve this problem using recursion. When implementing the recursion-based one, I first implemented the unoptimized version and later used an array for storing the intermediate values. After that, they asked me about the time and space complexities of the different approaches.
 ```cpp
  int fib(int n){
 	if (n == 1)
