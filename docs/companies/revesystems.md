@@ -1,5 +1,5 @@
 ---
-description: REVE Systems interview questions, REVE Systems interview stages, REVE Systems interview details, REVE Systems interview question and answers
+description: REVE Systems interview questions, REVE Systems interview stages, REVE Systems interview details, REVE Systems interview questions and answers
 head:
   - - link
     - rel: canonical
@@ -15,7 +15,7 @@ head:
 | Technologies Used| Java, Kotlin, Swift |
 
 ## Introduction
-[REVE Systems](https://www.revesoft.com/) specializes in delivering VoIP software solutions, with a focus on mobile VoIP, softswitch, and billing solutions.
+[REVE Systems](https://www.revesoft.com/) specializes in delivering VoIP (Voice over IP) software solutions, with a focus on mobile VoIP, softswitch, and billing solutions. They have different departments such as Research & Development (R&D), E-Gov, Reve Chat, etc. In this article, the recruitment process for the R&D department for the DEV roles (Junior Software Engineer) is presented. They perform campus recruitment. At first, all the CVs from the participants (final year undergrad students who were to graduate soon) were collected. Then, an online MCQ-based exam was carried out followed by two online technical rounds. At last, an onsite CTO round was performed.
 
 ## Interview Stages
 
