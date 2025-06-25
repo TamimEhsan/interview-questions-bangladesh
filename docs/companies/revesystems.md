@@ -30,7 +30,7 @@ head:
        9. Software engineering and design patterns
 2. **Technical Round I**: Two interviewers conducted this round via Skype. During the whole interview, the camera and microphone have to be on. At the beginning of the interview, a Google Doc was           shared for writing the code or any answers. Candidates are not allowed to use a pen or paper. Only the shared doc has to be used. In this round, they asked about me and told me to tell       them about any of my recent projects. Questions were asked on topics such as Linked list, BFS, DF, Fibonacci Series, String manipulation, a few basic OOP concepts, and REST APIs.
 3. **Technical Round II**: This round is also conducted via Skype, and two interviewers (project managers) were there. They asked in-depth questions on object-oriented programming. Other           topics included - Java socket programming, computer networking, focusing on TCP and UDP protocols, software engineering and design patterns, SOLID principles, string matching algorithms      (Naive, KMP).
-4. **CTO Round**: This was an onsite round where the CTO and head of the Mobile app department were present. They gave pen and paper to write the answers to their questions and asked many        questions where I struggled in the previous rounds.
+4. **CTO Round**: This was an onsite round where the CTO and head of the Mobile app development team were present. They gave pen and paper to write the answers to their questions and asked many        questions where I struggled in the previous rounds.
 
 ## Technical Round I Questions
 <article>
