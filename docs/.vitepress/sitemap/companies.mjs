@@ -19,6 +19,7 @@ const companiesMap = [
       { text: "Relisource", link: "/relisource" },
       { text: 'RoBenDevs <span class="VPBadge warning">updated</span>', link: "/robendevs" },
       { text: 'Shanghai BDCOM <span class="VPBadge tip">new</span>', link: "/shanghaibdcom" },
+      { text: 'REVE Systems <span class="VPBadge tip">new</span>', link: "/revesystems" },
       { text: "Spectrum", link: "/spectrum" },
       { text: "SRBD", link: "/srbd" },
       { text: 'Synesis IT <span class="VPBadge warning">updated</span>', link: "/synesis" },
