@@ -34,6 +34,7 @@ head:
 
 ## Technical Round I Questions
 <article>
+	
 Reverse a given singly linked list.
   
 [**💻 Submit Code**](https://leetcode.com/problems/reverse-linked-list/description/)
@@ -43,7 +44,6 @@ At first, I used extra memory for storing the reversed array.
 <details><summary>Show Answer</summary>
 
 ```cpp
-
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
@@ -76,7 +76,6 @@ They told me not to use extra memory. So, I performed an in-place reversal of th
 <details><summary>Show Answer</summary>
 
 ```cpp
-
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
@@ -123,7 +122,7 @@ int fib(int n){
 ```
 </details>
 
-As I used an array for storing the intermediate results, extra memory usage was involved. They told me not to use an array. Then I used three variables and performed swapping values as needed.
+As I used an array to store the intermediate results, extra memory usage was involved. They told me not to use an array. Then I used three variables and performed swapping values as needed.
 
 <details><summary>Show Answer</summary>
 
@@ -162,7 +161,92 @@ They asked me to solve this problem using recursion. When implementing the recur
 
 </article>
 
-## Technical Round Questions
+<article>
+	
+Given a weighted binary tree, you have to find whether a target sum can be achieved by traversing from the root to the leaf and summing the values on the intermediate nodes.
+  
+[**💻 Submit Code**](https://leetcode.com/problems/path-sum/description/)
+
+I described how this problem can be solved using BFS and provided the solution.
+
+<details><summary>Show Answer</summary>
+
+```cpp
+class Solution {
+public:
+    bool hasPathSum(TreeNode* root, int targetSum) {
+        if (root == NULL)
+            return false;
+        else if (root->left == NULL && root->right == NULL)
+            return (root->val == targetSum);
+
+        queue<TreeNode*> q;
+        bool found = false;
+        q.push(root);
+        
+        while (!q.empty()) {
+            TreeNode* cur = q.front();
+            q.pop();
+            
+            if (cur->left == NULL && cur->right == NULL) {
+                if (cur->val == targetSum) {
+                    found = true;
+                    break;
+                }
+            }
+            
+            if (cur->left != NULL) {
+                cur->left->val = cur->val + cur->left->val;
+                q.push(cur->left);
+            }
+            
+            if (cur->right != NULL) {
+                cur->right->val = cur->val + cur->right->val;
+                q.push(cur->right);
+            }
+        }
+        return found;
+    }
+};
+```
+</details>
+
+</article>
+
+<article>
+	
+Why are getters and setters used in Java?
+
+</article>
+
+<article>
+	
+Describe the Singleton design pattern and write the code in Java.
+
+</article>
+
+<article>
+	
+What are REST APIs? Tell about the HTTP verbs and the differences between PUT and POST in REST API.
+
+</article>
+
+<article>
+	
+Given a large input string without `\n` present. Output the string of sentences where we will input the max letter count in a line. output the modified string, so if line breaks occur in the middle of a word, place it after a newline.
+
+Input: ``(“reve systems is a software company”, 11)``
+
+Output:<br>
+reve<br>
+systems is<br>
+a software<br>
+company<br>
+
+
+</article>
+
+## Technical Round II Questions
 
 <article>
 
