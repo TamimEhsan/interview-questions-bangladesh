@@ -4,6 +4,7 @@ const companiesMap = [
       { text: "General Guidelines", link: "/general" },
       { text: 'Before Application', link: "/beforeapplying" },
       { text: 'AppifyLab <span class="VPBadge tip">new</span>', link: "/appifylab" },
+      { text: 'Bkash <span class="VPBadge tip">new</span>', link: "/bkash" },
       { text: 'Chaldal <span class="VPBadge warning">updated</span>', link: "/chaldal" },
       { text: "Bevy Commerce", link: "/bevycommerce" },
       { text: 'Brain Station 23 <span class="VPBadge warning">updated</span>', link: "/bs23" },
