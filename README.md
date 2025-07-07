@@ -17,8 +17,8 @@
 
  Visit the site [Interview BD](https://tamimehsan.github.io/interview-questions-bangladesh) to start taking preparation for your next interview!
 
-- 20+ companies
-- 350+ questions
+- 25+ companies
+- 425+ questions
 - 150+ verified solutions to questions
 - Company specific guidelines
 - Specialized knowledge on various topics
