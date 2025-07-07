@@ -9,7 +9,7 @@ const companiesMap = [
       { text: "Bevy Commerce", link: "/bevycommerce" },
       { text: 'Brain Station 23 <span class="VPBadge warning">updated</span>', link: "/bs23" },
       { text: "DSI", link: "/dsi" },
-      { text: 'Enosis <span class="VPBadge tip">new</span>', link: "/enosis" },
+      { text: 'Enosis Solutions <span class="VPBadge tip">new</span>', link: "/enosis" },
       { text: 'Exabyting <span class="VPBadge warning">updated</span>', link: "/exabyting" },
       { text: 'Fringecore <span class="VPBadge tip">new</span>', link: "/fringecore" },
       { text: 'Inverse AI', link: "/inverseai" },
