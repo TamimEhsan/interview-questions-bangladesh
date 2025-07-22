@@ -35,3 +35,9 @@ The selection process depends on the role, but generally has 3 to 4 stages,
 1. **1st technical round** The first round is taken by the BD team
 1. **2nd technical round:** This round is typically taken by the USA team [not for all roles]
 1. **HR Round:** This is the final stage before onboarding and typically deals with salary negotiation. 
+
+## Interview Questions
+
+- [Software Engineer Interview Questions](./swe)
+- [Database Engineer Interview Questions](./dbe)
+- [Machine Learning Engineer Interview Questions](./ml)
