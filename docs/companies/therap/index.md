@@ -7,12 +7,12 @@ head:
 ---
 # Therap
 
-| <img width="441" height="1"> | <img width="441" height="1"> |
-| :-| :- |
-| Founding year | 2004 |
-| Company Website | https://therapbd.com/ |
-| Career Website | https://therap.hire.trakstar.com/? |
-| Technologies Used| Java, J2EE |
+| <img width="441" height="1"> | <img width="441" height="1">       |
+| :--------------------------- | :--------------------------------- |
+| Founding year                | 2004                               |
+| Company Website              | https://therapbd.com/              |
+| Career Website               | https://therap.hire.trakstar.com/? |
+| Technologies Used            | Java, J2EE                         |
 
 ## Introduction
 
@@ -23,6 +23,7 @@ Therap has multiple roles.
 2. Database Engineer
 3. Quality Assurance Engineer
 4. Embedded System Engineer
+5. System Adminstrator
 
 > [!TIP]
 > Therap BD organizes a Java fest every year. The prize money is very handsome. Apart from that, if you advance to final that means you get a direct ticket to interview skipping the initial screening
@@ -41,3 +42,4 @@ The selection process depends on the role, but generally has 3 to 4 stages,
 - [Software Engineer Interview Questions](./swe)
 - [Database Engineer Interview Questions](./dbe)
 - [Machine Learning Engineer Interview Questions](./ml)
+- [Associate System Adminstrator Interview Questions](./sys.md)
