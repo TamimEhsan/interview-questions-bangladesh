@@ -149,4 +149,4 @@ Mention the advantages and typical use cases of each.
 
 
 ## Contributors
-[Students of CSE SUST 28th Batch (2019-2020 Session)]()  
+- Students of CSE SUST 28th Batch (2019-2020 Session)
