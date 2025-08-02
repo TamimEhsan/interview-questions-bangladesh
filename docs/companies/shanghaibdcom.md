@@ -1,8 +1,8 @@
 # Shanghai Baud Data Communication Co. Ltd.
 
-|  |  |
-| :-| :- |
-| Founding year | 1994 |
+|                 |                      |
+| :-------------- | :------------------- |
+| Founding year   | 1994                 |
 | Company Website | https://www.bdcom.cn |
 
 ## Introduction
@@ -149,4 +149,4 @@ Mention the advantages and typical use cases of each.
 
 
 ## Contributors
-[Rigan Mahmud Chowdhury](https://www.linkedin.com/in/rigan-mahmud-chowdhury-9622b2240/)  
+[Students of CSE SUST 28th Batch (2019-2020 Session)]()  
