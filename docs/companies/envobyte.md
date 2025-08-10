@@ -19,8 +19,6 @@ head:
 
 ## Interview Stages:
 
-# Interview Stages
-
 ## 1. Shortlisting
 - HR & Department Head review CVs based on needs, skills, and experience.
 - Final shortlist approved by HR Manager.
