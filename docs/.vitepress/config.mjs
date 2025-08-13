@@ -23,8 +23,8 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/companies/' : {base:'/companies/', items: companiesMap},
-      '/notes/' : {base:'/notes/', items: notesMap},
+      '/companies/' : {base:'/companies', items: companiesMap},
+      '/notes/' : {base:'/notes', items: notesMap},
     },
 
     socialLinks: [
