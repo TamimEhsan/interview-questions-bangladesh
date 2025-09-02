@@ -11,9 +11,34 @@ head:
 
 The selection process has 3 stages,
 
-1. **Initial screening:** This round is taken in written format
+1. **Initial screening:** This round is taken in written format and can be divided into two parts.
 1. **1st technical round** The first round is taken by the BD team
 1. **HR Round:** This is the final stage before onboarding and typically deals with salary negotiation. 
+
+## Initial Screening Questions
+
+<article>
+
+Given an integer `num`, you need to return the sum all its digits in the number. @@ASWE 2025@@
+</article>
+
+<article>
+
+Given an integer `n`, for every number `i` in the range `1 <= i <= n`, print one of the following:
+
+- `"FizzBuzz"` if i is divisible by 3 and 5.
+- `"Fizz"` if i is divisible by 3.
+- `"Buzz"` if i is divisible by 5.
+- `i` if none of the above conditions are true. @@ASWE 2025@@
+
+[**💻 Submit Code**](https://leetcode.com/problems/fizz-buzz/)
+
+</article>
+
+<article>
+
+Given an integer array `nums`. All the integers of `nums` are sorted in ascending order except for one element. Find the index of the element. @@ASWE 2025@@
+</article>
 
 ## Software Engineering Questions
 
