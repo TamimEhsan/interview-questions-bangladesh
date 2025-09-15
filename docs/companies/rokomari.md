@@ -23,7 +23,7 @@ In this article, the questions of recruitment test for Backend Developer role at
 
 ### Problem Solving (60 Marks)
 
-<br/>
+
 <article>
 
 You are given a tree with n nodes and e edges. Each node has a value. Then you are given Q queries. In each query, you are given a node number, and you need to return the XOR of all nodes in the subtree rooted at that node (including the node itself).
@@ -71,7 +71,7 @@ int main() {
 </details>
 </article>
 
-<br/>
+
 <article>
 
 A very large number (length between 50 to 100 digits) in string format is given. You need to check if the number is divisible by 7. Solve this for t test cases.
@@ -103,7 +103,7 @@ int main() {
 </details>
 </article>
 
-<br/>
+
 <article>
 
 Implement Merge Sort for t test cases.
@@ -152,10 +152,12 @@ int main() {
 </details>
 </article>
 
-<br/>
+
 <article>
 
 A non-decreasing array is given. A new group is formed whenever the difference between two consecutive numbers is greater than 1 (the later number starts a new group). You are allowed to remove any elements from the array to maximize the number of groups. Return the maximum number of groups you can form. Solve this for t test cases.
+
+[**💻 Submit Code**](https://codeforces.com/problemset/problem/2114/C)
 <details><summary>Show Answer</summary>
 
 ```C++
@@ -190,7 +192,7 @@ int main() {
 </details>
 </article>
 
-<br/>
+
 <article>
 
 For a given number, find and print all of its distinct prime divisors. Solve this for t test cases.
@@ -230,7 +232,6 @@ int main() {
 
 ### Analytical (10 Marks)
 
-<br/>
 <article>
 
 There are 3 switches S1, S2, and S3 outside a server room. Inside the room, there are 3 cooling fans, and each fan is connected to exactly one switch. However, the switches are not labeled, so you don’t know which switch controls which fan. You are allowed to enter the server room only once. How can you figure out which switch controls which fan?
