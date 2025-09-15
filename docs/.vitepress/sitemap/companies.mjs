@@ -21,6 +21,7 @@ const companiesMap = [
       { text: "Optimizely", link: "/optimizely" },
       { text: "Relisource", link: "/relisource" },
       { text: 'RoBenDevs <span class="VPBadge warning">updated</span>', link: "/robendevs" },
+      { text: 'Rokomari <span class="VPBadge tip">new</span>', link: "/rokomari" },
       { text: 'Shanghai BDCOM <span class="VPBadge tip">new</span>', link: "/shanghaibdcom" },
       { text: 'REVE Systems <span class="VPBadge tip">new</span>', link: "/revesystems" },
       { text: "Spectrum", link: "/spectrum" },
