@@ -56,6 +56,19 @@ Given an array of n integers.Find max subarray sum with at most one delete.
 Given an array of n integers. Find the number of subarrays where the maximum element is between x and y
 </article>
 
+<article>
+Given a grid of 'a' of size (nXm). [1<= n,m <=1000]. Each cell in the grid contains an integer reward point.[-1000 <= a[i][j] <= 1000] . You start from the top-left cell of the grid and have to reach to the bottom right cell of the grid. You only can move down or right (from [i,j] to [i+1,j] or [i,j+1])
+Everytime you go into a cell, you get the reward point of the cell. You can start with an initial reward point. Now, you need to find the minimum initial reward point needed so that at any point of your journey, your cumulative reward point stays non negative (>=0). Solution:
+<ul>
+<li>
+Binary search on the initial reward -> complexity log2(n*m*cell_value_limit) * nm
+</li>
+<li>
+DP: Start from the bottom right cell and using dynamic programming principle, solve for sub-grids. Complexity -> nm
+</li>
+</ul>
+</article>
+
 ## Technical Round Questions
 <article>
 
