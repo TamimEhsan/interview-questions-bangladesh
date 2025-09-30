@@ -8,11 +8,11 @@ head:
 # Bkash
 
 | <img width="441" height="1"> | <img width="441" height="1"> |
-| :-| :- |
-| Founding year | |
-| Company Website |  |
-| Career Website |  |
-| Technologies Used|  |
+| :--------------------------- | :--------------------------- |
+| Founding year                |                              |
+| Company Website              |                              |
+| Career Website               |                              |
+| Technologies Used            |                              |
 
 ## Introduction
 Bkash Ltd. is a leading mobile financial service (MFS) provider in Bangladesh, focused on enabling digital financial inclusion. It is a subsidiary of BRAC Bank and partners with global players like Ant Financial.
@@ -67,6 +67,93 @@ Given an array of integers `nums` and an integer `target`, return the indices of
 Given the `head` of a singly linked list, reverse the list, and return the reversed list.
 
 [**💻 Submit Code**](https://leetcode.com/problems/reverse-linked-list/description/)
+<details><summary>Show Answer</summary>
+
+::: code-group
+
+```C++ [C++ Solution]
+#include <bits/stdc++.h>
+using namespace std;
+struct ListNode
+{
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+class Solution
+{
+public:
+    void append(ListNode *&head, int value)
+    {
+        ListNode *newNode = new ListNode(value);
+        if (!head)
+        {
+            head = newNode;
+            return;
+        }
+        ListNode *curr = head;
+        while (curr->next)
+        {
+            curr = curr->next;
+        }
+        curr->next = newNode;
+    }
+    void traverse(ListNode *head)
+    {
+        ListNode *curr = head;
+        while (curr)
+        {
+            cout << curr->val << " ";
+            curr = curr->next;
+        }
+        cout << endl;
+    }
+    ListNode *reverseList(ListNode *head)
+    {
+        ListNode *curr = head;
+        ListNode *prev = nullptr;
+
+        while (curr)
+        {
+            ListNode *temp = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = temp;
+        }
+        return prev;
+    }
+};
+int main()
+{
+    Solution solution;
+    ListNode *head = nullptr;
+
+    int n;
+    cin >> n;
+
+    for (int i = 0; i < n; i++)
+    {
+        int value;
+        cin >> value;
+        solution.append(head, value);
+    }
+
+    cout << "Original list: ";
+    solution.traverse(head);
+
+    head = solution.reverseList(head);
+    cout << "Reversed list: ";
+    solution.traverse(head);
+
+    return 0;
+}
+```
+
+:::
+
+</details>
 </article>
 
 <article>
