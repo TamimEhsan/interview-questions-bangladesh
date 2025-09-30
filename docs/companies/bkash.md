@@ -82,6 +82,21 @@ What is function overriding in Object-Oriented Programming? How is it different 
 <article>
 
 What is inheritance in Object-Oriented Programming?
+
+<details> <summary> Show Answer </summary>
+
+Inheritance in OOP:
+
+Inheritance is a fundamental concept in OOP where a new class (called child/derived class) acquires the properties and behaviors (fields and methods) of an existing class (called the parent class or base class). It allows code reuse, extension, and polymorphism by enabling one class to build upon another.
+
+Think of it like a family tree:
+
+- Grandfather (base class) -> has some qualities (e.g., eye color, height)
+- Father (derived class) -> inherits those qualities from Grandfather, but can also add new ones (e.g., voice, skills).
+- Son (further derived class) -> inherites from Father (indirectly from Grandfather) and can add even more traits.
+
+
+</details>
 </article>
 
 <article>
