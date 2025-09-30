@@ -30,6 +30,32 @@ The given questions are the summarized version of the original questions. The or
 <article>
 
 Given multiple test cases, each containing a 3-letter string (uppercase/lowercase letters), you have to check whether the string equals "YES", case-insensitively. Output "YES" if it matches, else "NO".
+
+<details><summary>Show Answer</summary>
+
+```cpp
+# include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t; cin >> t; // number of test cases
+
+    while (t--) {
+        string st; cin >> st;  // read input string
+
+        // convert input string into lowercase
+        for (auto &c: st) {
+            c = tolower(c);
+        }
+
+        // if input string equals yes, the result is YES, otherwise NO
+        (st == "yes") ? cout << "YES\n" : cout << "NO\n";
+    }
+
+    return 0;
+}
+```
+</details>
 </article>
 
 <article>
