@@ -72,6 +72,22 @@ Given the `head` of a singly linked list, reverse the list, and return the rever
 <article>
 
 What is concurrency control in databases? Why is it important?
+<details> <summary> Show Answer </summary> 
+
+Concurrency control is the mechanism used in database systems to ensure that multiple users or transactions can access and modify the database at the same time (concurrently) without causing data inconsistency, conflicts, or integrity problems.
+
+Without concurrency control, two transactions might update the same data simultaneously, leading to incorrect values. 
+
+Concurrency control avoids problems like lost update (one transaction overwrites another's update), dirty read (reading uncommitted changes from another transaction).
+
+Concurrency control ensures isolation (the “I” in ACID) by carefully ordering the execution of transactions.
+
+Techniques for concurrency control:
+- lock based protocols (e.g., two-phase locking)
+- timestamps ordering
+
+
+</details>
 </article>
 
 <article>
