@@ -98,6 +98,37 @@ public:
 Given an array of integers `nums` and an integer `target`, return the indices of the two numbers such that they add up to `target`.
 
 [**💻 Submit Code**](https://leetcode.com/problems/two-sum/description/)
+<details> <summary> Show Answer </summary> 
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> idx;  // stores number -> index
+        idx.reserve(nums.size());     // reserve space to optimize rehashing
+        
+        vector<int> ans;
+
+        for (int i = 0; i < (int)nums.size(); i++) {
+            int need = target - nums[i]; // number we need to reach target
+
+            // if the "need" is already in the map, we found the pair
+            auto it = idx.find(need);
+            if (it != idx.end()) {
+                ans = {it->second, i}; // return indices of the pair
+                break;
+            }
+
+            // otherwise, store current number with its index
+            idx[nums[i]] = i;
+        }
+
+        return ans;
+    }
+};
+
+```
+</details>
 </article>
 
 <article>
