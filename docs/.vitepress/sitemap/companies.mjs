@@ -23,6 +23,7 @@ const companiesMap = [
       { text: 'RoBenDevs <span class="VPBadge warning">updated</span>', link: "/robendevs" },
       { text: 'Rokomari <span class="VPBadge tip">new</span>', link: "/rokomari" },
       { text: 'Shanghai BDCOM <span class="VPBadge tip">new</span>', link: "/shanghaibdcom" },
+      { text: 'ShellBeeHaken <span class="VPBadge tip">new</span>', link: "/shellbeehaken" },
       { text: 'REVE Systems <span class="VPBadge tip">new</span>', link: "/revesystems" },
       { text: "Spectrum", link: "/spectrum" },
       { text: "SRBD", link: "/srbd" },
