@@ -53,6 +53,44 @@ Given the head of a linked list, remove all duplicate elements so that each valu
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 [**💻 Submit Code**](https://leetcode.com/problems/valid-parentheses/description/)
+
+<details> <summary> Show Answer </summary>
+
+```cpp
+class Solution {
+public:
+    bool isValid(string s) {
+        stack<char> st;
+
+        for (int i = 0; i < s.length(); i++) {
+            // if opening bracket, push to stack
+            if (s[i] ==  '(' or s[i] == '{' or s[i] == '[') {
+                st.push(s[i]);
+            } else {
+                // if stack is empty, then no matching opening bracket 
+                if (st.empty()) {
+                    return false;
+                } else {
+                    char tp = st.top();
+
+                    // check for matching pairs
+                    if ((s[i] == ')' and tp == '(') 
+                        or (s[i] == '}' and tp == '{') 
+                        or s[i] == ']' and tp == '[') {
+                            st.pop();
+                    }  else {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        return st.empty(); // if stack is empty, all pairs matched
+    }
+};
+
+```
+</details>
 </article>
 
 <article>
@@ -60,6 +98,37 @@ Given a string containing just the characters '(', ')', '{', '}', '[' and ']', d
 Given an array of integers `nums` and an integer `target`, return the indices of the two numbers such that they add up to `target`.
 
 [**💻 Submit Code**](https://leetcode.com/problems/two-sum/description/)
+<details> <summary> Show Answer </summary> 
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> idx;  // stores number -> index
+        idx.reserve(nums.size());     // reserve space to optimize rehashing
+        
+        vector<int> ans;
+
+        for (int i = 0; i < (int)nums.size(); i++) {
+            int need = target - nums[i]; // number we need to reach target
+
+            // if the "need" is already in the map, we found the pair
+            auto it = idx.find(need);
+            if (it != idx.end()) {
+                ans = {it->second, i}; // return indices of the pair
+                break;
+            }
+
+            // otherwise, store current number with its index
+            idx[nums[i]] = i;
+        }
+
+        return ans;
+    }
+};
+
+```
+</details>
 </article>
 
 <article>
@@ -151,6 +220,18 @@ int main()
 }
 ```
 
+```java [Java Solution]
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        if (head == null || head.next == null) return head;
+        ListNode nxt = head.next;
+        head.next = null;
+        ListNode tail = reverseList(nxt);
+        nxt.next = head;
+        return tail;
+    }
+}
+```
 :::
 
 </details>
@@ -159,16 +240,60 @@ int main()
 <article>
 
 What is concurrency control in databases? Why is it important?
+<details> <summary> Show Answer </summary> 
+
+Concurrency control is the mechanism used in database systems to ensure that multiple users or transactions can access and modify the database at the same time (concurrently) without causing data inconsistency, conflicts, or integrity problems.
+
+Without concurrency control, two transactions might update the same data simultaneously, leading to incorrect values. 
+
+Concurrency control avoids problems like lost update (one transaction overwrites another's update), dirty read (reading uncommitted changes from another transaction).
+
+Concurrency control ensures isolation (the “I” in ACID) by carefully ordering the execution of transactions.
+
+Techniques for concurrency control:
+- lock based protocols (e.g., two-phase locking)
+- timestamps ordering
+
+
+</details>
 </article>
 
 <article>
 
 What is function overriding in Object-Oriented Programming? How is it different from overloading?
+
+<details> <summary> Show Answer </summary>
+
+Function Overloading in OOP: 
+- Function overloading occurs when multiple functions in the same class share the same name but have different parameters list (different type, number, or order of parameters)
+- It is decided at compile-time.
+
+Function Overriding in OOP:
+- Function overriding occurs when a derived (child) class provides a specific features of a function that is already defined in its base (parent) class.
+- The function in the child class must have the same name, parameters, and return type as in the parent class.
+- It allows runtime polymorphism (deciding at runtime which version of the function to call)
+
+</details>
 </article>
 
 <article>
 
 What is inheritance in Object-Oriented Programming?
+
+<details> <summary> Show Answer </summary>
+
+Inheritance in OOP:
+
+Inheritance is a fundamental concept in OOP where a new class (called child/derived class) acquires the properties and behaviors (fields and methods) of an existing class (called the parent class or base class). It allows code reuse, extension, and polymorphism by enabling one class to build upon another.
+
+Think of it like a family tree:
+
+- Grandfather (base class) -> has some qualities (e.g., eye color, height)
+- Father (derived class) -> inherits those qualities from Grandfather, but can also add new ones (e.g., voice, skills).
+- Son (further derived class) -> inherites from Father (indirectly from Grandfather) and can add even more traits.
+
+
+</details>
 </article>
 
 <article>
@@ -207,5 +332,6 @@ This is a very important question and aims to check the knowledge of networking.
 </article>
 
 <article>
+
 What happens when you copy a file in a computer? Are the copied file and the original file the same?
 </article>
