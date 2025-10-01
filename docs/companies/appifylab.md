@@ -194,6 +194,52 @@ Given dimensions of two rectangles, one inside another, where the outer rectangl
 Compute the area between the two rectangles modulo `1,000,000,007`.
 
 [**💻 Submit Code**](https://toph.co/p/the-attack-titan)
+
+<details> <summary> Show Answer </summary>
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+const int mod = 1e9 + 7;
+
+long long multiplication(long long a, long long b,long long m){
+    long long res = 0;
+    a %= m;
+    while (b) {
+        if (b % 2)
+            res = (res + a) % m;
+
+        a = (2 * a) % m;
+        b >>= 1;
+    }
+return res;
+}
+
+void solve(){
+    long long a, b, c, d; cin >> a >> b >> c >> d;
+
+    long long x = multiplication(a, b, mod);
+    long long y = multiplication(c, d, mod);
+
+    long long result = (x - y + mod) % mod;
+    cout << result << "\n";
+}
+ 
+int32_t main(){
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int t = 1;
+    cin >> t;
+    for(int i = 1; i <= t; i++){
+        solve();
+    }
+    
+    return 0;
+}
+```
+</details>
+
 </article>
 
 <article>
