@@ -204,17 +204,11 @@ using namespace std;
 const int mod = 1e9 + 7;
 
 long long multiplication(long long a, long long b,long long m){
-    long long res = 0;
     a %= m;
-    while (b) {
-        if (b % 2)
-            res = (res + a) % m;
-
-        a = (2 * a) % m;
-        b >>= 1;
-    }
-return res;
+	b %= m;
+	return (a * b) % m;
 }
+
 
 void solve(){
     long long a, b, c, d; cin >> a >> b >> c >> d;
