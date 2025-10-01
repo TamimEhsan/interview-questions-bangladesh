@@ -30,6 +30,32 @@ The given questions are the summarized version of the original questions. The or
 <article>
 
 Given multiple test cases, each containing a 3-letter string (uppercase/lowercase letters), you have to check whether the string equals "YES", case-insensitively. Output "YES" if it matches, else "NO".
+
+<details><summary>Show Answer</summary>
+
+```cpp
+# include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t; cin >> t; // number of test cases
+
+    while (t--) {
+        string st; cin >> st;  // read input string
+
+        // convert input string into lowercase
+        for (auto &c: st) {
+            c = tolower(c);
+        }
+
+        // if input string equals yes, the result is YES, otherwise NO
+        (st == "yes") ? cout << "YES\n" : cout << "NO\n";
+    }
+
+    return 0;
+}
+```
+</details>
 </article>
 
 <article>
@@ -104,6 +130,61 @@ The given questions are the summarized version of the original questions. The or
 <article>
  
 Given a sequence of integers, convert each number to binary using parity (even → 1, odd → 0), concatenate to form a binary string, and print it with leading zeros removed.
+
+<details> <summary> Show Answer </summary>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    int n; cin >> n;    // size of the array
+
+    // read input array
+    vector<int> arr(n);
+    for (auto &x : arr) cin >> x;
+
+    // convert even -> 1, odd -> 0
+    for (int i = 0; i < n; i++) {
+        arr[i] = (arr[i] % 2 == 0) ? 1 : 0;
+    }
+
+    // find position of the last leading zero (if any)
+    int initial_zero = -1;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == 0) {
+            initial_zero = i;
+        } else {
+            break;
+        }
+    }
+
+    // Build answer string from remaining elements
+    string ans;
+    for (int i = initial_zero + 1; i < n; i++) {
+        ans += char(arr[i] + '0');
+    }
+
+    cout << ans << "\n";
+}
+
+int32_t main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    int t; 
+    cin >> t;  // number of test cases
+
+    for (int i = 1; i <= t; i++) {
+        cout << "Case " << i << ": ";
+        solve();
+    }
+
+    return 0;
+}
+```
+
+</details>
 </article>
 
 <article>
@@ -113,6 +194,46 @@ Given dimensions of two rectangles, one inside another, where the outer rectangl
 Compute the area between the two rectangles modulo `1,000,000,007`.
 
 [**💻 Submit Code**](https://toph.co/p/the-attack-titan)
+
+<details> <summary> Show Answer </summary>
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+const int mod = 1e9 + 7;
+
+long long multiplication(long long a, long long b,long long m){
+    a %= m;
+	b %= m;
+	return (a * b) % m;
+}
+
+
+void solve(){
+    long long a, b, c, d; cin >> a >> b >> c >> d;
+
+    long long x = multiplication(a, b, mod);
+    long long y = multiplication(c, d, mod);
+
+    long long result = (x - y + mod) % mod;
+    cout << result << "\n";
+}
+ 
+int32_t main(){
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int t = 1;
+    cin >> t;
+    for(int i = 1; i <= t; i++){
+        solve();
+    }
+    
+    return 0;
+}
+```
+</details>
+
 </article>
 
 <article>
