@@ -53,6 +53,44 @@ Given the head of a linked list, remove all duplicate elements so that each valu
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 [**💻 Submit Code**](https://leetcode.com/problems/valid-parentheses/description/)
+
+<details> <summary> Show Answer </summary>
+
+```cpp
+class Solution {
+public:
+    bool isValid(string s) {
+        stack<char> st;
+
+        for (int i = 0; i < s.length(); i++) {
+            // if opening bracket, push to stack
+            if (s[i] ==  '(' or s[i] == '{' or s[i] == '[') {
+                st.push(s[i]);
+            } else {
+                // if stack is empty, then no matching opening bracket 
+                if (st.empty()) {
+                    return false;
+                } else {
+                    char tp = st.top();
+
+                    // check for matching pairs
+                    if ((s[i] == ')' and tp == '(') 
+                        or (s[i] == '}' and tp == '{') 
+                        or s[i] == ']' and tp == '[') {
+                            st.pop();
+                    }  else {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        return st.empty(); // if stack is empty, all pairs matched
+    }
+};
+
+```
+</details>
 </article>
 
 <article>
