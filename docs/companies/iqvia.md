@@ -311,3 +311,42 @@ https://www.geeksforgeeks.org/find-minimum-number-of-merge-operations-to-make-an
 </details>
 </article>
 
+
+<article>
+    Given a lowercase string <i>s</i>, find the length <i>L</i> of the
+    longest prefix <i>p</i> such that the entire string is exactly
+    <i>p</i> repeated <i>k</i> times for some integer <i>k ≥ 2</i>.
+    If no such prefix exists, return <i>-1</i>. <br>
+	For string: "ababab", L = 2; for "aaaaaa", L = 3; for "abcd", L = -1.
+	
+
+	
+
+  <details><summary>Show Answer (BF)</summary>
+    [Complexity: O(n^2)]
+
+    n = |s|.
+    For L from n/2 down to 1:
+        If (n mod L ≠ 0) skip L.
+        Check if s[0..L-1] is repeated n/L times.
+        If yes, return L.
+    return -1
+  </details>
+
+  <details><summary>Show Answer</summary>
+    Use KMP algorithm to build the LPS array. 
+    Use the last value of the LPS array to find the answer.
+    [Complexity: O(n)]
+
+    int n = s.length();
+    computeLsa(s);
+    int d = n - lsa[n - 1];
+    if (n % d != 0 || d == n) return -1;
+    else {
+        int ans = floor(n / (2 * d)) * d;
+        if(n % ans != 0) return -1;
+        else return ans;
+    }
+  </details>
+</article>
+
