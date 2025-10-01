@@ -249,6 +249,19 @@ Techniques for concurrency control:
 <article>
 
 What is function overriding in Object-Oriented Programming? How is it different from overloading?
+
+<details> <summary> Show Answer </summary>
+
+Function Overloading in OOP: 
+- Function overloading occurs when multiple functions in the same class share the same name but have different parameters list (different type, number, or order of parameters)
+- It is decided at compile-time.
+
+Function Overriding in OOP:
+- Function overriding occurs when a derived (child) class provides a specific features of a function that is already defined in its base (parent) class.
+- The function in the child class must have the same name, parameters, and return type as in the parent class.
+- It allows runtime polymorphism (deciding at runtime which version of the function to call)
+
+</details>
 </article>
 
 <article>
