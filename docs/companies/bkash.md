@@ -220,6 +220,18 @@ int main()
 }
 ```
 
+```java [Java Solution]
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        if (head == null || head.next == null) return head;
+        ListNode nxt = head.next;
+        head.next = null;
+        ListNode tail = reverseList(nxt);
+        nxt.next = head;
+        return tail;
+    }
+}
+```
 :::
 
 </details>
@@ -320,5 +332,6 @@ This is a very important question and aims to check the knowledge of networking.
 </article>
 
 <article>
+
 What happens when you copy a file in a computer? Are the copied file and the original file the same?
 </article>
