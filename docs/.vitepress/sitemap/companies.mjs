@@ -20,6 +20,7 @@ const companiesMap = [
       { text: 'Kite Games Studio <span class="VPBadge warning">updated</span>', link: "/kite" },
       { text: "Orbitax", link: "/orbitax" },
       { text: "Optimizely", link: "/optimizely" },
+      { text: 'Pathao <span class="VPBadge tip">new</span>', link: "/pathao" },
       { text: "Relisource", link: "/relisource" },
       { text: 'RoBenDevs <span class="VPBadge warning">updated</span>', link: "/robendevs" },
       { text: 'Rokomari <span class="VPBadge tip">new</span>', link: "/rokomari" },
