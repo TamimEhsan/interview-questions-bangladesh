@@ -7,12 +7,12 @@ head:
 ---
 # Enosis Solutions
 
-| |  |
-| :-| :- |
-| Founding year |  |
-| Company Website | https://www.enosisbd.com/ |
-| Career Website | https://enosisbd.pinpointhq.com/ |
-| Technologies Used|  |
+|                   |                                  |
+| :---------------- | :------------------------------- |
+| Founding year     |                                  |
+| Company Website   | https://www.enosisbd.com/        |
+| Career Website    | https://enosisbd.pinpointhq.com/ |
+| Technologies Used |                                  |
 
 ## Introduction
 
@@ -37,6 +37,22 @@ Given an array of strings `words` and a width `maxWidth`, format the text such t
 You are given an `n x n` 2D `matrix` representing an image, rotate the image by 90 degrees (clockwise).
 
 [**💻 Submit Code**](https://leetcode.com/problems/rotate-image/description/)
+<details> <summary> Show Answer </summary>
+
+```cpp
+void rotate(vector<vector<int>> &matrix)
+    {
+        reverse(matrix.begin(), matrix.end());
+        for (int i = 0; i < matrix.size(); i++)
+        {
+            for (int j = i + 1; j < matrix.size(); j++)
+            {
+                swap(matrix[i][j], matrix[j][i]);
+            }
+        }
+    }
+```
+</details>
 </article>
 
 <article>
@@ -74,6 +90,29 @@ Convert a given string into a palindrome with the least number of changes.
 You are given two integer arrays `nums1` and `nums2`, sorted in non-decreasing order. Merge `nums1` and `nums2` into a single array sorted in non-decreasing order.
 
 [**💻 Submit Code**](https://leetcode.com/problems/merge-sorted-array/description/)
+<details> <summary> Show Answer </summary>
+
+```cpp
+void merge(vector<int> &nums1, int m, vector<int> &nums2, int n)
+{
+    int i = m - 1, j = n - 1, k = n + m - 1;
+    while (j >= 0)
+    {
+        if (i>=0&&nums1[i] > nums2[j])
+        {
+            nums1[k] = nums1[i];
+            i--;
+        }
+        else
+        {
+            nums1[k] = nums2[j];
+            j--;
+        }
+        k--;
+    }
+}
+```
+</details>
 </article>
 
 <article>
@@ -96,6 +135,28 @@ Given an array of integers `nums`. In each move pick two numbers from start and 
 Given an integer `x`, return `true` if `x` is a palindrome, and `false` otherwise.
 
 [**💻 Submit Code**](https://leetcode.com/problems/palindrome-number/description/)
+<details> <summary> Show Answer </summary>
+
+```cpp
+bool isPalindrome(int x)
+{
+    if (x < 0)
+        return false;
+    vector<int> v;
+    long long n = x, ans = 0;
+    while (x)
+    {
+        v.push_back(x % 10);
+        x /= 10;
+    }
+    for (int i = 0; i < v.size(); i++)
+    {
+        ans += v[i] * pow(10, v.size() - 1 - i);
+    }
+    return n == ans;
+}
+```
+</details>
 </article>
 
 <article>
@@ -103,6 +164,22 @@ Given an integer `x`, return `true` if `x` is a palindrome, and `false` otherwis
 Given an integer array `nums`, rotate the array to the right by `k` steps, where `k` is non-negative.
 
 [**💻 Submit Code**](https://leetcode.com/problems/rotate-array/description/)
+<details> <summary> Show Answer </summary>
+
+```cpp
+void rotate(vector<int> &nums, int k)
+    {
+        vector<int> cp = nums;
+        int n = nums.size();
+        k = k % n;
+        for (int i = 0; i < n; i++)
+        {
+            cp[(i + k) % n] = nums[i];
+        }
+        nums = cp;
+    }
+```
+</details>
 </article>
 
 <article>
@@ -122,6 +199,33 @@ Given `n`, calculate the `nth` Fibonacci number F`(n)`.
 Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.
 
 [**💻 Submit Code**](https://leetcode.com/problems/valid-anagram/description/)
+<details> <summary> Show Answer </summary>
+
+```cpp
+ bool isAnagram(string s, string t)
+    {
+        map<char, int> m1, m2;
+        for (int i = 0; i < s.size(); i++)
+        {
+            m1[s[i]]++;
+        }
+        for (int i = 0; i < t.size(); i++)
+        {
+            m2[t[i]]++;
+        }
+        if (m1.size() != m2.size())
+            return false;
+        for (auto it : m1)
+        {
+            if (m2.count(it.first) == 0)
+                return false;
+            else if (m2[it.first] != it.second)
+                return false;
+        }
+        return true;
+    }
+```
+</details>
 </article>
 
 <article>
