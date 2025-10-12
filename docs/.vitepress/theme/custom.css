@@ -1,29 +1,39 @@
-details {
-    border-color: var(--vp-custom-block-details-border);
-    color: var(--vp-custom-block-details-text);
-    background-color: var(--vp-custom-block-details-bg);
-    border-radius: 8px;
-    padding: 16px 16px 8px;
-    line-height: 24px;
-    font-size: var(--vp-custom-block-font-size);
-    margin-bottom: 8px;
-    margin-top: 8px;
-    font-weight: 400;
-  }
+/* details {
+  border-color: var(--vp-custom-block-details-border);
+  color: var(--vp-custom-block-details-text);
+  background-color: var(--vp-custom-block-details-bg);
+  border-radius: 8px;
+  padding: 16px 16px 8px;
+  line-height: 24px;
+  font-size: var(--vp-custom-block-font-size);
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-weight: 400;
+} */
 
-  article {
-    border-color: var(--vp-custom-block-details-border);
-    color: var(--vp-custom-block-details-text);
-    background-color: var(--vp-custom-block-details-bg);
-    border-radius: 8px;
-    padding: 16px 16px 8px;
-    line-height: 24px;
-    font-size: var(--vp-custom-block-font-size);
-    margin-bottom: 8px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    font-weight: 600;
-  } 
+article {
+  border-color: var(--vp-custom-block-details-border);
+  color: var(--vp-custom-block-details-text);
+  background-color: var(--vp-plugin-tabs-tab-bg);
+  border-radius: 8px;
+  padding: 16px 16px 8px;
+  line-height: 24px;
+  /* font-size: var(--vp-custom-block-font-size); */
+  margin-bottom: 8px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  /* font-weight: 600; */
+}
+
+.plugin-tabs a {
+  color: var(--vp-badge-tip-text);
+  background-color: var(--vp-badge-tip-bg);
+  border-color: var(--vp-badge-tip-border);
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-weight: 700;
+  padding: 8px;
+}
 
 article a {
   color: var(--vp-badge-tip-text);
@@ -34,17 +44,19 @@ article a {
   font-weight: 700;
   padding: 8px;
 }
+
 article hr {
   background-color: var(--vp-badge-tip-bg);
 }
-summary {
-    margin: 0 0 8px!important;
-    font-weight: 700;
-    cursor: pointer;
-    -webkit-user-select: none;
-    user-select: none;
-}
+
+/* summary {
+  margin: 0 0 8px !important;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+} */
 
 .github-alert {
-  border-left: .35em solid #238636!important;
+  border-left: .35em solid #238636 !important;
 }
