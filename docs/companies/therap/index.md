@@ -43,3 +43,15 @@ The selection process depends on the role, but generally has 3 to 4 stages,
 - [Database Engineer Interview Questions](./dbe)
 - [Machine Learning Engineer Interview Questions](./ml)
 - [Associate System Adminstrator Interview Questions](./sys.md)
+
+## Benefits, Perks and Things to Consider
+- **Onboarding and Mentorship:** A four-month paid, in-house training program is provided for new hires.
+- **Health Benefits:** Therap offers comprehensive health benefits to all employees.
+- **Commuter Benefits:** Transportation facilities are provided for employees.
+- **Flexible Work Arrangements:** Standard work hours are 9 AM – 5 PM, with Mondays designated as work-from-home days.
+- **Meals and Snacks:** Free morning snacks, lunch, and evening snacks are provided daily.
+- **Bonuses:** Two festival bonuses are offered each year.
+- **Paid Time Off:** Employees receive 21 days of paid leave annually.
+- **Wellness Programs:** An in-house gym and yoga sessions are available for employees.
+- **Company Retreats and Team Offsites:** Therap organizes an annual picnic and regular team outings.
+- **Recreation Facilities:** A recreation room is equipped with games such as carrom, table tennis, and billiards.
