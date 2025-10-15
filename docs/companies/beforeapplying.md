@@ -132,6 +132,46 @@ Don’t lose hope if you don’t find a job immediately. No one in BUET CSE rema
 
 If you’re still struggling reach out to your seniors for advice. Discuss areas where you might be lacking and identify ways to improve. Remember, you can always work on yourself and develop for the better.
 
+## Step 8: What to Consider
+# Benefits and Other Perks
+When considering for a new position or company, it's important to look beyond just the salary. Benefits and perks can significantly enhance your overall compensation package and improve your quality of life. When negotiating your salary, dont't forget to consider and ask about the perks and benefits that are important to you and what the company offers.
+
+Some common benefits and perks to consider include:
+
+**Health and Wellness:**
+- Health insurance (medical, dental, vision)
+
+**Financial Benefits:**
+- Retirement plans
+- Equity / Stock Options / RSUs
+- Bonuses
+- Profit sharing
+- Tuition reimbursement
+
+**Work-Life Balance:**
+- Paid time off (vacation, sick leave, holidays)
+- Flexible work arrangements (remote work, flexible hours)
+- Parental leave
+
+**Professional Growth:**
+- On-boarding and mentorship programs
+- Professional development opportunities (training, workshops)
+- Employee assistance programs (counseling, mental health support)
+
+**Perks:**
+- Commuter benefits (transit passes, parking)
+- Meals and snacks
+- Company retreats / team offsites
+- Wellness programs (gym memberships, fitness classes)
+- Recreation facilities (game rooms, relaxation areas)
+
+**Work Environment & Engineering Culture**
+- Code quality standards
+- Team structure
+- Engineering practices (code reviews, pair programming)
+- On-call rotations
+- Tools and technologies used
+
 ## Final Note
 Best of luck to all of you! If you need help, don’t hesitate to reach out. Take care.
 

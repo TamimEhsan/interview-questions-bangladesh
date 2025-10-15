@@ -236,3 +236,6 @@ Trie Data structure
 </details>
 </article>
 
+## Benefits, Perks and Things to Consider
+- **Bonuses**: SRBD offers 4 festival bonuses each year.
+- **Meals and Snacks**: Free snacks and drinks are available in the office.
