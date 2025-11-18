@@ -110,7 +110,7 @@ branch name.
 
 <article>
 
-You have to build a robust coupon system of two types. one is user specific, a user can only redeem it once. an other is time specific, a user can redeem it x times within a period. You have to implement microservices for both generating these coupon and validation. Response time is preferred to be <100ms for 1M users with 5K coupons active, inactive or expired. You have to record all coupon validation attempts asuncronously including key details. 
+You have to build a robust coupon system of two types. one is user specific, a user can only redeem it once. an other is time specific, a user can redeem it x times within a period. You have to implement microservices for both generating these coupon and validation. Response time is preferred to be <100ms for 1M users with 5K coupons active, inactive or expired. You have to record all coupon validation attempts asynchronously including key details. 
 
 Allowed to use any combination of the following: 
 NodeJS/TypeScript, Golang, kafka, docker, postgresql, MySQL, Lua, Redis 
