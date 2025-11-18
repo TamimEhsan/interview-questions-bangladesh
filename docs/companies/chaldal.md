@@ -410,6 +410,39 @@ Find digits from a string( Leading zeroes doesn't get counted)
 
 ```
 
+vector<int> extractNumbers(const string& input) {
+    vector<int> numbers;
+    regex re("\\d+"); // match one or more digits
+    sregex_iterator begin(input.begin(), input.end(), re);
+    sregex_iterator end;
+
+    for (auto it = begin; it != end; ++it) {
+        string numStr = it->str();
+        int num = stoi(numStr); // converts string to int (removes leading zeros)
+        numbers.push_back(num);
+    }
+
+    return numbers;
+}
+
+int main() {
+    string input;
+    cout << "Enter a string: ";
+    getline(cin, input);
+
+    vector<int> nums = extractNumbers(input);
+
+    if (nums.empty()) {
+        cout << "No numbers found in the string." << endl;
+    } else {
+        cout << "Numbers found (ignoring leading zeros): ";
+        for (int n : nums) cout << n << " ";
+        cout << endl;
+    }
+
+    return 0;
+}
+
 ```
 
 </details>

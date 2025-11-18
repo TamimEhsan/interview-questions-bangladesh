@@ -97,3 +97,10 @@ Design a Backend for a Simplified Version of Internet Banking
 </details>
 </article>
 
+## Benefits, Perks and Things to Consider
+Optimizely is a certified Great Place to Work. Here are some of the benefits and perks they offer:
+- **Flexible Work Arrangements:** Optimizely supports flexible work from home or onsite work arrangements.
+- **Parental leave:** Optimizely offers a supportive parental leave for both birthing and non-birthing parents. Duration of leave may vary by local regulations.
+- **Meals and Snacks:** Free snacks and drinks are available in the office.
+
+
