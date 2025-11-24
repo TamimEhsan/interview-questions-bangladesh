@@ -127,6 +127,4 @@ The final interview was mostly informal, discussing about the company, work cult
 duration, and salary.
 
 </article>
-
-## Contributor
-- [Muntasir Mamun Nahid](https://bd.linkedin.com/in/muntasir-mamun-nahid-b1634a1aa)  
+ 
