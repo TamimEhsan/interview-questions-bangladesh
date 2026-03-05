@@ -43,6 +43,7 @@ const companiesMap = [
       },
       { text: "WSD", link: "/wsd" },
       { text: "WellDev", link: "/welldev" },
+      { text: "WeDevs", link: "/wedevs" }
     ],
   },
   {
