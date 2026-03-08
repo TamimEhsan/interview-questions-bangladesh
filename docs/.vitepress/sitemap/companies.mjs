@@ -42,8 +42,8 @@ const companiesMap = [
         ],
       },
       { text: "WSD", link: "/wsd" },
-      { text: "WellDev", link: "/welldev" },
-      { text: "WeDevs", link: "/wedevs" }
+      { text: 'WeDevs <span class="VPBadge tip">new</span>', link: "/wedevs" },
+      { text: "WellDev", link: "/welldev" }
     ],
   },
   {

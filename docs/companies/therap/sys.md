@@ -44,6 +44,16 @@ What are the advantages of cloud storage over local storage?
 Provide an example where multithreading is a better approach than multiprocessing.
 </article>
 
+<article>
+
+What is a context switch in Linux
+</article>
+
+<article>
+
+What’s the Difference between Hard Links vs Soft Links in Linux? What will happen if soft link is broken?
+</article>
+
 
 ### Networking
 <article>

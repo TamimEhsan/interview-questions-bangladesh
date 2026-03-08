@@ -23,27 +23,34 @@ weDevs' fresher recruitment is currently based on competitive programming. They 
 Their interview process consists of three stages. The first two stages vary from person to person. For some, the first stage is a basic verbal session focusing on fundamental computer science concepts, while for others, it is a coding round. The final stage is called the HR round. To receive an offer, you must pass all three stages.
 
 ## Questions
+
 <article>
+
 Discuss BFS and DFS: which one is faster, and what are their use cases?
 </article>
 
 <article>
+
 Explain the principles of OOP.
 </article>
 
 <article>
+
 How many types of relationships exist in databases?
 </article>
 
 <article>
+
 What is binary search? How does it work?
 </article>
 
 <article>
+
 Questions may be asked about the projects you have mentioned.
 </article>
 
 <article>
+
 The coding round is conducted on vjudge and contains Codeforces problems. The complexity is around 1000-1600 ELO rating.
 </article>
 
