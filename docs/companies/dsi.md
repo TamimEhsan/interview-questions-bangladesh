@@ -53,6 +53,23 @@ bool restoreDouble(vector<int> input,vector<int>& output){
 <article>
 
 Given n inputs each with n bits, output a number which was not in the given inputs and has n bits too.
+<details><summary>Show Hint</summary>
+
+Bit Manipulation
+</details>
+
+<details><summary>Show Answer</summary>
+```C++
+int missingNumber(vector<int>& nums) {
+    int ret = 0;
+    for(int i = 0; i < nums.size(); ++i) {
+        ret ^= i;
+        ret ^= nums[i];
+    }
+    return ret^=nums.size();
+}
+```
+</details>
 </article>
 
 <article>
