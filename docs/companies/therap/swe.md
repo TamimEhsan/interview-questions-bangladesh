@@ -577,7 +577,7 @@ Design this legacy table for using in a relational database.
 
 <article>
 
-You are given a list of orders, where each order takes a certain amount of time to process (e.g., brewing a coffee). There are `k` identical machines available to process these orders. Orders are processed on a first-come, first-served basis, and each order must be assigned to exactly one machine. Problems will be placed sequentially. Find the total time required to complete all orders.
+You are given a list of orders, where each order takes a certain amount of time to process (e.g., brewing a coffee). There are `k` identical machines available to process these orders. Orders are processed on a first-come, first-served basis, and each order must be assigned to exactly one machine. Orders will be placed sequentially. Find the total time required to complete all orders.
 
 ```
 Input: k = 2, orders = [3,2,5,4]
