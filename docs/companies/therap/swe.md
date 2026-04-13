@@ -573,3 +573,430 @@ Design this legacy table for using in a relational database.
 | 5  	| Rakib 	| rakib@gmail.com 	| MECHA   	| CSE101, BME101, MECHA101, MECHA101   	|
 </article>
 
+## April 2026
+
+<article>
+
+You are given a list of orders, where each order takes a certain amount of time to process (e.g., brewing a coffee). There are `k` identical machines available to process these orders. Orders are processed on a first-come, first-served basis, and each order must be assigned to exactly one machine. Find the minimum total time required to complete all orders.
+
+```
+Input: k = 2, orders = [3,2,5,4]
+Output: 7
+```
+
+[**💻 Submit Code**](https://leetcode.com/problems/task-scheduler/)
+<details><summary>Show Answer</summary>
+
+```cpp
+class Solution {
+public:
+    int getMinTime(int k, vector<int>& orders) {
+        // Min-heap to keep track of the earliest available machine
+        priority_queue<int, vector<int>, greater<int>> pq;
+        
+        for (int curr : orders) {
+            if (pq.size() < k) {
+                // If there are still empty machines, just push the task time
+                pq.push(curr);
+            } else {
+                // If pq.size() == k, get the earliest available machine
+                int x = pq.top();
+                pq.pop();
+                // Add the current task time to that machine and push back
+                pq.push(x + curr);
+            }
+        }
+        
+        // At the end, return the max element in the pq while pq is not empty
+        int max_time = 0;
+        while (!pq.empty()) {
+            max_time = pq.top(); // Since it's a min-heap, the last element popped is the max
+            pq.pop();
+        }
+        
+        return max_time;
+    }
+};
+```
+
+</details>
+</article>
+
+<article>
+
+Given an encoded string, return its decoded string.
+
+The encoding rule is: `k[encoded_string]`, where the `encoded_string` inside the square brackets is being repeated exactly `k` times. Note that `k` is guaranteed to be a positive integer. There can be nested encoding. You may assume that the input string is always valid; digits are only used as repeat numbers.
+
+```
+Input: s = "3[a2[bc]]"
+Output: "abcbcabcbcabcbc"
+```
+
+[**💻 Submit Code**](https://leetcode.com/problems/decode-string/description/?envType=problem-list-v2&envId=recursion)
+<details><summary>Show Answer</summary>
+
+```cpp
+class Solution {
+public:
+  string decodeString(string s) {
+    stack<char> st;
+
+    for (int i = 0; i < s.size(); i++) {
+      if (s[i] == ']') {
+        string substr = "";
+        while (st.top() != '[') {
+          substr += st.top();
+          st.pop();
+        }
+        st.pop();
+
+        reverse(substr.begin(), substr.end());
+        string num = "";
+
+        while (!st.empty() && isdigit(st.top())) {
+          num += st.top();
+          st.pop();
+        }
+        reverse(num.begin(), num.end());
+        int n = stoi(num);
+
+        string temp = substr;
+        for (int j = 1; j < n; j++) {
+          substr += temp;
+        }
+
+        for (int j = 0; j < substr.size(); j++) {
+          st.push(substr[j]);
+        }
+
+      } else {
+        st.push(s[i]);
+      }
+    }
+
+    string ans = "";
+    while (!st.empty()) {
+      ans += st.top();
+      st.pop();
+    }
+
+    reverse(ans.begin(), ans.end());
+    return ans;
+  }
+};
+```
+
+</details>
+</article>
+
+<article>
+
+Given two strings `s` and `t`, return the shortest substring of `s` such that every character in `t`, including duplicates, is present in the substring. If such a substring does not exist, return an empty string `""`.
+
+```
+Input: s = "OUZODYXAZV", t = "XYZ"
+Output: "YXAZ"
+```
+
+[**💻 Submit Code**](https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150)
+<details><summary>Show Answer</summary>
+
+```cpp
+class Solution {
+public:
+  string minWindow(string s, string t) {
+    map<char, int> pattern, mp;
+
+    for (auto &x : t)
+      pattern[x]++;
+
+    int i = 0, j = 0, cnt = 0, n = t.size();
+    string ans = "";
+
+    while (i < s.size()) {
+      mp[s[i]]++;
+
+      if (mp[s[i]] <= pattern[s[i]])
+        cnt++;
+
+      while (j <= i && mp[s[j]] > pattern[s[j]]) {
+        mp[s[j]]--;
+        j++;
+      }
+
+      if (cnt == n && (ans.empty() || i - j + 1 < ans.length()))
+        ans = s.substr(j, i - j + 1);
+
+      i++;
+    }
+
+    return ans;
+  }
+};
+```
+
+</details>
+</article>
+
+<article>
+
+Given an integer array `nums`, return the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle.
+
+```
+Input: nums = [2,2,3,4]
+Output: 3
+```
+
+[**💻 Submit Code**](https://leetcode.com/problems/valid-triangle-number/description/)
+<details><summary>Show Answer</summary>
+
+```cpp
+class Solution {
+public:
+    int triangleNumber(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        int count = 0;
+        for (int i = nums.size() - 1; i >= 2; i--) {
+            int l = 0, r = i - 1;
+            while (l < r) {
+                if (nums[l] + nums[r] > nums[i]) {
+                    count += r - l;
+                    r--;
+                } else {
+                    l++;
+                }
+            }
+        }
+        return count;
+    }
+};
+```
+
+</details>
+</article>
+
+<article>
+
+You are given a singly linked list. Traverse the list and reverse every block of 3 consecutive nodes. If the number of nodes is not a multiple of 3, the remaining nodes at the end should be left as is.
+
+```
+Input:  a > b > c > d > e > f > g > h
+Output: c > b > a > f > e > d > g > h
+```
+
+[**💻 Submit Code**](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+<details><summary>Show Answer</summary>
+
+```cpp
+ListNode* reverseKGroup(ListNode* head, int k) {
+    ListNode* curr = head;
+    int count = 0;
+    while (curr && count < k) {
+        curr = curr->next;
+        count++;
+    }
+    if (count < k) return head;
+
+    curr = head;
+    ListNode* prev = nullptr;
+    for (int i = 0; i < k; i++) {
+        ListNode* next = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr = next;
+    }
+    head->next = reverseKGroup(curr, k);
+    return prev;
+}
+```
+
+</details>
+</article>
+
+<article>
+
+Given a database table, normalize it. Show the primary key, foreign key, and the relationships among the tables.
+
+| code | bus_name | type    | from  | to         | departure | arrival | days          |
+|------|----------|---------|-------|------------|-----------|---------|---------------|
+| 101  | Khanika  | express | dhaka | rajshahi   | 9 am      | 9 pm    | sat, mon, thu |
+| 102  | Taranga  | local   | dhaka | khulna     | 10 pm     | 11 am   | everyday      |
+| 103  | Ulka     | express | dhaka | chittagong | 10 pm     | 11 am   | sat, sun      |
+</article>
+
+<article>
+
+Given an integer `n`, find the first `n` rows of Pascal's triangle.
+
+```
+Input: n = 4
+Output: [[1], [1,1], [1,2,1], [1,3,3,1]]
+```
+
+[**💻 Submit Code**](https://leetcode.com/problems/pascals-triangle/)
+<details><summary>Show Answer</summary>
+
+```cpp
+vector<vector<int>> generate(int numRows) {
+    vector<vector<int>> result;
+    for (int i = 0; i < numRows; i++) {
+        vector<int> row(i + 1, 1);
+        for (int j = 1; j < i; j++) {
+            row[j] = result[i-1][j-1] + result[i-1][j];
+        }
+        result.push_back(row);
+    }
+    return result;
+}
+```
+
+</details>
+</article>
+
+<article>
+
+An alien's warship has a large amount of fuel and needs to distribute it across multiple vessels. As the amount is very large, the fuel amount is given in string format and a divisor is given. Output the quotient.
+
+```
+Input:  total amount = "44444444444666666667777777777", divisor = 2
+Output: quotient = "22222222222333333333888888888"
+```
+
+[**💻 Submit Code**](https://www.geeksforgeeks.org/dsa/divide-large-number-represented-string/)
+<details><summary>Show Answer</summary>
+
+```cpp
+string divideString(string dividend, int divisor) {
+    string result = "";
+    long long current = 0;
+    for (char c : dividend) {
+        current = current * 10 + (c - '0');
+        result += to_string(current / divisor);
+        current %= divisor;
+    }
+    size_t start = result.find_first_not_of('0');
+    return start == string::npos ? "0" : result.substr(start);
+}
+```
+
+</details>
+</article>
+
+<article>
+
+Given a list of software versions in chronological order and a current version, output the following.
+
+```
+Input:
+versions = ["1.0", "1.5", "2.0"]
+current_version = "1.0"
+
+Output:
+{
+  "isLatest": false,
+  "latestVersion": "2.0",
+  "versionBehind": "2"
+}
+```
+<details><summary>Show Answer</summary>
+
+```cpp
+tuple<bool, string, int> checkVersion(vector<string>& versions, string current_version) {
+    string latest = versions.back();
+    bool isLatest = current_version == latest;
+
+    int idx = find(versions.begin(), versions.end(), current_version) - versions.begin();
+    int versionBehind = versions.size() - 1 - idx;
+
+    return {isLatest, latest, versionBehind};
+}
+```
+
+</details>
+</article>
+
+<article>
+
+Design an object-oriented programming solution for a parking management system. The system should model `ParkingLot`, `ParkingSpace`, and `Ticket`, and support different types of vehicles using a `Vehicle` superclass with subclasses such as `Car` and `Motorbike`.
+<details><summary>Show Answer</summary>
+
+```java
+abstract class Vehicle {
+    protected String licensePlate;
+    public Vehicle(String licensePlate) {
+        this.licensePlate = licensePlate;
+    }
+    public String getLicensePlate() { return licensePlate; }
+}
+
+class Car extends Vehicle {
+    public Car(String licensePlate) { super(licensePlate); }
+}
+
+class Motorbike extends Vehicle {
+    public Motorbike(String licensePlate) { super(licensePlate); }
+}
+
+class Ticket {
+    private Vehicle vehicle;
+    private ParkingSpace space;
+    private long entryTime;
+
+    public Ticket(Vehicle vehicle, ParkingSpace space) {
+        this.vehicle = vehicle;
+        this.space = space;
+        this.entryTime = System.currentTimeMillis();
+    }
+    public Vehicle getVehicle() { return vehicle; }
+    public ParkingSpace getSpace() { return space; }
+}
+
+class ParkingSpace {
+    private int id;
+    private boolean isOccupied;
+
+    public ParkingSpace(int id) {
+        this.id = id;
+        this.isOccupied = false;
+    }
+    public boolean isAvailable() { return !isOccupied; }
+    public void occupy() { isOccupied = true; }
+    public void vacate() { isOccupied = false; }
+    public int getId() { return id; }
+}
+
+class ParkingLot {
+    private List<ParkingSpace> spaces;
+
+    public ParkingLot(int totalSpaces) {
+        spaces = new ArrayList<>();
+        for (int i = 1; i <= totalSpaces; i++) {
+            spaces.add(new ParkingSpace(i));
+        }
+    }
+
+    public Ticket park(Vehicle vehicle) {
+        for (ParkingSpace space : spaces) {
+            if (space.isAvailable()) {
+                space.occupy();
+                return new Ticket(vehicle, space);
+            }
+        }
+        return null; // No space available
+    }
+
+    public void leave(Ticket ticket) {
+        ticket.getSpace().vacate();
+    }
+}
+```
+
+</details>
+</article>
+
+<article>
+
+Write about a project you have implemented. Discuss the use of AI, the challenges faced, and how you overcame those challenges.
+</article>
+
