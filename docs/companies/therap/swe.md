@@ -905,13 +905,20 @@ Output:
 <details><summary>Show Answer</summary>
 
 ```cpp
-tuple<bool, string, int> checkVersion(vector<string>& versions, string current_version) {
+tuple<bool, string, int> checkVersion(const vector<string>& versions, const string& current_version) {
+    if (versions.empty()) {
+        return {false, "", -1};
+    }
+
     string latest = versions.back();
+    auto it = find(versions.begin(), versions.end(), current_version);
+    if (it == versions.end()) {
+        return {false, latest, -1};
+    }
+
     bool isLatest = current_version == latest;
-
-    int idx = find(versions.begin(), versions.end(), current_version) - versions.begin();
-    int versionBehind = versions.size() - 1 - idx;
-
+    int idx = static_cast<int>(distance(versions.begin(), it));
+    int versionBehind = static_cast<int>(versions.size()) - 1 - idx;
     return {isLatest, latest, versionBehind};
 }
 ```
