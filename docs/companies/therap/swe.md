@@ -577,7 +577,7 @@ Design this legacy table for using in a relational database.
 
 <article>
 
-You are given a list of orders, where each order takes a certain amount of time to process (e.g., brewing a coffee). There are `k` identical machines available to process these orders. Orders are processed on a first-come, first-served basis, and each order must be assigned to exactly one machine. Find the total time required to complete all orders.
+You are given a list of orders, where each order takes a certain amount of time to process (e.g., brewing a coffee). There are `k` identical machines available to process these orders. Orders are processed on a first-come, first-served basis, and each order must be assigned to exactly one machine. Problems will be placed sequentially. Find the total time required to complete all orders.
 
 ```
 Input: k = 2, orders = [3,2,5,4]
@@ -587,34 +587,38 @@ Output: 7
 <details><summary>Show Answer</summary>
 
 ```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
-    int getMinTime(int k, vector<int>& orders) {
-        // Min-heap to keep track of the earliest available machine
-        priority_queue<int, vector<int>, greater<int>> pq;
-        
-        for (int curr : orders) {
-            if (pq.size() < k) {
-                // If there are still empty machines, just push the task time
-                pq.push(curr);
-            } else {
-                // If pq.size() == k, get the earliest available machine
-                int x = pq.top();
-                pq.pop();
-                // Add the current task time to that machine and push back
-                pq.push(x + curr);
-            }
-        }
-        
-        // At the end, return the max element in the pq while pq is not empty
-        int max_time = 0;
-        while (!pq.empty()) {
-            max_time = pq.top(); // Since it's a min-heap, the last element popped is the max
-            pq.pop();
-        }
-        
-        return max_time;
+  int getMinTime(int k, vector<int> &orders) {
+    // Min-heap to keep track of the earliest available machine
+    priority_queue<int, vector<int>, greater<int>> pq;
+
+    for (int curr : orders) {
+      if (!pq.empty() || pq.size() < k) {
+        // If there are still empty machines, just push the task time
+        pq.push(curr);
+      } else {
+        // If pq.size() == k, get the earliest available machine
+        int x = pq.top();
+        pq.pop();
+        // Add the current task time to that machine and push back
+        pq.push(x + curr);
+      }
     }
+
+    // At the end, return the max element in the pq while pq is not empty
+    int max_time = 0;
+    while (!pq.empty()) {
+      max_time =
+          pq.top(); // Since it's a min-heap, the last element popped is the max
+      pq.pop();
+    }
+
+    return max_time;
+  }
 };
 ```
 
@@ -895,7 +899,7 @@ Output:
 {
   "isLatest": false,
   "latestVersion": "2.0",
-  "versionBehind": "2"
+  "versionBehind": 2
 }
 ```
 <details><summary>Show Answer</summary>
