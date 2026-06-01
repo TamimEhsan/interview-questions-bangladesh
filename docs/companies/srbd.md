@@ -19,6 +19,9 @@ head:
 
 > [!TIP]
 > SRBD organizes a coding contest every year. The prize money is very handsome. Apart from that, if you do advance to round 2 or 3 means you might get a call for interview skipping the initial screening
+
+> [!NOTE]
+> SRBD employees have the opportunity to file patents for innovative work developed during their tenure.
 ## Interview Stages
 SRBD takes interview in two round.
 

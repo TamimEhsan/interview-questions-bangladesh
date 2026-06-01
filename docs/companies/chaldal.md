@@ -7,7 +7,7 @@ head:
 ---
 # Chaldal
 
-| <img width="441" height="1"> | <img width="441" height="1"> |
+|  |  |
 | :-| :- |
 | Founding year | 2013 |
 | Company Website | https://chaldal.com/ |
@@ -16,7 +16,10 @@ head:
 
 ## Introduction
 
-Chaldal.com, founded in 2013, is a grocery e-commerce platform in Bangladesh. They maintain the whole system by themselves. So, they are a tech company too and arguably one the most prestigious tech company in bangaldesh
+Chaldal.com, founded in 2013, is a grocery e-commerce platform in Bangladesh. They maintain the whole system by themselves. So, they are a tech company too and arguably one the most prestigious tech company in bangaldesh.
+
+> [!NOTE]
+> Chaldal is part of the Y-Combinator(YC) Summer 2015 batch. This highlights the company's global recognition and credibility, as YC is one of the world's most prestigious startup accelerators.
 
 ## Interview Stages
 
@@ -701,4 +704,16 @@ public:
 };
 ```
 </details>
+</article>
+
+<article>
+
+Design a file/text compression system
+</article>
+
+<article>
+
+Design a simple inventory system. The scenario is simplified. We have warehouses are to store products and employees work in there handling the products. Design a database schema for the system. 
+
+Follow up question: How do you make sure that an employee tasked to handle a product remains in the same warehouse using database constraints?
 </article>
