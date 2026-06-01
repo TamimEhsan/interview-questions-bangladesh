@@ -23,7 +23,7 @@ import { withBase } from 'vitepress'
 // Ad configuration - add your ads here
 const ads = [
   { 
-    img: '/resource/ads/chakri-koi-v2.png', 
+    img: 'https://raw.githubusercontent.com/TamimEhsan/interview-questions-bangladesh/refs/heads/master/docs/resource/ads/chakri-koi-v2.png', 
     link: 'https://chakri-koi.com',
     alt: 'Chakri.com - Find Your Dream Job in Bangladesh'
   },
