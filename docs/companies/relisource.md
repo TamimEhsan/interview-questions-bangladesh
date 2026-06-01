@@ -55,6 +55,25 @@ JavaScript & HTML
 Write JavaScript code to check if a button is clicked in an HTML element using an EventListener. Upon clicking, the size of the HTML element should increase by 10%.
 </article>
 
+<article>
+
+Given two tables: `employee(name, salary, department_id)` and `department(id, department_name)`. Write an SQL query to find the maximum salary for each department. @@Junior2026@@
+</article>
+
+<article>
+
+Given an `m x n` 2D binary grid grid which represents a map of 'L's (land) and 'W's (water), return the number of islands and the maximum size among the islands. 
+
+An island is surrounded by water and is formed by connecting adjacent lands horizontally, vertically or diagonally ie in all 8 directions. @@Junior2026@@
+
+Releated Question: [**💻 Submit Code**](https://leetcode.com/problems/number-of-islands/description/) 
+</article>
+
+<article>
+
+Write javascript code to create a button with id `growButton`. On each click its size increases by 2px. If its size goes beyond 36px it should stop growing, turn green, and show an alert saying it's already at max size. @@Junior2026@@
+</article>
+
 ## Embedded Software Engineering Questions
 <article>
 

@@ -268,6 +268,26 @@ bool containsNearbyAlmostDuplicate(vector<int>& nums, int indexDiff, int valueDi
 </details>
 </article>
 
+<article>
+
+You are given `n` balloons, indexed from `0` to `n - 1`. Each balloon is painted with a number on it represented by an array nums. You are asked to burst all the balloons.
+
+If you burst the `i`th balloon, you will get `nums[i - 1] * nums[i] * nums[i + 1]` coins. If `i - 1` or `i + 1` goes out of bounds of the array, then treat it as if there is a balloon with a `1` painted on it.
+
+Return the maximum coins you can collect by bursting the balloons wisely. @@SWE2026@@
+
+[**💻 Submit Code**](https://leetcode.com/problems/burst-balloons/description/)
+
+</article>
+
+<article>
+
+Given a callable function `f(x, y)` with a hidden formula and a value `z`, reverse engineer the formula and return all positive integer pairs `x` and `y` where `f(x,y) == z`. You may return the pairs in any order. @@SWE2026@@
+
+[**💻 Submit Code**](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/description/)
+
+</article>
+
 ## Online Round Questions
 
 <article>
