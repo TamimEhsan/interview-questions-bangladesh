@@ -1,8 +1,12 @@
 const companiesMap = [
   {
-    items: [
+    items: [      
       { text: "General Guidelines", link: "/general" },
       { text: 'Before Application', link: "/beforeapplying" },
+      { text: 'Reverse Interview', link: "/reverse-interview" },],
+  },{
+    items: [
+      { text: 'Aastha IT <span class="VPBadge tip">new</span>', link: "/aastha" },
       { text: 'AppifyLab <span class="VPBadge tip">new</span>', link: "/appifylab" },
       { text: 'Appscode <span class="VPBadge tip">new</span>', link: "/appscode" },
       { text: 'Bkash <span class="VPBadge tip">new</span>', link: "/bkash" },
