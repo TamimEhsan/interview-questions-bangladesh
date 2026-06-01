@@ -7,7 +7,7 @@ head:
 ---
 # Optimizely Bangladesh
 
-| <img width="441" height="1"> | <img width="441" height="1"> |
+|  |  |
 | :-| :- |
 | Founding year | |
 | Company Website | https://www.optimizely.com/ |
@@ -17,6 +17,9 @@ head:
 ## Introduction
 
 [Optimizely](https://www.optimizely.com/get-started/) has recently expanded its global operations with the establishment of a new office in Bangladesh. Optimizely is a leading software company specializing in digital experience platforms (DXP) that empower businesses to enhance their marketing and product strategies. Optimizely offers a comprehensive suite of tools, including a robust Content Management System (CMS) and an integrated Content Marketing Platform (CMP).
+
+> [!NOTE]
+> Optimizely was part of the Y Combinator (YC) Winter 2010 batch. This is one of largest global companies which have office in Bangladesh.
 
 ## Interview Stages
 
@@ -102,5 +105,9 @@ Optimizely is a certified Great Place to Work. Here are some of the benefits and
 - **Flexible Work Arrangements:** Optimizely supports flexible work from home or onsite work arrangements.
 - **Parental leave:** Optimizely offers a supportive parental leave for both birthing and non-birthing parents. Duration of leave may vary by local regulations.
 - **Meals and Snacks:** Free snacks and drinks are available in the office.
+- **Transportation:** Optimizely provides transportation facilities for employees commuting to the office.
+- **Health and Wellness:** Optimizely offers health insurance and wellness programs to support the well-being of its employees.
+- **Provident Fund:** Optimizely contributes to the provident fund for its employees, ensuring financial security for the future.
+- **Bonuses:** Optimizely offers 2 festival bonuses each year.
 
 
