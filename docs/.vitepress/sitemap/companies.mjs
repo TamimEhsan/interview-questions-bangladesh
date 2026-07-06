@@ -49,6 +49,14 @@ const companiesMap = [
       { text: 'WeDevs <span class="VPBadge tip">new</span>', link: "/wedevs" },
       { text: "WellDev", link: "/welldev" }
     ],
+  },{
+    items: [      
+      { text: "Green University", link: "/gub" },
+      { text: 'IUBAT', link: "/iubat" },
+      { text: "National University", link: "/nu" },
+      { text: "Stamford University", link: "/sub" },
+      { text: 'Sonargaon University', link: "/su"},
+      { text: 'World University', link: "/wub" },],
   },
   {
     items: [{ text: "CSE competitions", link: "/competitions" }],
