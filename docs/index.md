@@ -19,10 +19,10 @@ hero:
 
 features:
   - icon: 🏣
-    title: 20+ companies
+    title: 40+ companies
     details: Collection of questions asked in multiple top companies of Bangladesh
   - icon: 📝
-    title: 350+ questions
+    title: 600+ questions
     details: Details and solutions of 300+ questions
   - icon: 💡
     title: Tips and tricks
