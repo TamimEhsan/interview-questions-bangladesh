@@ -523,6 +523,7 @@ What is the motivation to apply here?
 
 ### Coding Questions
 
+
 <article>
 Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
 
@@ -539,6 +540,25 @@ Write pseudocode of generating fibonacci number using only two variable
 Given the `root` of a binary tree, return the postorder traversal of its nodes' values.
 
 [**💻 Submit Code**](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
+<details><summary>Show Answer</summary>
+
+```C++
+class Solution {
+public:
+    void traverse(TreeNode* root, vector<int> &path) {
+        if(root == nullptr) return;
+        traverse(root->left,path);
+        traverse(root->right,path);
+        path.push_back(root->val);
+    }
+    vector<int> postorderTraversal(TreeNode* root) {
+        vector<int> path;
+        traverse(root, path);
+        return path;
+    }
+};
+```
+</details>
 </article>
 
 <article>
@@ -546,6 +566,25 @@ Given the `root` of a binary tree, return the postorder traversal of its nodes' 
 Given an array of integers nums and an integer target, return all pairs of indices of the two numbers such that they add up to target.
 
 [**💻 Submit Code**](https://leetcode.com/problems/two-sum/description/)
+<details><summary>Show Answer</summary>
+
+```C++
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+    vector<pair<int,int>> pos;
+    for(int i=0;i<nums.size();i++) pos.push_back({nums[i],i});
+    sort(pos.begin(),pos.end());
+    int st = 0, en = nums.size()-1;
+    while(st<en) {
+        if( pos[st].first + pos[en].first == target ) return {pos[st].second, pos[en].second};
+        if( pos[st].first + pos[en].first > target ) en--;
+        else st++;
+    }
+    return {-1,-1};
+}
+```
+</details>
 </article>
 
 <article>
@@ -564,7 +603,36 @@ Given an array representing preorder traversal of BST, print its postorder trave
 
 Given an integer array nums, return all the triplets `[nums[i]`, `nums[j]`, `nums[k]]` such that `i != j` and `j != k` and `i != k` and `nums[i] + nums[j] + nums[k] == 0`.
 
-[**💻 Submit Code**](https://leetcode.com/problems/3sum/description//)
+[**💻 Submit Code**](https://leetcode.com/problems/3sum/description/)
+<details><summary>Show Answer</summary>
+
+```C++
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+        int n = nums.size();
+        vector<vector<int>> sum3;
+        for(int i=0;i<n;i++){
+            if( i>0 and nums[i] == nums[i-1] ) continue;
+            int j = i+1,k = n-1;
+            while( j<k ){
+                if( nums[j]+nums[k] + nums[i] > 0 ) k--;
+                else if( nums[j]+nums[k] + nums[i] < 0 ) j++;
+                else{
+                    if( j != i+1 and nums[j] == nums[j-1] ){j++;k--; continue;}
+                    sum3.push_back({nums[i],nums[j],nums[k]});
+                    j++;
+                    k--;
+                }
+            }
+        }
+
+        return sum3;
+    }
+};
+```
+</details>
 </article>
 
 <article>
@@ -572,6 +640,27 @@ Given an integer array nums, return all the triplets `[nums[i]`, `nums[j]`, `num
 Given an array of strings, group the anagrams together. You can return the answer in any order.
 
 [**💻 Submit Code**](https://leetcode.com/problems/group-anagrams/description/)
+<details><summary>Show Answer</summary>
+
+```C++
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        map<string, vector<string>> anagrams;
+        for(auto str:strs) {
+            string sorted = str;
+            sort(sorted.begin(),sorted.end());
+            anagrams[sorted].push_back(str);
+        }
+        vector<vector<string>> groups;
+        for(auto [k,v]:anagrams) {
+            groups.push_back(v);
+        }
+        return groups;
+    }
+};
+```
+</details>
 </article>
 
 <article>
@@ -603,17 +692,17 @@ Find the second highest element in a given array.
 
 <article>
 
-Find the unqiue column of a database
+Write SQL query to find unique column of a database
 </article>
 
 <article>
 
-SQL query to find second highest salary
+Write SQL query to find second highest salary
 </article>
 
 <article>
 
-SQL descending order salary
+Write SQL query to sort salary in descending order
 </article>
 
 ### Short Questions
@@ -649,7 +738,7 @@ How to describe a graph on code
 Details on Two pointers
 </article>
 
-</article>
+<article>
 
 What is abstract class?
 </article>
