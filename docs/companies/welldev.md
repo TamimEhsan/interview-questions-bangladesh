@@ -25,11 +25,12 @@ WellDev Ltd is a software company based in Zurich, Switzerland, specializing in 
 3. **Round 2:** The second round is divided into two part. The first part is a behavioural part taken by HR of the company. For the second part two software engineer conducts the technical sessions.
 4. **COO Round:** The final round is taken by the COO of the company
 
-## MCQ Round
+## Preliminary Round
 
 A Broad Range of Topics
 
 This round consisted of a multiple-choice questionnaire covering these topics. The test required me to share my screen with Quillgo and keep my camera on. It covers wide range of topics like JavaScript fundamentals, OOP, DBMS, SWE principles, Networking, Rest API knowledge, Analytical reasoning, DSA (time complexity, sorting, binary trees, MST, greedy algorithms).
+
 
 ## First Round Questions
 
@@ -435,6 +436,352 @@ void moveZeroes(vector<int>& nums) {
 ```
 
 </details>
+</article>
+
+## Behavioral questions
+
+<article>
+
+Could you please introduce yourself? where do you live? Who is there in your family?
+</article>
+
+<article>
+
+Where do you wanna see yourself after 5years?
+</article>
+
+<article>
+
+If you could devote yourself to learn new technologies?
+</article>
+
+<article>
+
+What is your strength and weakness?
+</article>
+
+<article>
+
+Do you have a plan to join full-time after successfully passing the training program?
+</article>
+
+<article>
+
+Why should we hire you?
+</article>
+
+<article>
+
+What is your salary expectation?
+</article>
+
+<article>
+
+How you will deal with a tough co-worker
+</article>
+
+<article>
+
+If you have a tight deadline and will miss it that time, how will you handle it?
+</article>
+
+<article>
+
+Tell me something that will convince me to hire you.
+</article>
+
+<article>
+
+How do you balance between a tight deadline and preserving best practices for?
+</article>
+
+<article>
+
+what stack u wanna work with, do you wanna go abroad?
+</article>
+
+<article>
+
+How would your friends, parents, and teachers describe you?
+</article>
+
+<article>
+
+3 word to describe yourself?
+</article>
+
+<article>
+
+What are your expectations from WellDev as a workplace?
+</article>
+
+<article>
+
+What is the motivation to apply here?
+</article>
+
+
+### Coding Questions
+
+<article>
+Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
+
+[**💻 Submit Code**](https://leetcode.com/problems/longest-palindrome/description/)
+</article>
+
+<article>
+
+Write pseudocode of generating fibonacci number using only two variable
+</article>
+
+<article>
+
+Given the `root` of a binary tree, return the postorder traversal of its nodes' values.
+
+[**💻 Submit Code**](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
+</article>
+
+<article>
+
+Given an array of integers nums and an integer target, return all pairs of indices of the two numbers such that they add up to target.
+
+[**💻 Submit Code**](https://leetcode.com/problems/two-sum/description/)
+</article>
+
+<article>
+
+Sort an array that consists with elements of odd numbers.
+</article>
+
+<article>
+
+Given an array representing preorder traversal of BST, print its postorder traversal. 
+
+[**💻 Submit Code**](https://www.geeksforgeeks.org/dsa/find-postorder-traversal-of-bst-from-preorder-traversal/)
+</article>
+
+<article>
+
+Given an integer array nums, return all the triplets `[nums[i]`, `nums[j]`, `nums[k]]` such that `i != j` and `j != k` and `i != k` and `nums[i] + nums[j] + nums[k] == 0`.
+
+[**💻 Submit Code**](https://leetcode.com/problems/3sum/description//)
+</article>
+
+<article>
+
+Given an array of strings, group the anagrams together. You can return the answer in any order.
+
+[**💻 Submit Code**](https://leetcode.com/problems/group-anagrams/description/)
+</article>
+
+<article>
+
+Basic recursive implementation problem
+</article>
+
+<article>
+
+Given two variables, write a code to swap them without using any additional variable.
+</article>
+
+<article>
+
+Printing cumulative sum
+</article>
+
+<article>
+
+Given a chessboard, there are some knights placed initially. How can we place some another knights in such a way so that no one attacked each other.
+</article>
+
+<article>
+
+Find the second highest element in a given array.
+</article>
+
+## SQL Questions
+
+<article>
+
+Find the unqiue column of a database
+</article>
+
+<article>
+
+SQL query to find second highest salary
+</article>
+
+<article>
+
+SQL descending order salary
+</article>
+
+### Short Questions
+
+<article>
+
+Write the output of the following code:
+
+```cpp
+int i = 5;
+cout << i++ << endl;
+cout << ++i << endl;
+```
+</article>
+
+<article>
+
+How to iterate a binary search tree in reverse order?
+</article>
+
+<article>
+
+Write a function to describe polymorphism
+</article>
+
+<article>
+
+How to describe a graph on code
+</article>
+
+<article>
+
+Details on Two pointers
+</article>
+
+</article>
+
+What is abstract class?
+</article>
+
+<article>
+
+Explain how insertion sort works
+</article>
+
+<article>
+
+Describe Encapsulation with examples?
+</article>
+
+<article>
+
+Which performs better Linked List or Array?
+</article>
+
+<article>
+
+Deletion and insertion of circular linked list Data structures used in DFS and BFS?
+</article>
+
+<article>
+
+What are the advantages and disadvantages of Linked List?
+</article>
+
+<article>
+
+Describe Singleton pattern.
+</article>
+
+<article>
+
+Describe database normalization
+</article>
+
+<article>
+
+Which http codes are used for success and failure?
+</article>
+
+<article>
+
+Finding network address
+</article>
+
+<article>
+
+BFS, DFS, Mergesort, Quicksort, Recursion
+</article>
+
+<article>
+
+Which data structure is good to use to search strings?
+</article>
+
+<article>
+
+What's the difference between selection sort and insertion sort?
+</article>
+
+<article>
+
+Explain ER Diagram in Relational Database.
+</article>
+
+<article>
+
+What is a Circular linked ist?
+</article>
+
+<article>
+
+what is the difference between graph and tree?
+</article>
+
+<article>
+
+What is kernel in os?
+</article>
+
+<article>
+
+Difference between left outer join and right outer join?
+</article>
+
+<article>
+
+What do you understand by the term Dependency Injection?
+</article>
+
+<article>
+
+What are protected and public variables?
+</article>
+
+<article>
+
+What is the JavaScript event in a document?
+</article>
+
+<article>
+
+What steps do you take to improve UI design?
+</article>
+
+<article>
+
+Give me a short description of polymorphism?
+</article>
+
+<article>
+
+What is the difference between array and linked list?
+</article>
+
+<article>
+
+Describe Stack & Queue?
+</article>
+
+<article>
+
+Difference between polymorphism and constructor overloading?
+</article>
+
+<article>
+
+How to reverse a linked list?
 </article>
 
 ## Contributors
