@@ -1200,3 +1200,108 @@ Output:
 
 </details>
 </article>
+
+<article>
+
+Given the following database table, normalize the relation into **1NF, 2NF, and 3NF**. Identify the **primary key and foreign keys**, and define the **relationships among the resulting tables**.
+
+| Teacher Name | Teacher Email | Subject | Class | Class Timing | Day |
+|---|---|---|---|---|---|
+| Alis | alis@email.com | Mathematics | 10-A | 9:00 AM | Sunday, Tuesday |
+| Zara | zara@email.com | Physics | 10-B | 10:00 AM | Monday, Wednesday |
+| Alis | alis@email.com | English | 10-A | 11:00 AM | Thursday, Friday |
+| Zara | zara@email.com | Mathematics | 10-B | 12:00 PM | Sunday, Wednesday |
+| Alis | alis@email.com | Physics | 10-A | 2:00 PM | Monday, Friday |
+</article>
+
+<article>
+
+Design an object-oriented programming solution for a Vending Machine system. The system should model classes such as `VendingMachine`, `Product`, `Payment`, and other necessary components.
+<details><summary>Show Answer</summary>
+
+```java
+class Product {
+    private String code;
+    private String name;
+    private int price;
+
+    public Product(String code, String name, int price) {
+        this.code = code;
+        this.name = name;
+        this.price = price;
+    }
+    public String getCode() { return code; }
+    public String getName() { return name; }
+    public int getPrice() { return price; }
+}
+
+class Slot {
+    private Product product;
+    private int quantity;
+
+    public Slot(Product product, int quantity) {
+        this.product = product;
+        this.quantity = quantity;
+    }
+    public Product getProduct() { return product; }
+    public boolean isEmpty() { return quantity == 0; }
+    public void dispenseOne() { quantity--; }
+}
+
+abstract class Payment {
+    protected int amount;
+    public Payment(int amount) { this.amount = amount; }
+    public int getAmount() { return amount; }
+    public abstract boolean process();
+}
+
+class CashPayment extends Payment {
+    public CashPayment(int amount) { super(amount); }
+    public boolean process() { return amount > 0; }
+}
+
+class CardPayment extends Payment {
+    private String cardNumber;
+
+    public CardPayment(int amount, String cardNumber) {
+        super(amount);
+        this.cardNumber = cardNumber;
+    }
+    public boolean process() {
+        return amount > 0 && cardNumber != null; // call the payment gateway here
+    }
+}
+
+class VendingMachine {
+    private Map<String, Slot> slots = new HashMap<>();
+
+    public void load(Product product, int quantity) {
+        slots.put(product.getCode(), new Slot(product, quantity));
+    }
+
+    public Product buy(String code, Payment payment) {
+        Slot slot = slots.get(code);
+        if (slot == null || slot.isEmpty()) {
+            throw new IllegalStateException("Product not available");
+        }
+
+        Product product = slot.getProduct();
+        if (payment.getAmount() < product.getPrice()) {
+            throw new IllegalArgumentException("Insufficient payment");
+        }
+        if (!payment.process()) {
+            throw new IllegalStateException("Payment failed");
+        }
+
+        slot.dispenseOne();
+        return product;
+    }
+
+    public int getChange(String code, Payment payment) {
+        return payment.getAmount() - slots.get(code).getProduct().getPrice();
+    }
+}
+```
+
+</details>
+</article>
