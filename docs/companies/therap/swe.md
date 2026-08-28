@@ -1071,3 +1071,132 @@ def mergeTwoLists(list1, list2):
 
 </details>
 </article>
+
+<article>
+
+Given a string `s` which represents an expression, evaluate this expression and return its value. The integer division should truncate toward zero. You may assume that the given expression is always valid and all intermediate results will be in the range of `[-2^31, 2^31 - 1]`. You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as `eval()`.
+
+```
+Input:  s = "3+2*2"
+Output: 7
+```
+
+[**💻 Submit Code**](https://leetcode.com/problems/basic-calculator-ii/)
+<details><summary>Show Answer</summary>
+
+```python
+def calculate(s):
+    stack = []
+    num = 0
+    sign = '+'
+
+    for i, ch in enumerate(s):
+        if ch.isdigit():
+            num = num * 10 + int(ch)
+
+        if (not ch.isdigit() and ch != ' ') or i == len(s) - 1:
+            if sign == '+':
+                stack.append(num)
+            elif sign == '-':
+                stack.append(-num)
+            elif sign == '*':
+                stack.append(stack.pop() * num)
+            else:
+                stack.append(int(stack.pop() / num))
+            sign = ch
+            num = 0
+
+    return sum(stack)
+```
+
+</details>
+</article>
+
+<article>
+
+Given the head of a linked list, remove the `n`th node from the end of the list and return its head.
+
+```
+Input:  head = 1 > 2 > 3 > 4 > 5, n = 2
+Output: 1 > 2 > 3 > 5
+```
+
+[**💻 Submit Code**](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+<details><summary>Show Answer</summary>
+
+```python
+def removeNthFromEnd(head, n):
+    dummy = ListNode(0)
+    dummy.next = head
+    fast = slow = dummy
+
+    for _ in range(n):
+        fast = fast.next
+
+    while fast.next:
+        fast = fast.next
+        slow = slow.next
+
+    slow.next = slow.next.next
+
+    return dummy.next
+```
+
+</details>
+</article>
+
+<article>
+
+Have you worked on any group projects where you incorporated AI into the development process? If so, what challenges did you encounter while working on the project?
+</article>
+
+<article>
+
+Design a prompt that accepts unstructured user input and transforms it into structured JSON. The prompt should extract the relevant task information, assign an appropriate status such as `pending`, `processing`, or `completed`, and determine the task's urgency using a numerical scale.
+<details><summary>Show Answer</summary>
+
+The prompt should pin down four things: the role, the exact output schema, the rules for every field that can be ambiguous, and a worked example so the model has a pattern to copy.
+
+```
+You are a task extraction service. Convert the user's note into a single JSON object.
+
+Output ONLY valid JSON. No markdown fences, no explanation.
+
+Schema:
+{
+  "title":    string,  // short imperative summary of the task, max 10 words
+  "details":  string,  // any extra context from the note, "" if none
+  "assignee": string,  // person named in the note, "" if none
+  "due_date": string,  // ISO 8601 date (YYYY-MM-DD), "" if none given
+  "status":   string,  // one of: "pending", "processing", "completed"
+  "urgency":  integer  // 1 to 5, see scale below
+}
+
+Status rules:
+- "completed"  - the note says the work is already done or delivered.
+- "processing" - the work has started but is not finished.
+- "pending"    - anything else, including notes with no progress mentioned.
+
+Urgency scale:
+- 5 - production outage, data loss, blocking others right now
+- 4 - hard deadline within 24 hours
+- 3 - has a deadline this week, or explicitly called important
+- 2 - normal work with no stated deadline
+- 1 - nice to have, someday, backlog
+
+Rules:
+- Never invent values. Use "" for missing strings.
+- Resolve relative dates ("tomorrow", "next Friday") against today's date: {{TODAY}}.
+- If the note contains several tasks, return a JSON array of these objects.
+
+Example
+Input: "hey can u fix the login bug asap, prod is down, im already looking into it"
+Output:
+{"title":"Fix login bug","details":"Production is down","assignee":"","due_date":"","status":"processing","urgency":5}
+
+Input: {{USER_INPUT}}
+Output:
+```
+
+</details>
+</article>
