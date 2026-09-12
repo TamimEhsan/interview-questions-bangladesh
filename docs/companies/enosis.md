@@ -285,3 +285,262 @@ What is the time complexity of operations in a Red-Black Tree?
 
 System design question: File management software. @@Senior@@
 </article>
+
+<article>
+
+You are given two arrays, `files[]` and `backupTimes[]`, where each index `i` represents a backup event for file `files[i]` at time `backupTimes[i]` (in seconds). A file is considered redundant if it has been backed up at least three times within a day (i.e., within 86,400 seconds). Return the number of distinct redundant files. @@SWE2026@@
+</article>
+
+<article>
+
+Engineers analyze user interaction patterns to enhance personalized recommendations for an online streaming platform. They are given a binary string `interactionLog` where each character (`'0'` or `'1'`) represents a specific type of user engagement.
+
+A substring of `interactionLog` is considered significant if it meets both of these conditions:
+
+1. Its length is in the range `[minSeqLength, maxSeqLength]` inclusive.
+2. No two adjacent characters are the same.
+
+Implement a function `countSignificantInteractions`, which takes the following inputs:
+
+- `string interactionLog`: the binary data representing user interaction patterns
+- `int minSeqLength`: the minimum length
+- `int maxSeqLength`: the maximum length
+
+The function should calculate and return the total number of significant substrings in `interactionLog`.
+
+
+**Constraints**
+
+- `1 ≤ |interactionLog| ≤ 2 × 10⁵`
+- `1 ≤ minSeqLength ≤ maxSeqLength ≤ |interactionLog|` @@SWE2026@@
+
+<details><summary>Example</summary>
+
+**Example**
+
+```
+interactionLog = "10010"
+minSeqLength = 2
+maxSeqLength = 3
+```
+
+| Start Index (i) | End Index (r) | Substring [i...r] | Is Significant? |
+| :-: | :-: | :-: | :- |
+| 0 | 1 | `"10"` | Yes |
+| 1 | 2 | `"00"` | No (matching adjacent characters) |
+| 2 | 3 | `"01"` | Yes |
+| 3 | 4 | `"10"` | Yes |
+| 0 | 2 | `"100"` | No (matching adjacent characters) |
+| 1 | 3 | `"001"` | No (matching adjacent characters) |
+| 2 | 4 | `"010"` | Yes |
+
+Return the number of significant substrings: `4`.
+</details>
+
+<details><summary>Sample Cases</summary>
+
+Sample Input 0
+
+```
+interactionLog = "1010"
+minSeqLength = 2
+maxSeqLength = 2
+```
+
+Sample Output 0
+
+```
+3
+```
+
+Sample Input 1
+
+```
+interactionLog = "110"
+minSeqLength = 1
+maxSeqLength = 3
+```
+
+Sample Output 1
+
+```
+4
+```
+</details>
+
+<details><summary>Code Template (C++)</summary>
+
+```cpp
+#include <bits/stdc++.h>
+
+/*
+ * Complete the 'countSignificantInteractions' function below.
+ *
+ * The function is expected to return a LONG_INTEGER.
+ * The function accepts following parameters:
+ *  1. STRING interactionLog
+ *  2. INTEGER minSeqLength
+ *  3. INTEGER maxSeqLength
+ */
+
+long countSignificantInteractions(string interactionLog, int minSeqLength, int maxSeqLength) {
+
+}
+
+int main() { ... }
+```
+</details>
+</article>
+
+<article>
+
+In a multi-model machine learning system, different models are trained sequentially on a single GPU. If a higher-priority task arrives during training, the lower-priority task is paused until the higher-priority task finishes.
+
+There are `n` different AI models to be trained on the GPU, each with a unique ID between `0` and `n - 1`. A list of training logs is represented by an array of strings, `logs[m]`. Log entries follow the format `(modelId):(start/end):(timestamp)`, indicating that the model with ID = `modelId` either starts or ends at a time identified by the timestamp value. If any model is introduced while the previous one is running, the previous model is put on hold, and the current model is trained until it is completed or put on hold.
+
+Implement a function `getTotalTrainingTime` that determines each model's training time. It takes two inputs:
+
+- `int n`: the number of models to train
+- `string logs[m]`: each string is a training log
+
+The function should return an array specifying the exclusive training times of each model.
+
+**Constraints**
+
+- `1 ≤ n ≤ 100`
+- `1 ≤ m ≤ 500`
+- `0 ≤ model_id < n`
+- `0 ≤ timestamp ≤ 3 × 10³`
+- The timestamps are given in non-decreasing order.
+- No two starting timestamps and no two ending timestamps are equal.
+- Every model's `start` call has a corresponding `end` call. @@SWE2026@@
+
+<details><summary>Example</summary>
+
+**Example**
+
+```
+n = 3
+logs = ["0:start:0", "2:start:4", "2:end:5", "1:start:7", "1:end:10", "0:end:11"]
+```
+
+| Timestamp | Model Running | Remarks |
+| :-: | :-: | :- |
+| 0 | 0 | Model 0 starts |
+| 1 | 0 | |
+| 2 | 0 | |
+| 3 | 0 | |
+| 4 | 2 | Model 0 is paused and Model 2 starts |
+| 5 | 2 | Model 2 ends |
+| 6 | 0 | Model 0 resumes |
+| 7 | 1 | Model 0 is paused and Model 1 starts |
+| 8 | 1 | |
+| 9 | 1 | |
+| 10 | 1 | Model 1 ends |
+| 11 | 0 | Model 0 ends |
+
+Thus, the total number of seconds allocated to Models 0, 1, and 2 are 6, 4, and 2 respectively. Hence the answer is `{6, 4, 2}`.
+</details>
+
+<details><summary>Sample Cases</summary>
+
+Sample Input 0
+
+```
+n = 2
+logs[] size m = 4
+logs = ["0:start:0", "1:start:3", "1:end:6", "0:end:10"]
+```
+
+Sample Output 0
+
+```
+7
+4
+```
+
+Sample Input 1
+
+```
+n = 3
+logs[] size m = 6
+logs = ["0:start:0", "1:start:3", "1:end:6", "2:start:8", "2:end:10", "0:end:12"]
+```
+
+Sample Output 1
+
+```
+6
+4
+3
+```
+</details>
+
+<details><summary>Code Template (C++)</summary>
+
+```cpp
+#include <bits/stdc++.h>
+
+/*
+ * Complete the 'getTotalTrainingTime' function below.
+ *
+ * The function is expected to return an INTEGER_ARRAY.
+ * The function accepts following parameters:
+ *  1. INTEGER n
+ *  2. STRING_ARRAY logs
+ */
+
+vector<int> getTotalTrainingTime(int n, vector<string> logs) {
+
+}
+
+int main() { ... }
+```
+</details>
+</article>
+
+<article>
+
+Given `AB = 4` and `AC = 5`, the perimeter of the rectangle is:
+
+- A. 18
+- B. 40
+- C. 14
+- D. 22
+@@SWE2026@@
+</article>
+
+<article>
+
+Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number.
+
+`52 : 5 :: 100 : 7 :: 164 : ?`
+
+- A. 7
+- B. 8
+- C. 11
+- D. 9
+@@SWE2026@@
+</article>
+
+<article>
+
+One watch which gains uniformly is one minute slow at 1 pm on Tuesday and it is two minutes fast at 1 am on the following Friday. When had it shown the correct time?
+
+- A. 5.00 pm on Wednesday
+- B. 9.00 pm on Wednesday
+- C. 5.00 am on Wednesday
+- D. 9.00 am on Wednesday
+@@SWE2026@@
+</article>
+
+<article>
+
+The product of two numbers is 9375 and the quotient, when the larger one is divided by the smaller, is 15. The sum of the numbers is:
+
+- A. 395
+- B. 380
+- C. 400
+- D. 425
+@@SWE2026@@
+</article>

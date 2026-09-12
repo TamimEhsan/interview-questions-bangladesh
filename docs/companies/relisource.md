@@ -74,6 +74,54 @@ Releated Question: [**💻 Submit Code**](https://leetcode.com/problems/number-o
 Write javascript code to create a button with id `growButton`. On each click its size increases by 2px. If its size goes beyond 36px it should stop growing, turn green, and show an alert saying it's already at max size. @@Junior2026@@
 </article>
 
+<article>
+
+Tell us about yourself and your competitive programming journey. @@Junior2026@@
+</article>
+
+<article>
+
+Let's say you are designing the database for a social media platform. How would you ensure that all the usernames are unique?
+
+Follow up questions:
+1. How does database indexing work?
+2. How does a trie work?
+3. How does hashing work?
+4. How does a binary search tree (BST) work?
+@@Junior2026@@
+</article>
+
+<article>
+
+Why do you use OOP instead of procedural programming? @@Junior2026@@
+</article>
+
+<article>
+
+What is the difference between an Object and an Instance? @@Junior2026@@
+</article>
+
+<article>
+
+You are given the root of a tree. Traverse every node starting from it and print the following values for each node:
+
+- `A` : The level of this node
+- `B` : Number of children of the current node's parent
+- `C` : `B + 2 ^ A +` (`C` for all of the current node's children)
+
+@@Junior2026@@
+</article>
+
+<article>
+
+You are given two entity tables `Student` and `Course`, and a relational table `Student_Courses`. Write an SQL query to find out the student name and the total number of courses of that student. @@Junior2026@@
+</article>
+
+<article>
+
+Why do you want to switch from your current job? @@Junior2026@@
+</article>
+
 ## Embedded Software Engineering Questions
 <article>
 
