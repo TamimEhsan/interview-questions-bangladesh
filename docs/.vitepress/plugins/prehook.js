@@ -10,7 +10,7 @@ export function myPreHook(md) {
         src = src.replace(articleRegex, (match, inner) => {
             // Split <article> content into main text + details sections
             const detailsRegex = /<details>([\s\S]*?)<\/details>/g
-            const parts = []
+            let parts = []
             let lastIndex = 0
             let m
 
@@ -28,6 +28,16 @@ export function myPreHook(md) {
             // Remaining trailing text
             const tail = inner.slice(lastIndex).trim()
             if (tail) parts.push({ type: 'text', content: tail })
+
+            // Fold every text chunk into the first one, so text that follows a
+            // <details> (a trailing badge, say) does not spawn a second
+            // "Question" tab
+            const textParts = parts.filter(p => p.type === 'text')
+            if (textParts.length > 1) {
+                textParts[0].content = textParts.map(p => p.content).join('\n\n')
+                parts = parts.filter(p => p.type !== 'text' || p === textParts[0])
+            }
+
             if (parts.length <= 1) {
                 return match
             }

@@ -507,6 +507,7 @@ Given `AB = 4` and `AC = 5`, the perimeter of the rectangle is:
 - B. 40
 - C. 14
 - D. 22
+
 @@SWE2026@@
 </article>
 
@@ -520,6 +521,7 @@ Select the option that is related to the fifth number in the same way as the sec
 - B. 8
 - C. 11
 - D. 9
+
 @@SWE2026@@
 </article>
 
@@ -531,6 +533,7 @@ One watch which gains uniformly is one minute slow at 1 pm on Tuesday and it is 
 - B. 9.00 pm on Wednesday
 - C. 5.00 am on Wednesday
 - D. 9.00 am on Wednesday
+
 @@SWE2026@@
 </article>
 
@@ -542,5 +545,6 @@ The product of two numbers is 9375 and the quotient, when the larger one is divi
 - B. 380
 - C. 400
 - D. 425
+
 @@SWE2026@@
 </article>
