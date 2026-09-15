@@ -49,3 +49,5 @@ Some of the info are taken from the respective company website and from [MBSTUPC
 The questions are collected from volunteers. The maintainer is not responsible for anykind of terms and conditions imposed from the companies. The maintainer will gladly remove any content if that violates any agreement. 
 
 The maintainer tries to check every questions and answer contributed from others. Sometimes, the questions or answers might not be correct. The maintainer is not responsible for any issues for that. 
+npm install
+npm run docs:dev
