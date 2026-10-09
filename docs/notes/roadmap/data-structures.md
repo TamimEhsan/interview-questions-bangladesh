@@ -9,6 +9,10 @@ head:
 
 *Part of the [Interview Prep Roadmap](./). Coverage ratings are explained there.*
 
+**Work through alongside this section**
+- [NeetCode 150](https://neetcode.io/practice) — the single best-known curated list for coding interviews; its array, string, linked list, stack, tree, heap, and graph sections map onto the topics below. Worth finishing as a whole rather than cherry-picking.
+- [Blind 75](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) — the shorter list NeetCode 150 grew out of, if time is tight.
+
 ## Arrays & Strings
 Indexing, traversal, and in-place manipulation, building up to two-pointer and sliding-window techniques.
 

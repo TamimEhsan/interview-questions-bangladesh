@@ -154,7 +154,7 @@ Abstraction, Inheritance, Encapsulation, Polymorphism.
 </article>
  
 
-<article>
+<article id="q-dp-singleton-implement">
 
 Implement the Singleton pattern.
 <details><summary>Show Interaction</summary>

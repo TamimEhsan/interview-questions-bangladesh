@@ -47,7 +47,7 @@ Solve LeetCode easy to medium-level coding problems.
 How do CI/CD pipelines work?
 </article>
 
-<article>
+<article id="q-solid-principles">
 
 Describe SOLID principles with examples.
 </article>

@@ -9,6 +9,10 @@ head:
 
 *Part of the [Interview Prep Roadmap](./). Coverage ratings are explained there.*
 
+**Work through alongside this section**
+- [NeetCode 150](https://neetcode.io/practice) — its binary search, backtracking, dynamic programming, greedy, and graph sections cover most of the topics below. Worth finishing as a whole rather than cherry-picking.
+- [CP Algorithms](https://cp-algorithms.com/) — reference implementations and proofs for the graph and DP algorithms here.
+
 ## Complexity Analysis
 Measuring and comparing the cost of an algorithm — the vocabulary every other topic in this phase depends on.
 
