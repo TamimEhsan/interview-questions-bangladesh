@@ -106,7 +106,7 @@ Read more from [TCP vs UDP: What's the Difference? | Cloudflare](https://www.clo
 </details>
 </article>
 
-<article>
+<article id="q-oop-principles">
 
 What are the principles of OOP and why do we use OOP?
 <details><summary>Show Answer</summary>

@@ -258,7 +258,7 @@ Techniques for concurrency control:
 </details>
 </article>
 
-<article>
+<article id="q-oop-overriding-vs-overloading">
 
 What is function overriding in Object-Oriented Programming? How is it different from overloading?
 
@@ -276,7 +276,7 @@ Function Overriding in OOP:
 </details>
 </article>
 
-<article>
+<article id="q-oop-inheritance">
 
 What is inheritance in Object-Oriented Programming?
 

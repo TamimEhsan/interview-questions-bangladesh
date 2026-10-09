@@ -4,10 +4,12 @@ export function myPreHook(md) {
         // `state.src` contains the raw markdown text before parsing
         let src = state.src
 
-        // Regex to capture <article>...</article> blocks (non-greedy)
-        const articleRegex = /<article>([\s\S]*?)<\/article>/g
+        // Regex to capture <article>...</article> blocks (non-greedy).
+        // Attributes on the opening tag are captured so an `id` used as a
+        // deep-link anchor survives the rewrite below.
+        const articleRegex = /<article\b([^>]*)>([\s\S]*?)<\/article>/g
 
-        src = src.replace(articleRegex, (match, inner) => {
+        src = src.replace(articleRegex, (match, attrs, inner) => {
             // Split <article> content into main text + details sections
             const detailsRegex = /<details>([\s\S]*?)<\/details>/g
             let parts = []
@@ -62,7 +64,12 @@ export function myPreHook(md) {
             }
             tabs.push(`:::::`)
 
-            return tabs.join('\n\n')
+            // The <article> wrapper is dropped when we emit tabs, so re-emit any
+            // id on it as an empty anchor element to keep deep links working
+            const idMatch = attrs.match(/\bid\s*=\s*["']([^"']+)["']/)
+            const anchor = idMatch ? `<span id="${idMatch[1]}"></span>\n\n` : ''
+
+            return anchor + tabs.join('\n\n')
         })
 
         state.src = src

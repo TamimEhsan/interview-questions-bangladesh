@@ -768,7 +768,7 @@ Deletion and insertion of circular linked list Data structures used in DFS and B
 What are the advantages and disadvantages of Linked List?
 </article>
 
-<article>
+<article id="q-dp-singleton-describe">
 
 Describe Singleton pattern.
 </article>

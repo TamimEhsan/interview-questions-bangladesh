@@ -951,7 +951,7 @@ tuple<bool, string, int> checkVersion(const vector<string>& versions, const stri
 </details>
 </article>
 
-<article>
+<article id="q-lld-parking-lot">
 
 Design an object-oriented programming solution for a parking management system. The system should model `ParkingLot`, `ParkingSpace`, and `Ticket`, and support different types of vehicles using a `Vehicle` superclass with subclasses such as `Car` and `Motorbike`.
 <details><summary>Show Answer</summary>
@@ -1214,7 +1214,7 @@ Given the following database table, normalize the relation into **1NF, 2NF, and 
 | Alis | alis@email.com | Physics | 10-A | 2:00 PM | Monday, Friday |
 </article>
 
-<article>
+<article id="q-lld-vending-machine">
 
 Design an object-oriented programming solution for a Vending Machine system. The system should model classes such as `VendingMachine`, `Product`, `Payment`, and other necessary components.
 <details><summary>Show Answer</summary>

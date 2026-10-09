@@ -85,7 +85,7 @@ Draw a class diagram of a course management system
 
 </article>
 
-<article>
+<article id="q-dp-pattern-for-auth-service">
 
 If you are given to design a authentication service. Which design pattern you will use? 
 <details><summary>Show Answer</summary>

@@ -64,7 +64,7 @@ Given a graph G and two nodes u and v of the graph. Find the lowest common ances
 What are the key points of OOP?
 </article>
 
-<article>
+<article id="q-oop-abstract-class-vs-interface">
 
 Describe abstract class and interface. What are their similarities and dissimilarities? What are their benefits?
 </article>
@@ -74,7 +74,7 @@ Describe abstract class and interface. What are their similarities and dissimila
 Describe key features of spring boot.
 </article>
 
-<article>
+<article id="q-oop-final-keyword">
 
 What happens when final keyword is used with variables and classes?
 </article>

@@ -40,7 +40,7 @@ Explain the ACID properties in Database Management Systems.
 What is pipelining in microprocessors? Explain with an example.
 </article>
 
-<article>
+<article id="q-dp-what-are-design-patterns">
 
 What are design patterns in Object-Oriented Programming? Why are they important?
 </article>

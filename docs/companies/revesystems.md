@@ -196,7 +196,7 @@ public:
 Why are getters and setters used in Java?
 </article>
 
-<article>
+<article id="q-dp-singleton-java">
 	
 Describe the Singleton design pattern and write the code in Java.
 </article>
@@ -252,7 +252,7 @@ What models are used in the Software development life cycle? Please tell us abou
 Please explain the Agile model in software engineering.
 </article>
 
-<article>
+<article id="q-solid-principles">
 
 What are the SOLID principles?
 </article>
@@ -285,7 +285,7 @@ Please tell us about yourself.
 Why do you want to join a software company instead of joining a university as a faculty member?
 </article>
 
-<article>
+<article id="q-dp-singleton-explain">
 
 Write the code of the Singleton pattern and explain.
 </article>

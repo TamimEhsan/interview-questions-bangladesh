@@ -96,7 +96,7 @@ student table:
 Explain ACID properties
 </article>
 
-<article>
+<article id="q-oop-static-keyword">
 
 Explain static keyword
 </article>
