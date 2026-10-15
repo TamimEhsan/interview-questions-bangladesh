@@ -78,7 +78,7 @@ Given a number n.return true if you find a middle element k such that sum of 1 t
 	explanation: 1 + 2 + ... + 35 = 35 + 36 + ... + 49
 </article>
 
-<article>
+<article id="q-db-normalize-student-table">
 
 Apply database normalization technique to the following table
 

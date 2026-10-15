@@ -45,7 +45,7 @@ What is pipelining in microprocessors? Explain with an example.
 What are design patterns in Object-Oriented Programming? Why are they important?
 </article>
 
-<article>
+<article id="q-db-vs-file-system">
 
 Why do we use Database Management Systems instead of file systems?
 </article>

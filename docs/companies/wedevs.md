@@ -34,7 +34,7 @@ Discuss BFS and DFS: which one is faster, and what are their use cases?
 Explain the principles of OOP.
 </article>
 
-<article>
+<article id="q-db-relationship-types">
 
 How many types of relationships exist in databases?
 </article>

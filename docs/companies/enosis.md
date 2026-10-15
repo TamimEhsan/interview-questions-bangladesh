@@ -32,7 +32,7 @@ Given an array of strings `words` and a width `maxWidth`, format the text such t
 [**💻 Submit Code**](https://leetcode.com/problems/text-justification/description/)
 </article>
 
-<article>
+<article id="q-ds-rotate-matrix">
 
 You are given an `n x n` 2D `matrix` representing an image, rotate the image by 90 degrees (clockwise).
 
@@ -65,7 +65,7 @@ Given an array `nums`. Find the average of the array excluding the maximum and m
 Given n cars in a row with their speeds and a specific position, calculate the total number of collisions that occur.
 </article>
 
-<article>
+<article id="q-ds-range-count-queries">
 
 Given an array of integers `nums` and queries in the form `l, r`. For each query, count the number of elements which are in range `[l,r]` in the array.
 </article>
@@ -115,7 +115,7 @@ void merge(vector<int> &nums1, int m, vector<int> &nums2, int n)
 </details>
 </article>
 
-<article>
+<article id="q-ds-odd-even-sum-diff">
 
 Given an array of integers, calculate the absolute difference between the sum of odd-indexed and even-indexed elements.
 </article>
@@ -246,17 +246,17 @@ You are given a string, `message`, and a positive integer, `limit`. Split the st
 [**💻 Submit Code**](https://leetcode.com/problems/split-message-based-on-limit/description/)
 </article>
 
-<article>
+<article id="q-ds-linked-tree-structure">
 
 Build a linked-list-based tree structure with left and right children.
 </article>
 
-<article>
+<article id="q-ds-build-tree-from-nodes">
 
 How would you build a tree structure from a list of given nodes?
 </article>
 
-<article>
+<article id="q-ds-tree-vs-graph">
 
 What are the key differences between a tree and a graph data structure?
 </article>
@@ -271,12 +271,12 @@ What are the four pillars of Object-Oriented Programming (OOP)?
 What is DFS? Implement Depth-First Search in any programming language.
 </article>
 
-<article>
+<article id="q-ds-priority-queue-internals">
 
 Explain the internal working and implementation of a priority queue.
 </article>
 
-<article>
+<article id="q-ds-red-black-complexity">
 
 What is the time complexity of operations in a Red-Black Tree?
 </article>

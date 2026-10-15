@@ -289,7 +289,7 @@ vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
 </details>
 </article>
 
-<article>
+<article id="q-ds-pairs-target-sum-list">
 
 Find pairs with given target sum in a doubly linked list. 
 ```
@@ -436,7 +436,7 @@ def areRightTriangles(triangles):
 </details>
 </article>
 
-<article>
+<article id="q-ds-sorted-dictionary">
 
 A dictionary of sorted words was like this: [a, above, bad, broke, cat,..., yes, yolk, zoo]. After a malfunction it became this: [..., yes, yolk, zoo, a, above, bad, broke, cat,....]. Write a program so that given a word, one can find the word in the dictionary, with the same time complexity as when the dictionary was sorted.
 
@@ -718,7 +718,7 @@ public:
 </details>
 </article>
 
-<article>
+<article id="q-ds-min-window-substring">
 
 Given two strings `s` and `t`, return the shortest substring of `s` such that every character in `t`, including duplicates, is present in the substring. If such a substring does not exist, return an empty string `""`.
 
@@ -804,7 +804,7 @@ public:
 </details>
 </article>
 
-<article>
+<article id="q-ds-reverse-k-group">
 
 You are given a singly linked list. Traverse the list and reverse every block of 3 consecutive nodes. If the number of nodes is not a multiple of 3, the remaining nodes at the end should be left as is.
 
@@ -842,7 +842,7 @@ ListNode* reverseKGroup(ListNode* head, int k) {
 </details>
 </article>
 
-<article>
+<article id="q-db-normalize-keys">
 
 Given a database table, normalize it. Show the primary key, foreign key, and the relationships among the tables.
 
@@ -1038,7 +1038,7 @@ Write about a project you have implemented. Discuss the use of AI, the challenge
 
 ## Auguest 2026
 
-<article>
+<article id="q-ds-merge-sorted-lists">
 
 You are given the heads of two sorted linked lists `list1` and `list2`. Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists. Return the head of the merged linked list.
 
@@ -1112,7 +1112,7 @@ def calculate(s):
 </details>
 </article>
 
-<article>
+<article id="q-ds-remove-nth-from-end">
 
 Given the head of a linked list, remove the `n`th node from the end of the list and return its head.
 
@@ -1201,7 +1201,7 @@ Output:
 </details>
 </article>
 
-<article>
+<article id="q-db-normalize-1nf-2nf-3nf">
 
 Given the following database table, normalize the relation into **1NF, 2NF, and 3NF**. Identify the **primary key and foreign keys**, and define the **relationships among the resulting tables**.
 

@@ -162,12 +162,12 @@ int solve(vector<pair<int,int>> ranges) {
 </details>
 </article>
 
-<article>
+<article id="q-ds-sort-by-frequency">
 
 Sort array elements by their frequency and in case of tie, keep the order they arrive in the original array.
 </article>
 
-<article>
+<article id="q-ds-disjoint-clusters">
 
 Given the connection between cities, Count the number of disjoint clusters of cities.
 </article>
@@ -202,7 +202,7 @@ Given two binary string A,B. Find the minimum number of bit flips to change stri
 2 shops sell apples in lots. their price is given. You cannot buy any loose apples. find minimum cost of buying exactly n apples.
 </article>
 
-<article>
+<article id="q-ds-frequency-count-sort">
 
 Given an integer array. Sort the array in nondecreasing order using frequency count of elements in the array. 
 </article>

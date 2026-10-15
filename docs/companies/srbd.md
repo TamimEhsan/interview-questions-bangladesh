@@ -44,7 +44,7 @@ Variants: coins achieved is nums[i-1]*nums[i+1]
 [**💻 Submit Code**](https://leetcode.com/problems/burst-balloons/description/)
 </article>
 
-<article>
+<article id="q-ds-clone-random-list">
 
 A linked list of length `n` is given such that each node contains an additional random pointer, which could point to any node in the list, or null. Construct a deep copy of the list.
 

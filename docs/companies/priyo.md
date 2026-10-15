@@ -57,7 +57,7 @@ Given an array of n integers. Find the number of subarrays where the maximum ele
 </article>
 
 ## Technical Round Questions
-<article>
+<article id="q-db-read-update-race">
 
 Suppose you want to update value of a field in a database. Generally, a read operation is done to fetch the value. Based on the retrieved value some logic is applies and the result is updated in the field. Example, subtract from balance if the balance is more than some threshold. Another client in the meantime can update the field too thus resulting unexpected behaviour. How can this be solved?
 <details><summary>Show Answer</summary>

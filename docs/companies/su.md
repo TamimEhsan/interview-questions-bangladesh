@@ -22,7 +22,7 @@ Explain the differences between supervised, unsupervised, and reinforcement lear
 What is an operating system? Mention its major functions.
 </article>
 
-<article>
+<article id="q-sql-join-basics">
 
 Write SQL queries to perform JOIN operations between two or more tables based on a given schema.
 </article>

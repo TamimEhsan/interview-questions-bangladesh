@@ -59,7 +59,7 @@ Given the `root` of a binary tree, invert/mirror the tree, and return its root.
 [**💻 Submit Code**](https://leetcode.com/problems/invert-binary-tree/description/)
 </article>
 
-<article>
+<article id="q-ds-connected-components">
 
 Determine the number of connected components in an undirected graph.
 
