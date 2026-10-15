@@ -23,13 +23,13 @@
 
 ### Operating System
 
-<article>
+<article id="q-os-scheduling-need">
 
 Discuss what led to the need for process scheduling in modern operating systems.  
 Explain how multitasking and limited CPU resources made it necessary to manage processes efficiently, and describe the objectives of a process scheduler (e.g., fairness, responsiveness, throughput, CPU utilization).
 </article>
 
-<article>
+<article id="q-os-compilation-steps">
 
 When a high-level program file (e.g., C or C++) is turned into an executable file, several steps occur in sequence. Explain each stage and how they work together to create a runnable program.
 <details><summary>Show Answer</summary>
@@ -42,7 +42,7 @@ When a high-level program file (e.g., C or C++) is turned into an executable fil
 </details>
 </article>
 
-<article>
+<article id="q-os-cs-terms">
 
 Define the following fundamental computer science terms: DMA, Byte Order, coroutine, RISC, PCB.
 <details><summary>Show Answer</summary> 
@@ -55,7 +55,7 @@ Define the following fundamental computer science terms: DMA, Byte Order, corout
 </details>
 </article>
 
-<article>
+<article id="q-os-cpu-parts">
 
 List and briefly describe the major parts of a CPU (Central Processing Unit):  
 
@@ -72,7 +72,7 @@ List and briefly describe the major parts of a CPU (Central Processing Unit):
 
 ### Networking
 
-<article>
+<article id="q-net-url-journey">
 
 What happens when you type google.com and press enter in your search bar
 <details><summary>Show Answer</summary>

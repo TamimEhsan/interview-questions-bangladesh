@@ -19,17 +19,17 @@ The selection process has multiple stages,
 ## Written test Questions for Associate System Adminstrator
 
 ### Operating System (OS)
-<article>
+<article id="q-os-kernel">
 
 What is a kernel? What is the difference between a monolithic kernel and a microkernel?
 </article>
 
-<article>
+<article id="q-os-process">
 
 What is a process?
 </article>
 
-<article>
+<article id="q-os-virtualization-containers">
 
 What is the difference between virtualization and containers?
 </article>
@@ -39,73 +39,73 @@ What is the difference between virtualization and containers?
 What are the advantages of cloud storage over local storage?
 </article>
 
-<article>
+<article id="q-os-threads-vs-processes">
 
 Provide an example where multithreading is a better approach than multiprocessing.
 </article>
 
-<article>
+<article id="q-os-context-switch">
 
 What is a context switch in Linux
 </article>
 
-<article>
+<article id="q-os-hard-soft-links">
 
 What’s the Difference between Hard Links vs Soft Links in Linux? What will happen if soft link is broken?
 </article>
 
 
 ### Networking
-<article>
+<article id="q-net-http-vs-https">
 
 What is the difference between HTTP and HTTPS?
 </article>
 
-<article>
+<article id="q-net-cidr-nat">
 
 Define the following terms:
 
 `CIDR` (Classless Inter-Domain Routing), `Gateway`, `NAT` (Network Address Translation)
 </article>
 
-<article>
+<article id="q-net-ip-address">
 
 What is an IP address? Why is it necessary?
 </article>
 
-<article>
+<article id="q-net-firewall">
 
 What is a firewall?
 </article>
 
-<article>
+<article id="q-net-ports">
 
 What is a port? Name some commonly used service ports.
 </article>
 
-<article>
+<article id="q-net-diagnostic-tools">
 
 Define the following networking tools/commands:
 
 `ping`, `traceroute`, `nslookup`
 </article>
 
-<article>
+<article id="q-net-tcp-udp-compare">
 
 What is the difference between TCP and UDP?
 </article>
 
-<article>
+<article id="q-net-dns-troubleshoot">
 
 A user says they can ping `8.8.8.8` but not `google.com`. What might be the problem? How can you resolve it?
 </article>
 
-<article>
+<article id="q-net-packet-loss">
 
 In a local network, there is no packet loss in communication. However, after connecting it to the external network and accessing it from outside, there is packet loss. What could be the possible reasons? How can this be resolved?
 </article>
 
-<article>
+<article id="q-net-multiple-ips">
 
 Can a network device have multiple IP addresses? If so, which types of devices commonly use multiple IP addresses, and why are multiple addresses necessary? Explain with examples.
 
@@ -126,56 +126,56 @@ Yes. Common devices and reasons:
 
 
 ### Linux
-<article>
+<article id="q-os-create-user">
 
 How can you create a user in Linux? Provide a command-line example.
 </article>
 
-<article>
+<article id="q-os-create-file">
 
 How can you create a file in Linux? Provide a command-line example.
 </article>
 
-<article>
+<article id="q-os-shell">
 
 What is a shell? Provide some examples of common shells.
 </article>
 
-<article>
+<article id="q-os-fs-hierarchy">
 
 What is the Linux file system hierarchy? Describe the purpose of the following directories:
 
 `/`,  `/home`, `/var`, `/bin`, `/etc`, `/opt`, `/tmp`, `/usr`
 </article>
 
-<article>
+<article id="q-os-cli-help">
 
 How can you find help in the Linux command line? Provide example commands.
 </article>
 
-<article>
+<article id="q-os-basic-commands">
 
 Provide example commands for the following:
 
 `cd`, `cp`, `ls`, `grep`, `mv`
 </article>
 
-<article>
+<article id="q-os-file-permissions">
 
 What are file permissions in Linux?
 </article>
 
-<article>
+<article id="q-os-monitor-process">
 
 How can you monitor a process? Suppose you have a program and you need to check its status and restart it if it crashes. How can you do that?
 </article>
 
-<article>
+<article id="q-os-chmod-puzzle">
 
 You have a file where you applied `chmod 777`, but still cannot modify it. What could be the possible reason?
 </article>
 
-<article>
+<article id="q-os-bash-script">
 
 Write a Bash script that checks whether a directory named `backend` exists anywhere within the current directory tree. If it exists, print `Backend is ready`. If it does not exist, create a `backend` directory in the current location and print `Backend Created`.
 
@@ -223,7 +223,7 @@ What is the difference between `git fetch` and `git pull`? In which situations s
 </details>
 </article>
 
-<article>
+<article id="q-os-config-automation">
 
 A development team is creating automation scripts to update configuration files across multiple servers. Because these scripts may be executed multiple times, how does the concept of idempotency apply in this scenario? How can the team design the scripts to prevent duplicate entries and ensure that repeated executions produce the same consistent result?
 

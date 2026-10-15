@@ -55,7 +55,7 @@ bool restoreDouble(vector<int> input,vector<int>& output){
 Given n inputs each with n bits, output a number which was not in the given inputs and has n bits too.
 </article>
 
-<article>
+<article id="q-net-osi-layers">
 
 What are the 7 layers in OSI networking model? 
 <details><summary>Show Answer</summary>
@@ -117,7 +117,7 @@ Swaps the value of a and b without a third variable using bit manipulation
 </details>
 </article>
 
-<article>
+<article id="q-sec-authn-vs-authz">
 
 Difference between authentication and authorization
 </article>

@@ -7,7 +7,7 @@ head:
 ---
 # International University of Business and Technology
 
-<article>
+<article id="q-net-multiplexing">
 
 What is multiplexing and demultiplexing?
 </article>
@@ -27,7 +27,7 @@ Write a simple inheritance program in C++ or Java.
 Draw an ER Diagram involving Student, Enrollment, Courses, and Results.
 </article>
 
-<article>
+<article id="q-os-internal-fragmentation">
 
 Explain Internal Fragmentation
 </article>
@@ -57,7 +57,7 @@ Draw a DFA for a given Regular Expression.
 Explain the difference between transform() and fit_transform()
 </article>
 
-<article>
+<article id="q-net-ipv4-vs-ipv6">
 
 Explain the difference between IPv4 and IPv6
 </article>
@@ -67,12 +67,12 @@ Explain the difference between IPv4 and IPv6
 Explain the difference between RISC and CISC
 </article>
 
-<article>
+<article id="q-net-app-vs-transport">
 
 Differentiate between Application and Transport Layers.
 </article>
 
-<article>
+<article id="q-net-logical-physical">
 
 Differentiate between Logical vs. Physical Addressing.
 </article>
@@ -111,7 +111,7 @@ Analyze the output of a program. (Code given)
 What is a platform-based business model in e-commerce?
 </article>
 
-<article>
+<article id="q-os-memory-hierarchy">
 
 Draw and explain the memory hierarchy in Computer Organization.
 </article>
