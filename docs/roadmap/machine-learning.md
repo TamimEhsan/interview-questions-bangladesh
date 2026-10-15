@@ -3,7 +3,7 @@ description: Model training, evaluation, neural networks, transformers and appli
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/machine-learning
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/machine-learning
 ---
 # Machine Learning
 

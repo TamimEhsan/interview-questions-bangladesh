@@ -3,7 +3,7 @@ description: Aptitude puzzles and behavioral questions — the interview craft s
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/interview-craft
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/interview-craft
 ---
 # Interview Craft
 

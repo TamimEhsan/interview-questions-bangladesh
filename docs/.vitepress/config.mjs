@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import companiesMap from "./sitemap/companies.mjs";
 import notesMap from "./sitemap/notes.mjs";
+import roadmapMap from "./sitemap/roadmap.mjs";
 import rewrites from "./sitemap/rewrites.mjs";
 import { applyMarkdownPlugins } from "./plugins";
 // https://vitepress.dev/reference/site-config
@@ -18,12 +19,14 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Companies', link: '/companies/general', activeMatch:'/companies/' },
+      { text: 'Roadmap', link: '/roadmap/', activeMatch:'/roadmap/' },
       { text: 'Notes', link: '/notes/general', activeMatch:'/notes/' }
       
     ],
 
     sidebar: {
       '/companies/' : {base:'/companies', items: companiesMap},
+      '/roadmap/' : {base:'/roadmap', items: roadmapMap},
       '/notes/' : {base:'/notes', items: notesMap},
     },
 

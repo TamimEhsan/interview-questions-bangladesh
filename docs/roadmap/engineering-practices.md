@@ -3,7 +3,7 @@ description: Version control, testing, SDLC and Agile, and REST APIs — the eng
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/engineering-practices
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/engineering-practices
 ---
 # Engineering Practices
 

@@ -3,7 +3,7 @@ description: The OSI stack, TCP and UDP, addressing, application protocols, and 
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/computer-networking
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/computer-networking
 ---
 # Computer Networking
 

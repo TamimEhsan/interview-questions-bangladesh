@@ -3,7 +3,7 @@ description: Complexity analysis, sorting, searching, recursion, dynamic program
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/algorithms
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/algorithms
 ---
 # Algorithms
 

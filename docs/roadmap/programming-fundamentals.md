@@ -3,7 +3,7 @@ description: OOP, object-oriented design, and design patterns — the programmin
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/programming-fundamentals
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/programming-fundamentals
 ---
 # Programming Fundamentals
 
