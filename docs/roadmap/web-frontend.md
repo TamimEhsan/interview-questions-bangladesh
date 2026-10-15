@@ -3,7 +3,7 @@ description: JavaScript, the DOM, CSS, and frameworks — the web and frontend t
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/web-frontend
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/web-frontend
 ---
 # Web & Frontend
 

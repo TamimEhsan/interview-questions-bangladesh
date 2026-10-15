@@ -3,7 +3,7 @@ description: Processes, threads, scheduling, memory, file systems, Linux, and co
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/operating-systems
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/operating-systems
 ---
 # Operating Systems & Concurrency
 

@@ -3,7 +3,7 @@ description: A topic-by-topic interview preparation roadmap, built from the real
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/
 ---
 # Interview Prep Roadmap
 

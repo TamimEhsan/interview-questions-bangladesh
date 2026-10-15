@@ -3,7 +3,7 @@ description: Scalability, caching, data layers, communication patterns, and clas
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/system-design
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/system-design
 ---
 # System Design
 

@@ -3,7 +3,7 @@ description: SQL querying and database design and theory — the databases secti
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/databases
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/databases
 ---
 # Databases
 

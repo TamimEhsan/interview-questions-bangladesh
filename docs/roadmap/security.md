@@ -3,7 +3,7 @@ description: Authentication, authorization, vulnerabilities, encryption, and def
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/security
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/security
 ---
 # Security
 

@@ -3,7 +3,7 @@ description: Arrays, linked lists, stacks, queues, trees, graphs, and hashing â€
 head:
   - - link
     - rel: canonical
-      href: https://tamimehsan.github.io/interview-questions-bangladesh/notes/roadmap/data-structures
+      href: https://tamimehsan.github.io/interview-questions-bangladesh/roadmap/data-structures
 ---
 # Data Structures
 
