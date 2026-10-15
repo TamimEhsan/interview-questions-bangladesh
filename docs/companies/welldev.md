@@ -91,7 +91,7 @@ Damn!
 </details>
 </article>
 
-<article>
+<article id="q-algo-print-complexity">
 
 What is the time complexity of the print statement?
 if it's `O(1)` why is that? Is it the same case for Linked List?
@@ -152,7 +152,7 @@ One of the implementation uses a Data structure, one doesn't. So their space com
 </details>
 </article>
 
-<article>
+<article id="q-algo-recursive-complexity">
 
 What is the time complexity of the following code?
 
@@ -373,7 +373,7 @@ int main(){
 </details>
 </article>
 
-<article>
+<article id="q-algo-egg-drop">
 
 You have a `n`-story building, and two eggs. An egg will break if dropped from a certain height (ie above a floor `f`).  Determine the minimum number of moves that you need to determine with certainty what the value of `f` is.
 
@@ -530,7 +530,7 @@ Given a string s which consists of lowercase or uppercase letters, return the le
 [**💻 Submit Code**](https://leetcode.com/problems/longest-palindrome/description/)
 </article>
 
-<article>
+<article id="q-algo-fibonacci-two-vars">
 
 Write pseudocode of generating fibonacci number using only two variable
 </article>
@@ -587,7 +587,7 @@ public:
 </details>
 </article>
 
-<article>
+<article id="q-algo-sort-odd-elements">
 
 Sort an array that consists with elements of odd numbers.
 </article>
@@ -663,7 +663,7 @@ public:
 </details>
 </article>
 
-<article>
+<article id="q-algo-basic-recursion">
 
 Basic recursive implementation problem
 </article>
@@ -743,7 +743,7 @@ Details on Two pointers
 What is abstract class?
 </article>
 
-<article>
+<article id="q-algo-insertion-sort">
 
 Explain how insertion sort works
 </article>
@@ -798,7 +798,7 @@ BFS, DFS, Mergesort, Quicksort, Recursion
 Which data structure is good to use to search strings?
 </article>
 
-<article>
+<article id="q-algo-selection-vs-insertion">
 
 What's the difference between selection sort and insertion sort?
 </article>

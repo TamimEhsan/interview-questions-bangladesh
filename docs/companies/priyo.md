@@ -40,7 +40,7 @@ Each boat carries at most two people at the same time, provided the sum of the w
 Return the minimum number of boats to carry every given person.
 </article>
 
-<article>
+<article id="q-algo-balls-into-boxes">
 
 Given an array of n colored balls. And some boxes. Each box has some capacity and each box must contain balls of same color. What is the maximum number of balls that the boxes can carry?
 Constraint: max capacity of box - min capacity of box <= 1

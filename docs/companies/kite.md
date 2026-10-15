@@ -25,7 +25,7 @@ head:
 
 ## Technical Round Questions
 
-<article>
+<article id="q-algo-good-permutations">
 
 A permutation `P` is good if `P[i] % i == 0` or `i % P[i] == 0` for `1 ≤ i ≤ N`. Given `N ≤ 20`, count the number of good permutations. 
 <details><summary>Show Answer</summary>
@@ -268,7 +268,7 @@ bool containsNearbyAlmostDuplicate(vector<int>& nums, int indexDiff, int valueDi
 </details>
 </article>
 
-<article>
+<article id="q-algo-burst-balloons">
 
 You are given `n` balloons, indexed from `0` to `n - 1`. Each balloon is painted with a number on it represented by an array nums. You are asked to burst all the balloons.
 
@@ -303,7 +303,7 @@ You're at a buffet with various food items. Each food item has a deliciousness f
 </details>
 </article>
 
-<article>
+<article id="q-algo-grid-regions">
 
 You have a 2D grid representing a village. 'X' denotes farmer-owned land, and '.' denotes government-owned land. Connected 'X' areas belong to the same farmer. If two connected 'X' areas match under any 90° rotation, they also belong to the same farmer. Count the number of unique farmers in the village. @@2024@@
 
@@ -419,7 +419,7 @@ Given a tree with `N` nodes. You will need to chose an optimal start node `s` su
 </details>
 </article>
 
-<article>
+<article id="q-algo-grid-patterns">
 
 Given a grid of size `N` and `M` with digit `0` and `1`. The grid indicates some patterns which are not connected. The patterns can be rotated or stretched too. You will need to find the patterns present in the grid. @@Jr SWE 2025@@
 

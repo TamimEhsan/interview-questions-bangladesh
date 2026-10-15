@@ -24,7 +24,7 @@ Their interview process consists of three stages. The first two stages vary from
 
 ## Questions
 
-<article>
+<article id="q-algo-bfs-vs-dfs">
 
 Discuss BFS and DFS: which one is faster, and what are their use cases?
 </article>

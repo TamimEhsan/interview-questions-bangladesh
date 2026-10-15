@@ -82,7 +82,7 @@ Differentiate between Logical vs. Physical Addressing.
 Why is Requirement Engineering important?
 </article>
 
-<article>
+<article id="q-algo-binary-search">
 
 Explain the Binary Search algorithm.
 </article>

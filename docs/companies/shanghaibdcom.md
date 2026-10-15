@@ -121,7 +121,7 @@ You are given an arithmetic expression in either infix or postfix notation. Writ
 You are given `1000` unsorted numbers and need to find the `10` smallest elements efficiently. Which sorting or selection algorithm would be most optimal to solve this problem and why?
 </article>
 
-<article>
+<article id="q-algo-preorder-recursive-iterative">
 
 Implement a function to perform preorder traversal of a binary tree using both recursive and iterative (loop-based) approaches.
 </article>

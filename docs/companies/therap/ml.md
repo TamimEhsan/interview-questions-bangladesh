@@ -35,7 +35,7 @@ For a binary tree, you are given a table of two columns N and P, where N represe
 | 6   | leaf |
 </article>
 
-<article>
+<article id="q-algo-stock-prices">
 
 You are given an array prices where `prices[i]` is the price of a given stock on the `i`th day.
 

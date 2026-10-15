@@ -127,7 +127,7 @@ Given grid dimensions `n × m`. Determine if it is possible to assign pigment va
 <!-- <iframe src="/interview-questions-bangladesh/resource/appify/Final_Onsite.pdf" width="400" height="600" type="application/pdf"></iframe>  -->
 The given questions are the summarized version of the original questions. The original questions are available in the [Final Round Problem Set](https://github.com/TamimEhsan/interview-questions-bangladesh/tree/master/docs/resource/appify/Final_Onsite.pdf).
 
-<article>
+<article id="q-algo-parity-binary">
  
 Given a sequence of integers, convert each number to binary using parity (even → 1, odd → 0), concatenate to form a binary string, and print it with leading zeros removed.
 
@@ -250,7 +250,7 @@ Given a string `s` of length `n`. Pick an integer `k` `(1 ≤ k ≤ n)` and perf
 [**💻 Submit Code**](https://codeforces.com/problemset/problem/1316/B)
 </article>
 
-<article>
+<article id="q-algo-reachable-vertices">
  
 Given a simple directed graph with `N` vertices and `M` edges. Count how many vertices can be starting points for infinite walks (i.e., they lie on or can reach a cycle).
 

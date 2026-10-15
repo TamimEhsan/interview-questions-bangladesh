@@ -133,7 +133,7 @@ intersectionArea(long double X1, long double Y1,
 </details>
 </article>
 
-<article>
+<article id="q-algo-merge-intervals">
 
 Given a list of ranges. Find the length covered by at least one of the range. <br>
 input: [[1,3],[2,5],[6,7]] <br>
@@ -192,12 +192,12 @@ int solve(string s, char c) {
 Given a range [l,r]. Find all primes between this range. 
 </article>
 
-<article>
+<article id="q-algo-bit-flips">
 
 Given two binary string A,B. Find the minimum number of bit flips to change string A to string B.
 </article>
 
-<article>
+<article id="q-algo-min-cost-lots">
 
 2 shops sell apples in lots. their price is given. You cannot buy any loose apples. find minimum cost of buying exactly n apples.
 </article>

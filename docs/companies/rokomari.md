@@ -104,7 +104,7 @@ int main() {
 </article>
 
 
-<article>
+<article id="q-algo-merge-sort">
 
 Implement Merge Sort for t test cases.
 <details><summary>Show Answer</summary>

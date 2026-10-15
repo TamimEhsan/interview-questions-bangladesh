@@ -187,7 +187,7 @@ void rotate(vector<int> &nums, int k)
 Given an array and a number, construct a number from the array digits, subtract the given number, and return the result.
 </article>
 
-<article>
+<article id="q-algo-fibonacci">
 
 Given `n`, calculate the `nth` Fibonacci number F`(n)`.
 
@@ -266,7 +266,7 @@ What are the key differences between a tree and a graph data structure?
 What are the four pillars of Object-Oriented Programming (OOP)?
 </article>
 
-<article>
+<article id="q-algo-dfs">
 
 What is DFS? Implement Depth-First Search in any programming language.
 </article>
