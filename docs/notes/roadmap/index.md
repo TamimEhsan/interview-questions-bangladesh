@@ -30,8 +30,17 @@ Complexity Analysis, Sorting & Searching, Recursion & Backtracking, Dynamic Prog
 ### [Databases](./databases)
 SQL Querying, Database Design & Theory.
 
-### [Systems](./systems)
-Operating Systems, Concurrency & Multithreading, Computer Networking, System Design, Security Fundamentals.
+### [Operating Systems & Concurrency](./operating-systems)
+Operating Systems, Concurrency & Multithreading.
+
+### [Computer Networking](./computer-networking)
+Network Models, Transport Layer, Network Layer & Addressing, Application Layer Protocols, Security & Performance.
+
+### [System Design](./system-design)
+Design Fundamentals, Scalability, Data Layer, Communication Patterns, Reliability & Observability, Classic Design Problems.
+
+### [Security](./security)
+Authentication & Authorization, Common Vulnerabilities, Secure Communication, Defensive Practices.
 
 ### [Engineering Practices](./engineering-practices)
 Version Control (Git), Testing & Code Quality, SDLC, Agile & Process, REST APIs & Microservices.
