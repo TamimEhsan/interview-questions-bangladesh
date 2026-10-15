@@ -503,7 +503,7 @@ bool isMatch(string s, string p) {
 </details>
 </article>
 
-<article>
+<article id="q-sec-project-auth">
 
 About project: What have you done in the authentication part in your project? Also how did you specify roles for different users.
 </article>
@@ -706,12 +706,12 @@ public:
 </details>
 </article>
 
-<article>
+<article id="q-sd-compression-system">
 
 Design a file/text compression system
 </article>
 
-<article>
+<article id="q-sd-inventory-schema">
 
 Design a simple inventory system. The scenario is simplified. We have warehouses are to store products and employees work in there handling the products. Design a database schema for the system. 
 

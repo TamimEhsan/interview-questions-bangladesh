@@ -250,7 +250,7 @@ What happens if two people try to reserve the same ticket simultaneously in a ti
 How many APIs are required to solve the above ticket reservation problem?
 </article>
 
-<article>
+<article id="q-sec-password-storage">
 
 How can passwords be secured so that no one (even the administrator) can view them? How can password hashing be strengthened? What techniques do you know? (Hint: Salting and hashing techniques)
 </article>

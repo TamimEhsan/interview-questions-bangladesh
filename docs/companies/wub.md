@@ -18,17 +18,17 @@ How does amortized analysis help determine time complexity in dynamic data struc
 When the halting problem makes termination undecidable, what methods can be used to ensure or analyze program termination?
 </article>
 
-<article>
+<article id="q-net-qos">
 
 How do traffic shaping and resource reservation enhance Quality of Service (QoS) in IP networks?
 </article>
 
-<article>
+<article id="q-os-cache-memory">
 
 How does cache memory improve CPU performance by reducing cache misses?
 </article>
 
-<article>
+<article id="q-sd-unstructured-architecture">
 
 You are tasked with designing a data architecture for a system that handles massive unstructured data. Which would you choose and why:
 a. Relational (SQL)

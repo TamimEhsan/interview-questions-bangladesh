@@ -71,7 +71,7 @@ Use DFS to identify and count the connected components.
 
 ## Whiteboard System Design
 
-<article>
+<article id="q-sd-electricity-monitoring">
 
 Design a system that will be used to monitor the usage of electricity of meters across a area. The system should be able to show the usage of electricity in real time and also be able to show the usage of electricity over a period of time.
 <details><summary>Show Hint</summary>
@@ -80,7 +80,7 @@ Answer varies from person to person. The interviewers are looking for a high lev
 </details>
 </article>
 
-<article>
+<article id="q-sd-delivery-platform">
 
 Design a system where a single restaurant offers home delivery services across the entire country. You don’t need to worry about the payment gateway, as that is handled by a third party.
 

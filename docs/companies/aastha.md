@@ -20,7 +20,7 @@ Astha IT is a software development company based in Dhaka, Bangladesh, providing
 
 ### Technical Assessment Questions
 
-<article>
+<article id="q-sd-social-media">
 
 Design a basic social media system.
 </article>

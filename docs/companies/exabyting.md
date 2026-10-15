@@ -83,7 +83,7 @@ If the binary search tree is imbalanced, then we can make it balanced by using A
 </details>
 </article>
 
-<article>
+<article id="q-net-url-journey">
 
 When we type a web address (www.google.com) in a web browser, what happens before we get the response?
 <details><summary>Show Answer</summary>
@@ -92,7 +92,7 @@ This is a very important question and aims to check the knowledge of networking.
 </details>
 </article>
 
-<article>
+<article id="q-net-tcp-vs-udp">
 
 Difference between TCP and UDP.
 <details><summary>Show Answer</summary>
@@ -263,12 +263,12 @@ Why Tailwind? What benefits Tailwind give us compared to other CSS libraries?
 What type of language is JavaScript? Compiled or Interpreted? How do they work?
 </article>
 
-<article>
+<article id="q-conc-js-async">
 
 JavaScript is a single-threaded language, so how does it maintain asynchronous tasks?
 </article>
 
-<article>
+<article id="q-conc-event-loop">
 
 Explain the event loop. Have you ever seen the implementations of libuv?
 </article>
@@ -428,7 +428,7 @@ Operator overloading is a feature in C++ that allows operators to be redefined s
 Explain the difference between an array and a linked list. Tell me some use cases for each of them. How can we access an element of an array with the index?
 </article>
 
-<article>
+<article id="q-net-https-internals">
 
 Explain HTTP and HTTPS. Why HTTPS? How does data transfer in HTTPS? What is used under the hood to encrypt the communication between the sender and the receiver?
 <details><summary>Show Answer</summary>
@@ -440,7 +440,7 @@ In HTTPS, data transfer is encrypted using SSL/TLS (Secure Sockets Layer / Trans
 </details>
 </article>
 
-<article>
+<article id="q-net-https-stateless">
 
 Is HTTPS stateful or stateless? If stateless, then how can we browse Facebook after login once?
 <details><summary>Show Answer</summary>
@@ -451,7 +451,7 @@ When we log in, the server sends a session ID (stored in a cookie) to our browse
 </details>
 </article>
 
-<article>
+<article id="q-sec-cookie-auth">
 
 Explain cookie-based authentication. How can we blacklist a cookie?
 <details><summary>Show Answer</summary>
@@ -469,7 +469,7 @@ Read more from [Cookie-Based Authentication: A Comprehensive Guide | Auth0](http
 </details>
 </article>
 
-<article>
+<article id="q-sec-jwt-structure">
 
 Do you know the structure of JWT? Explain. 
 <details><summary>Show Answer</summary>

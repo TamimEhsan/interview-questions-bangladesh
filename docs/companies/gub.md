@@ -22,7 +22,7 @@ Solve a problem using C/C++ and write the complete code.
 Explain overfitting, underfitting, and another type of fitting (possibly best fitting). Draw diagrams to support your explanation.
 </article>
 
-<article>
+<article id="q-net-subnet-calc">
 
 Given the subnet `223.1.1.0/24`, calculate:
 - Network ID
@@ -50,7 +50,7 @@ What will be the output of a C program? (Code was provided)
 Explain the phases of the Software Development Life Cycle (SDLC).
 </article>
 
-<article>
+<article id="q-sec-large-data-encryption">
 
 A cryptographic algorithm is used to encrypt large data. Explain how this encryption algorithm works and its application. (Detailed scenario was given)
 </article>

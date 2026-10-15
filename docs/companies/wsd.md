@@ -44,7 +44,7 @@ Create a java console based banking application. Features include creating, disp
 Describe key features of spring boot.
 </article>
 
-<article>
+<article id="q-sec-jwt-parts">
 
 What is JWT token? What are the parts of a jwt token?
 </article>

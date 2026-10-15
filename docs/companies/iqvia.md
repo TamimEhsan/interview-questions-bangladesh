@@ -212,7 +212,7 @@ Given an integer array. Sort the array in nondecreasing order using frequency co
 Given an array of thresholds. For each threshold print the first negative number.
 </article>
 
-<article>
+<article id="q-net-url-journey">
 
 What happens when you type google.com and press enter in your search bar
 <details><summary>Show Answer</summary>

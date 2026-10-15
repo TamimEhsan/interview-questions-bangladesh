@@ -85,7 +85,7 @@ provided; no test cases.
 
 </article>
 
-<article>
+<article id="q-sd-load-balancer">
 
 Load Balancer Problem:
 

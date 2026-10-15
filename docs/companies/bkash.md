@@ -321,7 +321,7 @@ How can you generate random numbers in your preferred programming language?
 How can you compare the contents of two text files to determine if they are identical?
 </article>
 
-<article>
+<article id="q-net-url-journey">
 
 What happens when you type google.com and press enter in your search bar
 <details><summary>Show Answer</summary>

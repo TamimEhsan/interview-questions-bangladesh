@@ -36,27 +36,27 @@ Evaluate the following postfix expression: `6 4 3 2 + - *`
 Differentiate between binary and linear data structures with examples.
 </article>
 
-<article>
+<article id="q-sec-symmetric-asymmetric">
 
 What is the difference between symmetric and asymmetric encryption?
 </article>
 
-<article>
+<article id="q-net-firewall">
 
 What is a firewall?
 </article>
 
-<article>
+<article id="q-net-vpn">
 
 What is a VPN?
 </article>
 
-<article>
+<article id="q-net-dns">
 
 What is DNS?
 </article>
 
-<article>
+<article id="q-sec-digital-signature">
 
 What is a digital signature?
 </article>

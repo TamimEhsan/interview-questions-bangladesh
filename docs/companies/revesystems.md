@@ -237,7 +237,7 @@ What are the four pillars of OOP?
 Explain about `Encapsulation`, `Abstraction`, `Inheritance`, and `Polymorphism` with real-world examples.
 </article>
 
-<article>
+<article id="q-net-socket-programming">
 
 Please tell us about Java Socket Programming.
 </article>
@@ -257,7 +257,7 @@ Please explain the Agile model in software engineering.
 What are the SOLID principles?
 </article>
 
-<article>
+<article id="q-net-tcp-udp-differences">
 
 What are the differences between the TCP and UDP protocols?
 </article>
