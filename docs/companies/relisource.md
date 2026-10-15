@@ -48,7 +48,7 @@ There is a food track consisting of cells marked with 0, 1, or other numbers. He
 |1|9|1|
 </article>
 
-<article>
+<article id="q-fe-click-listener">
 
 JavaScript & HTML
 
@@ -69,7 +69,7 @@ An island is surrounded by water and is formed by connecting adjacent lands hori
 Releated Question: [**💻 Submit Code**](https://leetcode.com/problems/number-of-islands/description/) 
 </article>
 
-<article>
+<article id="q-fe-grow-button">
 
 Write javascript code to create a button with id `growButton`. On each click its size increases by 2px. If its size goes beyond 36px it should stop growing, turn green, and show an alert saying it's already at max size. @@Junior2026@@
 </article>

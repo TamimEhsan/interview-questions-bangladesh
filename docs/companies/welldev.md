@@ -230,7 +230,7 @@ Think multiple queue.
 
 ## Second Round Questions
 
-<article>
+<article id="q-api-health-check">
 
 Write an API call to check whether the system is running properly and explain a GET API call.
 </article>
@@ -245,7 +245,7 @@ Write a code to create a directory and a text file inside it with “Hello World
 What happens if two people try to reserve the same ticket simultaneously in a ticket reservation system? How would you solve this problem in a ticket management system? What will be your idea in this regard?
 </article>
 
-<article>
+<article id="q-api-count-for-booking">
 
 How many APIs are required to solve the above ticket reservation problem?
 </article>
@@ -440,12 +440,12 @@ void moveZeroes(vector<int>& nums) {
 
 ## Behavioral questions
 
-<article>
+<article id="q-hr-introduce-yourself">
 
 Could you please introduce yourself? where do you live? Who is there in your family?
 </article>
 
-<article>
+<article id="q-hr-five-years">
 
 Where do you wanna see yourself after 5years?
 </article>
@@ -455,7 +455,7 @@ Where do you wanna see yourself after 5years?
 If you could devote yourself to learn new technologies?
 </article>
 
-<article>
+<article id="q-hr-strength-weakness">
 
 What is your strength and weakness?
 </article>
@@ -465,22 +465,22 @@ What is your strength and weakness?
 Do you have a plan to join full-time after successfully passing the training program?
 </article>
 
-<article>
+<article id="q-hr-why-hire-you">
 
 Why should we hire you?
 </article>
 
-<article>
+<article id="q-hr-salary-expectation">
 
 What is your salary expectation?
 </article>
 
-<article>
+<article id="q-hr-tough-coworker">
 
 How you will deal with a tough co-worker
 </article>
 
-<article>
+<article id="q-hr-missed-deadline">
 
 If you have a tight deadline and will miss it that time, how will you handle it?
 </article>
@@ -490,7 +490,7 @@ If you have a tight deadline and will miss it that time, how will you handle it?
 Tell me something that will convince me to hire you.
 </article>
 
-<article>
+<article id="q-hr-deadline-vs-quality">
 
 How do you balance between a tight deadline and preserving best practices for?
 </article>
@@ -500,22 +500,22 @@ How do you balance between a tight deadline and preserving best practices for?
 what stack u wanna work with, do you wanna go abroad?
 </article>
 
-<article>
+<article id="q-hr-how-others-describe-you">
 
 How would your friends, parents, and teachers describe you?
 </article>
 
-<article>
+<article id="q-hr-three-words">
 
 3 word to describe yourself?
 </article>
 
-<article>
+<article id="q-hr-workplace-expectations">
 
 What are your expectations from WellDev as a workplace?
 </article>
 
-<article>
+<article id="q-hr-motivation-to-apply">
 
 What is the motivation to apply here?
 </article>
@@ -838,7 +838,7 @@ What do you understand by the term Dependency Injection?
 What are protected and public variables?
 </article>
 
-<article>
+<article id="q-fe-dom-events">
 
 What is the JavaScript event in a document?
 </article>

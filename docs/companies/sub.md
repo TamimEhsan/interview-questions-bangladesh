@@ -14,7 +14,7 @@ head:
 Simplify and solve a Boolean function using a Karnaugh Map (KMap).
 </article>
 
-<article>
+<article id="q-ml-kmeans">
 
 Explain the K-means clustering algorithm with a suitable example.
 </article>

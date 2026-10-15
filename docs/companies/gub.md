@@ -17,7 +17,7 @@ Analyze a code and identify which data structure or algorithm (such as sorting) 
 Solve a problem using C/C++ and write the complete code.
 </article>
 
-<article>
+<article id="q-ml-fitting-curves">
 
 Explain overfitting, underfitting, and another type of fitting (possibly best fitting). Draw diagrams to support your explanation.
 </article>
@@ -45,7 +45,7 @@ Define and explain the key properties of object-oriented programming such as inh
 What will be the output of a C program? (Code was provided)
 </article>
 
-<article>
+<article id="q-sdlc-phases">
 
 Explain the phases of the Software Development Life Cycle (SDLC).
 </article>

@@ -232,7 +232,7 @@ int main() {
 
 ### Analytical (10 Marks)
 
-<article>
+<article id="q-apt-switches">
 
 There are 3 switches S1, S2, and S3 outside a server room. Inside the room, there are 3 cooling fans, and each fan is connected to exactly one switch. However, the switches are not labeled, so you don’t know which switch controls which fan. You are allowed to enter the server room only once. How can you figure out which switch controls which fan?
 </article>

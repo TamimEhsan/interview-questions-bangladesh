@@ -20,7 +20,7 @@ const notesMap = [
       { text: "Engineering Practices", link: "/roadmap/engineering-practices" },
       { text: "Web &amp; Frontend", link: "/roadmap/web-frontend" },
       { text: "Interview Craft", link: "/roadmap/interview-craft" },
-      { text: "Advanced", link: "/roadmap/advanced" },
+      { text: "Machine Learning", link: "/roadmap/machine-learning" },
     ],
   },
   {

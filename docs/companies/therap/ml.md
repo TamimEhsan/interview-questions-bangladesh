@@ -83,7 +83,7 @@ Return the number of possible unique paths that the robot can take to reach the 
 
 ## Machine Learning Questions
 
-<article>
+<article id="q-ml-cctv-inference">
 
 You are given realtime 120FPS CCTV footage of cars on a road. Assuming you have a model that can accurately identify cars and output an axis oriented bounding box for every detected car on a single frame. 
 
@@ -92,7 +92,7 @@ You have to detect how many distinct cars that camera has seen in a given timefr
 Describe how you would approach this problem.
 </article>
 
-<article>
+<article id="q-ml-news-classifier">
 
 You need to create a model that classified news articles into three categories, 
 - sports
@@ -105,27 +105,27 @@ The model has to handle very high throughput of hundreds of articles per second 
 Describe how you would approach this problem.
 </article>
 
-<article>
+<article id="q-ml-training-curves">
 
 Given model's training and validation accuracy/loss curve, describe what the graph tells about the model and explain your reasoning. Also describe how you can mitigate the issue the model is facing.
 </article>
 
-<article>
+<article id="q-ml-recent-paper">
 
 Explain in brief any one research paper you read recently about ML. briefly describe it's methodology, findings and show atleast one real world implication of the paper.
 </article>
 
-<article>
+<article id="q-ml-softmax-multilabel">
 
 Softmax was used for a multi-label classification task. What are the implications of this choice, and what should have been used instead?  @@2026@@
 </article>
 
-<article>
+<article id="q-ml-residual-connections">
 
 Residual connections in Transformer models help prevent the vanishing gradient problem during training. Explain this mathematically.  @@2026@@
 </article>
 
-<article>
+<article id="q-ml-batch-size">
 
 Consider two models trained with batch sizes of 8 and 64.
 
@@ -133,12 +133,12 @@ Consider two models trained with batch sizes of 8 and 64.
 2. If the model trained with the larger batch size achieves 5% lower validation accuracy, what could explain this outcome?  @@2026@@
 </article>
 
-<article>
+<article id="q-ml-unshuffled-classes">
 
 What happens if a classifier is trained on a dataset containing three classes without shuffling, such that all samples from Class A are seen first, followed by Class B, and then Class C in every epoch?  @@2026@@
 </article>
 
-<article>
+<article id="q-ml-imbalanced-metrics">
 
 Consider an imbalanced dataset in which 99% of samples belong to the negative class and 1% belong to the positive class.
 
@@ -147,7 +147,7 @@ Consider an imbalanced dataset in which 99% of samples belong to the negative cl
 3. Express the chosen metric(s) in terms of TP, FP, TN, and FN.  @@2026@@
 </article>
 
-<article>
+<article id="q-ml-attention-shapes">
 
 An LLM has a sequence length of 100, 12 attention heads, and a hidden dimension of 768.
 
@@ -156,14 +156,14 @@ Determine:
 2. The shape of the attention matrix for each head.  @@2026@@
 </article>
 
-<article>
+<article id="q-ml-moe-router">
 
 In a Mixture-of-Experts (MoE) model, the router uses an argmax operation to route each token to a single expert. However, the router parameters are not being trained.
 
 Why does this occur, and how can the issue be addressed?  @@2026@@
 </article>
 
-<article>
+<article id="q-ml-rag-design">
 
 Design a Retrieval-Augmented Generation (RAG) system with a small context window and a vector database.
 
@@ -172,7 +172,7 @@ Follow up questions:
 2. What would you do if the retrieved content exceeds the model's context window?  @@2026@@
 </article>
 
-<article>
+<article id="q-ml-temperature-json">
 
 You are designing a system prompt with few-shot examples and require the model to output valid JSON.
 

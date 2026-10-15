@@ -12,7 +12,7 @@ head:
 Construct a binary search tree using a given list of numbers. Show the structure.
 </article>
 
-<article>
+<article id="q-ml-learning-types">
 
 Explain the differences between supervised, unsupervised, and reinforcement learning. Give examples for each.
 </article>

@@ -392,7 +392,7 @@ int main() { ... }
 </details>
 </article>
 
-<article>
+<article id="q-ml-gpu-scheduling">
 
 In a multi-model machine learning system, different models are trained sequentially on a single GPU. If a higher-priority task arrives during training, the lower-priority task is paused until the higher-priority task finishes.
 

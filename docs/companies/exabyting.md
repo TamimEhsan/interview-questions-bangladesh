@@ -231,34 +231,34 @@ Read more from [What is Indexing in Database? | Medium](https://medium.com/@rtaw
 </details> 
 </article>
 
-<article>
+<article id="q-fe-event-loop">
 
 Describe the Event loop in JS.
 </article>
 
-<article>
+<article id="q-fe-closure">
 
 What is closure? Describe.
 </article>
 
 ## Second Round Questions
 
-<article>
+<article id="q-fe-why-react">
 
 Why React? What advantages does React give us over direct DOM manipulation?
 </article>
 
-<article>
+<article id="q-fe-props-immutability">
 
 Why shouldn’t we mutate props in the child component?
 </article>
 
-<article>
+<article id="q-fe-tailwind">
 
 Why Tailwind? What benefits Tailwind give us compared to other CSS libraries?
 </article>
 
-<article>
+<article id="q-fe-js-compiled-interpreted">
 
 What type of language is JavaScript? Compiled or Interpreted? How do they work?
 </article>
@@ -273,7 +273,7 @@ JavaScript is a single-threaded language, so how does it maintain asynchronous t
 Explain the event loop. Have you ever seen the implementations of libuv?
 </article>
 
-<article>
+<article id="q-fe-var-let-const">
 
 Explain var, let, const in JavaScript.
 <details><summary>Show Answer</summary>
@@ -286,7 +286,7 @@ Read more from [Var, Let, and Const – What's the Difference? | FreeCodeCamp](h
 </details>
 </article>
 
-<article>
+<article id="q-fe-hoisting">
 
 Explain hoisting.
 <details><summary>Show Answer</summary>
@@ -309,7 +309,7 @@ Read more from [JavaScript Primitive Values vs Reference Values | FreeCodeCamp](
 </details>
 </article>
 
-<article>
+<article id="q-fe-closure-scope">
 
 Explain closure. The inner function (which is returned) of the closure has access to its outer scope, how is it possible, where the variable is stored in that time?
 </article>

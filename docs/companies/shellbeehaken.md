@@ -101,7 +101,7 @@ You are given a chat system to design. Polling, streaming or sockets which will 
 
 </article>
 
-<article>
+<article id="q-api-idempotency">
 
 - Describe idempotent and non-idempotent request in REST.
 - How does a DNS resolver work ?
