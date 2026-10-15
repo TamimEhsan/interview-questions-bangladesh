@@ -31,7 +31,7 @@ SRBD takes interview in two round.
 
 ## Coding Round Questions
 
-<article>
+<article id="q-algo-burst-balloons">
 
 You are given `n` balloons, indexed from `0` to `n - 1`. Each balloon is painted with a number on it represented by an array `nums`. You are asked to burst all the balloons.
 
@@ -84,7 +84,7 @@ Write a program that, starting at the office, finds a (the) shortest path visiti
 Your program only have to report the distance of a (the) shortest path.
 </article>
 
-<article>
+<article id="q-algo-detect-cycle">
 
 You are given a directed graph represented by an adjacency list. Your task is to detect if there exists a cycle in the graph.
 If a cycle is found, print the nodes of the cycle in sorted order. Additionally, provide the results for each test case in the format 
@@ -194,7 +194,7 @@ Unpredictable. It is not guaranteed that which thread is currently accessing the
 </details>
 </article>
 
-<article>
+<article id="q-algo-search-tradeoff">
 
 Given 5 element. We want to search million time that will return if the searched element is present or no. What is the best time complexity.
 <details><summary>Show Answer</summary>
@@ -203,7 +203,7 @@ You might be tempted to answer using binary search on sorted list but it might b
 </details>
 </article>
 
-<article>
+<article id="q-algo-search-followup">
 
 Follow up question. We are guaranteed that each time new search element would be front the next position of previous search. Write code on pen & paper.
 <details><summary>Show Answer</summary>
@@ -230,7 +230,7 @@ int solve( vector<int> arr, int element){
 </details>
 </article>
 
-<article>
+<article id="q-algo-search-large-keys">
 
 Follow up question. Suppose we have 5000 number each 500 digit. Now how will you search? 
 <details><summary>Show Answer</summary>

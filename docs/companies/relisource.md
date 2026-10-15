@@ -60,7 +60,7 @@ Write JavaScript code to check if a button is clicked in an HTML element using a
 Given two tables: `employee(name, salary, department_id)` and `department(id, department_name)`. Write an SQL query to find the maximum salary for each department. @@Junior2026@@
 </article>
 
-<article>
+<article id="q-algo-islands-max-size">
 
 Given an `m x n` 2D binary grid grid which represents a map of 'L's (land) and 'W's (water), return the number of islands and the maximum size among the islands. 
 

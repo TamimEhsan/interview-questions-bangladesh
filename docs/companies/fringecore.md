@@ -19,7 +19,7 @@ head:
 
 ## Frontend Questions
 
-<article>
+<article id="q-algo-recursive-partitioner">
 
 Build a recursive partitioner
 
@@ -254,7 +254,7 @@ We want to build an awkward mix between a real-time long-polling server and a qu
 
 
 
-<article>
+<article id="q-algo-task-scheduler">
 
 Priority Task Scheduler
 

@@ -35,14 +35,14 @@ Given an integer `n`, for every number `i` in the range `1 <= i <= n`, print one
 
 </article>
 
-<article>
+<article id="q-algo-search-rotated">
 
 Given an integer array `nums`. All the integers of `nums` are sorted in ascending order except for one element. Find the index of the element. @@ASWE 2025@@
 </article>
 
 ## Software Engineering Questions
 
-<article>
+<article id="q-algo-stock-profit">
 
 Given an array of numbers indicating stock price of n consecutive days. If you buy stock at one day and sell at any later day what is the maximum profit that you can get?
 
@@ -536,7 +536,7 @@ def subtract(num1, num2):
 </details>
 </article>
 
-<article>
+<article id="q-algo-sort-012">
 
 Given an array containing 0,1,2 sort it.
 

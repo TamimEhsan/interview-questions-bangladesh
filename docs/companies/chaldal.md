@@ -135,7 +135,7 @@ bool solve(string s){
 </details>
 </article>
 
-<article>
+<article id="q-algo-even-fibonacci">
 
 Given an positive integer n. Find the sum of even fibonacchi number upto nth term.
 
@@ -180,7 +180,7 @@ long long stringToInteger(string &s) {
 </details>
 </article>
 
-<article>
+<article id="q-algo-permutations">
 
 Given an array of integers. Generate all possible permutation of the given array.
 
@@ -218,7 +218,7 @@ public:
 </details>
 </article>
 
-<article>
+<article id="q-algo-subsets">
 
 Given an array of integers. Generate all possible subset of the given array.
 
@@ -259,7 +259,7 @@ public:
 Given a regex expression and a string. Check if the regex expression matches with the string.
 </article>
 
-<article>
+<article id="q-algo-interval-scheduling">
 
 Each student is assigned to an assignment at a particular location at a specific time. Are there any inconsistencies in the assignments ? Find at least one of them by looking into the input. Then write a code to print all inconsistencies in the assignments. 
 <details><summary>Show Answer</summary>
@@ -534,7 +534,7 @@ string decimalToHexa(int decimal){
 </details>
 </article>
 
-<article>
+<article id="q-algo-all-subsets">
 
 Write a function which finds all the subset of a given set.
 
@@ -564,7 +564,7 @@ vector<vector<int>> subsets(vector<int>& nums) {
 </details>
 </article>
 
-<article>
+<article id="q-algo-topological-sort">
 
 Given a set of orderings of letters, determine their topological sorting order. The orderings are provided as strings. 
 For example, given the input ["A>B", "B>C", "C>D"], the expected output is "ABCD".
@@ -622,7 +622,7 @@ public:
 </details>
 </article>
 
-<article>
+<article id="q-algo-structure-tradeoff">
 
 You are to create a data structure that will support the following operations with the mentioned time complexity
 
@@ -667,7 +667,7 @@ The encoding rule is: k[encoded_string], where the encoded_string inside the squ
 [**💻 Submit Code**](https://leetcode.com/problems/decode-string/description/)
 </article>
 
-<article>
+<article id="q-algo-number-of-islands">
 
 You are given `row x col` grid representing a map where `grid[i][j] = 1` represents land and `grid[i][j] = 0` represents water.
 

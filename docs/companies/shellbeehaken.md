@@ -41,7 +41,7 @@ There is an array of numbers `n`. You have to merge any two neighboring elements
 
 </article>
 
-<article>
+<article id="q-algo-scenario-shortest-path">
 
 Write the shortest path of the scenario graph. (The scenario included undirected graph with cycles)
 

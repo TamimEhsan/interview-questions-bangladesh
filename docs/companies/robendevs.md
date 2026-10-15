@@ -47,7 +47,7 @@ Given the `head` of a linked list, remove the `n`th node from the end of the lis
 [**💻 Submit Code**](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
 </article>
 
-<article>
+<article id="q-algo-mst-problem">
 
 Solve a problem related to finding the Minimum Spanning Tree in a graph.
 </article>

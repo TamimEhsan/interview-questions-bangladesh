@@ -8,7 +8,7 @@ head:
 # World University of Bangladesh
 
 
-<article>
+<article id="q-algo-amortized-analysis">
 
 How does amortized analysis help determine time complexity in dynamic data structures like heaps and hash tables?
 </article>

@@ -36,7 +36,7 @@ Given a array of numbers. You have to perform a number of queries. Each queries 
 
 </article>
 
-<article>
+<article id="q-algo-knapsack">
 
 A dynamic programming problem.(Similar to 0/1 knapsack)
 

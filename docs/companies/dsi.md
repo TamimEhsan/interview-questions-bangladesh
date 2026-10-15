@@ -50,7 +50,7 @@ bool restoreDouble(vector<int> input,vector<int>& output){
 </details>
 </article>
 
-<article>
+<article id="q-algo-missing-bit-string">
 
 Given n inputs each with n bits, output a number which was not in the given inputs and has n bits too.
 </article>

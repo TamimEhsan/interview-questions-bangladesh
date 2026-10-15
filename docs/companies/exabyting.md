@@ -42,7 +42,7 @@ Read more from [Array vs Linked List | GeeksforGeeks](https://www.geeksforgeeks.
 </details>
 </article>
 
-<article>
+<article id="q-algo-best-average-sort">
 
 Which sorting algorithm works better in the average case?
 <details><summary>Show Answer</summary>
@@ -51,7 +51,7 @@ Merge sort and Quick sort work better in the average case. Merge sort has a time
 </details>
 </article>
 
-<article>
+<article id="q-algo-sort-choice-range">
 
 Suppose, you have to sort 1000 numbers, numbers can be positive and negative. Which algorithm will you use?
 <details><summary>Show Answer</summary>
