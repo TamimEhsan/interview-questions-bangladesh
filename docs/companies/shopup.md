@@ -64,7 +64,7 @@ opportunity?
 
 ### Exam (conducted while on a live Google Meet)
 <br>
-<article>
+<article id="q-ds-char-frequency">
 
 String Frequency Problem:
 
@@ -96,7 +96,7 @@ Load Balancer Problem:
 
 </article>
 
-<article>
+<article id="q-sql-join-supervisor-branch">
 
 There are two tables:
 

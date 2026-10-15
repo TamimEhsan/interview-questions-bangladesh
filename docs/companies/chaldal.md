@@ -41,7 +41,7 @@ Answer varies from person to person
 </details>
 </article>
 
-<article>
+<article id="q-ds-spiral-matrix">
 
 You have been provided a spiral matrix of size NXN along with a coordinate (x, y) as follows. Find the element at the position (x, y) of the matrix.
 N = 4, x = 2, y =1
@@ -95,7 +95,7 @@ int RomanToArabic(string R){
 </details>
 </article>
 
-<article>
+<article id="q-ds-reverse-string">
 
 Given a string of characters. Reverse the string without using any library function.
 <details><summary>Show Answer</summary>
@@ -117,7 +117,7 @@ void solve(string &s){
 </details>
 </article>
 
-<article>
+<article id="q-ds-palindrome">
 
 Given a string of characters. Check if the given string is a palindrome.
 <details><summary>Show Answer</summary>
@@ -159,7 +159,7 @@ long long solve(int n){
 </details>
 </article>
 
-<article>
+<article id="q-ds-string-to-int">
 
 Given a string of characters [0-9]. Convert it to integer.
 
@@ -406,7 +406,7 @@ signed main() {
 </details>
 </article>
 
-<article>
+<article id="q-ds-digits-from-string">
 
 Find digits from a string( Leading zeroes doesn't get counted)
 <details><summary>Show Answer</summary>
@@ -451,7 +451,7 @@ int main() {
 </details>
 </article>
 
-<article>
+<article id="q-ds-anagram-substrings">
 
 Given a string s containing lowercase lattin letters and another string p containing lowercase lattin letters and * and ?. * means any substring possibly empty. ? means any character but single.
 
@@ -603,7 +603,7 @@ vector<char> sum(vector<char> &A, vector<char> &B){
 </details>
 </article>
 
-<article>
+<article id="q-ds-max-depth">
 
 Given the root of a binary tree, return its maximum depth.
 

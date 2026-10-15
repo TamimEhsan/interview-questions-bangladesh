@@ -19,7 +19,7 @@ head:
 For the Junior .NET Developer Position at first there was a 1 hour long written Exam which consisted 3 Questions (SQL Query, Problem Solving, JavaScript-HTML)
 
 ## Software Engineering Questions
-<article>
+<article id="q-sql-group-by-lowest-total">
 
 Select The Company name which has the lowest total emoployee count.
 
@@ -55,7 +55,7 @@ JavaScript & HTML
 Write JavaScript code to check if a button is clicked in an HTML element using an EventListener. Upon clicking, the size of the HTML element should increase by 10%.
 </article>
 
-<article>
+<article id="q-sql-max-salary-per-dept">
 
 Given two tables: `employee(name, salary, department_id)` and `department(id, department_name)`. Write an SQL query to find the maximum salary for each department. @@Junior2026@@
 </article>
@@ -112,7 +112,7 @@ You are given the root of a tree. Traverse every node starting from it and print
 @@Junior2026@@
 </article>
 
-<article>
+<article id="q-sql-count-per-student">
 
 You are given two entity tables `Student` and `Course`, and a relational table `Student_Courses`. Write an SQL query to find out the student name and the total number of courses of that student. @@Junior2026@@
 </article>

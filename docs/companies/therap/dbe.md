@@ -18,12 +18,12 @@ The selection process has 4 stages,
 
 ## Database Questions
 
-<article>
+<article id="q-db-erd-restaurant">
 
 Design an ERD of online restaurant management system
 </article>
 
-<article>
+<article id="q-db-transaction">
 
 What is Database Transaction
 </article>
@@ -46,7 +46,7 @@ ACID is a set of properties of database transactions intended to guarantee data 
 </details>
 </article>
 
-<article>
+<article id="q-db-denormalization">
 
 What is normalization and denormalization
 </article>
@@ -66,7 +66,7 @@ Explain data warehousing
 Explain data redundancy
 </article>
 
-<article>
+<article id="q-db-procedure-function-trigger">
 
 Briefly mention the differences between stored procedure, function and trigger
 </article>

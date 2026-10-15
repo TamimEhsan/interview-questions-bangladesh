@@ -30,7 +30,7 @@ Appscode generally gives a google form for the applicants. Based on the applicat
 ## Questions
 Questions from the written exam took place on May 1, 2025 
 
-<article>
+<article id="q-ds-range-query">
 
 Given a array of numbers. You have to perform a number of queries. Each queries ask for the average of numbers from a range.
 
@@ -42,13 +42,13 @@ A dynamic programming problem.(Similar to 0/1 knapsack)
 
 </article>
 
-<article>
+<article id="q-ds-trie">
 
 How does trie works. Implementation of trie.
 
 </article>
 
-<article>
+<article id="q-ds-hashing-basics">
 
 What is hashing? How does it work? What is hash collision?
 

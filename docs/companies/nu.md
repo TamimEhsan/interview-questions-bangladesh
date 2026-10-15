@@ -7,7 +7,7 @@ head:
 ---
 # National University
 
-<article>
+<article id="q-sql-select-and-update">
 
 Write SQL queries to:
 a. Select employees working at a specific bank.
@@ -21,12 +21,12 @@ d. Count the number of employees in each company.
 Write a C/C++ program using nested loops to print the a pattern:
 </article>
 
-<article>
+<article id="q-ds-deque-operations">
 
 Explain the operations of a Dequeue (Double-Ended Queue) with examples.
 </article>
 
-<article>
+<article id="q-ds-evaluate-postfix">
 
 Evaluate the following postfix expression: `6 4 3 2 + - *`
 </article>

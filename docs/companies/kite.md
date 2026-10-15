@@ -238,7 +238,7 @@ Given a string `s` and multiple queries. Each query consists of a string `t`. Ch
 [**💻 Submit Code**](https://leetcode.com/problems/is-subsequence/description/)
 </article>
 
-<article>
+<article id="q-ds-nearby-almost-duplicate">
 
 You are given an integer array `nums` and two integers `indexDiff` and `valueDiff`. Find a pair of indices `(i, j)` such that: `i != j`, `abs(i - j) <= indexDiff` and `abs(nums[i] - nums[j]) <= valueDiff`.@@2025@@
 
@@ -394,7 +394,7 @@ Given an array of pairs indicating the size and reward of each item. You will be
 </details>
 </article>
 
-<article>
+<article id="q-ds-range-function-queries">
 
 Given an array `A` of size `N` and some queries. Each query will ask for `f(l,r)` where the function computes the sum of the greatest common divisors over all prefixes of some range `[l,r]`.  @@Jr SWE 2025@@
 

@@ -47,7 +47,7 @@ Write the shortest path of the scenario graph. (The scenario included undirected
 
 </article>
 
-<article>
+<article id="q-ds-unique-queue">
 
 Create a data structure `uniqueQueue` where you can get the kth last element of the queue by using `get(k)` method and push `n` if it is not in the queue using `push(n)` method.
 
@@ -73,7 +73,7 @@ Exmaple Output: `1`
 
 </article>
 
-<article>
+<article id="q-sql-subquery-with-join">
 
 A SQL query was given to perform with a subquery and a JOIN operation.
 

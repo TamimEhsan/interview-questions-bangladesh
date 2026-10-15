@@ -40,12 +40,12 @@ Write a function that takes an array and a number as an argument. if the number 
 What is event driven programming? How event driven programming works in JavaScript?
 </article>
 
-<article>
+<article id="q-ds-array-second-max">
 
 Given an array of integers, find the second max of the array
 </article>
 
-<article>
+<article id="q-ds-sort-array-criteria">
 
 Given an array of integers and a sorting criteria[asc/desc], sort the array based on the sorting criteria in either ascending or descending order
 </article>

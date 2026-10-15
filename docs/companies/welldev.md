@@ -110,7 +110,7 @@ Learn about compile time and runtime memory allocation.
 </details>
 </article>
 
-<article>
+<article id="q-ds-binary-search-on-list">
 
 Can we run binary search on a sorted LinkedList? If we can, what issues we might face?
 <details><summary>Show Hint</summary>
@@ -119,7 +119,7 @@ Think about how and why arrays can be divided easily but LinkedList can't be.
 </details>
 </article>
 
-<article>
+<article id="q-ds-delete-middle-stack">
 
 Write a code to delete the middle element of a stack without using any additional data structure while preserving the original order. Input: [1, 2, 3, 4, 5]. Output: [1, 2, 4, 5]
 </article>
@@ -170,7 +170,7 @@ int fun(int n) {
 </details>
 </article>
 
-<article>
+<article id="q-sql-execution-order">
 
 Explain the order of SQL query execution (e.g., FROM, WHERE, GROUP BY, HAVING, SELECT).
 
@@ -214,12 +214,12 @@ ACID is a set of properties of database transactions intended to guarantee data 
 A basic GRE-like math question.
 </article>
 
-<article>
+<article id="q-sql-duplicate-rows">
 
 Write a SQL query to show all the duplicate rows in a table.
 </article>
 
-<article>
+<article id="q-ds-stack-from-queue">
 
 Can we make a stack with a queue?
 <details><summary>Show Hint</summary>
@@ -255,7 +255,7 @@ How many APIs are required to solve the above ticket reservation problem?
 How can passwords be secured so that no one (even the administrator) can view them? How can password hashing be strengthened? What techniques do you know? (Hint: Salting and hashing techniques)
 </article>
 
-<article>
+<article id="q-db-trigger-cascade">
 
 What is a trigger in DBMS, and what does cascading mean?
 </article>
@@ -275,7 +275,7 @@ What happens when we browse a website? How are the contents rendered?
 What is the difference between SQL and NoSQL?
 </article>
 
-<article>
+<article id="q-db-cache-storage-choice">
 
 For storing values from cache memory to RAM, should we use SQL or NoSQL?
 </article>
@@ -393,12 +393,12 @@ public:
 </details>
 </article>
 
-<article>
+<article id="q-sql-products-by-price">
 
 Given a table with product_id, price, and product_name, write a query to find products with the same price.
 </article>
 
-<article>
+<article id="q-sql-delete-truncate-drop">
 
 What is the difference between DELETE, TRUNCATE, and DROP in SQL?
 </article>
@@ -690,12 +690,12 @@ Find the second highest element in a given array.
 
 ## SQL Questions
 
-<article>
+<article id="q-sql-unique-column">
 
 Write SQL query to find unique column of a database
 </article>
 
-<article>
+<article id="q-sql-second-highest-salary">
 
 Write SQL query to find second highest salary
 </article>
@@ -728,7 +728,7 @@ How to iterate a binary search tree in reverse order?
 Write a function to describe polymorphism
 </article>
 
-<article>
+<article id="q-ds-represent-graph-code">
 
 How to describe a graph on code
 </article>
@@ -758,12 +758,12 @@ Describe Encapsulation with examples?
 Which performs better Linked List or Array?
 </article>
 
-<article>
+<article id="q-ds-circular-list-ops">
 
 Deletion and insertion of circular linked list Data structures used in DFS and BFS?
 </article>
 
-<article>
+<article id="q-ds-linkedlist-pros-cons">
 
 What are the advantages and disadvantages of Linked List?
 </article>
@@ -858,7 +858,7 @@ Give me a short description of polymorphism?
 What is the difference between array and linked list?
 </article>
 
-<article>
+<article id="q-ds-describe-stack-queue">
 
 Describe Stack & Queue?
 </article>

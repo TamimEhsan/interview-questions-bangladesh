@@ -43,12 +43,12 @@ Stage	Format	Description
 
 ## Questions
 
-<article>
+<article id="q-ds-remove-duplicates-list">
 
 Given the head of a linked list, remove all duplicate elements so that each value appears only once. Return the modified head of the linked list.
 </article>
 
-<article>
+<article id="q-ds-valid-parentheses">
 
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
@@ -93,7 +93,7 @@ public:
 </details>
 </article>
 
-<article>
+<article id="q-ds-two-sum">
 
 Given an array of integers `nums` and an integer `target`, return the indices of the two numbers such that they add up to `target`.
 
@@ -131,7 +131,7 @@ public:
 </details>
 </article>
 
-<article>
+<article id="q-ds-reverse-linked-list">
 
 Given the `head` of a singly linked list, reverse the list, and return the reversed list.
 
@@ -237,7 +237,7 @@ class Solution {
 </details>
 </article>
 
-<article>
+<article id="q-db-concurrency-control">
 
 What is concurrency control in databases? Why is it important?
 <details> <summary> Show Answer </summary> 
@@ -301,12 +301,12 @@ Think of it like a family tree:
 List and explain some basic Linux commands and their typical use cases.
 </article>
 
-<article>
+<article id="q-db-deadlock">
 
 What is a deadlock in computing? How can it be prevented or resolved?
 </article>
 
-<article>
+<article id="q-db-normalization-forms">
 
 What is database normalization? What are its benefits and common normal forms?
 </article>

@@ -21,7 +21,7 @@ Given an integer N, find all the divisors of N.
 Given two sorted arrays A and B, combine all the elements of A and B into a new sorted array C.
 </article>
 
-<article>
+<article id="q-ds-tree-node-table">
 
 For a binary tree, you are given a table of two columns N and P, where N represents the id of a node in the tree and P represents the parent of that node in the tree. Write a SQL query to find which the `leaf`, `root` and `inner` nodes and output a table fo the following format
 

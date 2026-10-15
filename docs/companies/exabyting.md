@@ -30,7 +30,7 @@ They often give job advertisements on LinkedIn. We have to apply using the Googl
 
 ## Phone Interview
 
-<article>
+<article id="q-ds-array-vs-linkedlist">
 
 Difference between Array and Linked List.
 <details><summary>Show Answer</summary>
@@ -60,7 +60,7 @@ We can use merge sort to sort the 1000 numbers. Merge sort has a time complexity
 </details>
 </article>
 
-<article>
+<article id="q-ds-stack-queue-pq">
 
 What is Stack, Queue and Priority Queue?
 <details><summary>Show Answer</summary>
@@ -71,7 +71,7 @@ What is Stack, Queue and Priority Queue?
 </details>
 </article>
 
-<article>
+<article id="q-ds-binary-tree-vs-bst">
 
 Difference between Binary Tree and BST.
 <details><summary>Show Answer</summary>
@@ -122,7 +122,7 @@ OOP is used to model real-world entities and relationships in software developme
 </details>
 </article>
 
-<article>
+<article id="q-db-sql-vs-nosql">
 
 Difference between SQL and NoSQL.
 <details><summary>Show Answer</summary>
@@ -148,7 +148,7 @@ To learn more about the difference between Compiler and Interpreter, read this a
 
 ## First Round Questions
 
-<article>
+<article id="q-ds-bst-explain">
 
 Explain BST.
 <details><summary>Show Answer</summary>
@@ -157,7 +157,7 @@ Explain BST.
 </details>
 </article>
 
-<article>
+<article id="q-ds-bst-insert-sorted">
 
 Suppose, we insert `[1, 2, 3, 4]` this array in BST. What will it look like after insertion? What is the search complexity in this tree? What if we want to make the search complexity  O(logn)?
 <details><summary>Show Answer</summary>
@@ -176,7 +176,7 @@ And the search complexity will be `O(n)` in this case. To make the search comple
 </details>
 </article>
 
-<article>
+<article id="q-sql-left-vs-full-join">
 
 Left Join VS Full Join. Describe a scenario where we need to use Left Join.
 <details><summary>Show Answer</summary>
@@ -200,7 +200,7 @@ LEFT JOIN marks ON students.id = marks.student_id;
 </details>
 </article>
 
-<article>
+<article id="q-db-acid">
 
 Describe the ACID properties of the database.
 <details><summary>Show Answer</summary>
@@ -218,7 +218,7 @@ ACID is a set of properties of database transactions intended to guarantee data 
 </details>
 </article>
 
-<article>
+<article id="q-db-index-duplicates">
 
 Describe the indexing of the database. Can we index with a column that has duplicate elements?
 <details><summary>Show Answer</summary>
@@ -352,7 +352,7 @@ ACID is a set of properties of database transactions intended to guarantee data 
 </details>
 </article>
 
-<article>
+<article id="q-db-indexing-why">
 
 Explain indexing. Why do we need indexing? What benefit does it give us?
 <details><summary>Show Answer</summary>
@@ -365,7 +365,7 @@ Read more from [What is Indexing in Database? | Medium](https://medium.com/@rtaw
 </details> 
 </article>
 
-<article>
+<article id="q-db-index-on-email">
 
 Suppose, we want to use user_email as index. How can we do it?
 <details><summary>Show Answer</summary>
@@ -376,7 +376,7 @@ CREATE INDEX user_email_index ON users (user_email);
 </details>
 </article>
 
-<article>
+<article id="q-ds-tree-types">
 
 Explain tree, binary tree, binary search tree. In a binary search tree, if the tree is imbalanced, then how can we make it balanced?
 <details><summary>Show Answer</summary>
@@ -388,7 +388,7 @@ If the binary search tree is imbalanced, then we can make it balanced by using A
 </details>
 </article>
 
-<article>
+<article id="q-ds-map-vs-unordered-map">
 
 Explain the map, unordered_map and their complexity. Why does the complexity of the unordered_map go to O(n) in some cases?
 <details><summary>Show Answer</summary>
@@ -530,7 +530,7 @@ string decimalToBinary(int n) {
 </details>
 </article>
 
-<article>
+<article id="q-sql-join-composite-keys">
 
 Explain JOIN and composite keys in the database.
 <details><summary>Show Answer</summary>

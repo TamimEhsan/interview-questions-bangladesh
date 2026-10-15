@@ -111,12 +111,12 @@ There are `10` jars of pills. One jar contains pills that weigh `9` grams each, 
 
 ### Data Structure and Algorithm
 
-<article>
+<article id="q-ds-expression-evaluation">
 
 You are given an arithmetic expression in either infix or postfix notation. Write a program to convert it to prefix notation, maintaining correct operator precedence and associativity.
 </article>
 
-<article>
+<article id="q-ds-k-smallest">
 
 You are given `1000` unsorted numbers and need to find the `10` smallest elements efficiently. Which sorting or selection algorithm would be most optimal to solve this problem and why?
 </article>
@@ -126,12 +126,12 @@ You are given `1000` unsorted numbers and need to find the `10` smallest element
 Implement a function to perform preorder traversal of a binary tree using both recursive and iterative (loop-based) approaches.
 </article>
 
-<article>
+<article id="q-ds-doubly-list-insert-delete">
 
 Write a program to add and delete a node in a doubly linked list. Your implementation should handle edge cases like deleting the head or tail nodes and adding a node at arbitrary positions.
 </article>
 
-<article>
+<article id="q-ds-array-vs-list-tradeoffs">
 
 Compare arrays and linked lists in terms of memory usage, access time, insertion, and deletion. In which scenarios would you prefer one over the other?
 </article>
