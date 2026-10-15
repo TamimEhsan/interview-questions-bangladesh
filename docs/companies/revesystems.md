@@ -201,7 +201,7 @@ Why are getters and setters used in Java?
 Describe the Singleton design pattern and write the code in Java.
 </article>
 
-<article>
+<article id="q-api-rest-verbs">
 	
 What are REST APIs? Tell about the HTTP verbs and the differences between PUT and POST in REST API.
 </article>
@@ -242,12 +242,12 @@ Explain about `Encapsulation`, `Abstraction`, `Inheritance`, and `Polymorphism` 
 Please tell us about Java Socket Programming.
 </article>
 
-<article>
+<article id="q-sdlc-models">
 
 What models are used in the Software development life cycle? Please tell us about the waterfall model.
 </article>
 
-<article>
+<article id="q-sdlc-agile-model">
 
 Please explain the Agile model in software engineering.
 </article>
@@ -275,12 +275,12 @@ Do you have a plan for higher studies? When will you go abroad for higher studie
 
 ## CTO Round Questions
 
-<article>
+<article id="q-hr-tell-about-yourself">
 
 Please tell us about yourself.
 </article>
 
-<article>
+<article id="q-hr-industry-vs-academia">
 
 Why do you want to join a software company instead of joining a university as a faculty member?
 </article>

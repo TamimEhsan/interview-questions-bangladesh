@@ -35,7 +35,7 @@ very challenging—comparable to the "Hard" category on HackerRank.
 
 ### First Interview
 <br>
-<article>
+<article id="q-hr-challenging-task">
 
 - During internships, you often face challenging tasks with no existing resources. Have
 you faced such a situation in your previous projects? How did you solve it?

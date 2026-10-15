@@ -25,7 +25,7 @@ Astha IT is a software development company based in Dhaka, Bangladesh, providing
 Design a basic social media system.
 </article>
 
-<article>
+<article id="q-fe-react-vs-next">
 
 What is the difference between React and Next.js?
 </article>
@@ -42,7 +42,7 @@ Solve LeetCode easy to medium-level coding problems.
 
 ### Technical Interview Questions
 
-<article>
+<article id="q-sdlc-cicd">
 
 How do CI/CD pipelines work?
 </article>

@@ -15,7 +15,7 @@ head:
 | Technologies Used| Java, JavaScript, Android, PHP |
 
 ## Coding Round Questions
-<article>
+<article id="q-fe-html-parse">
 
 You are given an HTML string. Your task is to determine the number of characters encompassed by each HTML tag in the string. For each tag, count the number of characters that are enclosed between the opening (<tag>) and closing (</tag>) tags.
 

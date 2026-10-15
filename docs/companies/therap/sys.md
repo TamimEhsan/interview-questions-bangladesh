@@ -200,12 +200,12 @@ fi
 
 
 ### Other
-<article>
+<article id="q-hr-biggest-accomplishment">
 
 What is the biggest accomplishment in your educational life? Explain why.
 </article>
 
-<article>
+<article id="q-git-fetch-vs-pull">
 
 What is the difference between `git fetch` and `git pull`? In which situations should you use `git pull` instead of `git fetch`?
 

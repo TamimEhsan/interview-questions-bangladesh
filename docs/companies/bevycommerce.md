@@ -35,7 +35,7 @@ How does error handling differ in synchronous and asynchronous code in Node.js, 
 Write a function that takes an array and a number as an argument. if the number is greater than 0, you must pop the number of elements from the array. if the number is not provided then pop once.
 </article>
 
-<article>
+<article id="q-fe-event-driven">
 
 What is event driven programming? How event driven programming works in JavaScript?
 </article>

@@ -51,5 +51,5 @@ Frontend Fundamentals.
 ### [Interview Craft](./interview-craft)
 Aptitude & Logical Puzzles, Behavioral & HR Questions.
 
-### [Advanced / Specialized](./advanced)
-Machine Learning & LLMs.
+### [Machine Learning](./machine-learning)
+ML Fundamentals, Model Training, Evaluation, Neural Networks, Transformers & LLMs, Applied LLM Systems.

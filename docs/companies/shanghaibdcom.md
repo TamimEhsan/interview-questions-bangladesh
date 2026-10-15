@@ -89,22 +89,22 @@ There are `N` train coaches numbered from `1` to `N` placed in sequence on a lef
 Print all possible valid output sequences (permutations) in which the coaches can arrive at the right track using the spur as intermediate storage.
 </article>
 
-<article>
+<article id="q-apt-poisoned-bottle">
 
 There are `1000` liquid bottles. One of the bottles contains poisoned liquid. A rat dies after one hour of drinking the poisoned wine. How many minimum rats are needed to figure out which bottle contains poison in hour? [Also called the Poison and Rat problem]
 </article>
 
-<article>
+<article id="q-apt-bridge-crossing">
 
 Four people need to cross a bridge at night. They have one torch and the bridge can only hold two people at a time. Each person walks at a different speed: `1`, `2`, `5`, and `10` minutes. If two people cross together, they must go at the slower person’s pace. What is the minimum total time required for all four people to cross the bridge?
 </article>
 
-<article>
+<article id="q-apt-burning-candles">
 
 You are given two candles of equal length. Each candle takes exactly 60 minutes to burn, but they burn at inconsistent rates (i.e., half the candle may not burn in 30 minutes). How can you measure exactly 45 minutes using these two candles? [Also called the The Burning Candles problem]
 </article>
 
-<article>
+<article id="q-apt-weighing-pills">
 
 There are `10` jars of pills. One jar contains pills that weigh `9` grams each, while the others contain pills weighing `10` grams each. Using a weighing scale only once, how can you determine which jar contains the lighter pills?
 </article>
@@ -136,7 +136,7 @@ Write a program to add and delete a node in a doubly linked list. Your implement
 Compare arrays and linked lists in terms of memory usage, access time, insertion, and deletion. In which scenarios would you prefer one over the other?
 </article>
 
-<article>
+<article id="q-apt-coin-ways">
 
 You are given unlimited coins of denominations `1`, `2`, and `5` cents. How many different ways can you make a total of `1` dollar (`100` cents) using these coins?
 </article>
