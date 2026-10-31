@@ -174,6 +174,35 @@ int fun(int n) {
 
 Explain the order of SQL query execution (e.g., FROM, WHERE, GROUP BY, HAVING, SELECT).
 
+<details><summary>Show Answer</summary>
+
+The order of SQL query execution is as follows:
+
+1. FROM/JOIN: Specifies the tables from which to retrieve data.
+1. WHERE: Filters the rows that meet the condition before grouping.
+1. GROUP BY: Groups rows that share a property.
+1. HAVING: Filters groups based on conditions, applied after grouping.
+1. SELECT: Specifies the columns to retrieve or calculate.
+1. DISTINCT: Removes duplicate rows from the result set.
+1. ORDER BY: Sorts the result set by specified columns.
+1. LIMIT: Specifies the maximum number of rows to return.
+1. OFFSET: Specifies how many rows to skip before starting to return rows.
+
+```sql
+SELECT DISTINCT department_id   -- #6+7                                  
+FROM employees                  -- #1                                   
+JOIN orders                     -- #2 
+    ON customers.customer_id = orders.customer_id          
+WHERE salary > 3000             -- #3                       
+GROUP BY department             -- #4
+HAVING AVG(salary) > 5000       -- #5
+ORDER BY department             -- #8
+LIMIT 10                        -- #9     
+OFFSET 5;                       -- #10    
+```
+
+For more details, see [SQL Order of Execution: Understanding How Queries Run from Datacamp](https://www.datacamp.com/tutorial/sql-order-of-execution)
+</details>
 </article>
 
 <article>
@@ -217,14 +246,56 @@ A basic GRE-like math question.
 <article id="q-sql-duplicate-rows">
 
 Write a SQL query to show all the duplicate rows in a table.
+
+[**💻 Submit Code**](https://leetcode.com/problems/duplicate-emails/)
+<details><summary>Show Answer</summary>
+
+```sql
+SELECT email as Email from Person GROUP BY email HAVING count(email) > 1;
+```
+</details>
 </article>
 
 <article id="q-ds-stack-from-queue">
 
 Can we make a stack with a queue?
-<details><summary>Show Hint</summary>
 
-Think multiple queue.
+[**💻 Submit Code**](https://leetcode.com/problems/implement-stack-using-queues/description/)
+<details><summary>Show Answer</summary>
+
+```cpp
+class MyStack {
+public:
+    queue<int> q[2];
+    int t = 0;
+    MyStack() {
+        
+    }
+    
+    void push(int x) {
+       q[t].push(x);
+    }
+    
+    int pop() {
+        int ret = top();
+        q[t].pop();
+        t = 1-t;
+        return ret;
+    }
+    
+    int top() {
+        while(q[t].size() > 1) {
+            q[1-t].push(q[t].front());
+            q[t].pop();
+        }
+        return q[t].front();
+    }
+    
+    bool empty() {
+        return q[0].empty() and q[1].empty();
+    }
+};
+```
 </details>
 </article>
 
@@ -497,7 +568,7 @@ How do you balance between a tight deadline and preserving best practices for?
 
 <article>
 
-what stack u wanna work with, do you wanna go abroad?
+what stack you want to work with, do you want to go abroad?
 </article>
 
 <article id="q-hr-how-others-describe-you">
@@ -736,6 +807,19 @@ Write SQL query to find unique column of a database
 <article id="q-sql-second-highest-salary">
 
 Write SQL query to find second highest salary
+
+[**💻 Submit Code**](https://leetcode.com/problems/second-highest-salary/description/)
+<details><summary>Show Answer</summary>
+
+```sql
+SELECT (
+    SELECT DISTINCT salary 
+    FROM Employee 
+    ORDER BY salary DESC 
+    LIMIT 1 OFFSET 1
+) AS SecondHighestSalary;
+```
+</details>
 </article>
 
 <article>
@@ -890,7 +974,7 @@ What do you understand by the term Dependency Injection?
 
 <article>
 
-What are protected and public variables?
+What is the difference between `public`, `private` and `protected` variables?
 </article>
 
 <article id="q-fe-dom-events">
@@ -931,11 +1015,6 @@ How to reverse a linked list?
 <article>
 
 What is SDLC?
-</article>
-
-<article>
-
-What is the difference between `private` and `protected`?
 </article>
 
 <article>
