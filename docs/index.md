@@ -11,8 +11,8 @@ hero:
       text: Start Taking Preparations
       link: /companies/general
     - theme: alt
-      text: Read Notes
-      link: /notes/general
+      text: Follow Roadmap
+      link: /roadmap/
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples
@@ -22,10 +22,10 @@ features:
     title: 40+ companies
     details: Collection of questions asked in multiple top companies of Bangladesh
   - icon: 📝
-    title: 600+ questions
-    details: Details and solutions of 300+ questions
-  - icon: 💡
-    title: Tips and tricks
-    details: Tips related to specific companies or overall interview preparation
+    title: 750+ questions
+    details: Details and solutions of 250+ questions
+  - icon: 🚩
+    title: Roadmap
+    details: Follow the roadmap to prepare for your next interview
 ---
 
