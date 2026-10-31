@@ -28,7 +28,6 @@ head:
 - [What `SELECT 5/6` returns](/companies/bs23#q-sql-integer-division) — Brain Station 23
 - [`LIKE` with a literal underscore](/companies/bs23#q-sql-like-wildcard) — Brain Station 23
 - [Which is not a valid SQL data type](/companies/bs23#q-sql-data-types) — Brain Station 23
-- [Find the unique column of a table](/companies/welldev#q-sql-unique-column) — WellDev
 
 ### Aggregation
 - `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`
