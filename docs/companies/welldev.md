@@ -520,6 +520,11 @@ What are your expectations from WellDev as a workplace?
 What is the motivation to apply here?
 </article>
 
+<article>
+
+Questions on your background, experience and notice period.
+</article>
+
 
 ### Coding Questions
 
@@ -688,6 +693,39 @@ Given a chessboard, there are some knights placed initially. How can we place so
 Find the second highest element in a given array.
 </article>
 
+<article>
+
+Explain the idea of binary search and write its pseudocode.
+</article>
+
+<article>
+
+Write the code for merge sort.
+</article>
+
+<article>
+
+You are given an integer array `coins` representing coins of different denominations, and an integer `amount` representing a total amount of money.
+Return the fewest number of coins needed to make up that amount. If the amount cannot be made up by any combination of the coins, return `-1`. You may assume you have an infinite number of each kind of coin.
+
+[**💻 Submit Code**](https://leetcode.com/problems/coin-change/description/)
+</article>
+
+<article>
+
+Given a string `s` containing just the characters `(`, `)`, `{`, `}`, `[` and `]`, determine if the input string is valid. 
+An input string is valid when every open bracket is closed by a bracket of the same type, and brackets are closed in the correct order.
+
+[**💻 Submit Code**](https://leetcode.com/problems/valid-parentheses/description/)
+</article>
+
+<article>
+
+Given two arrays, find the elements common to both.
+
+[**💻 Submit Code**](https://leetcode.com/problems/find-common-elements-between-two-arrays/description/)
+</article>
+
 ## SQL Questions
 
 <article id="q-sql-unique-column">
@@ -703,6 +741,23 @@ Write SQL query to find second highest salary
 <article>
 
 Write SQL query to sort salary in descending order
+</article>
+
+<article>
+
+Find the highest salary from a table.
+
+[**💻 Submit Code**](https://leetcode.com/problems/biggest-single-number/description/)
+</article>
+
+<article>
+
+Write a query using a `JOIN` across two tables.
+</article>
+
+<article>
+
+You are given an obtained-marks table whose `id` references a student table holding `id` and class number. List every student in class 4 whose total marks exceed 170.
 </article>
 
 ### Short Questions
@@ -871,6 +926,41 @@ Difference between polymorphism and constructor overloading?
 <article>
 
 How to reverse a linked list?
+</article>
+
+<article>
+
+What is SDLC?
+</article>
+
+<article>
+
+What is the difference between `private` and `protected`?
+</article>
+
+<article>
+
+In real life, which matters more - space complexity or time complexity?
+</article>
+
+<article>
+
+When transferring data, what can we use to protect it from attackers?
+</article>
+
+<article>
+
+What's the difference between hashing and salting?
+</article>
+
+<article>
+
+Is a JWT encoded or encrypted?
+</article>
+
+<article>
+
+Why one would use a NoSQL database like MongoDB instead of a traditional SQL database?
 </article>
 
 ## Contributors
