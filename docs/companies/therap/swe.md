@@ -1205,13 +1205,98 @@ Output:
 
 Given the following database table, normalize the relation into **1NF, 2NF, and 3NF**. Identify the **primary key and foreign keys**, and define the **relationships among the resulting tables**.
 
-| Teacher Name | Teacher Email | Subject | Class | Class Timing | Day |
+| teacher_name | teacher_email | subject | class | class_timing | day |
 |---|---|---|---|---|---|
 | Alis | alis@email.com | Mathematics | 10-A | 9:00 AM | Sunday, Tuesday |
 | Zara | zara@email.com | Physics | 10-B | 10:00 AM | Monday, Wednesday |
 | Alis | alis@email.com | English | 10-A | 11:00 AM | Thursday, Friday |
 | Zara | zara@email.com | Mathematics | 10-B | 12:00 PM | Sunday, Wednesday |
 | Alis | alis@email.com | Physics | 10-A | 2:00 PM | Monday, Friday |
+
+<details><summary>Show Answer</summary>
+We will normalize the given table step by step into **1NF, 2NF, and 3NF**. You can at first read through the theory from [Normalization in SQL: A Complete Guide to 1NF Through 5NF by DataCamp](https://www.datacamp.com/tutorial/normalization-in-sql)
+
+### Normalization Steps:
+- 1NF: Each cell holds a single atomic value; every row is uniquely identifiable
+- 2NF: Remove partial dependencies—non-key columns must depend on the entire primary key
+- 3NF: Remove transitive dependencies—non-key columns depend only on the primary key, not on other non-key columns
+
+### Step 1: First Normal Form (1NF)
+1NF ensures that each column cell contains only atomic values. In the given table, the `day` column contains multiple values (e.g., "Sunday, Tuesday"). We will split this into separate rows for each day. 
+
+| teacher_name | teacher_email | subject | class | class_timing | day |
+|---|---|---|---|---|---|
+| Alis | alis@email.com | Mathematics | 10-A | 9:00 AM | Sunday |
+| Alis | alis@email.com | Mathematics | 10-A | 9:00 AM | Tuesday |
+| Zara | zara@email.com | Physics | 10-B | 10:00 AM | Monday |
+| Zara | zara@email.com | Physics | 10-B | 10:00 AM | Wednesday |
+| Alis | alis@email.com | English | 10-A | 11:00 AM | Thursday |
+| Alis | alis@email.com | English | 10-A | 11:00 AM | Friday |
+| Zara | zara@email.com | Mathematics | 10-B | 12:00 PM | Sunday |
+| Zara | zara@email.com | Mathematics | 10-B | 12:00 PM | Wednesday |
+| Alis | alis@email.com | Physics | 10-A | 2:00 PM | Monday |
+| Alis | alis@email.com | Physics | 10-A | 2:00 PM | Friday |
+
+Now, every cell contains exactly one value. The Day column no longer contains multiple values in a single cell. However, we still have redundancy. For example, Alis's email is repeated in multiple rows. That is acceptable in 1NF.
+
+### Step 2: Second Normal Form (2NF)
+A table is in 2NF if:
+1. It is already in 1NF.
+2. Every non-key attribute is fully functionally dependent on the entire candidate key.
+3. There are no partial dependencies.
+
+Our step 1 is to identify the primary key. In this case, the combination of (`teacher_email`, `subject`, `class`, `day`) can serve as a composite primary key. Why? Because each row is uniquely identified by the combination of these four attributes. However, we notice that `teacher_name` is dependent only on `teacher_email` and not on the entire composite key. This is a partial dependency. ie. one of the non-key attributes (`teacher_name`) depends only on part of the primary key (`teacher_email`). This violates 2NF. To resolve this, we will create a separate table for Teachers and rename the original table to Classes.
+
+On the same note, we also notice that `class_timing` is dependent on (`subject`, `class`) and not on the entire composite key. This is another partial dependency. So, we will create a separate table for Classes.
+
+And `day` is dependent on (`subject`, `class`) as well. So, we will create a separate table for Class_Days. 
+
+Extra: If the class timing was different on different days, then we would need to include the `class_timing` in the Class_Days table. But in this case, as `class_timing` depends only on (`subject`, `class`), and not (subject, class, day)`, we can not keep it in the Class_Days table.
+
+**Teachers**
+
+| teacher_email (PK) | teacher_name |
+|---|---|
+| alis@email.com | Alis |
+| zara@email.com | Zara |
+
+**Classes** (one row per subject-class pair)
+
+| subject (PK) | class (PK) | teacher_email (FK) | class_timing |
+|---|---|---|---|
+| Mathematics | 10-A | alis@email.com | 9:00 AM |
+| Physics | 10-B | zara@email.com | 10:00 AM |
+| English | 10-A | alis@email.com | 11:00 AM |
+| Mathematics | 10-B | zara@email.com | 12:00 PM |
+| Physics | 10-A | alis@email.com | 2:00 PM |
+
+**Class_Days**
+
+| subject (PK, FK) | class (PK, FK) | day (PK) |
+|---|---|---|
+| Mathematics | 10-A | Sunday |
+| Mathematics | 10-A | Tuesday |
+| Physics | 10-B | Monday |
+| Physics | 10-B | Wednesday |
+| English | 10-A | Thursday |
+| English | 10-A | Friday |
+| Mathematics | 10-B | Sunday |
+| Mathematics | 10-B | Wednesday |
+| Physics | 10-A | Monday |
+| Physics | 10-A | Friday |
+
+Note: if the class timing was different on different days, we would have to include Day in the Class Timings table as well. But in this case, it seems that the timing is consistent for each subject and class combination.
+
+Now that there are no partial dependencies, the Classes table is in 2NF.
+### Step 3: Third Normal Form (3NF)
+Rule: A table is in 3NF if:
+1. It is already in 2NF.
+2. There are no transitive dependencies
+
+A transitive dependency occurs when a non-key attribute depends on another non-key attribute rather than directly on the key.
+
+There are no transitive dependencies in the Teachers table or the Classes table. The Class Timings table also does not have any transitive dependencies. Therefore, all three tables are in 3NF.
+</details>
 </article>
 
 <article id="q-lld-vending-machine">

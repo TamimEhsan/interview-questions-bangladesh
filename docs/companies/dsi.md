@@ -89,6 +89,52 @@ student table:
 | 2 	   | rakib   | Algorithms  | 100	  |
 | 3 	   | showrov | Networking  | 300	  |
 | 4 	   | kalam   | Algorithms  | 100	  |
+
+<details><summary>Show Answer</summary>
+We will normalize the given table step by step into **1NF, 2NF, and 3NF**. You can at first read through the theory from [Normalization in SQL: A Complete Guide to 1NF Through 5NF by DataCamp](https://www.datacamp.com/tutorial/normalization-in-sql)
+
+### Normalization Steps:
+- 1NF: Each cell holds a single atomic value; every row is uniquely identifiable
+- 2NF: Remove partial dependencies—non-key columns must depend on the entire primary key
+- 3NF: Remove transitive dependencies—non-key columns depend only on the primary key, not on other non-key columns
+
+### Step 1: 1NF
+
+**Rule**: All values must be atomic, with no repeating groups, and each row must be uniquely identifiable.  
+**Check**: Every cell holds a single value, and student_id uniquely identifies each row.  
+**Result**: The table is already in 1NF. No change is needed.
+
+### Step 2: 2NF
+
+**Rule**: Must be in 1NF, with no partial dependencies (a non-key attribute depending on only part of a composite key).  
+**Check**: The primary key is a single column (student_id), so a partial dependency is impossible.  
+**Result**: The table is already in 2NF. No change is needed.
+
+### Step 3: 3NF
+
+**Rule**: Must be in 2NF, with no transitive dependencies (a non-key attribute depending on another non-key attribute).  
+**Check**: There is a transitive dependency: `student_id → course_name → course_fee`. `course_fee` depends on `course_name`, which is not a key, rather than directly on `student_id`.
+
+**Fix**: Move the course data into its own table and link it with a foreign key.
+
+#### `Course` table
+
+| course_name (PK) | course_fee
+| :- | :-: |
+| DSA	| 400 |
+| Algorithms	| 100 |
+| Networking	| 300 |
+
+#### `Student` table
+| student_id (PK) | name | course_name (FK)
+| :-: | :- | :-: |
+| 1	| shakib	| DSA |
+| 2	| rakib	| Algorithms |
+| 3	| showrov	| Networking |
+| 4	| kalam	| Algorithms |
+
+Note: It is better to use a surrogate key for the `Course` table, but for simplicity, we are using `course_name` as the primary key.
+</details>
 </article>
 
 <article>
