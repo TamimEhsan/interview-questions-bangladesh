@@ -16,7 +16,7 @@ JavaScript and DOM basics, CSS, then framework-specific questions (commonly Reac
 
 *Coverage: moderate*
 
-**Resources** · [JavaScript.info](https://javascript.info/) — thorough and free · [MDN Web Docs](https://developer.mozilla.org/) · [web.dev — Learn CSS](https://web.dev/learn/css/)
+**Resources** · [JavaScript.info](https://javascript.info/) — thorough and free · [MDN Web Docs](https://developer.mozilla.org/) · [web.dev — Learn CSS](https://web.dev/learn/css/) · [FrontendAtlas — JavaScript interview prep path](https://frontendatlas.com/guides/framework-prep/javascript-prep-path)
 
 ### JavaScript Fundamentals
 - Types, coercion, and equality
