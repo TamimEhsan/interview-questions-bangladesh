@@ -851,6 +851,14 @@ Given a database table, normalize it. Show the primary key, foreign key, and the
 | 101  | Khanika  | express | dhaka | rajshahi   | 9 am      | 9 pm    | sat, mon, thu |
 | 102  | Taranga  | local   | dhaka | khulna     | 10 pm     | 11 am   | everyday      |
 | 103  | Ulka     | express | dhaka | chittagong | 10 pm     | 11 am   | sat, sun      |
+<details><summary>Show Answer</summary>
+
+Here, we need to break the days column into a seperate table cause by 1NF, a column needs to be atomic. 
+
+It is apparent that `code` is the primary key of the table. If one assumes that the `type` is inferred from `bus_name` then the `type` goes to a new table `bus_type(bus_name PK, type)`. If not, then no need. 
+
+The tables are then `bus(code PK, bus_name, type, from, to, departure, arrival)` and `schedule(code PK FK, days PK)`. If we want we can create seperate tables for location, type and use their foreign key in the `bus` table. 
+</details>
 </article>
 
 <article>

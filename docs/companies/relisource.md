@@ -58,6 +58,27 @@ Write JavaScript code to check if a button is clicked in an HTML element using a
 <article id="q-sql-max-salary-per-dept">
 
 Given two tables: `employee(name, salary, department_id)` and `department(id, department_name)`. Write an SQL query to find the maximum salary for each department. @@Junior2026@@
+
+[**💻 Submit Code**](https://leetcode.com/problems/department-highest-salary/description/) 
+<details><summary>Show Answer</summary>
+
+```sql
+SELECT 
+    d.name AS Department,
+    e.name AS Employee,
+    e.salary AS Salary
+FROM 
+    Employee e
+JOIN 
+    Department d ON e.departmentId = d.id
+WHERE 
+    (e.departmentId, e.salary) IN (
+        SELECT departmentId, MAX(salary)
+        FROM Employee
+        GROUP BY departmentId
+    );
+```
+</details>
 </article>
 
 <article id="q-algo-islands-max-size">
