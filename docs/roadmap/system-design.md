@@ -62,6 +62,7 @@ Core principles — scalability, load balancing, caching, trade-offs — applied
 
 **Practice**
 - [Design a URL shortener](/companies/spectrum#q-sd-url-shortener) — Spectrum
+  - [Free worked URL shortener walkthrough](https://www.youtube.com/watch?v=FHYBCHfEg_o) (53 seconds, English captions). Compare read and write contracts and decide what a later lookup should return after deletion.
 - [Design a social media system](/companies/aastha#q-sd-social-media) — Astha IT
 - [Real-time electricity meter monitoring](/companies/robendevs#q-sd-electricity-monitoring) — RoBenDevs, with answer
 - [Nationwide restaurant delivery](/companies/robendevs#q-sd-delivery-platform) — RoBenDevs, with answer
